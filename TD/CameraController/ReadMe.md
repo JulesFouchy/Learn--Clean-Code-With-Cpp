@@ -1,0 +1,1 @@
+A pre-existing class (CameraController) that you need to refactor using the State pattern.
