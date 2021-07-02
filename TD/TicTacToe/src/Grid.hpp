@@ -3,13 +3,14 @@
 #include <optional>
 
 enum class Player {
-      Blue,
-      Red,
+      Knots,
+      Crosses,
 };
 
 class Grid {
 public:
       Grid();
+      bool is_empty(int x, int y);
       std::optional<Player> get(int x, int y) const;
       void set(int x, int y, Player player);
 

@@ -1,5 +1,7 @@
 # pragma once
 
+#include "Grid.hpp"
+
 class TicTacToe {
 public:
       /**
@@ -9,6 +11,14 @@ public:
        * @param y The index of the cell along the y-axis (can be 0, 1 or 2)
        */
       void on_cell_picked(int x, int y);
+
+      void draw_grid() const;
+
 private:
-      
+      void change_player();
+
+private:
+      Grid grid_;
+      Player current_player_ = Player::Crosses;
+      std::optional<Player> winner_;
 };
