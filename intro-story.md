@@ -13,3 +13,11 @@ The classes should be as independant as possible between ; and most importantly,
 ## Flat folder architecture + A ReadMe that guides you through the sections
 
 ## Use Git, submodules, pull requests
+
+### Easy collabaration between teachers
+
+### Great visibility for students
+
+## Be declarative
+
+We state (and grade) what we actually want (that the students acquire some given skills), rather than implementation details (that students succeed a given exercise).
