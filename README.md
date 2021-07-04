@@ -26,6 +26,7 @@ We will also revisit some basic C++ constructs like
 - lambdas
 - std::unordered_map
 - templates (?)
+- don't forget the virtual destructors !
 
 A focus on performance will sometimes be present when it is really relevant (like : *almost never use linked lists*).
 

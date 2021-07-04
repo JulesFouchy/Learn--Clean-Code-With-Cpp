@@ -18,10 +18,16 @@ This is also why you should depend on interfaces and never on concrete classes. 
 
 If you end up with too many arguments, maybe grouping them in a struct can be a good idea. This should be considered carefully though because it can lead to introducing unnecessary dependencies (if a class X needs 4 out of the 5 classes packaged in a struct Y, it can be tempting to make X depend on Y, although it will grab one unnecessary dependency, which is *bad*).
 
-**Dependency Inversion** (the I of SOLID) The interfaces should be owned by the high level that uses it, not by the low level that implements it.
+**Dependency Inversion** (the D of SOLID) The interfaces should be owned by the high level that uses it, not by the low level that implements it.
+
+## Concepts vs Interfaces
+
+Concepts are etter than interfaces because they can also require the existance of free functions, not only methods.
+
+For example if you want to require that each shape is drawable, with an interface it would require that ```draw()``` be a method of each ```Shape``` class. With concepts you can require that a free function ```draw(auto Shape shape const&)``` exist for each type following the ```Shape``` concept. And free functions are great for many reasons ! (Single Responsibility Principle, Open-Close Principle, etc. See [Free your functions](https://www.youtube.com/watch?v=WLDT1lDOsb4))
 
 ## To go further
 
-[About the Singleton and alternatives to it](https://www.youtube.com/watch?v=K5c7uvWe_hw)
+[About the Singleton and alternatives to it](../conferences/peter-muldoon--retiring-the-singleton-pattern-concrete-suggestions-for-what-to-use-instead.md)
 
-[About SOLID by Klaus Iglberger](https://www.youtube.com/watch?v=Ntraj80qN2k)
+[About SOLID by Klaus Iglberger](../conferences/klaus-iglberger--breaking-dependencies-the-solid-principles.md)
