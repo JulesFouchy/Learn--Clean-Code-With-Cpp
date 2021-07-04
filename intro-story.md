@@ -21,3 +21,7 @@ The classes should be as independant as possible between ; and most importantly,
 ## Be declarative
 
 We state (and grade) what we actually want (that the students acquire some given skills), rather than implementation details (that students succeed a given exercise).
+
+## Open-Source
+
+Open-Source is **the best way to produce high quality products**. Everybody contributes to it, the project is refined again and again and improves over time as people use it.
