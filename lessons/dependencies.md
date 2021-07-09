@@ -2,7 +2,9 @@ Managing dependencies between the different parts of your application is probabl
 
 ## The Singleton attempt
 
-One tempting solution is to resort to the *Singleton* (anti-)pattern. In its simplest form it consists in making your class static so that anyone can access it from anywhere. It has the advantage that you don't need to pass an instance around (which would probably require you to modify the signature of quite a few fonctions to pass the instance to the parts that need it). **This makes the Singleton a really good solution _in the short term_.**
+One tempting solution is to resort to the *Singleton* (anti-)pattern. In its simplest form it consists in making your class static [^1] so that anyone can access it from anywhere. It has the advantage that you don't need to pass an instance around (which would probably require you to modify the signature of quite a few fonctions to pass the instance to the parts that need it). **This makes the Singleton a really good solution _in the short term_.**
+
+[^1]: Or rather have a static instance available through a ```MyClass::get()``` method, because it gives you control over the instanciation and destruction order, which is important when you have dependencies between your singletons, and when you use multithreading.
 
 But the Singleton can end up causing a few problems, hence why most people have stopped using it :
 
@@ -22,9 +24,9 @@ If you end up with too many arguments, maybe grouping them in a struct can be a 
 
 ## Concepts vs Interfaces
 
-Concepts are etter than interfaces because they can also require the existance of free functions, not only methods.
+Concepts are better than interfaces because they can also require the existance of free functions, not only methods.
 
-For example if you want to require that each shape is drawable, with an interface it would require that ```draw()``` be a method of each ```Shape``` class. With concepts you can require that a free function ```draw(auto Shape shape const&)``` exist for each type following the ```Shape``` concept. And free functions are great for many reasons ! (Single Responsibility Principle, Open-Close Principle, etc. See [Free your functions](https://www.youtube.com/watch?v=WLDT1lDOsb4))
+For example if you want to require that each shape is drawable, with an interface it would require that ```draw()``` be a method of each ```Shape``` class. With concepts you can require that a free function ```draw(auto Shape shape const&)``` exists for each type following the ```Shape``` concept. And free functions are great for many reasons ! (Single Responsibility Principle, Open-Close Principle, etc. See [Free your functions](https://www.youtube.com/watch?v=WLDT1lDOsb4))
 
 ## To go further
 
