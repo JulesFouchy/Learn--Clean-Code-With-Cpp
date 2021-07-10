@@ -16,11 +16,21 @@ This is also why you should depend on interfaces and never on concrete classes. 
 
 ## The best practices
 
-**Dependency Injection** Yes, you should receive as parameters all the classes / systems that you depend on. Storing them as members isn't the cleanest either in my opinion (this can be qualified though) ; I would tend to only store a reference to a class if there is a very strong coupling between the two (like a ```CameraController``` and the corresponding ```Camera```), and otherwise I would prefer sending references as parameters to each function that needs them.
+### Dependency Injection
+Yes, you should receive as parameters all the classes / systems that you depend upon. Storing them as members isn't the cleanest either in my opinion (this can be qualified though) ; ~~I would tend to only store a reference to a class if there is a very strong coupling between the two (like a ```CameraController``` and the corresponding ```Camera```)~~ (EDIT : I would **almost never** store references because it makes copying and assigning pretty troublesome / impossible).
+
+You should always send references as parameters to each function that needs them : it prevents you from introducing extra member variables, and makes it clearer which parts of your class actually need or act upon a dependency.
 
 If you end up with too many arguments, maybe grouping them in a struct can be a good idea. This should be considered carefully though because it can lead to introducing unnecessary dependencies (if a class X needs 4 out of the 5 classes packaged in a struct Y, it can be tempting to make X depend on Y, although it will grab one unnecessary dependency, which is *bad*).
 
-**Dependency Inversion** (the D of SOLID) The interfaces should be owned by the high level that uses it, not by the low level that implements it.
+#### About storing a reference to a dependency
+
+This is a problem because it makes your type more complex than it needs to be. I realized that after a 1 hour debugging session filled with cryptic template error messages. 
+Having a reference to a complex type in your type can prevent the C++ compiler from being able to generate a default assignment operator. That is because when trying to assign a refence, you are actually assigning to the object behind the reference ! (This could be fixed by using a pointer instead of a reference, but then you get nullability problems (which can be fixed with [gsl::not_null](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ri-nullptr)))
+
+### Dependency Inversion (the D of SOLID)
+
+The interfaces should be owned by the high level that uses it, not by the low level that implements it.
 
 ## Concepts vs Interfaces
 
