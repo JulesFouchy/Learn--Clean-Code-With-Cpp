@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          submodules: true
+          fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
@@ -37,17 +40,9 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Release to GitHub Pages
-        env:
-          USE_SSH: true
-          GIT_USER: git
-        run: |
-          git config --global user.email "jules.fouchy@ntymail.com"
-          git config --global user.name "julesfouchy"
-          if [ -e yarn.lock ]; then
-            yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-            npm ci
-          else
-            npm i
-          fi
-          npm run deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          publish_dir: ./website/build
+          force_orphan: true
