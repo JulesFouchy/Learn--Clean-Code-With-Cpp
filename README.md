@@ -1,47 +1,33 @@
-## Prerequisites
+# Website
 
-Some beginner-level experience in programming, in C++ or a similar language like C, Java, C#, Javascript, ...
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Goals
+## Installation
 
-**The main goal of this class is to teach you how to write clean code**. Clean code means code that is easy to understand, easy to reason about and easy to modify. It is an essential concern when you start building larger projects that are meant to last for decades. Anyone should be able to pick up your code and, within a reasonable time frame, understand what it does, what its role inside the project is, and how to modify it.
+```console
+yarn install
+```
 
-Clean code is both a concern at the architectural level (organisation between classes) and at the granular level (organisation inside a given class).
+## Local Development
 
-We will see basic coding habits that make your code more expressive, general principles that help you organize your code, a few amazing design patterns, and we will get into the habit of using **meaningful names** and writing **documentation**.
+```console
+yarn start
+```
 
-Although the class will make use of C++, most of its content will be applicable to any language and any programming project.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-We will also revisit some basic C++ constructs like
-- classes and structs
-- enums
-- references (*vs* pointers *vs* copy *vs* move)
-- const
-- std::vector
-- std::unique_ptr
-- auto (?)
-- operator overloading
-- iterators (?)
-- algorithms available in the standard library
-- lambdas
-- std::unordered_map
-- templates (?)
-- don't forget the virtual destructors !
+## Build
 
-A focus on performance will sometimes be present when it is really relevant (like : *almost never use linked lists*).
+```console
+yarn build
+```
 
-As a bonus for advanced people, we will see the powerful constructs available as of C++ 17 (and even C++ 20) and use them to write great code (and look very cool and snazy :sunglasses:).
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Exercises
+## Deployment
 
-- code review (?) (["Did you consider..."](https://www.youtube.com/watch?v=ta3S8CRN2TM&t=18m12s))
-- start a TD from the work of someone else in the previous TD
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
 
-## Skills
-
-| Skill | Ressources |
-| ----- |:-----------:|
-| col 3 is  | right-aligned<br> |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
-| be consistent with the conventions you choose (e.g. camelCase vs snake_case, prefix of member variables etc.)
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
