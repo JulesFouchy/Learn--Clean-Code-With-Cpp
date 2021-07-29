@@ -1,11 +1,4 @@
-type mark = 0 | 1 | 2 | 3 | 4 | 5
-
-interface Skill {
-    shortname?: string,
-    description: string,
-    difficulty: mark,
-    benefit: mark
-}
+import { Skill } from '../Thoughts-on-Teaching/evaluation/Skill'
 
 const skills: Skill[] = [
     {
@@ -13,12 +6,14 @@ const skills: Skill[] = [
         description: "Yo",
         difficulty: 0,
         benefit: 0,
+        importance: 5,
     },
     {
         shortname: "templates",
         description: "templateSS",
         difficulty: 3,
         benefit: 3,
+        importance: 4,
     },
 ]
 
