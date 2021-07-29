@@ -44,3 +44,4 @@ As a bonus for advanced people, we will see the powerful constructs available as
 | col 3 is  | right-aligned<br> |
 | col 2 is      | centered      |
 | zebra stripes | are neat      |
+| be consistent with the conventions you choose (e.g. camelCase vs snake_case, prefix of member variables etc.)

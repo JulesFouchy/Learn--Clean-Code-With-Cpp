@@ -36,7 +36,7 @@ The interfaces should be owned by the high level that uses it, not by the low le
 
 Concepts are better than interfaces because they can also require the existance of free functions, not only methods.
 
-For example if you want to require that each shape is drawable, with an interface it would require that ```draw()``` be a method of each ```Shape``` class. With concepts you can require that a free function ```draw(auto Shape shape const&)``` exists for each type following the ```Shape``` concept. And free functions are great for many reasons ! (Single Responsibility Principle, Open-Close Principle, etc. See [Free your functions](https://www.youtube.com/watch?v=WLDT1lDOsb4))
+For example if you want to require that each shape is drawable, with an interface it would require that ```draw()``` be a method of each ```Shape``` class. With concepts you can require that a free function ```draw(Shape const auto& shape)``` exists for each type following the ```Shape``` concept. And free functions are great for many reasons ! (Single Responsibility Principle, Open-Close Principle, etc. See [Free your functions](https://www.youtube.com/watch?v=WLDT1lDOsb4))
 
 ## To go further
 
