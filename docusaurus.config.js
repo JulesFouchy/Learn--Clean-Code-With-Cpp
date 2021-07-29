@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'C++ Best Practices',
   tagline: 'A gentle introduction',
-  url: 'https://julesfouchy.github.io/Learn--Cpp-Best-Pratices',
+  url: 'https://julesfouchy.github.io/',
   baseUrl: '/Learn--Cpp-Best-Pratices/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -27,7 +27,7 @@ module.exports = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/grading', label: 'Grading', position: 'left'},
+        {to: '/evaluation', label: 'Evaluation', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
