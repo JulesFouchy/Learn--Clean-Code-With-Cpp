@@ -1,5 +1,5 @@
 import React from 'react'
-import skills from '../../external/skills'
+import skills from '../../evaluation/skills'
 
 export default () => (
     <table>

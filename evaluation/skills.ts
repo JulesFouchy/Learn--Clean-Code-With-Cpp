@@ -1,4 +1,4 @@
-import { Skill } from '../Thoughts-on-Teaching/evaluation/Skill'
+import { Skill } from '../Thoughts-on-Teaching/evaluation/Skill.ts'
 
 const skills: Skill[] = [
     {
