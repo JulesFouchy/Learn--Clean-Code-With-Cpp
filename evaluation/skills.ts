@@ -15,6 +15,13 @@ const skills: Skill[] = [
         benefit: 3,
         importance: 4,
     },
+    {
+        shortname: "use {} for initialization",
+        description: "",
+        difficulty: 2,
+        benefit: 2,
+        importance: 4,
+    },
 ]
 
 export default skills

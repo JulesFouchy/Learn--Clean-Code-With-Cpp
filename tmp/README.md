@@ -27,6 +27,7 @@ We will also revisit some basic C++ constructs like
 - std::unordered_map
 - templates (?)
 - don't forget the virtual destructors !
+- std::string_view
 
 A focus on performance will sometimes be present when it is really relevant (like : *almost never use linked lists*).
 
@@ -44,4 +45,16 @@ As a bonus for advanced people, we will see the powerful constructs available as
 | col 3 is  | right-aligned<br> |
 | col 2 is      | centered      |
 | zebra stripes | are neat      |
-| be consistent with the conventions you choose (e.g. camelCase vs snake_case, prefix of member variables etc.)
+
+
+Be consistent with the conventions you choose (e.g. camelCase vs snake_case, prefix of member variables etc.)
+
+WebAssembly ?
+Static Site Generators for docs ?
+Formater
+Sanitizer
+
+
+Consider : do you optimize for the reader or for the writer ? Usually ocde is written a few times, but read hundreds of times
+
+Look at [Cherno](https://www.youtube.com/watch?v=zB9RI8_wExo&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=8) for all the basics of C++
