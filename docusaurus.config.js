@@ -17,7 +17,7 @@ module.exports = {
       title: '',
       logo: {
         alt: 'Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/favicon-32x32.png',
       },
       items: [
         {
