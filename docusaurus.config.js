@@ -3,15 +3,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'C++ Best Practices',
+  title: 'C++ and Dev Practices',
   tagline: 'A gentle introduction',
   url: 'https://julesfouchy.github.io/',
-  baseUrl: '/Learn--Cpp-Best-Pratices/',
+  baseUrl: '/Learn--Cpp-And-Dev-Practices/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'julesfouchy',
-  projectName: 'Learn--Cpp-Best-Pratices',
+  projectName: 'Learn--Cpp-And-Dev-Practices',
   themeConfig: {
     navbar: {
       title: '',
@@ -29,7 +29,7 @@ module.exports = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/evaluation', label: 'Evaluation', position: 'left'},
         {
-            href: 'https://github.com/JulesFouchy/Learn--Cpp-Best-Pratices',
+            href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
