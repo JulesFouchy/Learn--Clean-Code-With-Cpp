@@ -26,7 +26,6 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/evaluation', label: 'Evaluation', position: 'left'},
         {
             href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices',
@@ -68,10 +67,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
