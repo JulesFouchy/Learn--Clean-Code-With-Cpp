@@ -85,6 +85,13 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    // algolia: {
+    //     apiKey: 'YOUR_API_KEY',
+    //     indexName: 'YOUR_INDEX_NAME',
+    //     contextualSearch: true,
+    //     searchParameters: {},
+    //     placeholder: 'Search',
+    // },
   },
   presets: [
     [
