@@ -25,8 +25,41 @@ If you end up with too many arguments, maybe grouping them in a struct can be a 
 
 #### About storing a reference to a dependency
 
-This is a problem because it makes your type more complex than it needs to be. I realized that after a 1 hour debugging session filled with cryptic template error messages. 
-Having a reference to a complex type in your type can prevent the C++ compiler from being able to generate a default assignment operator. That is because when trying to assign a refence, you are actually assigning to the object behind the reference ! (This could be fixed by using a pointer instead of a reference, but then you get nullability problems (which can be fixed with [gsl::not_null](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ri-nullptr)))
+Storing *a reference* is a problem because it makes your type more complex than it needs to be. I realized that after a 1 hour debugging session filled with cryptic template error messages. 
+Having a reference in your type will make it **non-copy-assignable** ! That is because when trying to assign to a refence, you are actually assigning to the object behind the reference ! You cannot modify where the reference points to after its creation !
+
+Let's have an example :
+```cpp
+class MyClass {
+public:
+    // Constructor
+    MyClass(const MyDependency& my_dependency) 
+        : _my_dependency{my_dependency} // OK : initializes the reference to point to my_dependency
+    {}
+    // Copy Constructor
+    MyClass(const MyClass& o)
+        : _my_dependency{o._my_dependency} // OK : initializes the reference to point to o.my_dependency
+    {}
+    // Copy Assignment operator
+    MyClass& operator=(const MyClass& o)
+    {
+        _my_dependency = o._my_dependency; // Bad ! This doesn't change where the reference is pointing to, but instead tries to modify the object that the reference points to ! Here this is a compile error because _my_dependency is a const&, but if it was not const, that would be a silent bug modifying the object pointed to by _my_dependency!!!
+        return *this;
+    }
+private:
+    const MyDependency& _my_dependency;
+};
+```
+
+#### When you have no choice but to store the dependency
+
+An interesting exception to the *do not store your dependencies* rule is if you need your dependency in the destructor of your class (or in an operator like ```+=```) : in those cases, you cannot pass any arguments ! Therefore you have no other choice but to store the dependency inside the class (or have it global but that would be even worse !)
+
+In such cases[^2], I would recommend storing a pointer rather than a reference (except if your type is non-copyable anyways) because pointers have the appropriate copy semantics for the cases where we store a reference to a "global and unique" dependency (aka for cases where we are not owning the pointed object).
+
+One problem though is that pointers can be ```nullptr``` : if this isn't desired you should consider using ```gsl::not_null``` from [the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ri-nullptr).
+
+[^2]: I met such a case when creating wrapper classes for Vulkan resources : they need a reference to the device to be destructed, so I had to store a handle to the device in each wrapper class.
 
 ### Dependency Inversion (the D of SOLID)
 
