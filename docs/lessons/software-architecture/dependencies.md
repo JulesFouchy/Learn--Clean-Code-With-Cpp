@@ -51,6 +51,9 @@ private:
 };
 ```
 
+**Also** when you store a reference or a pointer, you must make sure that the pointed object outlives the class where the reference is stored ; otherwise you will get a dangling reference or pointer !
+For example if your dependency lives in a ```std::vector```, and the vector gets resized at some point, all the references to elements of that vector get invalidated ! If you stored one such reference, you are in trouble ! On the contrary if you pass a reference each frame, you will not notice the change of adress in memory at all.
+
 #### When you have no choice but to store the dependency
 
 An interesting exception to the *do not store your dependencies* rule is if you need your dependency in the destructor of your class (or in an operator like ```+=```) : in those cases, you cannot pass any arguments ! Therefore you have no other choice but to store the dependency inside the class (or have it global but that would be even worse !)
