@@ -65,3 +65,7 @@ html[data-theme='dark'] .header-issues-link:before {
         background-size: contain;
 }
 /*---*/
+
+.footer__col {
+    text-align: center;
+}
