@@ -22,16 +22,22 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'planning',
           position: 'left',
           label: 'Tutorial',
         },
         {to: '/evaluation', label: 'Evaluation', position: 'left'},
         {
-            href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
+          href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+          position: 'right',
+          className: 'header-issues-link',
+          'aria-label': 'GitHub issues',
+        },
+        {
+          href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -39,42 +45,54 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Other classes',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Generative Art',
+              to: 'https://julesfouchy.github.io/Learn--Generative-Art',
+            },
+            {
+              label: 'Math for Art and Computer Graphics',
+              to: 'https://julesfouchy.github.io/Learn--Math-for-Art-and-Computer-Graphics',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Raise an issue !',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Ask a question',
+              to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
             },
+            {
+              label: 'Report a mistake',
+              to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+            },
+          ],
+        },
+        {
+          title: 'Contact Me',
+          items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              to: 'https://discord.com/users/372812330742054914',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Mail',
+              to: 'mailto:jules.fouchy@ntymail.com',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              to: 'https://github.com/JulesFouchy',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${
+          new Date()
+              .getFullYear()}. Built with <a href="https://docusaurus.io/">Docusaurus</a>.
+              <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+              `,
     },
     prism: {
       theme: lightCodeTheme,

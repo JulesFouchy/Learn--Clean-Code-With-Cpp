@@ -4,32 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Improve your C++',
+    Svg: require('../../static/img/drawkit-daily-life-vector-illustration-07.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        No matter your current level, there will be something for you to learn, neither too hard, nor too easy. <b>Improving</b> is what matters.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Learn general programming patterns',
+    Svg: require('../../static/img/holiday-season-7.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Most lessons will be applicable to any programming language, not only C++.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Ease your development workflow',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        With the appropriate tools, everything becomes easier.
       </>
     ),
   },

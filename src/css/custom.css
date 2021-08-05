@@ -45,3 +45,23 @@ html[data-theme='dark'] .header-github-link:before {
         no-repeat;
 }
 /*---*/
+
+/* Question Mark icon */
+.header-issues-link:hover {
+    opacity: 0.6;
+}
+.header-issues-link:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background: url("/img/question-mark-black.png")
+        no-repeat;
+        background-size: contain;
+}
+html[data-theme='dark'] .header-issues-link:before {
+    background: url("/img/question-mark-white.png")
+        no-repeat;
+        background-size: contain;
+}
+/*---*/
