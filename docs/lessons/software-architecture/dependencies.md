@@ -51,6 +51,8 @@ private:
 };
 ```
 
+Here is a nice article about problems around references by Herb Sutter : https://herbsutter.com/2020/02/
+
 **Also** when you store a reference or a pointer, you must make sure that the pointed object outlives the class where the reference is stored ; otherwise you will get a dangling reference or pointer !
 For example if your dependency lives in a ```std::vector```, and the vector gets resized at some point, all the references to elements of that vector get invalidated ! If you stored one such reference, you are in trouble ! On the contrary if you pass a reference each frame, you will not notice the change of adress in memory at all.
 

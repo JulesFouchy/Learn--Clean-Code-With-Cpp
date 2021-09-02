@@ -1,0 +1,1 @@
+[About types to model a concept](docs/conferences/robert-ramey--cpp-abstract-algebra-and-practical-applications)
