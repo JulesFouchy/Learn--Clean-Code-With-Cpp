@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/drawkit-daily-life-vector-illustration-07.svg').default,
     description: (
       <>
-        No matter your current level, there will be something for you to learn, neither too hard, nor too easy. <b>Improving</b> is what matters.
+        No matter your current level, there will be something for you to learn. <b>Improving</b> is what matters.
       </>
     ),
   },
