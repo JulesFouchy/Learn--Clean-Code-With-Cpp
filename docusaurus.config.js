@@ -9,6 +9,9 @@ module.exports = {
   baseUrl: '/Learn--Cpp-And-Dev-Practices/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
+  plugins: [
+    './Thoughts-on-Teaching/gather-skills-plugin'
+  ],
   favicon: 'img/favicon.ico',
   organizationName: 'julesfouchy',
   projectName: 'Learn--Cpp-And-Dev-Practices',

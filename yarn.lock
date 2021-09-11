@@ -4146,6 +4146,13 @@
   "resolved" "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
   "version" "0.5.2"
 
+"front-matter@^4.0.2":
+  "integrity" "sha512-I8ZuJ/qG92NWX8i5x1Y8qyj3vizhXS31OxjKDu3LKP+7/qBgfIKValiZIEwoVoJKUHlhWtYrktkxV1XsX+pPlg=="
+  "resolved" "https://registry.npmjs.org/front-matter/-/front-matter-4.0.2.tgz"
+  "version" "4.0.2"
+  dependencies:
+    "js-yaml" "^3.13.1"
+
 "fs-extra@^10.0.0":
   "integrity" "sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ=="
   "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-10.0.0.tgz"
