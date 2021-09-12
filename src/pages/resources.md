@@ -9,3 +9,5 @@
 [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 
 [Google's Tips of the Week](https://abseil.io/tips/)
+
+[Bloomberg's coding standards](http://bloomberg.github.io/bde/knowledge_base/coding_standards.html)
