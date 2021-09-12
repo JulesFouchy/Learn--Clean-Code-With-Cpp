@@ -30,6 +30,8 @@ module.exports = {
           label: 'Lessons',
         },
         {to: '/skills', label: 'Skills', position: 'left'},
+        {to: '/resources', label: 'Resources', position: 'left'},
+        {to: '/tools', label: 'Tools', position: 'left'},
         {
           href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
           position: 'right',
