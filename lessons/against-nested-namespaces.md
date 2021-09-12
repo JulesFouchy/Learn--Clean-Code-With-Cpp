@@ -1,5 +1,5 @@
 ---
-name : Avoid nested namespaces
+title : Avoid nested namespaces
 benefit: 1
 easiness: 5
 ---
