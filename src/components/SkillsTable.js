@@ -1,5 +1,5 @@
 import React from 'react'
-import skills from '@site/.docusaurus/gather-skills-plugin/default/friends.json'
+import skills from '@site/.docusaurus/gather-skills-plugin/default/skills.json'
 import skill_priority from '../../Thoughts-on-Teaching/evaluation/skill_priority'
 
 export default () => {
