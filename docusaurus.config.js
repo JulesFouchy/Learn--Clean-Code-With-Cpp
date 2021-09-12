@@ -25,11 +25,11 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'planning',
+          docId: 'introduction',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Lessons',
         },
-        {to: '/evaluation', label: 'Evaluation', position: 'left'},
+        {to: '/skills', label: 'Skills', position: 'left'},
         {
           href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
           position: 'right',
