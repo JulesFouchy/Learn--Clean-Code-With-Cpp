@@ -10,7 +10,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   plugins: [
-    './Thoughts-on-Teaching/gather-skills-plugin'
+    './Thoughts-on-Teaching/gather-skills-plugin',
   ],
   favicon: 'img/favicon.ico',
   organizationName: 'julesfouchy',
@@ -125,6 +125,36 @@ module.exports = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarItemsGenerator: async function ({
+              defaultSidebarItemsGenerator,
+              ...args
+            }) {
+                if (args.item.dirName === "lessons") {
+                    const res = args.docs
+                        // Keep only the files in "/lessons"
+                        .filter(doc => doc.sourceDirName === args.item.dirName)
+                        // Compute the priority
+                        .map(doc => ({
+                            ...doc,
+                            priority: doc.frontMatter.benefit
+                        }))
+                        // Sort by priority
+                        .sort((a, b) => b.priority - a.priority)
+                        // Generate the item
+                        .map(doc => {
+                            return {
+                                type: 'doc',
+                                id: doc.id,
+                                prio: doc.priority,
+                            }
+                        })
+                    console.log(res)
+                    return res
+                }
+                else {
+                    return await defaultSidebarItemsGenerator(args)
+                }
+            },
         },
         blog: {
           showReadingTime: true,
