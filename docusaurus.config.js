@@ -25,12 +25,18 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'introduction',
+          docId: 'lessons/introduction',
           position: 'left',
           label: 'Lessons',
         },
         {to: '/skills', label: 'Skills', position: 'left'},
         {to: '/resources', label: 'Resources', position: 'left'},
+        {
+          type: 'doc',
+          docId: 'conferences/introduction',
+          position: 'left',
+          label: 'Conferences',
+        },
         {to: '/tools', label: 'Tools', position: 'left'},
         {
           href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
@@ -116,8 +122,8 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'lessons',
-          routeBasePath: 'lessons',
+          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
