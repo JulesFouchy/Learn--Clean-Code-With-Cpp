@@ -143,8 +143,20 @@ module.exports = {
                                 order: doc.frontMatter.order,
                             }),
                         }))
-                        // Sort by priority
-                        .sort((a, b) => b.priority - a.priority)
+                        // Sort
+                        .sort((a, b) => {
+                            // Put introduction first
+                            if (a.frontMatter.title === "Introduction") {
+                                return -1
+                            }
+                            else if (b.frontMatter.title === "Introduction") {
+                                return 1
+                            }
+                            // Then sort by priority
+                            else {
+                                return b.priority - a.priority
+                            }
+                        })
                         // Generate the item
                         .map(doc => {
                             return {

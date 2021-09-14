@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
 title: Introduction
 slug: /lessons
+sidebar_position: 1
 ---
