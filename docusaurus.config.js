@@ -1,5 +1,6 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer/themes/github')
+const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const skill_priority = require('./Thoughts-on-Teaching/evaluation/skill_priority')
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -136,7 +137,10 @@ module.exports = {
                         // Compute the priority
                         .map(doc => ({
                             ...doc,
-                            priority: doc.frontMatter.benefit
+                            priority: skill_priority({
+                                benefit: doc.frontMatter.benefit,
+                                easiness: doc.frontMatter.easiness,
+                            }),
                         }))
                         // Sort by priority
                         .sort((a, b) => b.priority - a.priority)
@@ -148,7 +152,6 @@ module.exports = {
                                 prio: doc.priority,
                             }
                         })
-                    console.log(res)
                     return res
                 }
                 else {
