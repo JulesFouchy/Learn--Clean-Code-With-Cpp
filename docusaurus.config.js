@@ -140,6 +140,7 @@ module.exports = {
                             priority: skill_priority({
                                 benefit: doc.frontMatter.benefit,
                                 easiness: doc.frontMatter.easiness,
+                                order: doc.frontMatter.order,
                             }),
                         }))
                         // Sort by priority

@@ -15,6 +15,7 @@ export default () => {
                 <th>Skill</th>
                 <th>Benefit</th>
                 <th>Easiness</th>
+                <th>Order</th>
                 <th>Priority</th>
             </tr>
             {prioritized_skills.map(skill =>
@@ -22,6 +23,7 @@ export default () => {
                     <td><a href = {skill.description.link}>{skill.description.name}</a></td>
                     <td>{skill.value.benefit}</td>
                     <td>{skill.value.easiness}</td>
+                    <td>{skill.value.order}</td>
                     <td>{skill.priority}</td>
                 </tr>
             )}

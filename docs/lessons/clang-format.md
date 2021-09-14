@@ -1,5 +1,6 @@
 ---
 title : Clang format
-benefit: 1
-easiness: 1
+benefit: 4
+easiness: 5
+order: 1
 ---
