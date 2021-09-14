@@ -3,6 +3,8 @@ title : Use a formatting tool
 benefit: 4
 easiness: 5
 order: 1
+tags:
+    - Dev Practices
 ---
 
 ## Brief
