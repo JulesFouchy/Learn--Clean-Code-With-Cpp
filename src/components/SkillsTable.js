@@ -5,7 +5,7 @@ import skill_priority from '../../Thoughts-on-Teaching/evaluation/skill_priority
 export default () => {
     const prioritized_skills = skills.map(skill => ({
         ...skill,
-        priority: skill_priority(skill.value)
+        priority: skill_priority(skill)
     }))
     .sort((a, b) => a.priority < b.priority)
     
@@ -21,10 +21,10 @@ export default () => {
             </tr>
             {prioritized_skills.map(skill =>
                 <tr>
-                    <td><a href = {skill.description.link}>{skill.description.name}</a></td>
-                    <td>{skill.value.benefit}</td>
-                    <td>{skill.value.easiness}</td>
-                    <td>{skill.value.order}</td>
+                    <td><a href = {skill.link}>{skill.title}</a></td>
+                    <td>{skill.benefit}</td>
+                    <td>{skill.easiness}</td>
+                    <td>{skill.order}</td>
                     <td>{skill.priority}</td>
                     <td>{skill.tags}</td>
                 </tr>
