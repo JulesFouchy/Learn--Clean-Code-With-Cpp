@@ -20,7 +20,7 @@ Although this class will make use of C++, most of its content will be applicable
 
 ## Evaluation
 
-The evaluation is skill based : you will find [a long list of skills](../skills) that I deem important, and you will be graded on how much you improve during this semester.
+The evaluation is skill based : you will find [a long list of skills](./skills) that I deem important, and you will be graded on how much you improve during this semester.
 
 I must acknowledge that you all have vary different levels coming into this class, so I must give everyone the opportunity to make progress at his own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require a self-evaluation that I will then use to know how much progress you made and reward that.
 
