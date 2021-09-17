@@ -10,16 +10,6 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-const student_skills = {
-    old: {
-        "use-a-formatting-tool": 1,
-    },
-    new: {
-        "code-reviews": 1,
-        "against-nested-namespaces": 1,
-    },
-}
-
 const students_dropdown = () => {
     const [student, set_student] = React.useState('')
     const handle_change = (event) => {
@@ -73,7 +63,7 @@ const checkbox_not_validated = () =>
     <Checkbox
     />
 
-export default () => {
+export default ({student_skills}) => {
     const prioritized_skills = skills.map(skill => ({
         ...skill,
         priority: skill_priority(skill)
@@ -86,7 +76,7 @@ export default () => {
             <table>
                 <tr>
                     <th>Skill</th>
-                    <th>Validated</th>
+                    {student_skills && <th>Validated</th>}
                     <th>Tags</th>
                     <th>Importance</th>
                     <th>Benefit</th>
@@ -96,9 +86,11 @@ export default () => {
                 {prioritized_skills.map(skill =>
                     <tr>
                         <td><a href = {skill.link}>{skill.title}</a></td>
-                        <td>{ student_skills.new[skill.slug] ? checkbox_validated()
-                            : student_skills.old[skill.slug] ? checkbox_validated_disabled()
-                            :                                  checkbox_not_validated()}</td>
+                        {student_skills &&
+                            <td>{ student_skills.new[skill.slug] ? checkbox_validated()
+                                : student_skills.old[skill.slug] ? checkbox_validated_disabled()
+                                :                                  checkbox_not_validated()}</td>
+                        }
                         <td>{tags(skill.tags || [])}</td>
                         <td>{skill.priority}</td>
                         <td>{skill.benefit}</td>
