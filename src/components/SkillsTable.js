@@ -70,7 +70,7 @@ export default class SkillsTable extends React.Component {
                         <th>Skill</th>
                         {this.student_skills && <th>Validated</th>}
                         <th>Tags</th>
-                        <th>Importance</th>
+                        <th>Priority</th>
                         <th>Benefit</th>
                         <th>Easiness</th>
                         <th>Order</th>
