@@ -4,36 +4,7 @@ import skill_priority from '../../Thoughts-on-Teaching/evaluation/skill_priority
 import style from './SkillsTable.module.css'
 import Checkbox from '@mui/material/Checkbox'
 import { green, blueGrey } from '@mui/material/colors'
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import grader from '../../Thoughts-on-Teaching/evaluation/grader'
-
-const students_dropdown = () => {
-    const [student, set_student] = React.useState('')
-    const handle_change = (event) => {
-        set_student(event.target.value)
-        current_student = student
-    }
-    return (
-        <Box sx={{ minWidth: 120 }}>
-            <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">Student</InputLabel>
-                <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={student}
-                    label="Student"
-                    onChange={handle_change}
-                >
-                {Object.keys(students).map((student, i) => <MenuItem value={i}>{student}</MenuItem>)}
-                </Select>
-            </FormControl>
-        </Box>
-      );
-}
 
 const tags = (tags_list) =>
     tags_list.map(tag => (
@@ -91,7 +62,6 @@ export default class SkillsTable extends React.Component {
         
         return (
             <div>
-                {/* {students_dropdown()} */}
                 <div>{grader(skills, [...Object.keys(this.student_skills.new), ...this.skills_checked_by_user])}</div>
                 <table>
                     <tr>
