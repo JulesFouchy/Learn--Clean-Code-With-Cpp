@@ -59,10 +59,12 @@ export default class SkillsTable extends React.Component {
             priority: skill_priority(skill)
         }))
         .sort((a, b) => a.priority < b.priority)
+
+        const grade = grader(skills, [...Object.keys(this.student_skills.new), ...this.skills_checked_by_user])
         
         return (
             <div>
-                <div>{grader(skills, [...Object.keys(this.student_skills.new), ...this.skills_checked_by_user])}</div>
+                <div className = {style.grade}>{grade} / 20</div>
                 <table>
                     <tr>
                         <th>Skill</th>
