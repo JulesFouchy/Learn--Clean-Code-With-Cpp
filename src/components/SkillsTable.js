@@ -9,6 +9,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import grader from '../../Thoughts-on-Teaching/evaluation/grader'
 
 const students_dropdown = () => {
     const [student, set_student] = React.useState('')
@@ -59,8 +60,17 @@ const checkbox_validated_disabled = () =>
         }}
     />
 
-const checkbox_not_validated = () => 
+const checkbox_not_validated = (skill_slug, skills_list) => 
     <Checkbox
+        onChange={e => {
+            if(e.target.checked) {
+                skills_list.push(skill_slug)
+            }
+            else {
+                skills_list = skills_list.filter(slug => slug !== skill_slug)
+            }
+            console.log(skills_list)
+        }}
     />
 
 export default ({student_skills}) => {
@@ -70,9 +80,12 @@ export default ({student_skills}) => {
     }))
     .sort((a, b) => a.priority < b.priority)
     
+    let tmp_skills_list = []
+    
     return (
         <div>
             {/* {students_dropdown()} */}
+            <div>{grader(skills, [...Object.keys(student_skills.new), ...tmp_skills_list])}</div>
             <table>
                 <tr>
                     <th>Skill</th>
@@ -89,7 +102,7 @@ export default ({student_skills}) => {
                         {student_skills &&
                             <td>{ student_skills.new[skill.slug] ? checkbox_validated()
                                 : student_skills.old[skill.slug] ? checkbox_validated_disabled()
-                                :                                  checkbox_not_validated()}</td>
+                                :                                  checkbox_not_validated(skill.slug, tmp_skills_list)}</td>
                         }
                         <td>{tags(skill.tags || [])}</td>
                         <td>{skill.priority}</td>
