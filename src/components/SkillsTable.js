@@ -60,58 +60,66 @@ const checkbox_validated_disabled = () =>
         }}
     />
 
-const checkbox_not_validated = (skill_slug, skills_list) => 
+const checkbox_not_validated = (skill_slug, obj) => 
     <Checkbox
         onChange={e => {
             if(e.target.checked) {
-                skills_list.push(skill_slug)
+                obj.skills_checked_by_user.push(skill_slug)
             }
             else {
-                skills_list = skills_list.filter(slug => slug !== skill_slug)
+                obj.skills_checked_by_user = obj.skills_checked_by_user.filter(slug => slug !== skill_slug)
             }
-            console.log(skills_list)
+            obj.forceUpdate()
         }}
     />
 
-export default ({student_skills}) => {
-    const prioritized_skills = skills.map(skill => ({
-        ...skill,
-        priority: skill_priority(skill)
-    }))
-    .sort((a, b) => a.priority < b.priority)
-    
-    let tmp_skills_list = []
-    
-    return (
-        <div>
-            {/* {students_dropdown()} */}
-            <div>{grader(skills, [...Object.keys(student_skills.new), ...tmp_skills_list])}</div>
-            <table>
-                <tr>
-                    <th>Skill</th>
-                    {student_skills && <th>Validated</th>}
-                    <th>Tags</th>
-                    <th>Importance</th>
-                    <th>Benefit</th>
-                    <th>Easiness</th>
-                    <th>Order</th>
-                </tr>
-                {prioritized_skills.map(skill =>
+export default class SkillsTable extends React.Component {
+    skills_checked_by_user = []
+    student_skills = {}
+
+    constructor({student_skills}) {
+        super()
+        this.student_skills = {...student_skills}
+    }
+
+    render() {
+        const prioritized_skills = skills.map(skill => ({
+            ...skill,
+            priority: skill_priority(skill)
+        }))
+        .sort((a, b) => a.priority < b.priority)
+        
+        return (
+            <div>
+                {/* {students_dropdown()} */}
+                <div>{grader(skills, [...Object.keys(this.student_skills.new), ...this.skills_checked_by_user])}</div>
+                <table>
                     <tr>
-                        <td><a href = {skill.link}>{skill.title}</a></td>
-                        {student_skills &&
-                            <td>{ student_skills.new[skill.slug] ? checkbox_validated()
-                                : student_skills.old[skill.slug] ? checkbox_validated_disabled()
-                                :                                  checkbox_not_validated(skill.slug, tmp_skills_list)}</td>
-                        }
-                        <td>{tags(skill.tags || [])}</td>
-                        <td>{skill.priority}</td>
-                        <td>{skill.benefit}</td>
-                        <td>{skill.easiness}</td>
-                        <td>{skill.order}</td>
+                        <th>Skill</th>
+                        {this.student_skills && <th>Validated</th>}
+                        <th>Tags</th>
+                        <th>Importance</th>
+                        <th>Benefit</th>
+                        <th>Easiness</th>
+                        <th>Order</th>
                     </tr>
-                )}
-            </table>
-        </div>
-    )
+                    {prioritized_skills.map(skill =>
+                        <tr>
+                            <td><a href = {skill.link}>{skill.title}</a></td>
+                            {this.student_skills &&
+                                <td>{ this.student_skills.new[skill.slug] ? checkbox_validated()
+                                    : this.student_skills.old[skill.slug] ? checkbox_validated_disabled()
+                                    :                                  checkbox_not_validated(skill.slug, this)}</td>
+                            }
+                            <td>{tags(skill.tags || [])}</td>
+                            <td>{skill.priority}</td>
+                            <td>{skill.benefit}</td>
+                            <td>{skill.easiness}</td>
+                            <td>{skill.order}</td>
+                        </tr>
+                    )}
+                </table>
+            </div>
+        )
+    }
 }
