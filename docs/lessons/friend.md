@@ -4,3 +4,6 @@ The only one I can think of is when you are forced, for implementation reasons, 
 What really bothers me with ```friend``` is that it is *all or nothing*. I wish I could specify that only one given method will be usable by a specific class : "this method is not part of the public API, but it can be used by this one class who knows how to handle it". With the current ```friend```, all friends suddenly have access to all methods *and members*.
 
 (Maybe this problem is lessened when the Single Responsibility Principle is strictly followed and each class really is an *all or nothing* package (since there is only one thing in the package), but still I don't like the fact the friends can access member variables)
+
+
+=> Useless since C++20 and modules, which allow us a much finer grain control over visibility
