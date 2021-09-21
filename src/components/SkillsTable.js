@@ -84,7 +84,7 @@ export default class SkillsTable extends React.Component {
                                     :                                  checkbox_not_validated(skill.slug, this)}</td>
                             }
                             <td>{tags(skill.tags || [])}</td>
-                            <td>{skill.priority}</td>
+                            <td>{(100 * skill.priority).toFixed(0)} %</td>
                             <td>{skill.benefit}</td>
                             <td>{skill.easiness}</td>
                             <td>{skill.order}</td>
