@@ -64,7 +64,7 @@ export default class SkillsTable extends React.Component {
         
         return (
             <div>
-                <div className = {style.grade}>{grade} / 20</div>
+                <div className = {style.grade}>{grade.toFixed(1)} / 20</div>
                 <table>
                     <tr>
                         <th>Skill</th>
