@@ -30,7 +30,7 @@ module.exports = {
           position: 'left',
           label: 'Lessons',
         },
-        {to: '/docs/skills', label: 'Skills', position: 'left'},
+        {to: '/docs/students', label: 'Skills', position: 'left'},
         {to: '/resources', label: 'Resources', position: 'left'},
         {
           type: 'doc',
