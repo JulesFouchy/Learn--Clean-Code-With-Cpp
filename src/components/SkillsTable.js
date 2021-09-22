@@ -72,7 +72,7 @@ export default class SkillsTable extends React.Component {
                     <tr>
                         <th>Skill</th>
                         {this.student_skills && <th>Validated</th>}
-                        <th>Tags</th>
+                        {/* <th>Tags</th> */}
                         <th>Priority</th>
                         <th>Benefit</th>
                         <th>Easiness</th>
@@ -86,7 +86,7 @@ export default class SkillsTable extends React.Component {
                                     : this.student_skills.old[skill.slug] ? checkbox_validated_disabled()
                                     :                                  checkbox_not_validated(skill.slug, this)}</td>
                             }
-                            <td>{tags(skill.tags || [])}</td>
+                            {/* <td>{tags(skill.tags || [])}</td> */}
                             <td>{(100 * skill.priority).toFixed(0)} %</td>
                             <td>{skill.benefit}</td>
                             <td>{skill.easiness}</td>
