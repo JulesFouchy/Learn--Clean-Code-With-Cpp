@@ -33,6 +33,9 @@ const checkbox_validated_disabled = () =>
 
 const checkbox_not_validated = (skill_slug, obj) => 
     <Checkbox
+        style ={{
+            color: "#29B6F6",
+        }}
         onChange={e => {
             if(e.target.checked) {
                 obj.skills_checked_by_user.push(skill_slug)
