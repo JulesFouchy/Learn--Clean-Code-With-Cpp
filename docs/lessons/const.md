@@ -1,3 +1,12 @@
+---
+title : const
+benefit: 4
+easiness: 3
+order: 2
+tags:
+    - C++
+---
+
 ## Bonus trick
 
 You can use lambdas for const variables that are complex to initialize.

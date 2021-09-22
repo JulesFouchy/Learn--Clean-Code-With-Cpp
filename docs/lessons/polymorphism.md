@@ -1,3 +1,12 @@
+---
+title : Polymorphism
+benefit: 3
+easiness: 2
+order: 2
+tags:
+    - Architecture
+---
+
 ## Static Polymorphism
 
 Function overloading and templates.

@@ -1,6 +1,6 @@
 ---
 title : Write small functions
-benefit: 4
+benefit: 5
 easiness: 3
 order: 2
 tags:

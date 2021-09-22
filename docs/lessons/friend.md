@@ -1,3 +1,12 @@
+---
+title : friend
+benefit: 1
+easiness: 5
+order: 4
+tags:
+    - C++
+---
+
 There are __*very few*__ good reasons to use ```friend```.
 The only one I can think of is when you are forced, for implementation reasons, to split something into two classes but conceptually it really is one united block. For example, when implementing the state pattern : you have a class X that holds a state S. Although S needs to be a seperate class in order to have different implementations and be changed at runtime, it really is part of X and should be allowed to access it's internals like no one else. Even in that case, you should first wonder wether it wouldn't make sense to put in your public interface all the things that *S* needs. If the answer is now, then maybe you have a use case for ```friend```.
 

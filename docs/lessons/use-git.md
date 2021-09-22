@@ -1,7 +1,7 @@
 ---
 title : Use Git
 benefit: 5
-easiness: 4
+easiness: 3
 order: 1
 tags:
     - Dev Practices

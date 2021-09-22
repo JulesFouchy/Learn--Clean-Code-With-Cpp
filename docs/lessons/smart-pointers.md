@@ -1,3 +1,12 @@
+---
+title : Smart Pointers
+benefit: 3
+easiness: 5
+order: 2
+tags:
+    - C++
+---
+
 **No naked new** : this doesn't mean *no dynamic allocations*, it just means they should always be done through a smart pointer or a container.
 
 ```cpp

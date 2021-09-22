@@ -1,3 +1,12 @@
+---
+title : Stack vs Heap
+benefit: 5
+easiness: 3
+order: 2
+tags:
+    - C++
+---
+
 Good Reasons to use the heap :
 - varying size (std::vector)
 - very big object (image / mesh etc.)

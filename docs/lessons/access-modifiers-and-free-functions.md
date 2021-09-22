@@ -1,6 +1,6 @@
 ---
 title : Free functions
-benefit: 4
+benefit: 5
 easiness: 3
 order: 3
 tags:

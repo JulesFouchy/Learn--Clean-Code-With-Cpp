@@ -1,3 +1,12 @@
+---
+title : Avoid dead code
+benefit: 2
+easiness: 3
+order: 3
+tags:
+    - Style
+---
+
 Don't leave commented out blocks in your code.
 If for some reason you want to do so, then leave a comment at the top explaining your reason ; otherwise it is very hard for readers to know what the purpose of that code is and what to do with it : is it still relevant ? is it another option ? or is it just junk ?
 

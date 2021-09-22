@@ -1,3 +1,12 @@
+---
+title : Dependencies
+benefit: 5
+easiness: 1
+order: 3
+tags:
+    - Architecture
+---
+
 Managing dependencies between the different parts of your application is probably the most difficult challenge as your codebase grows.
 
 ## The Singleton attempt

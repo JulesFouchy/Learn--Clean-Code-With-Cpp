@@ -1,3 +1,12 @@
+---
+title : Exceptions
+benefit: 3
+easiness: 4
+order: 3
+tags:
+    - C++
+---
+
 Despite their bad reputations, they are actually pretty good and you should consider using them.
 
 Here is a very nice paper by Bjarne Stroustrup defending them : http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1947r0.pdf
