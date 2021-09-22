@@ -49,11 +49,13 @@ const checkbox_not_validated = (skill_slug, obj) =>
 
 export default class SkillsTable extends React.Component {
     skills_checked_by_user = []
-    student_skills = {}
+    new_skills = {}
+    old_skills = {}
 
     constructor({student_skills}) {
         super()
-        this.student_skills = {...student_skills}
+        this.new_skills = [...student_skills.new]
+        this.old_skills = [...student_skills.old]
     }
 
     render() {
@@ -63,7 +65,7 @@ export default class SkillsTable extends React.Component {
         }))
         .sort((a, b) => a.priority < b.priority)
 
-        const grade = grader(skills, [...Object.keys(this.student_skills.new), ...this.skills_checked_by_user])
+        const grade = grader(skills, [...this.new_skills, ...this.skills_checked_by_user])
         
         return (
             <div>
@@ -71,7 +73,7 @@ export default class SkillsTable extends React.Component {
                 <table>
                     <tr>
                         <th>Skill</th>
-                        {this.student_skills && <th>Validated</th>}
+                        <th>Validated</th>
                         {/* <th>Tags</th> */}
                         <th>Priority</th>
                         <th>Benefit</th>
@@ -81,11 +83,9 @@ export default class SkillsTable extends React.Component {
                     {prioritized_skills.map(skill =>
                         <tr>
                             <td><a href = {skill.link}>{skill.title}</a></td>
-                            {this.student_skills &&
-                                <td>{ this.student_skills.new[skill.slug] ? checkbox_validated()
-                                    : this.student_skills.old[skill.slug] ? checkbox_validated_disabled()
-                                    :                                  checkbox_not_validated(skill.slug, this)}</td>
-                            }
+                            <td>{ this.new_skills.find(slug => skill.slug === slug) ? checkbox_validated()
+                                : this.old_skills.find(slug => skill.slug === slug) ? checkbox_validated_disabled()
+                                :                                                     checkbox_not_validated(skill.slug, this)}</td>
                             {/* <td>{tags(skill.tags || [])}</td> */}
                             <td>{(100 * skill.priority).toFixed(0)} %</td>
                             <td>{skill.benefit}</td>
