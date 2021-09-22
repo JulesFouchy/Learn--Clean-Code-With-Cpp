@@ -16,7 +16,7 @@ const checkbox_validated = () =>
         checked
         disabled
         sx={{'&.Mui-checked': {
-                color: green[600],
+                color: "#25c2a0",
             },
         }}
     />
