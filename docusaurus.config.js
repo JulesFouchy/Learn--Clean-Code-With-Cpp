@@ -31,14 +31,15 @@ module.exports = {
           label: 'Lessons',
         },
         {to: '/docs/students', label: 'Skills', position: 'left'},
+        {to: '/docs/assignment', label: 'Assignment', position: 'left'},
         {to: '/resources', label: 'Resources', position: 'left'},
+        {to: '/tools', label: 'Tools', position: 'left'},
         {
           type: 'doc',
           docId: 'conferences/introduction',
           position: 'left',
           label: 'Conferences',
         },
-        {to: '/tools', label: 'Tools', position: 'left'},
         {
           href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
           position: 'right',

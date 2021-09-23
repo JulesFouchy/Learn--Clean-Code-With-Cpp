@@ -1,8 +1,8 @@
 ---
-title : variant and optional
-benefit: 5
-easiness: 4
-order: 2
+title : std::variant
+benefit: 3
+easiness: 3
+order: 3
 tags:
     - C++
 ---
