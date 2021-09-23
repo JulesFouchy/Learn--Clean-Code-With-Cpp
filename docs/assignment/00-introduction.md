@@ -27,11 +27,17 @@ In order for me to do so, all of you must publish you work on a public Git repos
 
 You can use GitHub, GitLab or whatever you are used to using. Just send me a link to the relevant repository *now* (or as soon as you start working on the project).
 
+## Time investment
+
+In terms of invested time I won't ask you more than can fit during the class sessions, i.e. 26 hours in total this semester. This means that hopefully you won't have to work (too much) outside of class on your spare time.
+
+Please note that *I will only be evaluating the quality of your code, not the state of the end product*. This means that it doesn't matter if you don't have time to finish the project you set out to do ! Your grade will be solely based on the skills you successfully applied in the project. So no worries please 😎.
+
 ## Option#1 : Rolling your own project
 
 I would highly encourage you to do so if you are really interested in programming. You will definitely learn a ton by doing so, and produce something that you will be proud of.
 
-If you choose to do so, please contact me so that we can discuss your plans and make sure they won't take you excessively long. In terms of invested time I won't ask you more than can fit during the class sessions, i.e. 26 hours in total this semester. Note that you can still embark on a huge project if you so desire because it doesn't matter if you don't finish it for the end of the semester. I will only grade the quality of the code, not the state of the end product.
+If you choose to do so, please contact me so that we can discuss your plans and make sure they won't take you excessively long. Note that you can still embark on a huge project if you so desire because it doesn't matter if you don't finish it for the end of the semester (see [Time investment](#time-investment)).
 
 **For this project you _can_ work in groups**. Simply remember that the more you are on a project, the harder it is to coordinate and produce a cohesive codebase. But if you think that a collaboration would be beneficial, then please go ahead !
 
@@ -40,7 +46,7 @@ I also think that it only makes sense to team up with people who have roughly th
 If you choose Option#1, you don't need to care about the other pages of the *Assignment* section.
 
 
-### Ideas of projects
+### Project ideas
 
 If you are looking for inspiration I can suggest a few ideas that I would personally love working on :
 
