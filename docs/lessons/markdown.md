@@ -1,7 +1,7 @@
 ---
 title : Markdown
 benefit: 3
-easiness: 1
+easiness: 5
 order: 2
 tags:
     - Dev Practices
