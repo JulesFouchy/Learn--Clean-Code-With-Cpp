@@ -8,16 +8,13 @@ slug: /assignment
 > Que ce soit tes sources ou ton Wi-Fi, stp passe-moi le code ! 
 – [*MC-Risson*](https://www.youtube.com/watch?v=59lC-XnPgBE&ab_channel=LaCineTech)
 
-In order to evaluate you, all I need is to see some code you wrote so that I can tell which skills you mastered.
+In order to evaluate you, all I need is to see some code you wrote in order for me to tell which skills you mastered.
 
 **This means that the exact project you will be working on is up to you**.
-
 
 I will provide a suggestion of a small project with guided steps, but you can choose to work on your own project instead.
 
 The main difference will be that I won't be able to provide you with guided steps for your own projects, but this also means that you will learn a ton more by doing it ! You might also be more motivated to work on something you chose and care about.
-
-The decision is up to you, and it won't affect your grade.
 
 ## Submitting your work
 
@@ -37,11 +34,11 @@ Please note that *I will only be evaluating the quality of your code, not the st
 
 I would highly encourage you to do so if you are really interested in programming. You will definitely learn a ton by doing so, and produce something that you will be proud of.
 
-If you choose to do so, please contact me so that we can discuss your plans and make sure they won't take you excessively long. Note that you can still embark on a huge project if you so desire because it doesn't matter if you don't finish it for the end of the semester (see [Time investment](#time-investment)).
+If you choose to do so it might be a good idea to share your plans with me so that we can discuss them, give you some feedback or suggestions, and try to estimate the time it will take you. Note that you can still embark on a huge project if you so desire because it doesn't matter if you don't finish it for the end of the semester (see [Time investment](#time-investment)).
 
 **For this project you _can_ work in groups**. Simply remember that the more you are on a project, the harder it is to coordinate and produce a cohesive codebase. But if you think that a collaboration would be beneficial, then please go ahead !
 
-I also think that it only makes sense to team up with people who have roughly the same level as you. This way you will be able to help each other and discuss ideas on equal footing. If you are looking for someone very good to help you, you can always ask your comrades or me ! But working on the same project wouldn't be beneficial I think because you won't be advancing at the same pace and/or having the same ambitions (I might be wrong though and we can discuss that).
+I also think that it only makes sense to team up with people who have roughly the same level as you. This way you will be able to help each other out and discuss ideas on equal footing. If you are looking for someone very good to help you, you can always ask your comrades or me ! But working on the same project wouldn't be beneficial I believe because you won't be advancing at the same pace and/or having the same ambitions. (I might be wrong though and we can discuss that).
 
 If you choose Option#1, you don't need to care about the other pages of the *Assignment* section.
 
@@ -54,10 +51,10 @@ If you are looking for inspiration I can suggest a few ideas that I would person
 
 ## Option#2 : Following the guided project
 
-There is no shame in preferring this option. It is better suited for beginners and will overall be easier to follow. The project will consist in making a few little games : hangman, noughts and crosses, *etc.*.
+This is the best option for beginners and will overall be easier to follow. The project will consist in making a few little games : hangman, noughts and crosses, *etc.*.
 
 It makes sense to choose this option if you don't want to have to organize and plan a project by yourself. Here you will be able to focus entirely on the micro-level programming tasks like *"let's get a string from the user"*, *"let's check if this word contains this letter"* and so on.
 
 The other pages of this section will guide you through this project step by step.
 
-I think it is better if you work alone on that project (but we can discuss it if you really want to team up with someone.)
+I believe it is better if you work alone on this project (but we can discuss it if you really want to team up with someone).
