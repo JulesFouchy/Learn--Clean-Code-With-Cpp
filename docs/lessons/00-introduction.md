@@ -19,19 +19,20 @@ We will see basic coding habits that make your code more expressive, general pri
 
 Although this class makes use of C++, most of its content will be applicable to any language and any programming project.
 
+## How to
+
+These lessons are not meant to be read one after the other. Instead look at [the list of skills](./students) and pick one (or a few) that seem interesting to you ; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat.
+
+ Note that the lessons are sorted by order of importance so it makes sense to somewhat follow the order, even though this is not a strict one.
+
 ## Evaluation
 
-The evaluation is skill based : you will find [a long list of skills](./students) that I deem important, and you will be graded on how much you improve during this semester.
+The evaluation is skill based : you will find [a long list of skills that I deem important](./students), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
+
+### Rationale
 
 I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at his/her own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require a self-evaluation that I will then use to know how much progress you made and reward that.
 
-The extra investment will also be rewarded. I expect that the dedicated classroom hours will be enough for you to get meaningfull value out of this class (and a good grade), but if you want or need to invest more time I will take that into account and reward it.
+The extra investment will also be rewarded. I expect that the dedicated classroom hours will be enough for you to get meaningfull value out of this class (and a good grade), but if you want or need to invest more time I will make sure to take that into account too.
 
--> don't spend too much time working outside of the class
--> you will have a great visibility on your current grade, and how it will evolve if you do this or that
-
-## How to
-
-These lessons are not meant to be read one after the other. Instead look at [the list of skills](./students) and pick one (or a few) that seem interesting to you ; read the lessons and then try to apply them to your exercises or projects. Once you mastered them, repeat.
-
- Note that the lessons are sorted by order of importance so it makes sense to somewhat follow the order, eventhough this is not a strict one.
+My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will have a great visibility on your current grade as you progress in the semester and you will always have the possibility to submit extra work to improve it if you wish.
