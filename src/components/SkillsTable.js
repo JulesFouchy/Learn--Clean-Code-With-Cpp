@@ -47,34 +47,28 @@ const checkbox_not_validated = (skill_slug, obj) =>
         }}
     />
 
+function download_as_json(object) {
+    const blob = new Blob([JSON.stringify(object)], { type: "text/json;charset=utf-8" })
+    const file_name = "skills.json"
+
+    if (false || !!document.documentMode) { // Internet Explorer
+        window.navigator.msSaveBlob(blob, file_name)
+    }
+    else { // Other browsers
+        const a = document.createElement("a")
+        a.download = file_name
+        a.href = (window.URL || window.webkitURL).createObjectURL(blob)
+        document.body.appendChild(a)
+        a.click()
+        document.body.removeChild(a)
+    }
+}
+
 const export_as_json_button = (object) => (
-    <button onClick = {() => DownloadJSON(object)}>
+    <button onClick = {() => download_as_json(object)}>
         Export as JSON
     </button>
 )
-
-function DownloadJSON(object) {
-    var json = JSON.stringify(object);
-
-    //Convert JSON string to BLOB.
-    json = [json];
-    var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
-
-    //Check the Browser.
-    var isIE = false || !!document.documentMode;
-    if (isIE) {
-        window.navigator.msSaveBlob(blob1, "Customers.txt");
-    } else {
-        var url = window.URL || window.webkitURL;
-        var link = url.createObjectURL(blob1);
-        var a = document.createElement("a");
-        a.download = "skills.json";
-        a.href = link;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    }
-}
 
 export default class SkillsTable extends React.Component {
     skills_checked_by_user = []
