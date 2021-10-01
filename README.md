@@ -44,8 +44,6 @@ deno run tests.ts
 
 Improve the grader, and give it more documentation since it is designed to be read by students. Most importantly, the "time to learn" is not a linear function of the "easiness". Easinnes = 1 is bonkers hard to master.
 
-Add feature : export checked skills as JSON
-
 Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, skills that are hard but have been partially mastered like *naming*.
 
 Move conferences in resources
