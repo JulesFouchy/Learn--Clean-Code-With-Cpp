@@ -47,6 +47,35 @@ const checkbox_not_validated = (skill_slug, obj) =>
         }}
     />
 
+const export_as_json_button = (object) => (
+    <button onClick = {() => DownloadJSON(object)}>
+        Export as JSON
+    </button>
+)
+
+function DownloadJSON(object) {
+    var json = JSON.stringify(object);
+
+    //Convert JSON string to BLOB.
+    json = [json];
+    var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
+
+    //Check the Browser.
+    var isIE = false || !!document.documentMode;
+    if (isIE) {
+        window.navigator.msSaveBlob(blob1, "Customers.txt");
+    } else {
+        var url = window.URL || window.webkitURL;
+        var link = url.createObjectURL(blob1);
+        var a = document.createElement("a");
+        a.download = "skills.json";
+        a.href = link;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+}
+
 export default class SkillsTable extends React.Component {
     skills_checked_by_user = []
     new_skills = {}
@@ -70,6 +99,9 @@ export default class SkillsTable extends React.Component {
         return (
             <div>
                 <div className = {style.grade}>{grade.toFixed(1)} / 20</div>
+                <div className = {style.grade}>{export_as_json_button(this.skills_checked_by_user)}
+                </div>
+                
                 <table>
                     <tr>
                         <th>Skill</th>
