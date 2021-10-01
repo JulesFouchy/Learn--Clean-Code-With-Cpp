@@ -36,12 +36,16 @@ const checkbox_not_validated = (skill_slug, obj) =>
         style ={{
             color: "#29B6F6",
         }}
+        checked = {obj.skills_checked_by_user.includes(skill_slug)}
         onChange={e => {
             if(e.target.checked) {
                 obj.skills_checked_by_user.push(skill_slug)
             }
             else {
                 obj.skills_checked_by_user = obj.skills_checked_by_user.filter(slug => slug !== skill_slug)
+            }
+            if (obj.is_demo) {
+                localStorage.setItem("skills_checked_by_user", JSON.stringify(obj.skills_checked_by_user))
             }
             obj.forceUpdate()
         }}
@@ -74,11 +78,21 @@ export default class SkillsTable extends React.Component {
     skills_checked_by_user = []
     new_skills = {}
     old_skills = {}
+    is_demo = false
 
     constructor({student_skills}) {
         super()
         this.new_skills = [...student_skills.new]
         this.old_skills = [...student_skills.old]
+        if (student_skills.is_demo) {
+            this.is_demo = true
+            try {
+                this.skills_checked_by_user = [...JSON.parse(localStorage.getItem("skills_checked_by_user") || "[]")]
+            }
+            catch (e) {
+                console.error(e)
+            }
+        }
     }
 
     render() {
@@ -93,8 +107,8 @@ export default class SkillsTable extends React.Component {
         return (
             <div>
                 <div className = {style.grade}>{grade.toFixed(1)} / 20</div>
-                <div className = {style.grade}>{export_as_json_button(this.skills_checked_by_user)}
-                </div>
+                {this.is_demo && <div className = {style.grade}>{export_as_json_button(this.skills_checked_by_user)}
+                </div>}
                 
                 <table>
                     <tr>
