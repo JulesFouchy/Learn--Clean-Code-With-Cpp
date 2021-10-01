@@ -6,7 +6,7 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 ## Video tutorials
 
-[The Cherno](https://youtu.be/2BP8NhxjrO0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) : great beginner level tutorials to learn C++ and many of its features.
+[The Cherno](https://youtu.be/2BP8NhxjrO0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) : Great beginner level tutorials to learn C++ and many of its features.
 
 [Jason Turner](https://youtu.be/UYEyHlynkPc) : Advanced and very detailed videos about various aspects of C++.
 
@@ -20,36 +20,36 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 ## Books
 
-[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), by David Thomas & Andrew Hunt.
+[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), *David Thomas & Andrew Hunt*.
 
 ## Conferences
 
-[Kevlin Henney Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks](https://youtu.be/FyCYva9DhsI)
+[10 Core Guidelines You Need to Start Using Now](https://www.youtube.com/watch?v=XkDEzfpdcSg), *Kate Gregory*.
 
-[Ben Deane “Using Types Effectively"](https://www.youtube.com/watch?v=ojZbFIQSdl8)
+[Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks](https://youtu.be/FyCYva9DhsI), *Kevlin Henney*.
 
-[Andrei Alexandrescu “Declarative Control Flow"](https://www.youtube.com/watch?v=WjTrfoiB0MQ)
+[Using Types Effectively](https://www.youtube.com/watch?v=ojZbFIQSdl8), *Ben Deane*.
 
-[David Sankel “Building Software Capital: How to write the highest quality code and why"](https://www.youtube.com/watch?v=ta3S8CRN2TM) : All good dev practices (code review, unit test, etc.)
+[Free Your Functions!](https://www.youtube.com/watch?v=WLDT1lDOsb4), *Klaus Iglberger*. ([David Sankel agrees with this](https://youtu.be/ta3S8CRN2TM?t=2159))
 
-[C++ Code Smells - Jason Turner](https://www.youtube.com/watch?v=f_tLQl0wLUM) : Great quiz to test your knowledge of C++ features.
+[Declarative Control Flow](https://www.youtube.com/watch?v=WjTrfoiB0MQ), *Andrei Alexandrescu*.
 
-[Jason Turner “The Best Parts of C++"](https://www.youtube.com/watch?v=iz5Qx18H6lg) : Great quiz to test your knowledge of C++ features.
+[C++ Code Smells](https://www.youtube.com/watch?v=f_tLQl0wLUM), *Jason Turner*. Great quiz to test your knowledge of C++ features.
 
-[Kate Gregory “10 Core Guidelines You Need to Start Using Now”](https://www.youtube.com/watch?v=XkDEzfpdcSg)
+[The Best Parts of C++](https://www.youtube.com/watch?v=iz5Qx18H6lg), *Jason Turner*. Great quiz to test your knowledge of C++ features.
 
-[Breaking Dependencies: The SOLID Principles - Klaus Iglberger](https://www.youtube.com/watch?v=Ntraj80qN2k)
+[Building Software Capital: How to write the highest quality code and why](https://www.youtube.com/watch?v=ta3S8CRN2TM), *David Sankel*. All good dev practices (code review, unit test, etc.).
 
-[ Klaus Iglberger - "Embrace No Paradigm Programming!"](https://www.youtube.com/watch?v=fwXaRH5ffJM)
+[Curiously Recurring C++ Bugs at Facebook](https://www.youtube.com/watch?v=lkgszkPnV8g), *Louis Brandy*.
 
-[Klaus Iglberger “Free Your Functions!”](https://www.youtube.com/watch?v=WLDT1lDOsb4) : ([David Sankel agrees with this](https://youtu.be/ta3S8CRN2TM?t=2159) (EDIT : everybody agrees with this actually, this is crazy that I didn't hear of it earlier))
+[Embrace No Paradigm Programming!](https://www.youtube.com/watch?v=fwXaRH5ffJM), *Klaus Iglberger*.
 
-[ Louis Brandy “Curiously Recurring C++ Bugs at Facebook”](https://www.youtube.com/watch?v=lkgszkPnV8g)
+[Breaking Dependencies: The SOLID Principles](https://www.youtube.com/watch?v=Ntraj80qN2k), *Klaus Iglberger*.
 
-[Matt Godbolt “What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid”](https://www.youtube.com/watch?v=bSkpMdDe4g4) : Amazing optimizations done by the compilers, and a bit about understanding assembly code.
+[What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid](https://www.youtube.com/watch?v=bSkpMdDe4g4), *Matt Godbolt*. Amazing optimizations done by the compilers, and a bit about understanding assembly code.
 
-[Retiring the Singleton Pattern: Concrete Suggestions for What to use Instead - Peter Muldoon](https://www.youtube.com/watch?v=K5c7uvWe_hw)
+[Retiring the Singleton Pattern: Concrete Suggestions for What to use Instead](https://www.youtube.com/watch?v=K5c7uvWe_hw), *Peter Muldoon*.
 
-[Robert Ramey “C++, Abstract Algebra and Practical Applications"](https://youtu.be/632a-DMM5J0)
+[C++, Abstract Algebra and Practical Applications](https://youtu.be/632a-DMM5J0), *Robert Ramey*.
 
-[timothy-daly Literate Programming in the Large](https://www.youtube.com/watch?v=Av0PQDVTP4A)
+[Literate Programming in the Large](https://www.youtube.com/watch?v=Av0PQDVTP4A), *Timothy Daly*.
