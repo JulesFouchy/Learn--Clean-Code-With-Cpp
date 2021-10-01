@@ -6,11 +6,6 @@ import Checkbox from '@mui/material/Checkbox'
 import { green, blueGrey } from '@mui/material/colors'
 import grader from '../../Thoughts-on-Teaching/evaluation/grader'
 
-const tags = (tags_list) =>
-    tags_list.map(tag => (
-        <div className={style.tag}>{tag}</div>
-    ))
-
 const checkbox_validated = () => 
     <Checkbox
         checked
@@ -114,7 +109,6 @@ export default class SkillsTable extends React.Component {
                     <tr>
                         <th>Skill</th>
                         <th>Validated</th>
-                        {/* <th>Tags</th> */}
                         <th>Priority</th>
                         <th>Benefit</th>
                         <th>Easiness</th>
