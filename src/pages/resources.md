@@ -1,3 +1,9 @@
+# Resources
+
+:::tip
+Here are a lot of awesome resources that will help you in your learning journey.
+:::
+
 ## Video tutorials
 
 [The Cherno](https://youtu.be/2BP8NhxjrO0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) : great beginner level tutorials to learn C++ and many of its features.
@@ -14,7 +20,7 @@
 
 ## Books
 
-[The Pragmatic Programmer](https://pragprog.com/ties/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), by David Thomas & Andrew Hunt.
+[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), by David Thomas & Andrew Hunt.
 
 ## Conferences
 
