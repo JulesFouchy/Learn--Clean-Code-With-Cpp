@@ -3,7 +3,7 @@ import skills from '@site/.docusaurus/gather-skills-plugin/default/skills.json'
 import skill_priority from '../../Thoughts-on-Teaching/evaluation/skill_priority'
 import style from './SkillsTable.module.css'
 import Checkbox from '@mui/material/Checkbox'
-import { green, blueGrey } from '@mui/material/colors'
+import { blueGrey } from '@mui/material/colors'
 import grader from '../../Thoughts-on-Teaching/evaluation/grader'
 
 const checkbox_validated = () => 
