@@ -46,8 +46,6 @@ Improve the grader, and give it more documentation since it is designed to be re
 
 Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, skills that are hard but have been partially mastered like *naming*.
 
-Move conferences in resources
-
 Move the reusable code to Thoughts-on-Teaching (which should be renamed Teaching-Toolbox)
 
 Fix the errors in the browser console

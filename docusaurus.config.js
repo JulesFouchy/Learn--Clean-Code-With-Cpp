@@ -35,12 +35,6 @@ module.exports = {
         {to: '/resources', label: 'Resources', position: 'left'},
         {to: '/tools', label: 'Tools', position: 'left'},
         {
-          type: 'doc',
-          docId: 'conferences/introduction',
-          position: 'left',
-          label: 'Conferences',
-        },
-        {
           href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
           position: 'right',
           className: 'header-issues-link',

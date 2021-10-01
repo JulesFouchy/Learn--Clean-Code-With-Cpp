@@ -7,4 +7,4 @@ tags:
     - Design Pattern
 ---
 
-[Conference](docs/conferences/andrei-alexandrescu--declarative-control-flow)
+[Conference](https://www.youtube.com/watch?v=WjTrfoiB0MQ)

@@ -87,6 +87,6 @@ For example if you want to require that each shape is drawable, with an interfac
 
 ## To go further
 
-[About the Singleton and alternatives to it](docs/conferences/peter-muldoon--retiring-the-singleton-pattern-concrete-suggestions-for-what-to-use-instead)
+[About the Singleton and alternatives to it](https://www.youtube.com/watch?v=K5c7uvWe_hw)
 
-[About SOLID by Klaus Iglberger](docs/conferences/klaus-iglberger--breaking-dependencies-the-solid-principles)
+[About SOLID by Klaus Iglberger](https://www.youtube.com/watch?v=Ntraj80qN2k)

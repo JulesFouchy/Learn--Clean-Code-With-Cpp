@@ -19,4 +19,4 @@ Base class *vs* ```std::variant```. When people say why OOP is so great, the big
 
 ## To Go Further
 
-[Check this out](docs/conferences/klaus-iglberger--embrace-no-paradigm-programming) (Comparison of different approaches to achieve polymorphism)
+[Check this out](https://www.youtube.com/watch?v=fwXaRH5ffJM) (Comparison of different approaches to achieve polymorphism)

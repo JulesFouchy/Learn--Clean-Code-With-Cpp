@@ -7,4 +7,4 @@ tags:
     - Architecture
 ---
 
-[About types to model a concept](docs/conferences/robert-ramey--cpp-abstract-algebra-and-practical-applications)
+[About types to model a concept](https://youtu.be/632a-DMM5J0)

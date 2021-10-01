@@ -14,7 +14,7 @@
 
 ## Books
 
-[The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), by David Thomas & Andrew Hunt.
+[The Pragmatic Programmer](https://pragprog.com/ties/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), by David Thomas & Andrew Hunt.
 
 ## Conferences
 

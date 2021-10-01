@@ -7,4 +7,4 @@ tags:
     - C++
 ---
 
-[Conference](docs/conferences/ben-deane--using-types-effectively)
+[Conference](https://www.youtube.com/watch?v=ojZbFIQSdl8)
