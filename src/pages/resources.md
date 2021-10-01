@@ -24,9 +24,11 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 ## Conferences
 
-[Andrei Alexandrescu “Declarative Control Flow"](https://www.youtube.com/watch?v=WjTrfoiB0MQ)
+[Kevlin Henney Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks](https://youtu.be/FyCYva9DhsI)
 
 [Ben Deane “Using Types Effectively"](https://www.youtube.com/watch?v=ojZbFIQSdl8)
+
+[Andrei Alexandrescu “Declarative Control Flow"](https://www.youtube.com/watch?v=WjTrfoiB0MQ)
 
 [David Sankel “Building Software Capital: How to write the highest quality code and why"](https://www.youtube.com/watch?v=ta3S8CRN2TM) : All good dev practices (code review, unit test, etc.)
 

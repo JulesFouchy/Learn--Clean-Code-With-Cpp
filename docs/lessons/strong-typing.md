@@ -9,7 +9,7 @@ tags:
 
 ## Brief
 
-Strong typing is when you create a type just to wrap an `int`,  so that you can give that `int` a name. It helps you express your intent more clearly and makes your APIs harder to misuse. They are amazing and definitely worth the extra little time needed to write them down ; don't be lazy !
+Strong typing is when you create a type just to wrap an `int`,  so that you can give that `int` a name, invariants, and so on. It helps you express your intent more clearly and makes your APIs harder to misuse. They are amazing and definitely worth the extra little time needed to write them down ; don't be lazy !
 
 ## Details
 
@@ -37,6 +37,12 @@ But adding two positions doesn't make sense at all !!!
 
 Even though it would be easy to add the *representation* of two positions, we want to prevent that because it would most likely be a bug or a logic error.
 
-:::tip
+:::tip Recap
 Strong typing helps us give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more ! They prevent logic errors and make APIs clearer.
+:::
+
+:::info Going further
+[*Strong types for physical units*](https://youtu.be/7dExYGSOJzo)
+
+[*Abstract Algebra and Strong Types*](https://youtu.be/632a-DMM5J0)
 :::
