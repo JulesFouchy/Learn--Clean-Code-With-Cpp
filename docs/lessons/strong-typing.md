@@ -15,7 +15,9 @@ Strong typing is when you create a type just to wrap an `int`,  so that you can 
 
 [Read this great article about strong types](https://www.fluentcpp.com/2016/12/08/strong-types-for-strong-interfaces/).
 
-Once you are done reading it, I want to give an example of my own.
+And then look at [this great example](https://youtu.be/ojZbFIQSdl8?t=1444) of using strong types to prevent a nasty bug.
+
+Once you are done with these, I want to give an example of my own.
 
 Consider a 2D position (a.k.a a point) and a 2D displacement (a.k.a. a vector (although that term is way too overloaded and has sadly become ambiguous)). They can both be represented with two numbers *x* and *y* even though they are **_very different concepts_** !
 

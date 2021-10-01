@@ -7,4 +7,4 @@ tags:
     - C++
 ---
 
-[Conference](https://www.youtube.com/watch?v=ojZbFIQSdl8)
+https://youtu.be/ojZbFIQSdl8?t=1056
