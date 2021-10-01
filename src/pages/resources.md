@@ -1,6 +1,6 @@
 # Resources
 
-:::tip
+:::tip Brief
 Here are a lot of awesome resources that will help you in your learning journey.
 :::
 
