@@ -64,9 +64,9 @@ function download_as_json(object) {
 }
 
 const export_as_json_button = (object) => (
-    <button onClick = {() => download_as_json(object)}>
+    <div onClick = {() => download_as_json(object)}>
         Export as JSON
-    </button>
+    </div>
 )
 
 export default class SkillsTable extends React.Component {
@@ -101,9 +101,11 @@ export default class SkillsTable extends React.Component {
         
         return (
             <div>
-                <div className = {style.grade}>{grade.toFixed(1)} / 20</div>
-                {this.is_demo && <div className = {style.grade}>{export_as_json_button(this.skills_checked_by_user)}
-                </div>}
+                {!this.is_demo && <div className = {style.grade}>{grade.toFixed(1)} / 20</div>}
+                {this.is_demo && 
+                    <div className = {style.export_button}>{export_as_json_button(this.skills_checked_by_user)}
+                    </div>
+                }
                 
                 <table>
                     <tr>

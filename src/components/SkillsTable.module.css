@@ -1,10 +1,9 @@
-.grade {  
+.grade, .export_button {  
     position: sticky;
     position: -webkit-sticky;
     top: 100px;
-    
     float: right;
-    width: 100px;
+
     text-align: center;
     padding: 2px 10px;
     margin: 10px;
@@ -12,4 +11,12 @@
     color: white;
     font-weight: bold;
     border-radius: 50px;
+}
+
+.grade {
+    width: 100px;
+}
+
+.export_button :hover {
+    cursor: pointer;
 }
