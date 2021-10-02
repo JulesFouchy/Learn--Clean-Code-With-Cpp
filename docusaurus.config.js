@@ -77,6 +77,10 @@ module.exports = {
               label: 'Report a mistake',
               to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
             },
+            {
+              label: 'Give me feedback',
+              to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+            },
           ],
         },
         {
@@ -87,7 +91,7 @@ module.exports = {
               to: 'https://discord.com/users/372812330742054914',
             },
             {
-              label: 'Mail',
+              label: 'E-Mail',
               to: 'mailto:jules.fouchy@ntymail.com',
             },
             {
