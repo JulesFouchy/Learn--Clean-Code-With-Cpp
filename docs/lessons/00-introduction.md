@@ -35,7 +35,7 @@ The evaluation is skill based : you will find [a long list of skills that I deem
 
 ### Rationale
 
-I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at his/her own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require a self-evaluation that I will then use to know how much progress you made and reward that.
+I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at his/her own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require [a self-evaluation](./students#self-evaluation) that I will then use to know how much progress you made and reward that.
 
 The extra investment will also be rewarded. I expect that the dedicated classroom hours will be enough for you to get meaningfull value out of this class (and a good grade), but if you want or need to invest more time I will make sure to take that into account too.
 
