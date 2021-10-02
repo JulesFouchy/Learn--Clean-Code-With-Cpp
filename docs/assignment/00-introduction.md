@@ -51,10 +51,10 @@ If you are looking for inspiration I can suggest a few ideas that I would person
 
 ## Option#2 : Following the guided project
 
-This is the best option for beginners and will overall be easier to follow. The project will consist in making a few little games : hangman, noughts and crosses, *etc.*.
+This option will be easier to follow and shouldn't require as much time investment. The project will consist in making a few little games : hangman, noughts and crosses, *etc.*.
 
 It makes sense to choose this option if you don't want to have to organize and plan a project by yourself. Here you will be able to focus entirely on the micro-level programming tasks like *"let's get a string from the user"*, *"let's check if this word contains this letter"* and so on.
 
 The other pages of this section will guide you through this project step by step.
 
-I believe it is better if you work alone on this project (but we can discuss it if you really want to team up with someone).
+I believe it is better if you work alone on this project (but we can discuss this if you think it will be beneficial for you to team up with someone).

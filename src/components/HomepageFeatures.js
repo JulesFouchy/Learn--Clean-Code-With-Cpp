@@ -1,5 +1,6 @@
-import React from 'react';
 import clsx from 'clsx';
+import React from 'react';
+
 import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
@@ -22,7 +23,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Ease your development workflow',
+    title: "Ease your workflow",
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

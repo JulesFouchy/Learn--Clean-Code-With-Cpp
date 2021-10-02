@@ -15,7 +15,7 @@ We will only assume some beginner-level experience in programming with C++ or a 
 
 Clean code is both a concern at the architectural level (organisation between modules and classes) and at the granular level (organisation inside a given class or function).
 
-We will see basic coding habits that make your code more expressive, general principles that help you organize your code, a few amazing design patterns, and we will get into the habit of using **meaningful names** and writing **documentation**. We will also discover the amazing tools available that make our job way easier and enjoyable.
+We will see basic coding habits that make your code more expressive, general principles that help you organize your code, a few amazing design patterns, and we will get into the habit of using **meaningful names** and writing **documentation**. We will also discover the amazing tools available that make our job easier and way more enjoyable.
 
 Although this class makes use of C++, most of its content will be applicable to any language and any programming project.
 

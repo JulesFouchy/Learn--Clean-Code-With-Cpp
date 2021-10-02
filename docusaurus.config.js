@@ -1,11 +1,12 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const skill_priority = require('./Thoughts-on-Teaching/evaluation/skill_priority')
+const skill_priority =
+    require('./Thoughts-on-Teaching/evaluation/skill_priority')
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'C++ and Dev Practices',
-  tagline: 'A gentle introduction',
+  tagline: 'From 0️⃣ to 🦸',
   url: 'https://julesfouchy.github.io/',
   baseUrl: '/Learn--Cpp-And-Dev-Practices/',
   onBrokenLinks: 'throw',
@@ -35,7 +36,8 @@ module.exports = {
         {to: '/resources', label: 'Resources', position: 'left'},
         {to: '/tools', label: 'Tools', position: 'left'},
         {
-          href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+          href:
+              'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
           position: 'right',
           className: 'header-issues-link',
           'aria-label': 'GitHub issues',
@@ -121,51 +123,46 @@ module.exports = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          sidebarItemsGenerator: async function ({
-              defaultSidebarItemsGenerator,
-              ...args
-            }) {
-                if (args.item.dirName === "lessons") {
-                    const res = args.docs
-                        // Keep only the files in "/lessons"
-                        .filter(doc => doc.sourceDirName === args.item.dirName)
-                        // Compute the priority
-                        .map(doc => ({
-                            ...doc,
-                            priority: skill_priority({
-                                benefit: doc.frontMatter.benefit,
-                                easiness: doc.frontMatter.easiness,
-                                order: doc.frontMatter.order,
-                            }),
-                        }))
-                        // Sort
-                        .sort((a, b) => {
-                            // Put introduction first
-                            if (a.frontMatter.title === "Introduction") {
-                                return -1
-                            }
-                            else if (b.frontMatter.title === "Introduction") {
-                                return 1
-                            }
-                            // Then sort by priority
-                            else {
-                                return b.priority - a.priority
-                            }
-                        })
-                        // Generate the item
-                        .map(doc => {
-                            return {
-                                type: 'doc',
-                                id: doc.id,
-                                prio: doc.priority,
-                            }
-                        })
-                    return res
-                }
-                else {
-                    return await defaultSidebarItemsGenerator(args)
-                }
-            },
+          sidebarItemsGenerator: async function(
+              {defaultSidebarItemsGenerator, ...args}) {
+            if (args.item.dirName === 'lessons') {
+              const res =
+                  args.docs
+                      // Keep only the files in "/lessons"
+                      .filter(doc => doc.sourceDirName === args.item.dirName)
+                      // Compute the priority
+                      .map(doc => ({
+                             ...doc,
+                             priority: skill_priority({
+                               benefit: doc.frontMatter.benefit,
+                               easiness: doc.frontMatter.easiness,
+                               order: doc.frontMatter.order,
+                             }),
+                           }))
+                      // Sort
+                      .sort((a, b) => {
+                        // Put introduction first
+                        if (a.frontMatter.title === 'Introduction') {
+                          return -1
+                        } else if (b.frontMatter.title === 'Introduction') {
+                          return 1
+                        }
+                        // Then sort by priority
+                        else {
+                          return b.priority - a.priority
+                        }
+                      })
+                      // Generate the item
+                      .map(doc => {
+                        return {
+                          type: 'doc', id: doc.id, prio: doc.priority,
+                        }
+                      })
+              return res
+            } else {
+              return await defaultSidebarItemsGenerator(args)
+            }
+          },
         },
         blog: {
           showReadingTime: true,
