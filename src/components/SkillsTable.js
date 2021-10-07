@@ -1,6 +1,5 @@
 import React from 'react'
 import skills from '@site/.docusaurus/gather-skills-plugin/default/skills.json'
-import skill_priority from '../../Thoughts-on-Teaching/evaluation/skill_priority'
 import style from './SkillsTable.module.css'
 import Checkbox from '@mui/material/Checkbox'
 import { blueGrey } from '@mui/material/colors'
@@ -91,12 +90,6 @@ export default class SkillsTable extends React.Component {
     }
 
     render() {
-        const prioritized_skills = skills.map(skill => ({
-            ...skill,
-            priority: skill_priority(skill)
-        }))
-        .sort((a, b) => a.priority < b.priority)
-
         const grade = grader(skills, [...this.new_skills, ...this.skills_checked_by_user])
         
         return (
@@ -116,7 +109,7 @@ export default class SkillsTable extends React.Component {
                         <th>Easiness</th>
                         <th>Order</th>
                     </tr>
-                    {prioritized_skills.map(skill =>
+                    {skills.map(skill =>
                         <tr>
                             <td><a href = {skill.link}>{skill.title}</a></td>
                             <td>{ this.new_skills.find(slug => skill.slug === slug) ? checkbox_validated()
