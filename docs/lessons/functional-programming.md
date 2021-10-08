@@ -12,6 +12,8 @@ Functional programming is an important paradigm that has gotten a lot of attenti
 [^1]: Notice the pun 😉
 
 :::info Going further
+[A sweet intro to some functional concepts](https://youtu.be/vDe-4o8Uwl8)
+
 [Lambda calculus, the theory behind functional programming](https://youtu.be/3VQ382QG-y4)
 
 [TODO](https://youtu.be/Nrp_LZ-XGsY)
