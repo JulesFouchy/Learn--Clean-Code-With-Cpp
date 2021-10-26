@@ -30,7 +30,7 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Using Types Effectively](https://www.youtube.com/watch?v=ojZbFIQSdl8), *Ben Deane*.
 
-[Free Your Functions!](https://www.youtube.com/watch?v=WLDT1lDOsb4), *Klaus Iglberger*. ([David Sankel agrees with this](https://youtu.be/ta3S8CRN2TM?t=2159))
+[Free Your Functions!](https://www.youtube.com/watch?v=WLDT1lDOsb4), *Klaus Iglberger*.
 
 [Declarative Control Flow](https://www.youtube.com/watch?v=WjTrfoiB0MQ), *Andrei Alexandrescu*.
 
