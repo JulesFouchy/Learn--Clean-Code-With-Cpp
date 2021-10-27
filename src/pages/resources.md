@@ -16,6 +16,8 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Google's Tips of the Week](https://abseil.io/tips/)
 
+[Cool's guidelines](https://coollibs.github.io/home/docs/contributing/coding-guidelines)
+
 [Bloomberg's coding standards](http://bloomberg.github.io/bde/knowledge_base/coding_standards.html)
 
 ## Books

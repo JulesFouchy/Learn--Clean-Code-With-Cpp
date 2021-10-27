@@ -1,10 +1,16 @@
 ---
-title : Rule of 5
-benefit: 4
+title : The Rule of 5
+benefit: 3
 easiness: 3
 order: 4
 tags:
     - C++
 ---
 
-If yo have to do that, try to limit its scope. You most likely have only one member of your class that requires the destructor / move. Then, move that member into its own class that implements the rule of 5, and in your main class use that wrapper class and let the compiler generate the destructor / move / copy. It will prevent you from forgetting to copy a member in your copy / move, or something silly of that kind. Most classes shuldn't have complex destruction behaviour, and those wo do should be kept to a minimal size.
+The *Rule of 5* states that if you write either a destructor, a copy constructor, a copy assignment, a move constructor or a move assignment, then you most likely need to write all 5 of them. This is because resources that need proper destruction most often also need proper copy. For example a raw owning pointer needs to be deleted, but also when you make a copy of it you want to copy the pointed object, not the pointer, in order to preserve value semantics. (If you were to copy only the pointer then the copied object would point to the same thing as the original object, they would not be independent copies).
+
+If you have to do that, try to limit its scope. You most likely have only one member of your class that requires the destructor / copy. Then, move that member into its own class that implements the rule of 5, and in your main class use that wrapper class and let the compiler generate the destructor / move / copy. It will prevent you from forgetting to copy a member in your copy / move, or something silly of that kind.
+
+:::tip
+Most classes shouldn't have complex destruction behaviour, and those wo do should be kept to a minimal size.
+:::
