@@ -110,6 +110,7 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+      additionalLanguages: ['cmake'],
     },
     // algolia: {
     //     apiKey: 'YOUR_API_KEY',

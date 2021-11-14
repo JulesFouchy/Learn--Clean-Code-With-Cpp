@@ -2,7 +2,7 @@
 title : Debug vs Release
 benefit: 3
 easiness: 5
-order: 3
+order: 2
 tags:
     - C++
 ---
