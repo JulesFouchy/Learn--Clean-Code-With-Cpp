@@ -8,3 +8,5 @@ tags:
 ---
 
 https://youtu.be/ta3S8CRN2TM?t=1306
+
+https://youtu.be/u5senBJUkPc

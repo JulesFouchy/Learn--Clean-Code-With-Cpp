@@ -221,7 +221,7 @@ Users should only have to do
 add_subdirectory(libname)
 target_link_libraries(${PROJECT_NAME} libname)
 ```
-This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (these informations are known as *usage requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} libname)` all these informations are propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
+This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (these informations are known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} libname)` all these informations are propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
 
 *If you want to have a look at a real-world example of modern cmake, check out [p6](https://github.com/julesfouchy/p6/blob/main/CMakeLists.txt) (small library) or [Cool](https://github.com/CoolLibs/Cool/blob/main/CMakeLists.txt) (big framework).*
 
@@ -235,7 +235,7 @@ add_library(libname)
 
 ### Use the target_xxx() commands
 
-To set usage requirements of your library, always use a `target_xxx` function. They all have alternatives without the `target_` prefix, but those functions affect the global state instead of just your target, which is obviously bad! For example if your project uses *libA* and *libB*, you don't want *libB* to see the include directories and settings of *libA*! These libraries should be completely independent!
+To set requirements of your library, always use a `target_xxx` function. They all have alternatives without the `target_` prefix, but those functions affect the global state instead of just your target, which is obviously bad! For example if your project uses *libA* and *libB*, you don't want *libB* to see the include directories and settings of *libA*! These libraries should be completely independent!
 
 They are all used like so:
 ```cmake
@@ -264,7 +264,7 @@ endif()
 
 ### PRIVATE | PUBLIC | INTERFACE
 
-This is the visibility of the usage requirements set with `target_xxx()`.
+This is the visibility of the requirements set with `target_xxx()`.
 
 - `PRIVATE`: Only this target will have access to these requirements. When other targets link to this one with `target_link_libraries()` they will not get the private requirements. For example your warning level should always be private because you do not want to impose it on your dependents:
  ```cmake
