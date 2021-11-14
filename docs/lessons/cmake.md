@@ -19,10 +19,10 @@ add_executable(${PROJECT_NAME} # Creates a target called ${PROJECT_NAME}, a.k.a.
     src/something.cpp          # Note that you don't need to list the header files here (.h / .hpp)
 )
 
-add_subdirectory(p6)                        # Includes the p6 library ; this assumes that you have a folder called p6 at the same level as this CMakeLists.txt file, and that the p6 folder contains a CMakeLists.txt file
-target_link_libraries(${PROJECT_NAME} p6::) # Adds the target "p6::" as a dependency of our target ${PROJECT_NAME}. Unfortunately the command is called target_link_libraries() even though it can be used for other things than just linking ; don't get confused! A better name would have been add_dependency()
-                                            # The name of the target "p6::" is up to the library authors. Check out their documentation to know how they called it!
-                                            # The "::" in the name of the library's target is not mandatory, but library authors often add it because target_link_libraries() can do many different things, and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a "::" in the name that target_link_libraries() will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
+add_subdirectory(p6)                          # Includes the p6 library ; this assumes that you have a folder called p6 at the same level as this CMakeLists.txt file, and that the p6 folder contains a CMakeLists.txt file
+target_link_libraries(${PROJECT_NAME} p6::p6) # Adds the target "p6::p6" as a dependency of our target ${PROJECT_NAME}. Unfortunately the command is called target_link_libraries() even though it can be used for other things than just linking ; don't get confused! A better name would have been add_dependency()
+                                              # The name of the target "p6::p6" is up to the library authors. Check out their documentation to know how they called it!
+                                              # The "::" in the name of the library's target is not mandatory, but library authors often add it because target_link_libraries() can do many different things, and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a "::" in the name that target_link_libraries() will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
 ```
 
 And that is all you need for a basic *CMakeLists.txt*!
@@ -36,7 +36,7 @@ Now we will see a few useful things that you can do with CMake:
 ### Enabling warnings
 
 ```cmake
-if(MSVC) # Visual Studio for Windows
+if (MSVC) # Visual Studio for Windows
     target_compile_options(${PROJECT_NAME} PRIVATE /WX /W4)
 else() # gcc and clang
     target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors -Wconversion -Wsign-conversion)
@@ -297,12 +297,12 @@ Try to keep things private as much as possible! Don't pollute others for no reas
 
 ```cmake
 add_library(p6)
-add_library(p6:: ALIAS p6)
+add_library(p6::p6 ALIAS p6)
 ```
 
 People care about having a name with `::` because `target_link_libraries()` can do many different things and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a `::` in the name that `target_link_libraries()` will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
 
-As far as the alias name goes, people have different conventions like `p6::`, `p6::p6`, `p6::core` *etc.* So pick one that you like.
+As far as the alias name goes, people have different conventions like `p6::p6`, `p6::core` *etc.* So pick one that you like.
 
 ## Going further
 
