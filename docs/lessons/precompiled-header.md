@@ -6,3 +6,5 @@ order: 3
 tags:
     - C++
 ---
+
+https://youtu.be/eSI4wctZUto
