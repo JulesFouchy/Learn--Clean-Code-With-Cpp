@@ -252,7 +252,7 @@ Here are the most important functions:
 add_library(Cool src/Cool.cpp)
 if (USE_OPENGL)
     target_sources(Cool PRIVATE src/OpenGL/opengl.cpp)
-elif (USE_VULKAN)
+elseif (USE_VULKAN)
     target_sources(Cool PRIVATE src/Vulkan/vulkan.cpp)
 endif()
 ```
