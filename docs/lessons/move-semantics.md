@@ -62,14 +62,14 @@ public:
     UniqueBuffer(UniqueBuffer&& rhs) noexcept // Move constructor
         : _id{rhs._id}
     {
-        rhs._id = 0; // Make sure rhs won't delete the _id we just copied
+        rhs._id = 0; // Make sure that rhs won't delete the _id we just copied
     }
     UniqueBuffer& operator=(UniqueBuffer&& rhs) noexcept // Move assignment operator
     {
-        if (this != &rhs) {           // Make sure we don't do silly things if we try to move an object to itself
+        if (this != &rhs) {           // Make sure that we don't do silly things if we try to move an object to itself
             glDeleteBuffers(1, &_id); // Delete the previous object
             _id     = rhs._id;        // Get the new object
-            rhs._id = 0;              // Make sure rhs won't delete the _id we just copied
+            rhs._id = 0;              // Make sure that rhs won't delete the _id we just copied
         }
         return *this; // move assignment must return a reference to this, so we do it
     }
@@ -83,10 +83,10 @@ private:
 
 Many things to note:
 
-- We disable copying because we can't simply copy the `_id` (the copy would refer to the same object as the original, which would we confusing just like in our vector example), and we can create a new object with `glGenBuffers` because we have no idea what was stored in that buffer by users (if we were to try that, then when users ask for a copy they would get a new empty buffer instead of a copy of all the vertex data or whatever that was added to that buffer). Disabling copy also prevents accidental copies of objects that are not supposed to be copied (e.g. because they are big and the copy would be expensive).
-- We do `rhs._id = 0;` when we move. This is because if we don't, then when `rhs` gets destroyed it will destroy `_id` and our new object will become invalid!
-- We do `if (this != &rhs)`. This is because someone could call `v = std::move(v);` (in generic code it can happen and it is not that obvious and sometimes you need to do it). In such case, without the check we would do `rhs._id = 0;` but since `rhs` is ourself we just lost our `_id`!
-- The signature for move operations contains `UniqueBuffer&&`. This `&&` symbol is called an r-value reference ; it is kind of like the usual reference `&` but it indicates that you are allowed to modify the object and steal its resources. Basically it means that it is okay to move from that object. 
+- We disable copying because we can't simply copy the `_id` (the copy would refer to the same object as the original, which would be confusing just like in our vector example), and we can't create a new object with `glGenBuffers` because we have no idea what was stored in that buffer by users (if we were to try that, then when users ask for a copy they would get a new empty buffer instead of a copy of all the vertex data or whatever that was added to the buffer). Disabling copy also prevents accidental copies of objects that are not supposed to be copied (e.g. because they are big and the copy would be expensive).
+- We do `rhs._id = 0;` when we move. This is because if we don't, then when `rhs` gets destroyed it will destroy its `_id`, which is the same that our new object is using, which would make it invalid!
+- We do `if (this != &rhs)`. This is because someone could call `v = std::move(v);` (in generic code it can happen and it is not that obvious and sometimes you need to do it). In such case without the check we would do `rhs._id = 0;` but since `rhs` is ourself we would just loose our `_id`!
+- The signature for move operations contains `UniqueBuffer&&`. This `&&` symbol is called an r-value reference ; it is kind of like the usual reference `&` (called an l-value reference) but it indicates that you are allowed to modify the object and steal its resources. Basically it means that it is okay to move from the object. 
 - The move constructor and move assignment are marked `noexcept` which is **extremely important**. If you don't then STL containers like vector will not use your move and will do a copy instead (because it would be problematic if an exception was thrown while a vector is resizing and moving objects to the new location). This `noexcept` costs you nothing and allows great performance improvements when you store your objects in a vector, so please don't forget it!
 
 :::tip
@@ -95,13 +95,51 @@ Make your wrappers as small as possible. Because if you need to define a move co
 *You can find examples of such wrappers in [GL++](https://github.com/CoolLibs/glpp/blob/main/src/UniqueBuffer.h)*.
 :::
 
-<!-- ## Return value optimization (RVO)
+## Asking for a move with std::move
 
-Sometimes the compiler can do *even better than move*. When you are returning -->
+Move happens automatically:
+- When returning from a function
+- When passing a temporary value to a function (a.k.a. something that was not put in a variable). In `f(MyClass{1, 3});`, `MyClass{1, 3}` is not given any name: it is a temporary and will be moved into `f` instead of copied.
+
+But if you have
+```cpp
+std::vector<MyClass> v;
+
+MyClass my_class{1, 3};
+// Do something with my_class
+// . . .
+v.push_back(my_class);
+```
+
+when passing `my_class` to `push_back` it will be copied and not moved. But let's say that we don't need `my_class` after the call to `push_back`: then it would be nice to move `my_class` into `push_back` and avoid a copy. We can ask for that by doing `v.push_back(std::move(my_class));`.
+
+This works because `push_back` is overloaded to accept both normal references (`const MyClass&`) and r-value references (`MyClass&&`).
+
+:::caution
+After calling `std::move()` on an object, don't use it again! It has been moved away and might not be valid anymore. To learn more on that, check out [Beware: Zombies](https://abseil.io/tips/77).
+:::
+
+## Return value optimization (RVO)
+
+Sometimes the compiler can do *even better than move*. When you are returning an unnamed variable from a function you are guaranteed that there won't even be a move, the variable will be created in place at the call site. This is called RVO and is guaranteed by the standard.
+```cpp
+std::vector<int> create_some_vector(int x) {
+    int a = x + 1;
+    int b = x * 2;
+    return std::vector<int>{{a, b}}; // RVO applies because we did not give a name to the variable std::vector<int>{{a, b}}, we returned it directly
+}
+
+std::vector<int> v = create_some_vector(2); // No copy nor move. It is the same as doing std::vector<int> v = {2 + 1, 2 * 2};
+```
+
+Compilers can do other optimizations, but RVO is (currently) the only one that is guaranteed. In [our first example](#brief) RVO doesn't apply because we gave a name to the variable that we return (`v`). But chances are your compiler will still optimize the *move* away ; this is known as NRVO (Named Return Value Optimization).
 
 ## Going further
 
 :::info Going further
+[Abseil's tip](https://abseil.io/tips/77) (5min)
+
 TODO put a link to Klaus' conference when the CppCon 2021 is available on Youtube.
 <!-- [Klaus Iglberger] -->
+
 :::
