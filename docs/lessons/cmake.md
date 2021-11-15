@@ -221,7 +221,7 @@ Users should only have to do
 add_subdirectory(libname)
 target_link_libraries(${PROJECT_NAME} libname)
 ```
-This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (these informations are known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} libname)` all these informations are propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
+This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (these information are known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} libname)` all these information are propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
 
 *If you want to have a look at a real-world example of modern cmake, check out [p6](https://github.com/julesfouchy/p6/blob/main/CMakeLists.txt) (small library) or [Cool](https://github.com/CoolLibs/Cool/blob/main/CMakeLists.txt) (big framework).*
 
