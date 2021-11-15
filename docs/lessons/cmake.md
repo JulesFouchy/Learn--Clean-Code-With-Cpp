@@ -37,9 +37,9 @@ Now we will see a few useful things that you can do with CMake:
 
 ```cmake
 if (MSVC) # Visual Studio for Windows
-    target_compile_options(${PROJECT_NAME} PRIVATE /WX /W4)
+    target_compile_options(${PROJECT_NAME} PRIVATE /WX /W3)
 else() # gcc and clang
-    target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors -Wconversion -Wsign-conversion)
+    target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors)
 endif()
 ```
 
