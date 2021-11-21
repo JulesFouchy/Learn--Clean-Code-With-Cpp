@@ -11,7 +11,7 @@ tags:
 
 To understand modern CMake you need to understand *targets*. Basically a target is an executable or a library. You will define a target for your executable and describe its source files, and then you will import the targets for each library you use, and will add those targets as a dependency of your executable. Here is an example taken from [p6-examples](https://github.com/JulesFouchy/p6-examples/blob/main/CMakeLists.txt):
 ```cmake
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.8)
 project(p6-hello-world)
 
 add_executable(${PROJECT_NAME} # Creates a target called ${PROJECT_NAME}, a.k.a. p6-hello-world
@@ -19,15 +19,15 @@ add_executable(${PROJECT_NAME} # Creates a target called ${PROJECT_NAME}, a.k.a.
     src/something.cpp          # Note that you don't need to list the header files here (.h / .hpp)
 )
 
-add_subdirectory(p6)                          # Includes the p6 library ; this assumes that you have a folder called p6 at the same level as this CMakeLists.txt file, and that the p6 folder contains a CMakeLists.txt file
-target_link_libraries(${PROJECT_NAME} p6::p6) # Adds the target "p6::p6" as a dependency of our target ${PROJECT_NAME}. Unfortunately the command is called target_link_libraries() even though it can be used for other things than just linking ; don't get confused! A better name would have been add_dependency()
-                                              # The name of the target "p6::p6" is up to the library authors. Check out their documentation to know how they called it!
-                                              # The "::" in the name of the library's target is not mandatory, but library authors often add it because target_link_libraries() can do many different things, and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a "::" in the name that target_link_libraries() will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
+add_subdirectory(p6)                                  # Includes the p6 library ; this assumes that you have a folder called p6 at the same level as this CMakeLists.txt file, and that the p6 folder contains a CMakeLists.txt file
+target_link_libraries(${PROJECT_NAME} PRIVATE p6::p6) # Adds the target "p6::p6" as a dependency of our target ${PROJECT_NAME}. Unfortunately the command is called target_link_libraries() even though it can be used for other things than just linking ; don't get confused! A better name would have been add_dependency()
+                                                      # The name of the target "p6::p6" is up to the library authors. Check out their documentation to know how they called it!
+                                                      # The "::" in the name of the library's target is not mandatory, but library authors often add it because target_link_libraries() can do many different things, and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a "::" in the name that target_link_libraries() will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
 ```
 
 And that is all you need for a basic *CMakeLists.txt*!
 
-If all your libraries define a target properly then you don't need anything more to build your project. (If they don't then unfortunately you will have to [do their job for them](#cmake-for-library-authors)).
+If all your libraries define a target properly then you don't need anything more to build your project. (If they don't, unfortunately you will have to [do their job for them](#cmake-for-library-authors)).
 
 ## CMake tips
 
@@ -53,13 +53,13 @@ A C++ code that compiles is far from guaranteed to have no bugs! (mostly because
 
 ### Setting your C++ version
 
-You can ask for a specific version of C++
+You can ask for a specific version of C++:
 ```cmake
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 ```
-(if you don't you will probably get C++11 by default).
+(If you don't you will probably get C++11 by default).
 
-You can even ask for finer details with parameters like `cxx_variadic_templates`. This can be useful to increase the portability of your code a little bit (for example if you need C++11 plus only one little feature from C++14).
+You can even ask for finer details with parameters like `cxx_variadic_templates`. This can be useful to increase the portability of your code a little bit (for example if you need C++11 plus only one little feature from C++14). Don't abuse it though because it can be very tedious to maintain!
 
 ### Adding `#define` (compile definitions)
 
@@ -70,7 +70,7 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
 )
 ```
 ```cpp title="C++"
-#if defined(USE_THIS_FEATURE)
+#if USE_THIS_FEATURE
     // Do something
 #else 
     // Do something else
@@ -83,11 +83,11 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
     $<$<CONFIG:Debug>:DEBUG>
 )
 ```
-which defines `DEBUG` if you are building in debug mode. (This uses a [generator expression](https://stackoverflow.com/questions/46206495/cmake-generator-expressions). It can be read as: "If the cmake *CONFIG* is *Debug*, then return *DEBUG*, otherwise return nothing"). You can then have debug checks in your code that are only compiled in debug mode and removed in release:
+which defines `DEBUG` if you are building in debug mode. (This uses a [generator expression](https://stackoverflow.com/questions/46206495/cmake-generator-expressions). It can be read as: "If the CMake *CONFIG* is *Debug*, then return *DEBUG*, otherwise return nothing"). You can then have debug checks in your code that are only compiled in debug mode and totally removed in release:
 ```cpp
-void assert_shader_is_bound(GLuint id)
+void assert_shader_is_bound(GLint id)
 {
-#if defined(DEBUG)
+#if DEBUG
     GLint current_id;
     glGetIntegerv(GL_CURRENT_PROGRAM, &current_id);
     assert(current_id == id && "The shader is not bound");
@@ -95,7 +95,7 @@ void assert_shader_is_bound(GLuint id)
 }
 ```
 
-You can also give a value to your `#define`:
+You can also give a value to your `#define` (by default it gets the value `1`):
 ```cmake title="cmake"
 target_compile_definitions(${PROJECT_NAME} PRIVATE
     WINDOW_NAME=\"Django ${CMAKE_PROJECT_VERSION}\"
@@ -205,10 +205,8 @@ target_precompile_headers(Cool PUBLIC
     <string>
     <memory>
     <functional>
-
     <imgui/imgui.h>
     <imgui/misc/cpp/imgui_stdlib.h>
-    
     <Cool/Log/Log.h>
 )
 ```
@@ -219,9 +217,9 @@ As a library, your *CMakeLists.txt* has one goal: define a target containing all
 Users should only have to do
 ```cmake
 add_subdirectory(libname)
-target_link_libraries(${PROJECT_NAME} libname)
+target_link_libraries(${PROJECT_NAME} PRIVATE libname)
 ```
-This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (these information are known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} libname)` all these information are propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
+This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (this information is known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} PRIVATE libname)` all this information is propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
 
 *If you want to have a look at a real-world example of modern cmake, check out [p6](https://github.com/julesfouchy/p6/blob/main/CMakeLists.txt) (small library) or [Cool](https://github.com/CoolLibs/Cool/blob/main/CMakeLists.txt) (big framework).*
 
@@ -246,8 +244,8 @@ You can also use `PUBLIC` or `INTERFACE` instead of `PRIVATE` (see [PRIVATE | PU
 
 Here are the most important functions:
 
-- [`target_include_directories`](https://cmake.org/cmake/help/latest/command/target_include_directories.html). Specifies the location of the include files. For a library I would suggest to put them in a *include/libname* folder and to do `target_include_directories(libname PUBLIC include)` so that the include files are accessed with `#include <libname/some_file.hpp>`. It can also be nice to add a `libname.hpp` file that includes all the other header files. It allows users to include the whole library at once with `#include <libname/libname.hpp>`.
-- [`target_sources`](https://cmake.org/cmake/help/latest/command/target_sources.html). Adds source files to the target (appends to the list that was already set with `add_library(libname some_file.cpp)`). It can be useful for example if you only need some files in some situations:
+- [`target_include_directories`](https://cmake.org/cmake/help/latest/command/target_include_directories.html) Specifies the location of the include files. For a library I would suggest to put them in a *include/libname* folder and to do `target_include_directories(libname PUBLIC include)` so that the include files are accessed with `#include <libname/some_file.hpp>`. It can also be nice to add a `libname.hpp` file that includes all the other header files. It allows users to include the whole library at once with `#include <libname/libname.hpp>`.
+- [`target_sources`](https://cmake.org/cmake/help/latest/command/target_sources.html) Adds source files to the target (appends to the list that was already set with `add_library(libname some_file.cpp)`). It can be useful for example if you only need some files in some situations:
 ```cmake
 add_library(Cool src/Cool.cpp)
 if (USE_OPENGL)
@@ -256,11 +254,11 @@ elseif (USE_VULKAN)
     target_sources(Cool PRIVATE src/Vulkan/vulkan.cpp)
 endif()
 ```
-- [`target_link_libraries`](https://cmake.org/cmake/help/latest/command/target_link_libraries.html). To add another target as a dependency.
-- [`target_compile_options`](https://cmake.org/cmake/help/latest/command/target_compile_options.html). We have seen it in [Enabling warnings](#enabling-warnings).
-- [`target_compile_features`](https://cmake.org/cmake/help/latest/command/target_compile_features.html). We have seen it in [Setting your C++ version](#setting-your-c-version).
-- [`target_compile_definitions`](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html). We have seen it in [Adding `#define` (compile definitions)](#adding-define-compile-definitions).
-- [`target_precompile_headers`](https://cmake.org/cmake/help/git-stage/command/target_precompile_headers.html). We have seen it in [Precompiled header](#precompiled-header).
+- [`target_link_libraries`](https://cmake.org/cmake/help/latest/command/target_link_libraries.html) To add another target as a dependency.
+- [`target_compile_options`](https://cmake.org/cmake/help/latest/command/target_compile_options.html) We have seen it in [Enabling warnings](#enabling-warnings).
+- [`target_compile_features`](https://cmake.org/cmake/help/latest/command/target_compile_features.html) We have seen it in [Setting your C++ version](#setting-your-c-version).
+- [`target_compile_definitions`](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html) We have seen it in [Adding `#define` (compile definitions)](#adding-define-compile-definitions).
+- [`target_precompile_headers`](https://cmake.org/cmake/help/git-stage/command/target_precompile_headers.html) We have seen it in [Precompiled header](#precompiled-header).
 
 ### PRIVATE | PUBLIC | INTERFACE
 
@@ -302,7 +300,7 @@ add_library(p6::p6 ALIAS p6)
 
 People care about having a name with `::` because `target_link_libraries()` can do many different things and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a `::` in the name that `target_link_libraries()` will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
 
-As far as the alias name goes, people have different conventions like `p6::p6`, `p6::core` *etc.* So pick one that you like.
+As far as the alias name goes, people have different conventions like `p6::p6`, `p6::core` *etc.* Pick one that you like.
 
 ## Going further
 
