@@ -5,7 +5,7 @@ slug: /lessons
 
 ## Forewords
 
-*Welcome to the best class of your life !*
+*Welcome to this class!*
 
 We will only assume some beginner-level experience in programming with C++ or a similar language like C#, Java, C, Javascript, *etc.*, and will guide you from your current level to being a competent engineer who loves coding and creates amazing software 🥳.
 
@@ -31,11 +31,11 @@ These lessons are not meant to be read one after the other. Instead look at [the
 
 ## Evaluation
 
-The evaluation is skill based : you will find [a long list of skills that I deem important](./students), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
+The evaluation is skill based: you will find [a long list of skills that I deem important](./students), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
 
 ### Rationale
 
-I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at his/her own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require [a self-evaluation](./students#self-evaluation) that I will then use to know how much progress you made and reward that.
+I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at their own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require [a self-evaluation](./students#self-evaluation) that I will then use to know how much progress you made and reward that.
 
 The extra investment will also be rewarded. I expect that the dedicated classroom hours will be enough for you to get meaningfull value out of this class (and a good grade), but if you want or need to invest more time I will make sure to take that into account too.
 
@@ -43,6 +43,6 @@ My hope is that you won't spend too much time working outside of the class if th
 
 ## Give me feedback
 
-I tried my best to deliver the best learning experience possible. I am still a novice teacher though (and even if I were experienced, one never runs out of things to learn anyways). So your feedback is more than welcome and I will happily improve my classes with your help !
+I tried my best to deliver the best learning experience possible. I am still a novice teacher though (and even if I were experienced, one never runs out of things to learn anyways). So your feedback is more than welcome and I will happily improve my classes with your help!
 
 To do so, feel free to reach out to me directly or [raise an issue on GitHub](https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues).

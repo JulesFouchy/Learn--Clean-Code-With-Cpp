@@ -1,7 +1,7 @@
 # Tools
 
 :::tip Brief
-Here are a few awesome tools that will help you as you write or learn C++.
+Here are a few awesome tools that will help you as you write or learn C++
 :::
 
 [C++ Insights](https://cppinsights.io/): See what kind of code the compiler is generating from your high-level code.
