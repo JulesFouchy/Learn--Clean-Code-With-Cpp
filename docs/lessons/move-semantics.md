@@ -38,6 +38,11 @@ This is the power of *move*: the compiler optimizes your *copy* when it knows th
 
 So, do you need to think about *move* all the time? Luckily, no! It will happen automatically in places where it can. Just remember that having a function that returns a vector by value is not a bad thing because the copy will be optimized into a move, which is cheap.
 
+
+:::info Another explanation
+[The Cherno, *Move Semantics in C++*](https://youtu.be/ehMg6zvXuMY) (13min)
+:::
+
 ## Implementing move for your own classes
 
 For most of your classes a move constructor will be defined automatically (just like the copy constructor) and you have nothing to do.
