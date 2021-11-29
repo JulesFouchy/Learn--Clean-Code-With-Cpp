@@ -310,4 +310,6 @@ As far as the alias name goes, people have different conventions like `p6::p6`, 
 [Henry Schreiner, *Modern CMake*](https://cliutils.gitlab.io/modern-cmake/) (short online book)
 
 [Stephen Kelly, *Embracing Modern CMake*](https://youtu.be/mn1ZnO3MtVk) (1h)
+
+[Jason Turner, *C++ Weekly - Ep 208 - The Ultimate CMake / C++ Quick Start*](https://youtu.be/YbgH7yat-Jo) (30min)
 :::
