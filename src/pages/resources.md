@@ -30,9 +30,11 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks](https://youtu.be/FyCYva9DhsI) *Kevlin Henney*
 
-[Using Types Effectively](https://www.youtube.com/watch?v=ojZbFIQSdl8) *Ben Deane*
-
 [Free Your Functions!](https://www.youtube.com/watch?v=WLDT1lDOsb4) *Klaus Iglberger*
+
+[SOLID, Revisited](https://youtu.be/glYq-dvgby4) *Tony Van Eerd*
+
+[Using Types Effectively](https://www.youtube.com/watch?v=ojZbFIQSdl8) *Ben Deane*
 
 [Declarative Control Flow](https://www.youtube.com/watch?v=WjTrfoiB0MQ) *Andrei Alexandrescu*
 
