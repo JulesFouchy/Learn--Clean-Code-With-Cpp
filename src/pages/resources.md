@@ -57,3 +57,5 @@ Here are a lot of awesome resources that will help you in your learning journey.
 [Literate Programming in the Large](https://www.youtube.com/watch?v=Av0PQDVTP4A) *Timothy Daly*
 
 [Patterns and Techniques Used in the Houdini 3D Graphics Application](https://youtu.be/2YXwg0n9e7E) *Mark Elendt*
+
+[Don't constexpr All the Things](https://youtu.be/NNU6cbG96M4) *David Sankel*
