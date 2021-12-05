@@ -6,3 +6,6 @@ order: 1
 tags:
     - Architecture
 ---
+
+Small classes, small functions
+https://youtu.be/glYq-dvgby4
