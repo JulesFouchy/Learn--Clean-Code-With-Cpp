@@ -16,3 +16,5 @@ What really bothers me with ```friend``` is that it is *all or nothing*. I wish 
 
 
 => Useless since C++20 and modules, which allow us a much finer grain control over visibility
+
+[PassKey idiom](https://youtu.be/zvWCgiVvpPU)
