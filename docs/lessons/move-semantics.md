@@ -147,4 +147,6 @@ Compilers can do other optimizations, but RVO is (currently) the only one that i
 TODO put a link to Klaus' conference when the CppCon 2021 is available on Youtube.
 <!-- [Klaus Iglberger] -->
 
+[Arthur O'Dwyer,* Return Value Optimization: Harder Than It Looks*](https://youtu.be/hA1WNtNyNbo), Details about RVO (25min)
+
 :::
