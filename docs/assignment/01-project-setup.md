@@ -17,5 +17,3 @@ static constexpr int MAX = 100; // It is as efficient as `#define` but has the b
 ## Project template
 
 I would recommend you use [this template](https://github.com/JulesFouchy/Simple-Cpp-Setup). It is a minimalist C++ project that uses CMake. It also sets up a few tools that will be useful to you. Read its readme to learn how to build it! (NB: I don't recommend to use the dev container for this project because we will do some graphics stuff later on).
-
-[*Here is the commit where I copied the template*](https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices--Project/tree/35483a5d889d855812f5aefcbef246bb631fe87f).
