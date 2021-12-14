@@ -162,7 +162,7 @@ function(copy_folder FOLDER_NAME)
 endfunction()
 ```
 
-:::warn
+:::caution
 You will need to add `cmake_policy(SET CMP0112 NEW)` after `cmake_minimum_required` in your *CMakeLists.txt* because this code doesn't work without this policy which fixes a "bug" in CMake.
 :::
 
