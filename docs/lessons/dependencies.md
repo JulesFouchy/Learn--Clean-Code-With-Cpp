@@ -69,11 +69,9 @@ For example if your dependency lives in a ```std::vector```, and the vector gets
 
 An interesting exception to the *do not store your dependencies* rule is if you need your dependency in the destructor of your class (or in an operator like ```+=```) : in those cases, you cannot pass any arguments ! Therefore you have no other choice but to store the dependency inside the class (or have it global but that would be even worse !)
 
-In such cases[^2], I would recommend storing a pointer rather than a reference (except if your type is non-copyable anyways) because pointers have the appropriate copy semantics for the cases where we store a reference to a "global and unique" dependency (aka for cases where we are not owning the pointed object).
+In such cases[^2], you can use a [`std::reference_wrapper`](https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper): it will act like a reference, but still be copyable.
 
-One problem though is that pointers can be ```nullptr``` : if this isn't desired you should consider using ```gsl::not_null``` from [the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ri-nullptr).
-
-[^2]: I met such a case when creating wrapper classes for Vulkan resources : they need a reference to the device to be destructed, so I had to store a handle to the device in each wrapper class.
+[^2]: I met such a case when creating wrapper classes for Vulkan resources: they need a reference to the device to be destructed, so I had to store a handle to the device in each wrapper class.
 
 ### Dependency Inversion (the D of SOLID)
 
