@@ -61,3 +61,5 @@ Here are a lot of awesome resources that will help you in your learning journey.
 [Patterns and Techniques Used in the Houdini 3D Graphics Application](https://youtu.be/2YXwg0n9e7E) *Mark Elendt*
 
 [Don't constexpr All the Things](https://youtu.be/NNU6cbG96M4) *David Sankel*
+
+[C++ Class Natures in Their Canonical Form and How to Find Them](https://youtu.be/PedVlux_p-k) *Peter Sommerlad*
