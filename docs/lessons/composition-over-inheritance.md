@@ -6,3 +6,5 @@ order: 3
 tags:
     - Architecture
 ---
+
+https://youtu.be/Rs9ykyFlebU?t=2177
