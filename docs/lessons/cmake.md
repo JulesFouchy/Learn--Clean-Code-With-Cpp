@@ -162,6 +162,10 @@ function(copy_folder FOLDER_NAME)
 endfunction()
 ```
 
+:::warn
+You will need to add `cmake_policy(SET CMP0112 NEW)` after `cmake_minimum_required` in your *CMakeLists.txt* because this code doesn't work without this policy which fixes a "bug" in CMake.
+:::
+
 `add_custom_target()` adds a "fake" target whose only purpose is to run a command when it is built. In our case that command is `${CMAKE_COMMAND} -E copy_directory` which is a CMake command that copies a directory (you can use `copy` instead if you want to copy a single file). Finally we tell CMake that our main target depends on that "fake" target with `add_dependencies()`. This means that whenever our main target is built, the "fake" target will also be built, and therefore the command will be run.
 
 NB: In this example we copy from `${CMAKE_SOURCE_DIR}` (a.k.a. the root directory of our project, where our main *CMakeLists.txt* lives)
