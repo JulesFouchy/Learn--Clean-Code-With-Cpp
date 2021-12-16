@@ -287,8 +287,8 @@ This is the visibility of the requirements set with `target_xxx()`.
  ```
  This can also be used if the user-facing headers are different from the private ones (e.g. if you have many headers but only want users to see a `libname.hpp` header that includes all the other ones):
  ```cmake
- target_include_directories(libname INTERFACE include) # The include folder is only used by users
- target_include_directories(libname PRIVATE private-headers) # All the headers that we use internally are in private-headers
+ target_include_directories(libname INTERFACE include) # The include folder is only used by users and only contains libname.hpp
+ target_include_directories(libname PRIVATE src) # All the headers that we use internally are in src (alongside the .cpp)
  ```
 
 :::tip
