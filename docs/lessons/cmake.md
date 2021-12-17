@@ -156,10 +156,11 @@ function(copy_file TARGET FILE)
         set(FILE_RELATIVE_PATH ${FILE})
     endif()
     # Add the copy command
+    set(DUMMY_OUTPUT_NAME ${CMAKE_CURRENT_BINARY_DIR}/DUMMY_${FILE_RELATIVE_PATH}_${TARGET})
     add_custom_command(
         COMMENT "Copying \"${FILE_RELATIVE_PATH}\""
-        OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/DUMMY_${FILE_RELATIVE_PATH}
-        COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_CURRENT_BINARY_DIR}/DUMMY_${FILE_RELATIVE_PATH} # Create a dummy directory that CMake will use as a timestamp reference to know if the actual file has changed, when it checks for the OUTPUT (unfortunately OUTPUT can't use a generator expression so we can't use our actual output file as the OUTPUT)
+        OUTPUT ${DUMMY_OUTPUT_NAME}
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${DUMMY_OUTPUT_NAME} # Create a dummy directory that CMake will use as a timestamp reference to know if the actual file has changed, when it checks for the OUTPUT (unfortunately OUTPUT can't use a generator expression so we can't use our actual output file as the OUTPUT)
         COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/${FILE_RELATIVE_PATH} ${OUT_DIR}/${FILE_RELATIVE_PATH} # Actual copy of the file to the destination
         MAIN_DEPENDENCY ${FILE}
     )
