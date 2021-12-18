@@ -4,7 +4,7 @@ benefit: 5
 easiness: 3
 order: 3
 tags:
-    - Dev Practices
+    - Tools
 ---
 
 There are a lot of bugs and bad coding habits that can be caught by tools. It can really help you a lot to improve the quality of your code!

@@ -4,9 +4,13 @@ benefit: 5
 easiness: 3
 order: 1
 tags:
-    - Dev Practices
+    - Tools
 ---
 
-As soon as you have made meaningful progress and the code compiles, make a commit !
+*git* is probably the most important tool of all in your programmer's toolbelt! It is a giant history of all the changes you ever made to your code. It is also very powerful to work with others and get organized.
 
-Try to avoid long lists of *unrelated* changes in a single commit.
+## Good practices
+
+As soon as you have made meaningful progress and the code compiles, make a commit!
+
+Try to avoid putting *unrelated* changes in the same commit.

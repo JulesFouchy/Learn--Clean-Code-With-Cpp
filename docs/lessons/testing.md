@@ -10,3 +10,13 @@ tags:
 https://youtu.be/ta3S8CRN2TM?t=1306
 
 https://youtu.be/u5senBJUkPc
+
+## UnitTesting libraries
+
+There a few out there. I personaly use and recommend [doctest](https://github.com/doctest/doctest).
+
+## Going further
+
+:::info Going further
+[Phil Nash, *Test Driven C++*](https://youtu.be/N2gTxeIHMP0) (1h) About TDD 
+:::

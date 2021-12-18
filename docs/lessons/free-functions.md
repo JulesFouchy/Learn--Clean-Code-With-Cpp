@@ -18,7 +18,7 @@ Free functions are also very easy to reuse, since they are not burried inside an
 <!-- I don't know how much you are used to Object-Oriented Programming, using classes and methods ; but I know that when I personnaly started learning these topics, I then used them everywhere, every function has to be encapsulated in a class. -->
 
 :::info Going further
-[David Sankel, *Building Software Capital: How to write the highest quality code and why*](https://youtu.be/ta3S8CRN2TM?t=2159) (1m)
+[David Sankel, *Building Software Capital: How to write the highest quality code and why*](https://youtu.be/ta3S8CRN2TM?t=2159) (1min)
 
 [Klaus Iglberger, *Free Your Functions!*](https://youtu.be/WLDT1lDOsb4) (1h)
 :::
