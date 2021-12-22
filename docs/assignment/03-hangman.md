@@ -38,7 +38,7 @@ We will first write the global logic of our game, and will then implement each f
 pick_a_word_to_guess();
 while (player_is_alive() && !player_has_won()) {
     show_number_of_lives();
-    show_word_to_guess_with_holes();
+    show_word_to_guess_with_missing_letters();
     const auto guess = get_char_from_user();
     if (word_to_guess_contains(guess)) {
         mark_as_guessed(guess);
@@ -51,7 +51,7 @@ if (player_has_won()) {
     show_congrats_message();
 }
 else {
-    show_death_message();
+    show_defeat_message();
 }
 ```
 It should look like that in the end (even though we will probably have to modify it a bit as we write our code)
@@ -138,5 +138,174 @@ The signature of this function will be
 bool player_is_alive(int number_of_lives) {
     // TODO
 }
+```
 
 <CommitLink hash="39784edef20238fbd646058d9ca63fc1928314eb"/>
+
+## player_has_won()
+
+This one is a bit tricky ; we need to decide how we are gonna store the letters that the user has guessed in order to know if has won. We have many choices of implementation. We can trade off simplicity of the code for performance if we want to. But since the words are always gonna be small (less than 1000 characters, obviously) performance should not be a concern and we are gonna aim for the simplest code possible. I thing of vector of bools will work great, indicating for each letter of the word if it has been found.
+
+```cpp
+bool player_has_won(const std::vector<bool>& letters_guessed) {
+    // TODO
+}
+```
+
+We need to know if the vector contains at least one false. You might be tempted to use a loop, but you can also use an algorithm from the standard library and do this in one line! Go search on the Internet how you can do that 😉<br/>
+NB: several algorithms can be used to achieve this result and it doesn't really matter which one you pick.
+
+<CommitLink hash="1f853409ad2bd1f71d198f394f5a9d4da2616e67"/>
+
+## show_word_to_guess_with_missing_letters()
+
+We need to output something like *c \_ \_ e*
+
+```cpp
+void show_word_to_guess_with_missing_letters(const std::string& word, const std::vector<bool>& letters_guessed) {
+    // TODO
+}
+```
+
+<CommitLink hash="a7a27b74ad1af8fa89c5e1a67abe5178ca7af6ef"/>
+
+## word_contains()
+
+```cpp
+bool word_contains(char letter, std::string_view word) {
+    // TODO
+}
+```
+
+:::tip What is string_view?
+It is [a new type from C++17](https://en.cppreference.com/w/cpp/string/basic_string_view). It is a non-owning reference to either a `const char*` or a `std::string`.
+
+It has many advantages: providing the same API as `std::string` for `const char*` without having to pay the cost of constructing a `std::string`, working with `const char*` and `std::string` as if they were the same type, *etc.*
+
+Just remember that it is non-owning, like a reference: it is great for passing parameters around, but if you need to store it as a long-lasting variable you probably still need to use a `std::string`.
+
+[Read the lesson](../lessons/string-and-string-view)
+:::
+
+(**NB:** there might be a one-liner solution available in the standard library! Go search for it 😉)
+
+<CommitLink hash="f4d32f3a93cfb3455cd977c41e99b7956b51cd08"/>
+
+## mark_as_guessed()
+
+```cpp
+void mark_as_guessed(char guessed_letter, std::vector<bool>& letters_guessed, std::string_view word_to_guess) {
+    // TODO
+}
+```
+
+Again, try to use an algorithm instead of a raw loop.
+
+<CommitLink hash="bf39accdad3e94b34caf912a9a50993e61daae10"/>
+
+## remove_one_life()
+
+```cpp
+void remove_one_life(int& lives_count) {
+    // TODO
+}
+```
+
+<CommitLink hash="f2700eb415a3c19201dd5c6ba79553ca12d20a33"/>
+
+## show_congrats_message()
+
+```cpp
+void show_congrats_message(std::string_view word_to_guess) {
+    // TODO
+}
+```
+
+<CommitLink hash="905a59b56114569a5c97736f25c5c29a2af29317"/>
+
+## show_defeat_message()
+
+```cpp
+void show_defeat_message(std::string_view word_to_guess) {
+    // TODO
+}
+```
+
+<CommitLink hash="6b926baddbe8139f406bfc70f3d768e561434ce3"/>
+
+## Assembling it all
+
+Now we can go back to our pseudo-code and implement it. The final code might be a bit different because we did not consider the parameters we had to pass to each function, but the structure of the code is still the same!
+
+```cpp
+void play_hangman() {
+    // TODO: adapt the code below to make it work
+    pick_a_word_to_guess();
+    while (player_is_alive() && !player_has_won()) {
+        show_number_of_lives();
+        show_word_to_guess_with_missing_letters();
+        const auto guess = get_char_from_user();
+        if (word_to_guess_contains(guess)) {
+            mark_as_guessed(guess);
+        }
+        else {
+            remove_one_life();
+        }
+    }
+    if (player_has_won()) {
+        show_congrats_message();
+    }
+    else {
+        show_defeat_message();
+    }
+}
+```
+
+<CommitLink hash="ab4f021e61f020e4be095532e1258e021cd493b6"/>
+
+## Refactoring
+
+Now, as we did for the previous game, we will move all this code into its file.
+
+<CommitLink hash="1fedb688994be92d5e787f733e685611973c7256"/>
+
+## Bonus
+
+### Enforcing invariants with a class
+
+You noticed that in several functions we had to `assert(word_to_guess.size() == letters_guessed.size())`. This is because from the point of view of the function their is no guarantee that this invariant has been enforced. But because of that we end up checking the invariant many times, which is a waste of effort and requires more code (and code duplication!).
+
+So, how can we improve this situation? Well, classes are made exactly for that reason (and only that reason): *enforcing invariants*!
+
+```cpp
+class WordWithMissingLetters {
+public:
+    WordWithMissingLetters(std::string_view word)
+        : _word{word}
+        , _letters_revealed(word.size(), false) // The invariant is enforced by the constructor here, and no public function of this class allows users to break the invariant, so we can guarantee that it will be preserved!
+    {}
+
+    // TODO: implement the methods required by the outside world
+
+private:
+    std::string _word;
+    std::vector<bool> _letters_revealed;
+};
+```
+
+Now think about which of the functions we wrote deserve (or need) to be members of this class? TIP: try to move as few functions as possible inside the class. Only those that need access to the private details of the class must (and should) be moved in the class. Because each member function has to make sure that the invariant is preserved, whereas free functions using this class can rely on the fact that the invariant is enforced by the class.
+
+You will also probably need to add some getters.
+
+<CommitLink hash="3972c14c04b0a88da9a08b7a27625cbe3127bc8b"/><br/><br/>
+
+:::tip
+Designing a good class requires time and thinking, but it can simplify the rest of your code later down the road, and makes your code easier to reason about.
+
+**_Small_ classes that do their job well and enforce one or two invariants are all the rage!**<br/>
+Read [Design Great Classes](../lessons/design-great-classes)
+:::
+
+:::info Bonus
+Can you find a better name for this class? The current name is great because it is descriptive, but it is a bit long. Can you find a shorter name that is still as clear as the current one?
+:::
