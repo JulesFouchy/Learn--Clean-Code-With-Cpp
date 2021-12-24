@@ -13,6 +13,10 @@ https://youtu.be/u5senBJUkPc
 
 https://youtu.be/cfh6ZrA19r4?t=983
 
+## Unit Tests
+
+For example I wrote tests for the code that computes your grades: TODO PUT A LINK
+
 ## UnitTesting libraries
 
 There a few out there. I personaly use and recommend [doctest](https://github.com/doctest/doctest).
