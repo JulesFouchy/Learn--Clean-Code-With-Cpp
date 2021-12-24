@@ -12,6 +12,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   plugins: [
+    '@docusaurus/plugin-ideal-image',
     './Thoughts-on-Teaching/gather-skills-plugin',
     [
       require.resolve('docusaurus-lunr-search'), {
