@@ -34,3 +34,4 @@ while (player_is_alive() && !player_has_won()) {
 It might feel silly to add tests to a code that we already know to work. And even though it kinda is, there is still a lot of benefits to writing tests afterwards: 
 common misconception: the main goal of tests is not to prove that the code you just wrote is correct (we trust you on that, even though tests can help you writing your code), they are mainly here to make sure that whenever anyone changes the code, it **remains** correct!
 (But if you can write the tests as you write the code it is even better because they will help you write and debug your code, and you are less likely to forget to test an edge case)
+And since we will modify our *Hangman* in the next section, now is a good time to add tests to it.

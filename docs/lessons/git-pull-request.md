@@ -4,7 +4,7 @@ benefit: 3
 easiness: 4
 order: 3
 tags:
-    - Dev Practices
+    - Git
 ---
 
 (also known as *merge requests* in GitLab)

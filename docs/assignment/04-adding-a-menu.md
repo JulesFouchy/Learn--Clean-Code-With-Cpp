@@ -46,3 +46,9 @@ Something that is a little annoying is that we have to make sure we don't mess u
 </details>
 
 <CommitLink hash="f63f3317faf40baa9ffbf1dadf3b066fe1065711"/>
+
+## Refactoring
+
+As usual, move the code to its own file in order to clean up *main.cpp*.
+
+<CommitLink hash="c0eb2ced7cfbd8c2d5b0e8a56549e5224b344c28"/>
