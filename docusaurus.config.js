@@ -1,125 +1,120 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const skill_priority =
-    require('./Thoughts-on-Teaching/evaluation/skill_priority')
+const lightCodeTheme = require("prism-react-renderer/themes/github")
+const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+
+const sidebarItemsGenerator = require("./sidebarItemsGenerator")
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'C++ and Dev Practices',
-  tagline: 'From 0️⃣ to 🦸',
-  url: 'https://julesfouchy.github.io/',
-  baseUrl: '/Learn--Cpp-And-Dev-Practices/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  title: "C++ and Dev Practices",
+  tagline: "From 0️⃣ to 🦸",
+  url: "https://julesfouchy.github.io/",
+  baseUrl: "/Learn--Cpp-And-Dev-Practices/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
   plugins: [
-    '@docusaurus/plugin-ideal-image',
-    './Thoughts-on-Teaching/gather-skills-plugin',
+    "@docusaurus/plugin-ideal-image",
+    "./Thoughts-on-Teaching/gather-skills-plugin",
     [
-      require.resolve('docusaurus-lunr-search'), {
-        excludeRoutes: [
-          'docs/students/**/*',
-          'docs/img/**/*',
-        ]
-      }
-    ]
+      require.resolve("docusaurus-lunr-search"),
+      {
+        excludeRoutes: ["docs/students/**/*", "docs/img/**/*"],
+      },
+    ],
   ],
-  favicon: 'img/favicon.ico',
-  organizationName: 'julesfouchy',
-  projectName: 'Learn--Cpp-And-Dev-Practices',
+  favicon: "img/favicon.ico",
+  organizationName: "julesfouchy",
+  projectName: "Learn--Cpp-And-Dev-Practices",
   themeConfig: {
     navbar: {
-      title: '',
+      title: "",
       logo: {
-        alt: 'Site Logo',
-        src: 'img/favicon-32x32.png',
+        alt: "Site Logo",
+        src: "img/favicon-32x32.png",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'lessons/introduction',
-          position: 'left',
-          label: 'Lessons',
+          type: "doc",
+          docId: "lessons/introduction",
+          position: "left",
+          label: "Lessons",
         },
-        {to: '/docs/students', label: 'Skills', position: 'left'},
-        {to: '/docs/assignment', label: 'Assignment', position: 'left'},
-        {to: '/resources', label: 'Resources', position: 'left'},
-        {to: '/tools', label: 'Tools', position: 'left'},
+        { to: "/docs/students", label: "Skills", position: "left" },
+        { to: "/docs/assignment", label: "Assignment", position: "left" },
+        { to: "/resources", label: "Resources", position: "left" },
+        { to: "/tools", label: "Tools", position: "left" },
         {
-          href:
-              'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
-          position: 'right',
-          className: 'header-issues-link',
-          'aria-label': 'GitHub issues',
+          href: "https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues",
+          position: "right",
+          className: "header-issues-link",
+          "aria-label": "GitHub issues",
         },
         {
-          href: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
+          href: "https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices",
+          position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Other classes',
+          title: "Other classes",
           items: [
             {
-              label: 'Generative Art',
-              to: 'https://julesfouchy.github.io/Learn--Generative-Art',
+              label: "Generative Art",
+              to: "https://julesfouchy.github.io/Learn--Generative-Art",
             },
             {
-              label: 'Math for Art and Computer Graphics',
-              to: 'https://julesfouchy.github.io/Learn--Math-for-Art-and-Computer-Graphics',
+              label: "Math for Art and Computer Graphics",
+              to: "https://julesfouchy.github.io/Learn--Math-for-Art-and-Computer-Graphics",
             },
           ],
         },
         {
-          title: 'Raise an issue !',
+          title: "Raise an issue !",
           items: [
             {
-              label: 'Ask a question',
-              to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+              label: "Ask a question",
+              to: "https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues",
             },
             {
-              label: 'Report a mistake',
-              to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+              label: "Report a mistake",
+              to: "https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues",
             },
             {
-              label: 'Give me feedback',
-              to: 'https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues',
+              label: "Give me feedback",
+              to: "https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices/issues",
             },
           ],
         },
         {
-          title: 'Contact Me',
+          title: "Contact Me",
           items: [
             {
-              label: 'Discord',
-              to: 'https://discord.com/users/372812330742054914',
+              label: "Discord",
+              to: "https://discord.com/users/372812330742054914",
             },
             {
-              label: 'E-Mail',
-              to: 'mailto:jules.fouchy@ntymail.com',
+              label: "E-Mail",
+              to: "mailto:jules.fouchy@ntymail.com",
             },
             {
-              label: 'GitHub',
-              to: 'https://github.com/JulesFouchy',
+              label: "GitHub",
+              to: "https://github.com/JulesFouchy",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${
-          new Date()
-              .getFullYear()}. Built with <a href="https://docusaurus.io/">Docusaurus</a>.
+      copyright: `Copyright © ${new Date().getFullYear()}. Built with <a href="https://docusaurus.io/">Docusaurus</a>.
               <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
               `,
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
-      additionalLanguages: ['cmake'],
+      additionalLanguages: ["cmake"],
     },
     // algolia: {
     //     apiKey: 'YOUR_API_KEY',
@@ -131,60 +126,21 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
-          sidebarItemsGenerator: async function(
-              {defaultSidebarItemsGenerator, ...args}) {
-            if (args.item.dirName === 'lessons') {
-              const res =
-                  args.docs
-                      // Keep only the files in "/lessons"
-                      .filter(doc => doc.sourceDirName === args.item.dirName)
-                      // Compute the priority
-                      .map(doc => ({
-                             ...doc,
-                             priority: skill_priority({
-                               benefit: doc.frontMatter.benefit,
-                               easiness: doc.frontMatter.easiness,
-                               order: doc.frontMatter.order,
-                             }),
-                           }))
-                      // Sort
-                      .sort((a, b) => {
-                        // Put introduction first
-                        if (a.frontMatter.title === 'Introduction') {
-                          return -1
-                        } else if (b.frontMatter.title === 'Introduction') {
-                          return 1
-                        }
-                        // Then sort by priority
-                        else {
-                          return b.priority - a.priority
-                        }
-                      })
-                      // Generate the item
-                      .map(doc => {
-                        return {
-                          type: 'doc', id: doc.id, prio: doc.priority,
-                        }
-                      })
-              return res
-            } else {
-              return await defaultSidebarItemsGenerator(args)
-            }
-          },
+          path: "docs",
+          routeBasePath: "docs",
+          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarItemsGenerator,
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-};
+}
