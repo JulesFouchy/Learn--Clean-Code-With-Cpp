@@ -13,6 +13,14 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   plugins: [
     './Thoughts-on-Teaching/gather-skills-plugin',
+    [
+      require.resolve('docusaurus-lunr-search'), {
+        excludeRoutes: [
+          'docs/students/**/*',
+          'docs/img/**/*',
+        ]
+      }
+    ]
   ],
   favicon: 'img/favicon.ico',
   organizationName: 'julesfouchy',
