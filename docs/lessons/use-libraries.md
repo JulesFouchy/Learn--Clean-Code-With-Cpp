@@ -13,7 +13,7 @@ Building from source means that anyone simply has to clone your project and is g
 
 I am not the only one with this opinion. [Titus](https://youtu.be/tISy7EJQPzI)
 
-To add a library to your project you can simply download the folder and copy it into your project, but a better practice is to use a [Git submodule](./submodules).
+To add a library to your project you can simply download the folder and copy it into your project, but a better practice is to use a [Git submodule](./git-submodules.md).
 
 ## Add them to your project with CMake
 
