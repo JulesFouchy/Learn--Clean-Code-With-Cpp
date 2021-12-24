@@ -1,3 +1,6 @@
 [submodule "Thoughts-on-Teaching"]
 	path = Thoughts-on-Teaching
 	url = https://github.com/JulesFouchy/Thoughts-on-Teaching
+[submodule "Teaching-Toolbox"]
+	path = Teaching-Toolbox
+	url = https://github.com/JulesFouchy/Teaching-Toolbox
