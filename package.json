@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "cd Teaching-Toolbox/website && npm start"
+    "start": "cd Teaching-Toolbox/website && npm start",
+    "build": "cd Teaching-Toolbox/website && npm run build",
+    "serve": "cd Teaching-Toolbox/website && npm run serve"
   },
   "devDependencies": {},
   "author": "",
