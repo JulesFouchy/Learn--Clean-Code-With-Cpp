@@ -24,7 +24,7 @@ module.exports = /*async*/ () => {
   ]
   return {
     github_account: "JulesFouchy",
-    repo: "/Learn--Cpp-And-Dev-Practices",
+    repo: "Learn--Cpp-And-Dev-Practices",
     title: "C++ and Dev Practices",
     docusaurus_config: {
       tagline: "From 0️⃣ to 🦸",
