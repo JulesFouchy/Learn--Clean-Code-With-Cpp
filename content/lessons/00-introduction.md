@@ -25,17 +25,17 @@ Although this class makes use of C++, most of its content will be applicable to 
  
  I believe this is the best way for you to learn, for practicing is when the actual learning happens. Moreover, giving lectures would imply that you are all at the same point in your learning journey and are all ready to learn the same things, which is definitely never true, not for any single group of students larger than 2.
 
-These lessons are not meant to be read one after the other. Instead look at [the list of skills](./students) and pick one (or a few) that seem interesting to you ; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat.
+These lessons are not meant to be read one after the other. Instead look at [the list of lessons](./progress) and pick one (or a few) that seem interesting to you ; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat.
 
  Note that the lessons are sorted by order of importance so it makes sense to somewhat follow the order, even though this is not a strict one.
 
 ## Evaluation
 
-The evaluation is skill based: you will find [a long list of skills that I deem important](./students), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
+The evaluation is skill based: you will find [a long list of skills that I deem important](./progress), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
 
 ### Rationale
 
-I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at their own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require [a self-evaluation](./students#self-evaluation) that I will then use to know how much progress you made and reward that.
+I must acknowledge that you all have very different levels coming into this class, so I must give everyone the opportunity to make progress at their own pace. This means that the evaluation is not absolute, but relative to your level at the beginning of the semester. This will require [a self-evaluation](./progress#self-evaluation) that I will then use to know how much progress you made and reward that.
 
 The extra investment will also be rewarded. I expect that the dedicated classroom hours will be enough for you to get meaningfull value out of this class (and a good grade), but if you want or need to invest more time I will make sure to take that into account too.
 
