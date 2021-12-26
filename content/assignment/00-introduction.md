@@ -8,7 +8,7 @@ slug: /assignment
 > Que ce soit tes sources ou ton Wi-Fi, stp passe-moi le code ! 
 – [*MC-Risson*](https://www.youtube.com/watch?v=59lC-XnPgBE&ab_channel=LaCineTech)
 
-In order to evaluate you, all I need is to see some code you wrote in order for me to tell which skills you mastered.
+In order to evaluate you, all I need is to see some code you wrote in order for me to tell which lessons you mastered.
 
 **This means that the exact project you will be working on is up to you**.
 
@@ -18,9 +18,9 @@ The main difference will be that I won't be able to provide you with guided step
 
 ## Submitting your work
 
-I will be looking at your code regularly to give you feedback and start checking the skills that you are learning.
+I will be looking at your code regularly to give you feedback and start checking the lessons that you are learning.
 
-In order for me to do so, all of you must publish you work on a public Git repository (which is good practice anyways, and will be the number one skill I will be looking at).
+In order for me to do so, all of you must publish you work on a public Git repository (which is good practice anyways, and will be the number one lesson I will be looking at).
 
 You can use GitHub, GitLab or whatever you are used to using. Just send me a link to the relevant repository *now* (or as soon as you start working on the project).
 
@@ -28,7 +28,7 @@ You can use GitHub, GitLab or whatever you are used to using. Just send me a lin
 
 In terms of invested time I won't ask you more than can fit during the class sessions, i.e. 24 hours in total this semester. This means that hopefully you won't have to work (too much) outside of class on your spare time.
 
-Please note that *I will only be evaluating the quality of your code, not the state of the end product*. This means that it doesn't matter if you don't have time to finish the project you set out to do! Your grade will be solely based on the skills you successfully applied in the project. So no worries please 😎.
+Please note that *I will only be evaluating the quality of your code, not the state of the end product*. This means that it doesn't matter if you don't have time to finish the project you set out to do! Your grade will be solely based on the lessons you successfully applied in the project. So no worries please 😎.
 
 ## Option#1: Rolling your own project
 

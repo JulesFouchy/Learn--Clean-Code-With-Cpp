@@ -31,7 +31,7 @@ These lessons are not meant to be read one after the other. Instead look at [the
 
 ## Evaluation
 
-The evaluation is skill based: you will find [a long list of skills that I deem important](./progress), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
+The evaluation is skill based: you will find [a long list of lessons that I deem important](./progress), and you will be graded on how much you learn during this semester. Check out the [assignment](./assignment) section to learn more about what you will have to submit.
 
 ### Rationale
 
