@@ -2,6 +2,8 @@
 title: Setting up a project
 ---
 
+We will be making a program that allows you to play a few games, all in one project. This will force you to reuse code and maintain the hygiene of your codebase.
+
 ## Git
 
 First things first, let's create **a Git repo**. If you are not used to using Git, read [the associated lesson](../lessons/use-git).
