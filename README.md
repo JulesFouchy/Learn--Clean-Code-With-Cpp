@@ -49,3 +49,10 @@ Add a way to add bonus points : to reward the investment, the questions asked, t
 Move the reusable code to Thoughts-on-Teaching (which should be renamed Teaching-Toolbox)
 
 Fix the errors in the browser console
+
+TODO make a component to link to a lesson; otherwise we suplicate knowledge : `[*Don't Repeat Yourself*](../lessons/dont-repeat-yourself)`
+
+TODO 
+- move grader outside of website (and update link in Progress intro to the grader.js)
+- remove ThoughtsonTeaching
+- green and blue grades to see the actual one and the hypotheticla one

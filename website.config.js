@@ -32,13 +32,8 @@ module.exports = /*async*/ () => {
     },
     main_page_link: "lessons",
     navbar_items: [
-      {
-        type: "doc",
-        docId: "lessons/introduction",
-        position: "left",
-        label: "Lessons",
-      },
-      { to: "/students", label: "Skills", position: "left" },
+      { to: "/lessons", label: "Lessons", position: "left" },
+      { to: "/progress", label: "Progress", position: "left" },
       { to: "/assignment", label: "Assignment", position: "left" },
       { to: "/resources", label: "Resources", position: "left" },
       { to: "/tools", label: "Tools", position: "left" },
