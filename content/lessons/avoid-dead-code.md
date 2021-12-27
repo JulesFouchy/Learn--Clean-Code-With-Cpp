@@ -1,5 +1,5 @@
 ---
-title : Avoid dead code
+title: Avoid dead code
 benefit: 2
 easiness: 3
 order: 3

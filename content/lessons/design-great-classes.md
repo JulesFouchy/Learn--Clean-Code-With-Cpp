@@ -1,5 +1,5 @@
 ---
-title : Design Great Classes
+title: Design Great Classes
 benefit: 5
 easiness: 3
 order: 2

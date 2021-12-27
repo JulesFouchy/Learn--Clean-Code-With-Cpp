@@ -1,5 +1,5 @@
 ---
-title : std::optional
+title: std::optional
 benefit: 4
 easiness: 4
 order: 2

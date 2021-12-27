@@ -1,5 +1,5 @@
 ---
-title : string and string_view
+title: std::string and std::string_view
 benefit: 4
 easiness: 4
 order: 2

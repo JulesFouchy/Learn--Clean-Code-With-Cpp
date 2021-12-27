@@ -1,5 +1,5 @@
 ---
-title : std::variant
+title: std::variant
 benefit: 3
 easiness: 3
 order: 3

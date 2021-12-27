@@ -1,5 +1,5 @@
 ---
-title : Write small functions
+title: Write small functions
 benefit: 5
 easiness: 3
 order: 2

@@ -1,5 +1,5 @@
 ---
-title : C++ casts
+title: C++ casts
 benefit: 3
 easiness: 3
 order: 2

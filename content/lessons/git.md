@@ -1,10 +1,11 @@
 ---
-title : Use Git
+title: Use Git
 benefit: 5
 easiness: 3
 order: 1
 tags:
     - Tools
+    - Git
 ---
 
 *git* is probably the most important tool of all in your programmer's toolbelt! It is a giant history of all the changes you ever made to your code. It is also very powerful to work with others and get organized.

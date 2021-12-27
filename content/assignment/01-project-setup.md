@@ -6,7 +6,7 @@ We will be making a program that allows you to play a few games, all in one proj
 
 ## Git
 
-First things first, let's create **a Git repo**. If you are not used to using Git, read [the associated lesson](../lessons/use-git).
+First things first, let's create **a Git repo**. If you are not used to using Git, read [the associated lesson](../lessons/git).
 
 I also created a repo that you will be able to use as a reference / solution as you work on the project. I will regularly link to commits that correspond to the current exercise, and you can also check out the [commit history](https://github.com/JulesFouchy/Learn--Cpp-And-Dev-Practices--Project/commits/main).
 

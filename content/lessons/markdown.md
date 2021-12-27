@@ -1,5 +1,5 @@
 ---
-title : Markdown
+title: Markdown
 benefit: 3
 easiness: 5
 order: 2

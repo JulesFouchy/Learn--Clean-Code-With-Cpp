@@ -1,5 +1,5 @@
 ---
-title : Type erasure
+title: Type erasure
 benefit: 4
 easiness: 2
 order: 4

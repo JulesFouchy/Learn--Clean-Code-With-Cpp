@@ -1,5 +1,5 @@
 ---
-title : CMake
+title: CMake
 benefit: 3
 easiness: 3
 order: 2

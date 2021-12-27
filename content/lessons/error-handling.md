@@ -1,5 +1,5 @@
 ---
-title : Error Handling
+title: Error Handling
 benefit: 3
 easiness: 4
 order: 3

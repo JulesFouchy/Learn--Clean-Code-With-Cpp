@@ -1,5 +1,5 @@
 ---
-title : Single Source of Truth
+title: Single Source of Truth
 benefit: 4
 easiness: 4
 order: 3

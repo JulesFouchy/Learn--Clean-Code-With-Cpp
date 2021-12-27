@@ -1,5 +1,5 @@
 ---
-title : Stack vs Heap
+title: Stack vs Heap
 benefit: 5
 easiness: 3
 order: 2

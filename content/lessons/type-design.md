@@ -1,5 +1,5 @@
 ---
-title : Type design
+title: Type design
 benefit: 5
 easiness: 2
 order: 3

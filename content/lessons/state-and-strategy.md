@@ -1,5 +1,5 @@
 ---
-title : State and Strategy
+title: State and Strategy
 benefit: 3
 easiness: 3
 order: 3

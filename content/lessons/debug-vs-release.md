@@ -1,5 +1,5 @@
 ---
-title : Debug vs Release
+title: Debug vs Release
 benefit: 3
 easiness: 5
 order: 2

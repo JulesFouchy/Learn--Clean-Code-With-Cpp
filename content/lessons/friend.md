@@ -1,5 +1,5 @@
 ---
-title : friend
+title: friend
 benefit: 1
 easiness: 5
 order: 4

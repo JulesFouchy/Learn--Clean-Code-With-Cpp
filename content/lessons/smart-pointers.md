@@ -1,5 +1,5 @@
 ---
-title : Smart Pointers
+title: Smart Pointers
 benefit: 3
 easiness: 5
 order: 2

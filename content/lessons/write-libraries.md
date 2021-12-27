@@ -1,5 +1,5 @@
 ---
-title : Write libraries
+title: Write libraries
 benefit: 5
 easiness: 3
 order: 3

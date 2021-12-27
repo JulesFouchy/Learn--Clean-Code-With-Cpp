@@ -1,5 +1,5 @@
 ---
-title : Polymorphism
+title: Polymorphism
 benefit: 3
 easiness: 2
 order: 3

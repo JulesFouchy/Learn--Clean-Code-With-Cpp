@@ -1,5 +1,5 @@
 ---
-title : Advanced git features
+title: Advanced git features
 benefit: 3
 easiness: 3
 order: 3
@@ -19,3 +19,5 @@ Like amend, but more powerful
 :::caution
 Don't amend or rebase if someone has already pulled your inital commit and starting working on top of it! It will mess up the Git history and merging will be **impossible**.
 :::
+
+## Stash

@@ -1,5 +1,5 @@
 ---
-title : The Rule of 5
+title: The Rule of 5
 benefit: 3
 easiness: 3
 order: 4

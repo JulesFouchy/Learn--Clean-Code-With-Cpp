@@ -1,5 +1,5 @@
 ---
-title : Dear ImGui
+title: Dear ImGui
 benefit: 5
 easiness: 2
 order: 3

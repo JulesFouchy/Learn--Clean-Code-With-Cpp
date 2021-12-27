@@ -1,5 +1,5 @@
 ---
-title : Designated Initializers
+title: Designated Initializers
 benefit: 4
 easiness: 5
 order: 3

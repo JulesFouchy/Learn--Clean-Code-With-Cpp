@@ -1,5 +1,5 @@
 ---
-title : Trailing return type
+title: Trailing return type
 benefit: 2
 easiness: 5
 order: 3

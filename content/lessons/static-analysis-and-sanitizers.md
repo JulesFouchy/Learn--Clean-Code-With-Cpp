@@ -1,5 +1,5 @@
 ---
-title : Static analysis and Sanitizers
+title: Static analysis and Sanitizers
 benefit: 5
 easiness: 3
 order: 3

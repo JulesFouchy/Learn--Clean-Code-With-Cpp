@@ -1,5 +1,5 @@
 ---
-title : wasm and electron
+title: wasm and electron
 benefit: 4
 easiness: 2
 order: 4

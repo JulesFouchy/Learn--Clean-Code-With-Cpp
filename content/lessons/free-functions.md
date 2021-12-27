@@ -1,5 +1,5 @@
 ---
-title : Prefer free functions
+title: Prefer free functions
 benefit: 5
 easiness: 3
 order: 3

@@ -1,5 +1,5 @@
 ---
-title : Strong Typing
+title: Strong Typing
 benefit: 4
 easiness: 4
 order: 3

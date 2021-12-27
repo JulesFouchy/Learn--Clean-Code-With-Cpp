@@ -1,5 +1,5 @@
 ---
-title : Use a debugger
+title: Use a debugger
 benefit: 5
 easiness: 5
 order: 1

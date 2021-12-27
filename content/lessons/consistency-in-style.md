@@ -1,5 +1,5 @@
 ---
-title : Consistency in style
+title: Consistency in style
 benefit: 3
 easiness: 5
 order: 1

@@ -1,5 +1,5 @@
 ---
-title : Scope guard
+title: Scope guard
 benefit: 3
 easiness: 4
 order: 4

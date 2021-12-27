@@ -1,5 +1,5 @@
 ---
-title : auto
+title: auto
 benefit: 4
 easiness: 5
 order: 2

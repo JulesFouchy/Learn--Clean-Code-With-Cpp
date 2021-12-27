@@ -1,5 +1,5 @@
 ---
-title : Range-based for loop
+title: Range-based for loop
 benefit: 3
 easiness: 5
 order: 2

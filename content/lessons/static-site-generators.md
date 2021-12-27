@@ -1,5 +1,5 @@
 ---
-title : Static site generators
+title: Static site generators
 benefit: 4
 easiness: 3
 order: 3

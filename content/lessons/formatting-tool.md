@@ -1,5 +1,5 @@
 ---
-title : Use a formatting tool
+title: Use a formatting tool
 benefit: 4
 easiness: 5
 order: 1

@@ -1,5 +1,5 @@
 ---
-title : Watch conferences
+title: Watch conferences
 benefit: 5
 easiness: 3
 order: 3

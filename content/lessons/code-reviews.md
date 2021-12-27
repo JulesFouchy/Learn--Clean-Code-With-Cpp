@@ -1,5 +1,5 @@
 ---
-title : Code reviews
+title: Code reviews
 benefit: 4
 easiness: 3
 order: 3

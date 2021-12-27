@@ -1,5 +1,5 @@
 ---
-title : Use libraries
+title: Use libraries
 benefit: 5
 easiness: 3
 order: 3

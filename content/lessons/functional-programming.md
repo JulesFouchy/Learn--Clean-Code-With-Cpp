@@ -1,5 +1,5 @@
 ---
-title : Functional programming
+title: Functional programming
 benefit: 3
 easiness: 3
 order: 3

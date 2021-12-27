@@ -1,5 +1,5 @@
 ---
-title : Random
+title: "<random>"
 benefit: 3
 easiness: 3
 order: 4
