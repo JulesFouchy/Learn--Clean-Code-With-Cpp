@@ -10,8 +10,8 @@ module.exports = /*async*/ () => {
   }
   const classes = [
     {
-      name: "C++ and Dev Practices",
-      url: "https://julesfouchy.github.io/Learn--Cpp-And-Dev-Practices/",
+      name: "Clean Code with C++",
+      url: "https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/",
     },
     {
       name: "Generative Art",
@@ -24,8 +24,8 @@ module.exports = /*async*/ () => {
   ]
   return {
     github_account: "JulesFouchy",
-    repo: "Learn--Cpp-And-Dev-Practices",
-    title: "C++ and Dev Practices",
+    repo: "Learn--Clean-Code-With-Cpp",
+    title: "Clean Code with C++",
     docusaurus_config: {
       tagline: "From 0️⃣ to 🦸",
       // Override any parts of docusaurus.config.js you want
