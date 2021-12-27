@@ -12,7 +12,7 @@ If for some reason you want to do so, then leave a comment at the top explaining
 
 Example from real code from a company whose name I shall not mention:
 
-```c#
+```csharp
 void Start()
 {
     // Utils.SetEnglishLanguage();
