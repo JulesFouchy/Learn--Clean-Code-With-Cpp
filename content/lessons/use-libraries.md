@@ -4,7 +4,7 @@ benefit: 5
 easiness: 3
 order: 3
 tags:
-    - Architecture
+    - Clean Code
 ---
 import Image from '@theme/IdealImage';
 

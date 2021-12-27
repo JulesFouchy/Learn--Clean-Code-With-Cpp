@@ -4,7 +4,7 @@ benefit: 3
 easiness: 3
 order: 3
 tags:
-    - Architecture
+    - Clean Code
 ---
 
 Functional programming is an important paradigm that has gotten a lot of attention recently (it took of long after Object Oriented programming). A lot of very good techniques have emerged from this field and have been incorporated in many languages, including C++. `std::optional`, `std::variant`, `std::transform` and many others are inherited[^1] from Functional Programming.

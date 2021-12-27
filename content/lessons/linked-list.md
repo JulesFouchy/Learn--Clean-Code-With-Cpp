@@ -4,7 +4,7 @@ benefit: 2
 easiness: 5
 order: 3
 tags:
-    - C++
+    - Performant Code
 ---
 
 Linked lists are rarely usefull. All the theoretical advantages in insertion time and what not are actually murdered by the awfull cache coherency that make them actually very slow.

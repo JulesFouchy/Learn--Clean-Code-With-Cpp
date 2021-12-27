@@ -4,6 +4,8 @@ benefit: 4
 easiness: 5
 order: 2
 tags:
+    - Beautiful Code
+    - Clean Code
     - C++
 ---
 

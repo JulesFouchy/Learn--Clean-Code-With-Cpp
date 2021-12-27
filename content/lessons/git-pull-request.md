@@ -4,6 +4,7 @@ benefit: 3
 easiness: 4
 order: 3
 tags:
+    - Tools
     - Git
 ---
 

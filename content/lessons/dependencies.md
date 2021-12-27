@@ -4,7 +4,7 @@ benefit: 5
 easiness: 1
 order: 3
 tags:
-    - Architecture
+    - Clean Code
 ---
 
 Managing dependencies between the different parts of your application is probably the most difficult challenge as your codebase grows.

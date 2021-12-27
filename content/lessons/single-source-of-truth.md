@@ -4,7 +4,7 @@ benefit: 4
 easiness: 4
 order: 3
 tags:
-    - Architecture
+    - Clean Code
 ---
 
 The *Single Source of Truth* principle is very simple : only store an information once !

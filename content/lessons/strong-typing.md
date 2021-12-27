@@ -4,7 +4,7 @@ benefit: 4
 easiness: 4
 order: 3
 tags:
-    - Dev Practices
+    - Clean Code
 ---
 
 ## Brief

@@ -4,7 +4,7 @@ benefit: 3
 easiness: 5
 order: 2
 tags:
-    - Dev Practices
+    - Tools
 ---
 
 Markdown is an amazing markup language. Its main strength is its simplicity, and the other one is its omnipresence.

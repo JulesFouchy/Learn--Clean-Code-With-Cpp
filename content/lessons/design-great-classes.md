@@ -4,7 +4,7 @@ benefit: 5
 easiness: 3
 order: 2
 tags:
-    - Architecture
+    - Clean Code
 ---
 
 First, do you need a class? What is the difference between a *class* and a *struct*?[^1]<br/>

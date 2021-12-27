@@ -4,7 +4,7 @@ benefit: 5
 easiness: 3
 order: 2
 tags:
-    - Architecture
+    - Clean Code
 ---
 
 ## Brief

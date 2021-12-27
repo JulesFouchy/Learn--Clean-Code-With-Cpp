@@ -1,11 +1,13 @@
 ---
-title : Exceptions
+title : Error Handling
 benefit: 3
 easiness: 4
 order: 3
 tags:
-    - C++
+    - Clean Code
 ---
+
+## Exceptions
 
 Despite their bad reputations, they are actually pretty good and you should consider using them.
 

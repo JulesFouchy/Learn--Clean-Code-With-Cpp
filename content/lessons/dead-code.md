@@ -4,13 +4,13 @@ benefit: 2
 easiness: 3
 order: 3
 tags:
-    - Style
+    - Clean Code
 ---
 
 Don't leave commented out blocks in your code.
 If for some reason you want to do so, then leave a comment at the top explaining your reason ; otherwise it is very hard for readers to know what the purpose of that code is and what to do with it : is it still relevant ? is it another option ? or is it just junk ?
 
-Example :
+Example from real code from a company whose name I shall not mention:
 
 ```c#
 void Start()
@@ -42,17 +42,17 @@ void Start()
     // if (_commandLineArguments.ContainsKey("S3_MainAPIUrl"))
     //     BloombergUnityClient.Instance.S3_MainAPIUrl = _commandLineArguments["S3_MainAPIUrl"];
 
-    // // UbiServices specific to initialize the session
+    // // MyServices specific to initialize the session
     // if (_commandLineArguments.ContainsKey("US_ApplicationId"))
     // {
     //     try
     //     {
-    //         _ubiServices = new UbiServices();
-    //         _ubiServices?.Initialize(_commandLineArguments["US_ApplicationId"], _commandLineArguments["US_Email"], _commandLineArguments["US_Password"]);
+    //         _myServices = new MyServices();
+    //         _myServices?.Initialize(_commandLineArguments["US_ApplicationId"], _commandLineArguments["US_Email"], _commandLineArguments["US_Password"]);
     //     }
     //     catch (Exception e)
     //     {
-    //         Debug.LogWarning($"UbiServices creation failed /r/n {e}");
+    //         Debug.LogWarning($"MyServices creation failed /r/n {e}");
     //     }
     // }
 
