@@ -44,7 +44,7 @@ deno run tests.ts
 
 Improve the grader, and give it more documentation since it is designed to be read by students. Most importantly, the "time to learn" is not a linear function of the "easiness". Easinnes = 1 is bonkers hard to master.
 
-Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, skills that are hard but have been partially mastered like *naming*.
+Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, lessons that are hard but have been partially mastered like *naming*.
 
 Move the reusable code to Thoughts-on-Teaching (which should be renamed Teaching-Toolbox)
 
@@ -53,6 +53,8 @@ Fix the errors in the browser console
 TODO make a component to link to a lesson; otherwise we suplicate knowledge : `[*Don't Repeat Yourself*](../lessons/dont-repeat-yourself)`
 
 TODO 
-- move grader outside of website (and update link in Progress intro to the grader.js)
 - remove ThoughtsonTeaching
-- green and blue grades to see the actual one and the hypotheticla one
+- write tests for the grader
+- show tags in lessons list
+- Fix question mark invisible
+- retrieve my info from json once Docusaurus supports async
