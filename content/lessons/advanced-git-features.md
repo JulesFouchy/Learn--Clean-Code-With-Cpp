@@ -1,5 +1,5 @@
 ---
-title: Advanced git features
+title: Advanced Git features
 benefit: 3
 easiness: 3
 order: 3

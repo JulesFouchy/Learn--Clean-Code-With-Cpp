@@ -46,15 +46,12 @@ Improve the grader, and give it more documentation since it is designed to be re
 
 Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, lessons that are hard but have been partially mastered like *naming*.
 
-Move the reusable code to Thoughts-on-Teaching (which should be renamed Teaching-Toolbox)
-
 Fix the errors in the browser console
-
-TODO make a component to link to a lesson; otherwise we suplicate knowledge : `[*Don't Repeat Yourself*](../lessons/dont-repeat-yourself)`
 
 TODO 
 - remove ThoughtsonTeaching
 - write tests for the grader
-- show tags in lessons list
 - Fix question mark invisible
 - retrieve my info from json once Docusaurus supports async
+- tags column fixed length
+- make a component to link to a lesson; otherwise we suplicate knowledge : `[*Don't Repeat Yourself*](../lessons/dont-repeat-yourself)`
