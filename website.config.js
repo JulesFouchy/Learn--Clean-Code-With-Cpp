@@ -62,6 +62,9 @@ module.exports = /*async*/ () => {
       "Tools",
       "C++",
       "Workflow",
+      "Git",
+      "Libraries & Frameworks",
+      "Beautiful Code",
       "Performant Code",
     ],
   }
