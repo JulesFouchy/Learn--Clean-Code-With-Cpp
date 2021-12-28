@@ -51,5 +51,4 @@ Fix the errors in the browser console
 TODO 
 - remove ThoughtsonTeaching
 - write tests for the grader
-- Fix question mark invisible
 - retrieve my info from json once Docusaurus supports async
