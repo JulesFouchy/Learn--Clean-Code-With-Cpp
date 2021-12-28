@@ -57,5 +57,12 @@ module.exports = /*async*/ () => {
     extra_copyright:
       '<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>',
     syntax_highlight_for: ["cmake", "csharp"],
+    lessons_allowed_tags: [
+      "Clean Code",
+      "Tools",
+      "C++",
+      "Workflow",
+      "Performant Code",
+    ],
   }
 }
