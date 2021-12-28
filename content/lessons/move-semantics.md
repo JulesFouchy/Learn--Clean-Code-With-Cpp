@@ -7,6 +7,7 @@ tags:
     - Performant Code
     - C++
 ---
+import LessonLink from "@site/components/LessonLink"
 
 ## Brief
 
@@ -47,7 +48,7 @@ So, do you need to think about *move* all the time? Luckily, no! It will happen 
 ## Implementing move for your own classes
 
 For most of your classes a move constructor will be defined automatically (just like the copy constructor) and you have nothing to do.
-The only time where you need to implement *move* yourself is if your class has an explicitly defined destructor or copy constructor (see [The Rule of 5](./rule-of-5)). This should be rare because if all the members of your class already have move and destruction defined, then your class will get a default move and destructor that will do the right thing and everything will be fine.
+The only time where you need to implement *move* yourself is if your class has an explicitly defined destructor or copy constructor (see <LessonLink slug="rule-of-5"/>). This should be rare because if all the members of your class already have move and destruction defined, then your class will get a default move and destructor that will do the right thing and everything will be fine.
 
 The only case where you would need to define destruction and move is when you manage a resource like a pointer, an object from a C api that needs to be freed, *etc.* Note that in the case of a pointer the problem is already solved by `std::unique_ptr` and `std::shared_ptr`. Please don't allocate your pointers with raw `new` and don't add destructors to your classes just to manage the pointers that you allocated. Use `std::unique_ptr` instead and you won't even need to think about destructors and move constructors.
 If you ever need to create a wrapper similar to a `std::unique_ptr` for some resource (like an OpenGL id), here is how to do it:

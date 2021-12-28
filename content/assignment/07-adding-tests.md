@@ -1,8 +1,9 @@
 ---
 title: Adding tests
 ---
+import LessonLink from "@site/components/LessonLink"
 
-We will go back to our *Hangman* game and add a few tests. Tests are very important and a huge part of the job of every developer. To learn why tests are so great and how to write them, first [read the lesson](../lessons/testing).
+We will go back to our *Hangman* game and add a few tests. Tests are very important and a huge part of the job of every developer. To learn why tests are so great and how to write them, first <LessonLink text="read the lesson" slug="testing"/>.
 
 TODO SHOW HOW TO TEST SOME SIMPLE FUNCTIONS
 

@@ -6,10 +6,11 @@ order: 2
 tags:
     - Tools
 ---
+import LessonLink from "@site/components/LessonLink"
 
 Markdown is an amazing markup language. Its main strength is its simplicity, and the other one is its omnipresence.
 
-This is what most developers use to write readmes, documentation, books, websites *etc.*. For example all of the textual content of this website is written in Markdown (using a [static site generator](./static-site-generators)).
+This is what most developers use to write readmes, documentation, books, websites *etc.*. For example all of the textual content of this website is written in Markdown (using a <LessonLink text="static site generator" slug="static-site-generators"/>).
 
 Here are the features you will use the most :
 

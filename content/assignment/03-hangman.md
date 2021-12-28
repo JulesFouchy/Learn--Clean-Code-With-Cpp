@@ -3,6 +3,7 @@ title: Hangman
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
 import CommitLink from "../../src/components/CommitLink"
+import LessonLink from "@site/components/LessonLink"
 
 Our second game will be *Hangman*. The program picks a random word, and the player must find it. They enter letters ony by one: if they are in the word, then they are revealed, otherwise the player loses one life. They lose when they have no more lives, and they win if they find all letters of the word. Here is an example:
 
@@ -116,7 +117,7 @@ This is a complex question and there is no one true answer, so feel free to pond
 
 One answer might be that we will make a class which will have all the state as member variables, and that our `show_number_of_lives()` will be a member function. One problem with that approach is that now `show_number_of_lives()` also has access to variables it doesn't need like the word to guess and the letters that have already be found. It is as if we wrote `show_number_of_lives(int number_of_lives, const std::string& word_to_guess, const std::vector<char>& letters_that_have_been_found)`, giving three parameters to our function even though it only needs one.
 
-The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See [Prefer free functions](../lessons/free-functions))
+The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See <LessonLink slug="free-functions"/>)
 
 So, what do we put in our state? Well, I guess we will see as we implement each function 😉
 
@@ -184,7 +185,7 @@ It has many advantages: providing the same API as `std::string` for `const char*
 
 Just remember that it is non-owning, like a reference: it is great for passing parameters around, but if you need to store it as a long-lasting variable you probably still need to use a `std::string`.
 
-[Read the lesson](../lessons/string-and-string-view)
+(Read <LessonLink slug="string-and-string-view"/>)
 :::
 
 (**NB:** there might be a one-liner solution available in the standard library! Go search for it 😉)
@@ -303,7 +304,7 @@ You will also probably need to add some getters.
 Designing a good class requires time and thinking, but it can simplify the rest of your code later down the road, and makes your code easier to reason about.
 
 **_Small_ classes that do their job well and enforce one or two invariants are all the rage!**<br/>
-Read [Design Great Classes](../lessons/design-great-classes)
+(Read <LessonLink slug="design-great-classes"/>)
 :::
 
 :::info Bonus

@@ -53,5 +53,3 @@ TODO
 - write tests for the grader
 - Fix question mark invisible
 - retrieve my info from json once Docusaurus supports async
-- tags column fixed length
-- make a component to link to a lesson; otherwise we suplicate knowledge : `[*Don't Repeat Yourself*](../lessons/dont-repeat-yourself)`

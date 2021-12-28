@@ -6,6 +6,7 @@ order: 2
 tags:
     - C++
 ---
+import LessonLink from "@site/components/LessonLink"
 
 ## Brief
 
@@ -210,7 +211,7 @@ Now that you have the arguments from both sides, pick your poison.
 
 ### Precompiled header
 
-A precompiled header is pretty useful (see [Precompiled Header](./precompiled-header)).
+A precompiled header is pretty useful (see <LessonLink slug="precompiled-header"/>).
 You can create one with CMake using [`target_precompile_headers`](https://cmake.org/cmake/help/git-stage/command/target_precompile_headers.html).
 ```cmake
 target_precompile_headers(Cool PUBLIC

@@ -3,6 +3,7 @@ title: Guess the number
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
 import CommitLink from "../../src/components/CommitLink"
+import LessonLink from "@site/components/LessonLink"
 
 Our first game will be very simple: the program picks a random number, and the user must find it. They make propositions, and the program tells them if they are above or below the actual number. Here is an example:
 
@@ -28,7 +29,7 @@ We will code each of these features one by one, and we will assemble them at the
 
 ## Picking a random number
 
-Actually this is a bit of an annoying topic in C++, because C++ wants to be very generic and fit every use case. You can read [the lesson on random number generators](../lessons/random) or just copy this function:
+Actually this is a bit of an annoying topic in C++, because C++ wants to be very generic and fit every use case. You can read <LessonLink text="the lesson on random number generators" slug="random"/> or just copy this function:
 
 ```cpp
 #include <random>
@@ -52,7 +53,7 @@ int get_int_from_user() {
 }
 ```
 
-PS: did you think of what happens when the user tries to input something that is not a number? Here is [a link that can help you](https://stackoverflow.com/questions/10349857/how-to-handle-wrong-data-type-input). (NB: now you might start to understand why we wrap this code in a `get_int_from_user()` function: the code is not trivial so we want to encapsulate it. You can also read [*Write Small Functions*](../lessons/write-small-functions).)
+PS: did you think of what happens when the user tries to input something that is not a number? Here is [a link that can help you](https://stackoverflow.com/questions/10349857/how-to-handle-wrong-data-type-input). (NB: now you might start to understand why we wrap this code in a `get_int_from_user()` function: the code is not trivial so we want to encapsulate it. You can also read <LessonLink slug="write-small-functions"/>.)
 
 <CommitLink hash="f0b93c1f556d25dc4b4a9511f50110ed5a3765ae"/>
 
@@ -86,7 +87,7 @@ Now that we are done with that game we will move the code into its own file, so 
 
 :::tip
 It is a good practice to first code as you want, where you want, and get something working. You can worry about cleaning up in a second step.<br/>
-(Read *[Make it work then make it good](../lessons/make-it-work-then-make-it-good)*)
+(Read *<LessonLink slug="make-it-work-then-make-it-good"/>*)
 :::
 
 Think of what needs to go in the header (*.hpp*), and what belongs to the source file (*.cpp*). Tip: try to put as little things as possible in the header, because we want to keep things private as much as possible.

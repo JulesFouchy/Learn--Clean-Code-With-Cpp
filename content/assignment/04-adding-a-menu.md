@@ -3,6 +3,7 @@ title: Adding a menu
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
 import CommitLink from "../../src/components/CommitLink"
+import LessonLink from "@site/components/LessonLink"
 
 Before moving on to our third game, we will add a menu that allows the user to pick the game they want to play:
 
@@ -41,7 +42,7 @@ int main()
 
 Something that is a little annoying is that we have to make sure we don't mess up between what we say in `show_the_list_of_commands()` and what we actually implement in our switch. Imagine we want to change the command for a given game: we need to change it in two places, that's bad![^1] Can you think of a way to make the code more robust and easier to change?
 
-[^1]: We are duplicating knowledge and violating the *DRY* principle (see [*Don't Repeat Yourself*](../lessons/dont-repeat-yourself))
+[^1]: We are duplicating knowledge and violating the *DRY* principle (see <LessonLink slug="dont-repeat-yourself"/>)
 
 <details>
     <summary>Hint</summary>

@@ -7,6 +7,7 @@ tags:
     - Clean Code
 ---
 import Image from '@theme/IdealImage';
+import LessonLink from "@site/components/LessonLink"
 
 ## Build from source
 
@@ -16,7 +17,7 @@ Building from source means that:
 - you can tweak the libraries if you need to (and if their license allows so)
 - you have quick access to the source code to read it and your IDE can jump to it
 
-To add a library to your project you can simply download the folder and copy it into your project, but a better practice is to use a [Git submodule](./git-submodules.md).
+To add a library to your project you can simply download the folder and copy it into your project, but a better practice is to use a <LessonLink text="Git submodule" slug="git-submodules"/>.
 
 ## Add them to your project with CMake
 
@@ -26,7 +27,7 @@ add_subdirectory(libname)
 target_link_libraries(${PROJECT_NAME} PRIVATE libname)
 ```
 
-If not, then you will have to define the target and its requirements yourself. For that, check out [the lesson on CMake for library authors](./cmake#cmake-for-library-authors).
+If not, then you will have to define the target and its requirements yourself. For that, check out <LessonLink text="the lesson on CMake for library authors" slug="cmake" anchor="#cmake-for-library-authors"/>.
 
 ## Read the documentation
 
