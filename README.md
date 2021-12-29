@@ -49,6 +49,5 @@ Add a way to add bonus points : to reward the investment, the questions asked, t
 Fix the errors in the browser console
 
 TODO 
-- remove ThoughtsonTeaching
 - write tests for the grader
 - retrieve my info from json once Docusaurus supports async
