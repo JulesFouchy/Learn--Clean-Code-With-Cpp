@@ -8,6 +8,7 @@ assignees: ''
 
 ---
 
+**Where**
 [Link to the corresponding lesson / exercise; link to a specific heading (by clicking in the Table of Content)](TODO: put the link here)
 
 **Your question:**
