@@ -32,6 +32,8 @@ You should always send references as parameters to each function that needs them
 
 If you end up with too many arguments, maybe grouping them in a struct can be a good idea. This should be considered carefully though because it can lead to introducing unnecessary dependencies (if a class X needs 4 out of the 5 classes packaged in a struct Y, it can be tempting to make X depend on Y, although it will grab one unnecessary dependency, which is *bad*).
 
+https://youtu.be/qkGxy4c64Jg
+
 #### About storing a reference to a dependency
 
 Storing *a reference* is a problem because it makes your type more complex than it needs to be. I realized that after a 1 hour debugging session filled with cryptic template error messages. 
