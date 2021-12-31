@@ -2,7 +2,7 @@
 title: auto
 benefit: 4
 easiness: 5
-order: 2
+order: 3
 tags:
     - Beautiful Code
     - Clean Code

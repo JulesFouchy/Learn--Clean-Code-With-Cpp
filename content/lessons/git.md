@@ -1,8 +1,9 @@
 ---
 title: Use Git
 benefit: 5
-easiness: 3
+easiness: 4
 order: 1
+bias: 1
 tags:
     - Tools
     - Git

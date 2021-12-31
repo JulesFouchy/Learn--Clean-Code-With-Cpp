@@ -2,7 +2,7 @@
 title: "Don't overfocus on performance"
 benefit: 4
 easiness: 3
-order: 2
+order: 3
 tags:
     - Clean Code
 ---

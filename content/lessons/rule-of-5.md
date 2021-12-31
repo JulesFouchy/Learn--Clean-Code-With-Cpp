@@ -2,7 +2,7 @@
 title: The Rule of 5
 benefit: 3
 easiness: 3
-order: 4
+order: 3
 tags:
     - Clean Code
     - C++

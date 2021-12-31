@@ -1,6 +1,6 @@
 ---
 title: Consistency in style
-benefit: 3
+benefit: 2
 easiness: 5
 order: 1
 tags:

@@ -2,7 +2,7 @@
 title: Write libraries
 benefit: 5
 easiness: 3
-order: 3
+order: 4
 tags:
     - Clean Code
 ---

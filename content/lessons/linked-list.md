@@ -2,7 +2,7 @@
 title: Linked lists
 benefit: 2
 easiness: 5
-order: 3
+order: 4
 tags:
     - Performant Code
 ---

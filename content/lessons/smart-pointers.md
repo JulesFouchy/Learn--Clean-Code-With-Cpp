@@ -2,7 +2,7 @@
 title: Smart Pointers
 benefit: 3
 easiness: 5
-order: 2
+order: 3
 tags:
     - Clean Code
     - C++

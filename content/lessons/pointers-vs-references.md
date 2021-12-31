@@ -2,7 +2,7 @@
 title: Pointers vs References
 benefit: 2
 easiness: 2
-order: 3
+order: 4
 tags:
     - Clean Code
     - C++

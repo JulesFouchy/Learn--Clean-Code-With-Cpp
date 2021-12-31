@@ -2,7 +2,7 @@
 title: CMake
 benefit: 3
 easiness: 3
-order: 2
+order: 3
 tags:
     - C++
 ---

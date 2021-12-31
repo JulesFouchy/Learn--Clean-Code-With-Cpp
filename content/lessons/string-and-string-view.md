@@ -2,7 +2,7 @@
 title: std::string and std::string_view
 benefit: 4
 easiness: 4
-order: 2
+order: 4
 tags:
     - C++
 ---

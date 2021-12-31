@@ -2,7 +2,7 @@
 title: C++ casts
 benefit: 3
 easiness: 3
-order: 2
+order: 4
 tags:
     - Clean Code
     - C++

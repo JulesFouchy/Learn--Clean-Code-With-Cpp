@@ -2,7 +2,7 @@
 title: Avoid nested namespaces
 benefit: 1
 easiness: 5
-order: 3
+order: 5
 tags:
     - Clean Code
     - C++
