@@ -40,4 +40,4 @@ Think about it: what is their advantage over a free function? Apart from the fac
 
 [^3]: Actually they might be used in inheritance hierarchies. But since inheritance hierarchies are a bad practice too, this doesn't count 😛
 
-So my guideline will be: don't use private member functions, use
+So my guideline will be: don't use private member functions, use free functions that take as a paremeter the things they need.

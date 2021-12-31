@@ -8,3 +8,13 @@ tags:
     - Performant Code
     - C++
 ---
+
+Here are some of the most important ones:
+
+### Find & find_if
+
+### Filter
+
+### Map
+
+### Reduce
