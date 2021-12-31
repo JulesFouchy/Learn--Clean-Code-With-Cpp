@@ -34,3 +34,43 @@ Take the time to open the *Settings* menu of your IDE, and read through it! You 
 
 Same for the extensions you use: they can be configured in a lot of different ways, so check out their settings!<br/>
 (For example, did you know that you can tell the CMake extension where your CMakeLists.txt is? It doesn't have to be at the root of the project!)
+
+## A few great actions
+
+Do you know how to do each of these? If not, try to learn them one by one:
+
+### Select multiple occurences of the same word
+
+### Delete the current line
+
+### Move the current line up
+
+### Duplicate the current line
+
+### Go to a file
+
+`CTRL` + `P`
+
+### Switch between a header file and the corresponding .cpp file
+
+### Close all open tabs
+
+### Save all open tabs
+
+### Launch the project
+
+### Build the project
+
+### Debug the project
+
+## Go to definition
+
+## Find all occurences
+
+## Search for a word in the current file
+
+## Search for a word in the whole project
+
+## Rename
+
+## Putting multiple cursors at once

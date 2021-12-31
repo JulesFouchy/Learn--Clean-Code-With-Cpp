@@ -2,6 +2,7 @@
 title: Introduction
 slug: /assignment
 ---
+import LessonLink from "@site/components/LessonLink"
 
 ## ["Passe-moi le code !"](https://www.youtube.com/watch?v=59lC-XnPgBE&ab_channel=LaCineTech)
 
@@ -23,6 +24,10 @@ I will be looking at your code regularly to give you feedback and start checking
 In order for me to do so, all of you must publish you work on a public Git repository (which is good practice anyways, and will be the number one lesson I will be looking at).
 
 You can use GitHub, GitLab or whatever you are used to using. Just send me a link to the relevant repository *now* (or as soon as you start working on the project).
+
+Also, there are some lessons that I won't be able, from looking at your code, to tell if you have read them, like <LessonLink slug="master-your-ide"/>. So it would be nice if you kept a little ReadMe of all the lessons you have read. You can also use it for yourself: for example you can take notes of the things you learned in the lesson and really don't want to forget[^1], note the points that you didn't quite get, the ones you disagree with, *etc.*
+
+[^1]: This is a great learning practice. See [The Pragmatic Programer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), Chapter 3, Section *Engineering Daybooks*.
 
 ## Time investment
 
