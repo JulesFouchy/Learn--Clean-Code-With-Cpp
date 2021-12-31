@@ -3,6 +3,7 @@ title: Write small functions
 benefit: 5
 easiness: 3
 order: 2
+bias: 2
 tags:
     - Clean Code
 ---
