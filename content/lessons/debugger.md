@@ -6,6 +6,7 @@ order: 1
 tags:
     - Tools
 ---
+import VSCodeExtension from "@site/components/VSCodeExtension"
 
 If your code crashes, running it with a debugger will indicate you the exact place where it crashes. You will also be able to inspect the value of all the variables of the program, and see which functions were called before the one that caused the crash.
 
@@ -13,7 +14,7 @@ If your code crashes, running it with a debugger will indicate you the exact pla
 
 ### Running your debugger
 
-If you are using VS Code and the CMake extension ([ms-vscode.cmake-tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)), then you can simply click on the little bug in your toolbar:
+If you are using VS Code and the CMake extension (<VSCodeExtension id="ms-vscode.cmake-tools"/>), then you can simply click on the little bug in your toolbar:
 ![Debugger icon of VS Code](../img/debugger.png)
 If you are using something else, go look for the info! All IDEs come with a debugger and an easy way of launching it.
 
