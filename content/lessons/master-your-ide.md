@@ -74,3 +74,7 @@ Do you know how to do each of these? If not, try to learn them one by one:
 ## Rename
 
 ## Putting multiple cursors at once
+
+## Opening a new window
+
+## Opening another project / folder

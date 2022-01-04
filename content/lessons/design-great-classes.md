@@ -3,7 +3,7 @@ title: Design Great Classes
 benefit: 5
 easiness: 3
 order: 2
-bias: 3
+bias: 4
 tags:
     - Clean Code
 ---

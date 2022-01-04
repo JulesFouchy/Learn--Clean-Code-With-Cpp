@@ -7,5 +7,3 @@ tags:
     - Clean Code
     - C++
 ---
-
-https://youtu.be/nm45t2fnUms

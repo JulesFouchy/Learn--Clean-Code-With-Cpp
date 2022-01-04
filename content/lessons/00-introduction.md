@@ -3,7 +3,7 @@ title: Introduction
 slug: /lessons
 ---
 
-## Forewords
+## Hi 👋
 
 *Welcome to this class!*
 
