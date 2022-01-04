@@ -1,53 +1,48 @@
-# Website
+## Cloning
+
+In order to clone with the submodules use
+```console
+git clone --recursive https://github.com/JulesFouchy/Learn--Clean-Code-With-Cpp
+```
+
+## Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Installation
+### Installation
 
 ```console
-yarn install
+cd ./Teaching-Toolbox/website
+npm install
 ```
 
-## Local Development
+### Local Development
 
 ```console
-yarn start
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
-
-```console
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-## Tests
+### Tests
 
 Run the tests with
 
-```bash
+```console
 deno run tests.ts
 ```
 
-## TODO
+### Deployment
 
-Improve the grader, and give it more documentation since it is designed to be read by students. Most importantly, the "time to learn" is not a linear function of the "easiness". Easinnes = 1 is bonkers hard to master.
+The site is built and deployed automatically whenever you push to the *main* branch.
+You can check that the deployment succeeded in the [actions tab of GitHub](https://github.com/JulesFouchy/Learn--Clean-Code-With-Cpp/actions), and see the live website at https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/.
 
-Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, lessons that are hard but have been partially mastered like *naming*.
+## ToDo list
 
-Fix the errors in the browser console
+- Improve the grader, and give it more documentation since it is designed to be read by students. Most importantly, the "time to learn" is not a linear function of the "easiness". Easiness = 1 is bonkers hard to master.
 
-TODO 
+- Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, lessons that are hard but have been partially mastered like *naming*.
+
 - write tests for the grader
 - retrieve my info from json once Docusaurus supports async
+- write a VSCodeExtension component
