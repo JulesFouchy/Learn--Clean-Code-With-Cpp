@@ -2,7 +2,7 @@
 title: Noughts and Crosses
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
-import CommitLink from "../../src/components/CommitLink"
+import CommitLink from "../../components/CommitLink"
 import LessonLink from "@site/components/LessonLink"
 
 Today is a big day because for our third game we are leaving the console behind! We will display some actual graphics and the user will be able to click on the window to play!

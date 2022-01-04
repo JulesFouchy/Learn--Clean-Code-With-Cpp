@@ -6,7 +6,7 @@ import styles from "./HomepageFeatures.module.css"
 const FeatureList = [
   {
     title: "Improve your C++",
-    Svg: require("../../static/img/drawkit-daily-life-vector-illustration-07.svg")
+    Svg: require("../static/img/drawkit-daily-life-vector-illustration-07.svg")
       .default,
     description: (
       <>
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: "Learn general programming patterns",
-    Svg: require("../../static/img/holiday-season-7.svg").default,
+    Svg: require("../static/img/holiday-season-7.svg").default,
     description: (
       <>
         Most lessons will be applicable to any programming language, not only
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: "Ease your workflow",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("../static/img/undraw_docusaurus_react.svg").default,
     description: <>With the appropriate tools, everything becomes easier.</>,
   },
 ]

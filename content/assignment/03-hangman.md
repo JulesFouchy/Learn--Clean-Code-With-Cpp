@@ -2,7 +2,7 @@
 title: Hangman
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
-import CommitLink from "../../src/components/CommitLink"
+import CommitLink from "../../components/CommitLink"
 import LessonLink from "@site/components/LessonLink"
 
 Our second game will be *Hangman*. The program picks a random word, and the player must find it. They enter letters ony by one: if they are in the word, then they are revealed, otherwise the player loses one life. They lose when they have no more lives, and they win if they find all letters of the word. Here is an example:

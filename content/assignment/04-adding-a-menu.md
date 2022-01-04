@@ -2,7 +2,7 @@
 title: Adding a menu
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
-import CommitLink from "../../src/components/CommitLink"
+import CommitLink from "../../components/CommitLink"
 import LessonLink from "@site/components/LessonLink"
 
 Before moving on to our third game, we will add a menu that allows the user to pick the game they want to play:

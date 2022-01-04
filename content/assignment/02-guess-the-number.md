@@ -2,7 +2,7 @@
 title: Guess the number
 ---
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
-import CommitLink from "../../src/components/CommitLink"
+import CommitLink from "../../components/CommitLink"
 import LessonLink from "@site/components/LessonLink"
 
 Our first game will be very simple: the program picks a random number, and the user must find it. They make propositions, and the program tells them if they are above or below the actual number. Here is an example:
