@@ -6,6 +6,7 @@ order: 3
 tags:
     - Clean Code
 ---
+import GoingFurther from "@site/components/GoingFurther"
 
 Managing dependencies between the different parts of your application is probably the most difficult challenge as your codebase grows.
 
@@ -85,8 +86,20 @@ Concepts are better than interfaces because they can also require the existance 
 
 For example if you want to require that each shape is drawable, with an interface it would require that ```draw()``` be a method of each ```Shape``` class. With concepts you can require that a free function ```draw(Shape const auto& shape)``` exists for each type following the ```Shape``` concept. And free functions are great for many reasons ! (Single Responsibility Principle, Open-Close Principle, etc. See [Free your functions](https://www.youtube.com/watch?v=WLDT1lDOsb4))
 
-## To go further
+## Going further
 
-[About the Singleton and alternatives to it](https://www.youtube.com/watch?v=K5c7uvWe_hw)
-
-[About SOLID by Klaus Iglberger](https://www.youtube.com/watch?v=Ntraj80qN2k)
+<GoingFurther resources = {[
+    {
+        title: "Retiring the Singleton Pattern: Concrete Suggestions for What to use Instead",
+        author: "Peter Muldoon",
+        link: "https://youtu.be/K5c7uvWe_hw",
+        duration: "1h",
+        description: "About the Singleton and alternatives to it"
+    },
+    {
+        title: "Breaking Dependencies: The SOLID Principles",
+        author: "Klaus Iglberger",
+        link: "https://youtu.be/Ntraj80qN2k",
+        duration: "1h",
+    },
+]}/>

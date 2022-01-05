@@ -7,6 +7,7 @@ bias: 5
 tags:
     - Clean Code
 ---
+import GoingFurther from "@site/components/GoingFurther"
 
 Free functions help a lot with decoupling, code reuse, testing, *etc.*
 
@@ -18,8 +19,19 @@ Free functions are also very easy to reuse, since they are not burried inside an
 
 <!-- I don't know how much you are used to Object-Oriented Programming, using classes and methods ; but I know that when I personnaly started learning these topics, I then used them everywhere, every function has to be encapsulated in a class. -->
 
-:::info Going further
-[David Sankel, *Building Software Capital: How to write the highest quality code and why*](https://youtu.be/ta3S8CRN2TM?t=2159) (1min)
+## Going further
 
-[Klaus Iglberger, *Free Your Functions!*](https://youtu.be/WLDT1lDOsb4) (1h)
-:::
+<GoingFurther resources = {[
+    {
+        title: "Building Software Capital: How to write the highest quality code and why",
+        author: "David Sankel",
+        link: "https://youtu.be/ta3S8CRN2TM?t=2159",
+        duration: "1min",
+    },
+    {
+        title: "Free Your Functions!",
+        author: "Klaus Iglberger",
+        link: "https://youtu.be/WLDT1lDOsb4",
+        duration: "1h",
+    },
+]}/>

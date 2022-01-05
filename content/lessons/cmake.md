@@ -7,6 +7,7 @@ tags:
     - C++
 ---
 import LessonLink from "@site/components/LessonLink"
+import GoingFurther from "@site/components/GoingFurther"
 
 ## Brief
 
@@ -318,12 +319,29 @@ As far as the alias name goes, people have different conventions like `p6::p6`, 
 
 ## Going further
 
-:::info Going further
-[Mathieu Ropert, *Using Modern CMake Patterns to Enforce a Good Modular Design*](https://youtu.be/eC9-iRN2b04) (1h)
-
-[Henry Schreiner, *Modern CMake*](https://cliutils.gitlab.io/modern-cmake/) (short online book)
-
-[Stephen Kelly, *Embracing Modern CMake*](https://youtu.be/mn1ZnO3MtVk) (1h)
-
-[Jason Turner, *C++ Weekly - Ep 208 - The Ultimate CMake / C++ Quick Start*](https://youtu.be/YbgH7yat-Jo) (30min)
-:::
+<GoingFurther resources = {[
+    {
+        title: "Using Modern CMake Patterns to Enforce a Good Modular Design",
+        author: "Mathieu Ropert",
+        link: "https://youtu.be/eC9-iRN2b04",
+        duration: "1h",
+    },
+    {
+        title: "Modern CMake",
+        author: "Henry Schreiner",
+        link: "https://cliutils.gitlab.io/modern-cmake/",
+        duration: "short online book",
+    },
+    {
+        title: "Embracing Modern CMake",
+        author: "Stephen Kelly",
+        link: "https://youtu.be/mn1ZnO3MtVk",
+        duration: "1h",
+    },
+    {
+        title: "C++ Weekly - Ep 208 - The Ultimate CMake / C++ Quick Start",
+        author: "Jason Turner",
+        link: "https://youtu.be/YbgH7yat-Jo",
+        duration: "30min",
+    },
+]}/>
