@@ -6,17 +6,6 @@ order: 3
 tags:
     - Tools
 ---
-import VSCodeExtension from "@site/components/VSCodeExtension"
-
-## Use extensions
-
-There are many extensions that can help you! Check out the recommended extensions for your language or discover what other people use.
-
-Here are some great extensions for VS Code that I recommend:
-
-- <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>: The Basic C++ extensions
-- <VSCodeExtension id="coenraads.bracket-pair-colorizer-2"/>: This colors matching pairs of brackets ; it makes your code more readable
-- <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: Allows you to code remotely on someone else's computer. Is it amazing to work together!
 
 ## Learn the shortcuts
 
