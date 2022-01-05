@@ -1,7 +1,7 @@
 ---
 title: Use a formatting tool
-benefit: 4
-easiness: 5
+benefit: 5
+easiness: 4
 order: 1
 tags:
     - Tools
