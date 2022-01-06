@@ -25,15 +25,15 @@ The fact that they are different concepts means that we can not do the same oper
 
 For example, adding two displacements *d1* and *d2* makes total sense : it simply yields another displacement that is the same as moving by *d1* and then by *d2* :
 
-![](../../static/img/displacement-addition.png)
+![](./img/displacement-addition.png)
 
 Adding a displacement to a position is perfectly reasonable too : it moves the position :
 
-![](../../static/img/displacement-position-addition.png)
+![](./img/displacement-position-addition.png)
 
 But adding two positions doesn't make sense at all !!!
 
-![](../../static/img/point-addition.png)
+![](./img/point-addition.png)
 
 Even though it would be easy to add the *representation* of two positions, we want to prevent that because it would most likely be a bug or a logic error.
 
