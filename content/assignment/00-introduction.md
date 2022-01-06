@@ -45,8 +45,7 @@ If you choose to do so it might be a good idea to share your plans with me so th
 
 I also think that it only makes sense to team up with people who have roughly the same level as you. This way you will be able to help each other out and discuss ideas on equal footing. If you are looking for someone very good to help you, you can always ask your comrades or me, but working on the same project wouldn't be beneficial I believe because you won't be advancing at the same pace and/or having the same ambitions. (I might be wrong though and we can discuss that).
 
-If you choose Option#1, you don't need to care about the other pages of the *Assignment* section.
-
+If you choose Option#1, you don't need to care about the other pages of the *Assignment* section. Just know that I strongly recommend to use [this template](https://github.com/JulesFouchy/Simple-Cpp-Setup) as a starting point for your code.
 
 ### Project ideas
 
