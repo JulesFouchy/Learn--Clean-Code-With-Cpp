@@ -43,7 +43,7 @@ If you choose to do so it might be a good idea to share your plans with me so th
 
 **For this project you _can_ work in groups**. Simply remember that the more you are on a project, the harder it is to coordinate and produce a cohesive codebase. But if you think that a collaboration would be beneficial, then please go ahead!
 
-I also think that it only makes sense to team up with people who have roughly the same level as you. This way you will be able to help each other out and discuss ideas on equal footing. If you are looking for someone very good to help you, you can always ask your comrades or me! But working on the same project wouldn't be beneficial I believe because you won't be advancing at the same pace and/or having the same ambitions. (I might be wrong though and we can discuss that).
+I also think that it only makes sense to team up with people who have roughly the same level as you. This way you will be able to help each other out and discuss ideas on equal footing. If you are looking for someone very good to help you, you can always ask your comrades or me, but working on the same project wouldn't be beneficial I believe because you won't be advancing at the same pace and/or having the same ambitions. (I might be wrong though and we can discuss that).
 
 If you choose Option#1, you don't need to care about the other pages of the *Assignment* section.
 
@@ -53,6 +53,7 @@ If you choose Option#1, you don't need to care about the other pages of the *Ass
 If you are looking for inspiration I can suggest a few ideas that I would personally love working on:
 
  - **Cool**: I am currently working on a C++ framework called [*Cool*](https://coollibs.github.io/home/) where we do a lot of image-related work. If you are interested in joining the adventure, there is definitely a place for you!
+ - **A Bezier-curve editor**: Check out [this video](https://youtu.be/aVwxzDHniEw) to learn more about Bezier curves. Bezier curves are pretty cool; you could do an editor that renders them, allows you to modify them, implement a fill algorithm to colorize the interior, and so on. Once you can render Bezier curves you can render any SVG using a library like [nanosvg](https://github.com/memononen/nanosvg).
 
 ## Option#2: Following the guided project
 
