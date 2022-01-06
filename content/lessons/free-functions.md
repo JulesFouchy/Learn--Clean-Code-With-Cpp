@@ -2,7 +2,7 @@
 title: Prefer free functions
 benefit: 5
 easiness: 3
-order: 2
+level: 2
 bias: 5
 tags:
     - Clean Code

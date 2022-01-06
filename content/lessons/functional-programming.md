@@ -2,7 +2,7 @@
 title: Functional programming
 benefit: 3
 easiness: 3
-order: 3
+level: 3
 tags:
     - Clean Code
 ---

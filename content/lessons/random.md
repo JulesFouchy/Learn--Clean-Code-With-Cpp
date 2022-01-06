@@ -2,7 +2,7 @@
 title: "<random>"
 benefit: 3
 easiness: 3
-order: 4
+level: 4
 tags:
     - C++
 ---

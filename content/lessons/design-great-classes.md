@@ -1,8 +1,8 @@
 ---
-title: Design Great Classes
+title: Design Cohesive Classes
 benefit: 5
 easiness: 3
-order: 2
+level: 2
 bias: 4
 tags:
     - Clean Code
@@ -43,3 +43,11 @@ Think about it: what is their advantage over a free function? Apart from the fac
 [^3]: Actually they might be used in inheritance hierarchies. But since inheritance hierarchies are a bad practice too, this doesn't count 😛
 
 So my guideline will be: don't use private member functions, use free functions that take as a parameter the things they need.
+
+## No public methods that only use the public API
+
+If your method only uses public members of the class, then it could be written as a free function: this will make your class simpler, and the overall design more decoupled. See <LessonLink slug="free-functions"/>.
+
+:::tip
+Public methods are meant to access private members: this is where the encapsulation happens!
+:::

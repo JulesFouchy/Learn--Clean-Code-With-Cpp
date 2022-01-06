@@ -2,7 +2,7 @@
 title: Naming
 benefit: 5
 easiness: 1
-order: 1
+level: 1
 tags:
     - Clean Code
 ---

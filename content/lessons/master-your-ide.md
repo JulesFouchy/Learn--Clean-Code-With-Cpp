@@ -2,7 +2,7 @@
 title: Master your IDE
 benefit: 4
 easiness: 4
-order: 3
+level: 3
 tags:
     - Tools
 ---

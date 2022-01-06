@@ -2,7 +2,7 @@
 title: Avoid dead code
 benefit: 2
 easiness: 3
-order: 4
+level: 4
 tags:
     - Clean Code
 ---

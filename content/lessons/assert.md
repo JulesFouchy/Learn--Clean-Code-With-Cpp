@@ -2,7 +2,7 @@
 title: assert
 benefit: 4
 easiness: 5
-order: 3
+level: 3
 tags:
     - Clean Code
 ---

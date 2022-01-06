@@ -2,7 +2,7 @@
 title: Dependencies
 benefit: 5
 easiness: 1
-order: 3
+level: 3
 tags:
     - Clean Code
 ---

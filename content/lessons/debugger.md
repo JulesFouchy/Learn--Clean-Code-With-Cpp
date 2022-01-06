@@ -2,7 +2,7 @@
 title: Use a debugger
 benefit: 5
 easiness: 4
-order: 1
+level: 1
 tags:
     - Tools
 ---

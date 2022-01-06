@@ -2,7 +2,7 @@
 title: Git Pull Requests
 benefit: 3
 easiness: 4
-order: 3
+level: 3
 tags:
     - Tools
     - Git

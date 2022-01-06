@@ -2,7 +2,7 @@
 title: Move semantics
 benefit: 3
 easiness: 3
-order: 3
+level: 3
 tags:
     - Performant Code
     - C++

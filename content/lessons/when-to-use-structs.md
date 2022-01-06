@@ -2,7 +2,7 @@
 title: When to use structs
 benefit: 5
 easiness: 3
-order: 2
+level: 2
 bias: 3
 tags:
     - Clean Code

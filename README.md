@@ -45,4 +45,4 @@ You can check that the deployment succeeded in the [actions tab of GitHub](https
 
 - write tests for the grader
 - retrieve my info from json once Docusaurus supports async
-- write a VSCodeExtension component
+- Replace easiness with difficulty, and change difficulty calculation when I compute the points for each lesson

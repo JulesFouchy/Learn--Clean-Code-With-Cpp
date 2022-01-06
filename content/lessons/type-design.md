@@ -2,7 +2,7 @@
 title: Type design
 benefit: 5
 easiness: 2
-order: 3
+level: 3
 tags:
     - Clean Code
 ---
