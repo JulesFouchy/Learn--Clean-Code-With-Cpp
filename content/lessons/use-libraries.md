@@ -38,4 +38,4 @@ Whenever I finally take the time to sit down and go through the documentation of
 Take the time and **Read the Fucking Manual**. Programing is a slow and patient process. You will save time later down the road if you take the time to do things properly from the get go.
 :::
 
-<Image img={require('../img/the-fucking-manual.jpg')} />
+<Image img={require('./img/the-fucking-manual.jpg')} />

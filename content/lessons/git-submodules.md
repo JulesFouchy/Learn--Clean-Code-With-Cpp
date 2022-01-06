@@ -20,7 +20,7 @@ Submodules are used to *link* to other repositories: instead of copying a librar
 
 With GitKraken you can simply click the *Add submodule* button and then specify the url of the repo and the folder where you want to clone the submodule:
 
-![Adding a submodule with GitKraken](../img/submodule.png)
+![Adding a submodule with GitKraken](./img/submodule.png)
 
 With the command line you can do:
 

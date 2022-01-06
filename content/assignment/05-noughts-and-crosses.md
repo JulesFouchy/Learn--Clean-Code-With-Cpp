@@ -39,7 +39,7 @@ void draw_board(int size, p6::Context& p6)
 }
 ```
 
-![](../img/board.png)
+![](./img/board.png)
 
 
 :::info tip

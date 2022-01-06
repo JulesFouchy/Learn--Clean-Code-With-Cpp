@@ -141,7 +141,7 @@ Very often in projects you need to have files available alongside your executabl
 
 You will have those files somewhere in your sources, but when you produce an executable and send it to your friends you must not forget to send the other resource files as well! CMake can help you by automating the process of copying these files to the output folder where your executable is created.
 
-![All the files required by CoolLab.exe](../../static/img/cmake.png)
+![All the files required by CoolLab.exe](./img/cmake.png)
 
 *All the files required by CoolLab.exe*
 
