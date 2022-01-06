@@ -7,6 +7,7 @@ import {LessonsTable} from "@site/components/progress/LessonsTable"
 import {Grade} from "@site/components/progress/Grade"
 import {StudentPicker} from "@site/components/progress/StudentPicker"
 import ProgressScore from "@site/components/progress/ProgressScore"
+import BrowserOnly from "@docusaurus/BrowserOnly"
 
 ## How?
 
@@ -30,31 +31,40 @@ Level:
  - **4**: Nice to have features, or things to do when you are grown up and understand most of the things of level 3
  - **5**: When you have nothing important to learn anymore
 
- TODO: split the lesson table in multiple tables, one for each level
-
 ## Filters
-<StudentPicker/>
-<br/>
-<TagsFilter/>
-<Grade/>
-<br/>
+<BrowserOnly>{() =>(<span>
+    <StudentPicker/>
+    <br/>
+    <TagsFilter/>
+    <Grade/>
+    <br/>
+</span>)}</BrowserOnly>
 
 ## Level 1
-<ProgressScore level={1}/>
-<LessonsTable level={1}/>
+<BrowserOnly>{() =>(<span>
+    <ProgressScore level={1}/>
+    <LessonsTable level={1}/>
+</span>)}</BrowserOnly>
 
 ## Level 2
-<ProgressScore level={2}/>
-<LessonsTable level={2}/>
+<BrowserOnly>{() =>(<span>
+    <ProgressScore level={2}/>
+    <LessonsTable level={2}/>
+</span>)}</BrowserOnly>
 
 ## Level 3
-<ProgressScore level={3}/>
-<LessonsTable level={3}/>
+<BrowserOnly>{() =>(<span>
+    <ProgressScore level={3}/>
+    <LessonsTable level={3}/>
+</span>)}</BrowserOnly>
 
 ## Level 4
-<ProgressScore level={4}/>
-<LessonsTable level={4}/>
+<BrowserOnly>{() =>(<span>
+    <ProgressScore level={4}/>
+    <LessonsTable level={4}/>
+</span>)}</BrowserOnly>
 
 ## Level 5
-<ProgressScore level={5}/>
-<LessonsTable level={5}/>
+<BrowserOnly>{() =>(<span>
+    <ProgressScore level={5}/>
+</span>)}</BrowserOnly>
