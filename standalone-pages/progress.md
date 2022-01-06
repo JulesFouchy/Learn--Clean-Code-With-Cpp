@@ -10,6 +10,7 @@ import ProgressScore from "@site/components/progress/ProgressScore"
 import BrowserOnly from "@docusaurus/BrowserOnly"
 import ButterflyGreen from "@site/static/img/butterfly-green.svg"
 import ButterflyBlue from "@site/static/img/butterfly-blue.svg"
+import LevelPoints from "@site/components/progress/LevelPoints"
 
 # Progress
 
@@ -23,13 +24,13 @@ They are first sorted by **Level**. Then, for lessons of the same Level, a **Pri
 
 ## How is my grade calculated?
 
-**The level 1 is worth 10 points, the level 2 is worth 5 points, the level 3 is worth 3 points, the level 4  is worth 1.5 points and the level 5 is worth 0.5 points**. For each level the points are split across the lessons according to their difficulty: the harder lessons are worth more points.
+**The level 1 is worth <LevelPoints level={1}/> points, the level 2 is worth <LevelPoints level={2}/> points, the level 3 is worth <LevelPoints level={3}/> points, the level 4  is worth <LevelPoints level={4}/> points and the level 5 is worth <LevelPoints level={5}/> points**. For each level the points are split across the lessons according to their difficulty: the harder lessons are worth more points.
 
 Your mastery in each lesson is measured in *butterflies*: 0 butterfly means you haven't looked at the lesson yet, 1 means you have read it, 2 means you are starting to apply it to your code, and 3 means you apply it *consistently* with great success. **You get a third of the points of the lesson for each butterfly you unlock!**
 
 The <ButterflyGreen/> green butterflies <ButterflyGreen/> indicate the points that I have validated, and the <ButterflyBlue/> blue ones <ButterflyBlue/> are the ones you can temporarily check to see what your grade would be if you were to validate those points.
 
-**My goal is that all of you do level 1** (which is pretty easy and quick) and then **focus on level 2** for the majority of the semester. If you do so you will get at least 10 to 15 points. *If you have time*, start working on level 3: it is full of important lessons too. Level 4 contains lessons that are slightly less important, or that don't make sense to apply until you have already a strong mastery of level 3. Level 5 contains lessons that are not really important at all, but that are still worth hearing once in your life (perhaps).
+**My goal is that all of you do level 1** (which is pretty easy and quick) and then **focus on level 2** for the majority of the semester. If you do so you will get at least <LevelPoints level={1}/> to <LevelPoints level={[1, 2]}/> points. *If you have time*, start working on level 3: it is full of important lessons too. Level 4 contains lessons that are slightly less important, or that don't make sense to apply until you have already a strong mastery of level 3. Level 5 contains lessons that are not really important at all, but that are still worth hearing once in your life (perhaps).
 
 :::tip
 Don't wait to reach butterfly 3 on a lesson before moving on to the next: this last butterfly might be difficult to get (especially for the harder lessons).<br/>
@@ -41,7 +42,7 @@ You will be better off starting new lessons while still trying to apply the prev
     <StudentPicker/>
     <br/>
     <TagsFilter/>
-    <Grade/>
+    <Grade top_position="340px"/>
     <br/>
 </span>)}</BrowserOnly>
 
