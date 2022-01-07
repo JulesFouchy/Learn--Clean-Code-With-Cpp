@@ -6,6 +6,7 @@ level: 3
 tags:
     - Clean Code
 ---
+import GoingFurther from "@site/components/GoingFurther"
 
 ## Document for users of your library
 
@@ -17,5 +18,18 @@ State your intentions, the alternatives you considered, the reason that made you
 
 Even if you are unsure or not confident about your design, say it ! It will help future developers have no remorse to rewrite your code, and be confident there isn't some important thing that they are missing and that made you write the code this way.
 
+## Using Doxygen
 
-https://youtu.be/nm45t2fnUms
+Doxygen is *the* reference tool to generate documentation for C++ projects. It has one drawback though: the sites it generates are ugly. We can go around that by using another tool for the website part, like Sphinx: [here is a nice tutorial for Doxygen + Sphinx](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/).
+
+## Going further
+
+<GoingFurther resources = {[
+    {
+        title: "Documentation in the Era of Concepts and Ranges",
+        author: "Christopher Di Bella & Sy Brand",
+        link: "https://youtu.be/nm45t2fnUms",
+        duration: "1h",
+        description: "Good advice on what to put in your documentation"
+    }
+]}/>
