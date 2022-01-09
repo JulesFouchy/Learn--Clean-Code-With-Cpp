@@ -60,7 +60,7 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Literate Programming in the Large](https://www.youtube.com/watch?v=Av0PQDVTP4A) *Timothy Daly*
 
-[Value-oriented Design in an Object-oriented System](https://youtu.be/67MmJSw4bxo) *Juan Pedro Bolivar Puente*
+[The Most Valuable Values](https://youtu.be/_oBx_NbLghY) *Juan Pedro Bolivar Puente* Value-oriented architecture for C++ applications. This is a big deal!
 
 [Patterns and Techniques Used in the Houdini 3D Graphics Application](https://youtu.be/2YXwg0n9e7E) *Mark Elendt*
 
