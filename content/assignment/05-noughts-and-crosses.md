@@ -16,7 +16,7 @@ TODO PUT A GIF OF THE GAME BEING PLAYED
 First you will need to add the library to your project. This might be a great time to read the lessons on <LessonLink text="CMake" slug="cmake"/> and <LessonLink text="Git submodules" slug="git-submodules"/>.<br/>
 Also the examples of the library might help you getting started. (In order to find them, browse [the GitHub of the library](https://github.com/JulesFouchy/p6).)
 
-<CommitLink hash="458a5603ddc711b293543ae9fd1ae6a98ceab45e"/>
+<CommitLink hash="9f1fdf44859f1576d783abb4b3c13526316d5dd3"/>
 
 ## First steps
 
@@ -46,4 +46,4 @@ void draw_board(int size, p6::Context& p6)
 The [map](TODO link to the doc) function from *p6* might be useful to convert your loop indices into a position in the window.
 :::
 
-<CommitLink hash="a9f374bd92e8dd2503c35d2b868be469c00fdceb"/>
+<CommitLink hash="efe2e963eebf76ddd22f45be16bc202f9257815e"/>
