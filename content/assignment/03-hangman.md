@@ -304,7 +304,7 @@ You will also probably need to add some getters.
 Designing a good class requires time and thinking, but it can simplify the rest of your code later down the road, and makes your code easier to reason about.
 
 **_Small_ classes that do their job well and enforce one or two invariants are all the rage!**<br/>
-(Read <LessonLink slug="design-great-classes"/>)
+(Read <LessonLink slug="design-cohesive-classes"/>)
 :::
 
 :::info Bonus

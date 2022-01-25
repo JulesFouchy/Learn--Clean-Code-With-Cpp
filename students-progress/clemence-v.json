@@ -16,7 +16,7 @@
   "debugger": 3,
   "deleted-functions": 3,
   "dependencies": 3,
-  "design-great-classes": 3,
+  "design-cohesive-classes": 3,
   "designated_initializers": 3,
   "documentation": 3,
   "dont-overfocus-on-performance": 3,

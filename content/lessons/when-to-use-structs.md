@@ -9,7 +9,7 @@ tags:
 ---
 import LessonLink from "@site/components/LessonLink"
 
-Structs allow you to group data together. When there are no invariants to enforce, using a struct and having all your data public is better that using a class (refer to <LessonLink slug="design-great-classes"/>).
+Structs allow you to group data together. When there are no invariants to enforce, using a struct and having all your data public is better that using a class (refer to <LessonLink slug="design-cohesive-classes"/>).
 
 Often, if you notice that you are passing the same group of parameters to a few functions, it is a great oportunity to create a struct: it will simplify parameter passing, it will be easier to add a parameter later, and it adds an abstraction to your code that might help you reason about and that you might reuse later.
 
