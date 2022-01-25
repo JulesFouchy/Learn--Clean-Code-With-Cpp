@@ -16,8 +16,8 @@ Also, it ensures a consistency in style across the whole codebase and all the de
 
 ## Details
 
-For C++, *Clang format* is the most popular one and I would recommend it. Once you have installed Clang format you can install a VSCode extension that will automatically run it on your code: <VSCodeExtension id="xaver.clang-format"/>. Once installed you will need to go in your VSCode settings and
+For C++ *Clang format* is the most popular one and I would recommend it. Once you have installed Clang format you can install a VSCode extension that will automatically run it on your code: <VSCodeExtension id="xaver.clang-format"/>. Once installed you will need to go in your VSCode settings and
  - set *Default Formatter* to Clang-Format
  - enable *Format on Save*
 
-You will also need to put a configuration file named *.clang-format* at the root of your project to specify how the formatting should be done. You can use [this great website](https://zed0.co.uk/clang-format-configurator/) to configure it. If you don't want to spend too many time tweaking it yourself, you can use mine: https://github.com/CoolLibs/Cool/blob/main/.clang-format.
+You will also need to put a configuration file named *.clang-format* at the root of your project to specify how the formatting should be done. You can use [this great website](https://zed0.co.uk/clang-format-configurator/) to configure it. Or if you don't want to spend too many time tweaking it yourself, you can use mine: https://github.com/CoolLibs/Cool/blob/main/.clang-format.
