@@ -7,3 +7,4 @@ tags:
     - Clean Code
 ---
 
+TODO: take inspiration from the chapter in *The Pragmatic Programmer*
