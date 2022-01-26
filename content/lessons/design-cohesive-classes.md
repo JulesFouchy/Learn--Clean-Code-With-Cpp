@@ -14,7 +14,7 @@ import LessonLink from "@site/components/LessonLink"
 First, do you need a class? What is the difference between a *class* and a *struct*?[^1]<br/>
 A class can have private members, it can have methods attached to it[^2], and it can use inheritance.
 
-Inheritance is kinda problematic so we are not going to consider it here. We are then left with methods and with private attributes, which actually both serve the same goal: *enforcing invariants*.
+Inheritance is kinda problematic so we are not going to consider it here (see <LessonLink slug="composition-over-inheritance"/>). We are then left with methods and with private attributes, which actually both serve the same goal: *enforcing invariants*.
 
 :::tip
 Classes have one goal: **_enforcing invariants_**.
