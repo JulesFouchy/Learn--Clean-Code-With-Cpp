@@ -8,22 +8,39 @@ tags:
 ---
 import VSCodeExtension from "@site/components/VSCodeExtension"
 
-If your code crashes, running it with a debugger will indicate you the exact place where it crashes. You will also be able to inspect the value of all the variables of the program, and see which functions were called before the one that caused the crash.
+Are you tired of printing values in the log to know what is going on ? Is your program crashing and you don't know where or why ? Well the debugger has your back.
 
-## How to
+A debugger allow you to stop the execution of your program once it reaches a specific point, we call this a **breakpoint**. Once hit, you are able to inspect the value of all the variables (and the whole program memory). You can also see which functions were called until this point through the **callstack**. Finally, you will be able to advance step-by-step into the execution.
+
+## How to (with VSCode)
+
+### Prerequisites
+
+You need to use the (<VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>) and have a C++ compiler installed on your computer.
+
+### Configure your debugger
+
+If you are using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) this is already done for you ! 
+
+Yet you might want to set this up yourself in the future. In order to do so, simply open the "Run and Debug" panel and click on the "Run and Debug" blue button. You now have to select your debugger, first option is for linux, second for windows, press *Default Configuration* and it will create a `launch.json` file under the `.vscode` folder.
+
+![](./img/create-launch-file.png)
+
+If you want to know the specific details, [doc is here](https://code.visualstudio.com/docs/cpp/launch-json-reference). For now you only have to set the `"program"` field with the path to your executable (so you have to build your program with `F7` beforehand). In general with the CMake setup it will be under `${workspaceFolder}/build/bin/Debug/YOURPROGRAM.exe` but you should check to be sure.
 
 ### Run your debugger
 
-If you are using VS Code and the CMake extension (<VSCodeExtension id="ms-vscode.cmake-tools"/>), then you can simply click on the little bug in your toolbar:
+Simply press the play button in the "Run and Debug" panel, you can also press `F5` or press the bug icon on the bottom bar.
+
 ![Debugger icon of VS Code](./img/debugger.png)
-If you are using something else, go look for the info! All IDEs come with a debugger and an easy way to launch it.
 
 ### Set breakpoints
 
-Even if you don't have a crash in your program you might want to see what is going on if for example a function doesn't behave as expected. You can set a breakpoint, usually by clicking on the left of the line
+You can set a breakpoint by clicking on the left of the line, right before the line number, or by pressing `F9`.
+
 ![Setting a breakpoint](./img/breakpoint.png)
 
-Then, when you run your code with the debugger the program will pause when it hits a breakpoint and you will be able to inspect the state of your program and run it step-by-step to see what happens.
+Then, when you run your code with the debugger the program will pause when it hits a breakpoint and the editor will jump to the breakpoint which was it. You can even place conditional breakpoints if you right click on the red dot and select "Edit Breakpoint...". Great if you want the execution to stop only if a variable equals a given value.
 
 ### Inspect the state of your program
 
