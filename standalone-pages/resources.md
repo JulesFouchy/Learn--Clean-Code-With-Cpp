@@ -6,6 +6,10 @@ import Resource from "@site/components/Resource"
 Here are a lot of awesome resources that will help you in your learning journey.
 :::
 
+## Alternative classes
+
+[CPP Learning](https://laefy.github.io/CPP_Learning/): Great classes (in French) done by Céline Noel for the Master 1 at Université Gustave Eiffel
+
 ## Video tutorials
 
 [The Cherno](https://youtu.be/2BP8NhxjrO0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb): Great beginner level tutorials to learn C++ and many of its features.
@@ -22,9 +26,23 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Bloomberg's coding standards](http://bloomberg.github.io/bde/knowledge_base/coding_standards.html)
 
+[How to write unmaintainable code](https://github.com/Droogans/unmaintainable-code)
+
+## Blogs
+
+[IT Hare](http://ithare.com/)
+
+[Fluent C++](https://www.fluentcpp.com/)
+
 ## Books
 
 [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), *David Thomas & Andrew Hunt*.
+
+[Game Engine Architecture](https://www.gameenginebook.com/), *Jason Gregory*
+
+[Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/0596007124/), *Eric Freeman & Kathy Sierra*
+
+[Game programming patterns](https://gameprogrammingpatterns.com/), *Robert Nystrom*
 
 ## Conferences
 
@@ -67,3 +85,13 @@ Here are a lot of awesome resources that will help you in your learning journey.
 [Don't constexpr All the Things](https://youtu.be/NNU6cbG96M4) *David Sankel*
 
 [C++ Class Natures in Their Canonical Form and How to Find Them](https://youtu.be/PedVlux_p-k) *Peter Sommerlad*
+
+[Data oriented design and C++](https://www.youtube.com/watch?v=rX0ItVEVjHc), *Mike Acton*
+
+## Articles
+
+[CPP Compilation](https://github.com/green7ea/cpp-compilation): A short description of the C++ build process
+
+[CPP Questions d'entretien](https://www.codingame.com/work/fr/question-entretien-c-plus-plus/): Common question to test your skills in C++
+
+[Doom3 BFG Source code review](https://fabiensanglard.net/doom3_bfg/): Code analysis of a huge codebase by Fabien Sanglard
