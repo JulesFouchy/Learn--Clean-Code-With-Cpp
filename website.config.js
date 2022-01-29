@@ -4,20 +4,9 @@ module.exports = async () => {
   const contact_info = await fetch(
     "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/contact.json"
   ).then((res) => res.json())
-  const classes = [
-    {
-      name: "Clean Code with C++",
-      url: "https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/",
-    },
-    {
-      name: "Generative Art",
-      url: "https://julesfouchy.github.io/Learn--Generative-Art",
-    },
-    {
-      name: "Math for Art and Computer Graphics",
-      url: "https://julesfouchy.github.io/Learn--Math-for-Art-and-Computer-Graphics",
-    },
-  ]
+  const classes = await fetch(
+    "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/my-classes.json"
+  ).then((res) => res.json())
   return {
     github_account: "JulesFouchy",
     repo: "Learn--Clean-Code-With-Cpp",
