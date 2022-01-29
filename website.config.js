@@ -1,13 +1,9 @@
-// const fetch = require("node-fetch");
+const fetch = require("node-fetch")
 
-module.exports = /*async*/ () => {
-  //   const contact_info = await fetch(
-  //     "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/contact.json"
-  //   ).then((res) => res.json());
-  const contact_info = {
-    discord_user_id: "372812330742054914",
-    email: "jules.fouchy@ntymail.com",
-  }
+module.exports = async () => {
+  const contact_info = await fetch(
+    "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/contact.json"
+  ).then((res) => res.json())
   const classes = [
     {
       name: "Clean Code with C++",
