@@ -54,6 +54,10 @@ If you know which file you want to open it is blazing fast to press `CTRL + P` a
 
 ![](./img/go-to-file.png)
 
+### Switch between .h and .cpp
+
+Use `alt + O` to quickly switch between the header and the implementation file. Very useful when you are writing code for a class.
+
 ### Find all references
 
 This allows you to find all the places where a symbol is used. Simply right-click on a variable or method and select *Find All References* to get this panel to open. Just like the *Rename Symbol* action it is context-aware and is supposed to only return the correct variable (if another one has the same name, it won't show up).
