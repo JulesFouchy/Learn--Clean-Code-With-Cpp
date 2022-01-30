@@ -39,6 +39,71 @@ I could not do a better job than Kevlin Henney already did, so please watch thos
 
 Finding the right name sometimes gives you ideas of how to improve your design. For example I wanted a class to hold a width and a height to represent the size of some images. I started calling it `RectangleSize` to be more generic, but when I realized it was more of an `ImageSize` it helped me a lot! Because then I added an invariant to that class : `width > 0 && height > 0`. This is very useful because most graphics APIs won't accept an empty image anyways and I was doing tests all over the place to make sure that `width > 0 && height > 0`. Once I had this invariant for `ImageSize` I was able to use it safely without checks, since they already took place in the constructor of `ImageSize`.
 
+## Some Guidelines
+
+Some of these are extracted from the [Unreal Engine Coding Guidelines](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/CodingStandard/).
+
+### Name your Booleans as questions
+
+Because they can only be true or false, Boolean are well suited to be read as question.
+
+```cpp
+// Bad, what does true mean?
+bool CheckTea(FTea Tea);
+
+// Good, name makes it clear true means tea is fresh
+bool IsTeaFresh(FTea Tea);
+```
+
+### Use Boolean to describe complicated conditions
+
+Because it is faster to read than a comment, and can't be outdated.
+
+```cpp
+// Bad, difficult to understand
+if ((Blah->BlahP->WindowExists->Etc && Stuff) &&
+    !(bPlayerExists && bGameStarted && bPlayerStillHasPawn &&
+    IsTuesday())))
+{
+    DoSomething();
+}
+
+// Good, way easier to understand
+const bool bIsLegalWindow = Blah->BlahP->WindowExists->Etc && Stuff;
+const bool bIsPlayerDead = bPlayerExists && bGameStarted && bPlayerStillHasPawn && IsTuesday();
+if (bIsLegalWindow && !bIsPlayerDead)
+{
+    DoSomething();
+}
+```
+
+### Append "out" to non-const references parameters
+
+When you pass a variable [per reference](pointers-vs-references) (and not by copy), it implies that your function will change its value. It is better to make it explicit so that it is easier to understand what is going on.
+
+```cpp
+bool parseObjectFromPath(const char* aPath, Object& anObjectOut)
+{
+    if (const auto values = readFile(aPath))
+    {
+        anObjectOut.Set(values);
+        return true;
+    }
+    return false;
+}
+
+// ...
+
+{
+    Object newObject;
+    if (parseObjectFromPath("superPath/superFile", newObject))
+    {
+        // Do stuff with your filled object
+    }
+    // ...
+}
+```
+
 ## Going further
 
 <GoingFurther resources = {[

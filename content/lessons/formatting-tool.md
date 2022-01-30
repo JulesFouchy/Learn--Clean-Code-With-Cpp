@@ -12,7 +12,7 @@ import VSCodeExtension from "@site/components/VSCodeExtension"
 
 Tools can format your code automatically: fix indentation, add spaces consistently, put curly braces where you want them, *etc.*
 It saves a lot of time because it means you don't have to worry about it and do it manually!
-Also, it ensures a consistency in style across the whole codebase and all the developpers.
+Also, it ensures a consistency in style across the whole codebase and all the developers.
 
 ## Details
 
