@@ -70,6 +70,8 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Breaking Dependencies: The SOLID Principles](https://www.youtube.com/watch?v=Ntraj80qN2k) *Klaus Iglberger*
 
+[Functional C++](https://youtu.be/CIg6eyJv4dk) *Kevlin Henney*
+
 [What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid](https://www.youtube.com/watch?v=bSkpMdDe4g4) *Matt Godbolt* Amazing optimizations done by the compilers, and a bit about understanding assembly code
 
 [Retiring the Singleton Pattern: Concrete Suggestions for What to use Instead](https://www.youtube.com/watch?v=K5c7uvWe_hw) *Peter Muldoon*
