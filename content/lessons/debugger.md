@@ -8,7 +8,9 @@ tags:
 ---
 import VSCodeExtension from "@site/components/VSCodeExtension"
 
-Are you tired of printing values in the terminal to know what is going on? Is your program crashing and you don't know where or why? Well the debugger has got your back!
+## Brief
+
+Are you tired of printing values to the terminal to know what is going on? Is your program crashing and you don't know where or why? Well the debugger has got your back!
 
 A debugger allows you to stop the execution of your program once it reaches a specific point, called a **breakpoint**. Once hit, you are able to inspect the value of all the variables (and the whole program memory). You can also see which functions were called until this point through the **callstack**. Finally, you will be able to advance step-by-step into the execution.
 
