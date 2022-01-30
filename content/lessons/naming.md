@@ -79,7 +79,7 @@ if (bIsLegalWindow && !bIsPlayerDead)
 
 ### Append "out" to non-const references parameters
 
-When you pass a variable [per reference](pointers-vs-references) (and not by copy), it implies that your function will change its value. It is better to make it explicit so that it is easier to understand what is going on.
+When you pass a variable per reference (and not by copy), it implies that your function will change its value. It is better to make it explicit so that it is easier to understand what is going on.
 
 ```cpp
 bool parseObjectFromPath(const char* aPath, Object& anObjectOut)
