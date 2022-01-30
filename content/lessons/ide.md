@@ -57,7 +57,7 @@ If you know which file you want to open it is blazing fast to press `CTRL + P` a
 
 ### Switch between .h and .cpp
 
-Use `alt + O` to quickly switch between the header and the implementation file. Very useful when you are writing code for a class.
+Use `ALT + O` to quickly switch between the header and the implementation file. Very useful when you are writing code for a class.
 
 ### Find all references
 
