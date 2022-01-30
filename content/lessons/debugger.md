@@ -22,7 +22,7 @@ You need to use <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> and ha
 
 ### Configure your debugger
 
-If you are using the <VSCodeExtension id="ms-vscode.cmake-tools"/> extension this is already done for you! 
+If you are using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) this is already done for you! And if you are using the <VSCodeExtension id="ms-vscode.cmake-tools"/> extension you don't even need this `launch.json` config file.
 
 Yet you might want to set this up by yourself in the future. In order to do so, simply open the "Run and Debug" panel and click on the "Run and Debug" blue button. You now have to select your debugger, first option is for Linux, second is for Windows. Press *Default Configuration* and it will create a `launch.json` file under the `.vscode` folder.
 
