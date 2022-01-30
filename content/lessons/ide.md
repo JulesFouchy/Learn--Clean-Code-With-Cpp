@@ -7,6 +7,7 @@ tags:
     - Tools
 ---
 import VSCodeExtension from "@site/components/VSCodeExtension"
+import LessonLink from "@site/components/LessonLink"
 
 ## Brief
 
@@ -78,6 +79,6 @@ If you need to find something fast and easy, run `CTRL + SHIFT + F`, enter the o
 
 ### Launching the project
 
-Once you have the [CMake](cmake) setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing `F7` and run it using `F5`. When you run the project it will use the current configuration; these are made to be customizable so you can select the one you want using the dropdown in the "Run and Debug" panel on the left, and edit them by pressing the cogwheel icon.
+Once you have the <LessonLink slug="cmake" text="CMake"/> setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing `F7` and run it using `F5`. When you run the project it will use the current configuration; these are made to be customizable so you can select the one you want using the dropdown in the "Run and Debug" panel on the left, and edit them by pressing the cogwheel icon.
 
 ![](./img/run-project.png)
