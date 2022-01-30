@@ -23,7 +23,7 @@ Classes have one goal: **_enforcing invariants_**.
 If you don't have any invariants, you will end up with a class that only has getters and setters that do nothing special: this is basically a struct with an uglier syntax. You could also have member functions, but if your member variables all have getters and setters then you could always replace these member functions with free functions, which is a better practice anyways (see <LessonLink slug="free-functions"/>).
 
 :::tip
-Prefer using a *struct* over a *class* if you have no invariants to enforce.
+Prefer using a *struct* over a *class* if you have no invariants to enforce (see the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c2-use-class-if-the-class-has-an-invariant-use-struct-if-the-data-members-can-vary-independently)).
 :::
 
 [^1]: I am talking about the semantic differences here, because in C++ a *class* and a *struct* can do exactly the same things. The only difference is that by default if you don't use an access specifier everything is private in a *class* and public in a *struct*.

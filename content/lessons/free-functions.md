@@ -21,7 +21,7 @@ The problem with methods is that they depend on the whole class and, if your cla
 
 Free functions are also very easy to reuse since they are not burried inside any class and have minimal dependencies.
 
-**Check out what David Sankel has to say about this ([1 minute, starting at 36:00](https://youtu.be/ta3S8CRN2TM?t=2159)).**
+**Check out what David Sankel has to say about this ([1 minute, starting at 36:00](https://youtu.be/ta3S8CRN2TM?t=2159)), as well as the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c4-make-a-function-a-member-only-if-it-needs-direct-access-to-the-representation-of-a-class).**
 
 <!-- :::tip
 Don't feel the need to put every function in a class just because you are an "object-oriented programmer".
