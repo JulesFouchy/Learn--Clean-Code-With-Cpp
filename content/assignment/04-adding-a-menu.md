@@ -46,7 +46,7 @@ Something that is a little annoying is that we have to make sure we don't mess u
 
 <details>
     <summary>Hint</summary>
-    You could define a <code>Game</code> struct that would contain the name of the game as a string and the function you need to call to start the game. Then you can associate a distinct command to each game by storing the game in a map (or an array if you only plan to use numbers: the index of the game will correspond to its command). 
+    You could define a <code>Game</code> struct that would contain the name of the game as a string and the function you need to call to start the game. Then you can associate a distinct command to each game by storing the game in a map (or an array if you only plan on using numbers: the index of the game will correspond to its command). 
 </details>
 
 <CommitLink hash="f63f3317faf40baa9ffbf1dadf3b066fe1065711"/>

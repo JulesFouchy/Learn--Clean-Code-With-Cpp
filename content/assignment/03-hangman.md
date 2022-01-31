@@ -59,7 +59,7 @@ It should look like that in the end (even though we will probably have to modify
 
 ## Picking a random word
 
-You might be able to reuse what we did for the last game where we needed a random int. If you do so, you will need to move the `rand()` code to it's own file so that it can be included both in *Guess the Number* and *Hangman*.
+You might be able to reuse what we did for the last game where we needed a random int. If you do so, you will need to move the `rand()` code to its own file so that it can be included both in *Guess the Number* and *Hangman*.
 
 You can use a hardcoded list of words like:
 ```cpp
@@ -109,13 +109,13 @@ T get_input_from_user() {
 
 **Now we will ask a difficult and fondamental question!**
 
-Many functions we wrote in our pseudo-code need to have access to some state. For example `show_number_of_lives()` needs to know the number of lives, `show_word_to_guess_with_holes()` needs to know the word to guess and the letters that have already be found, and so on. So, how are we gonna give our functions access to this state?
+Many functions we wrote in our pseudo-code need to have access to some state. For example `show_number_of_lives()` needs to know the number of lives, `show_word_to_guess_with_holes()` needs to know the word to guess and the letters that have already been found, and so on. So, how are we gonna give our functions access to this state?
 
 :::tip
 This is a complex question and there is no one true answer, so feel free to ponder and find your own 🥰
 :::
 
-One answer might be that we will make a class which will have all the state as member variables, and that our `show_number_of_lives()` will be a member function. One problem with that approach is that now `show_number_of_lives()` also has access to variables it doesn't need like the word to guess and the letters that have already be found. It is as if we wrote `show_number_of_lives(int number_of_lives, const std::string& word_to_guess, const std::vector<char>& letters_that_have_been_found)`, giving three parameters to our function even though it only needs one.
+One answer might be that we will make a class which will have all the state as member variables, and that our `show_number_of_lives()` will be a member function. One problem with that approach is that now `show_number_of_lives()` also has access to variables it doesn't need like the word to guess and the letters that have already been found. It is as if we wrote `show_number_of_lives(int number_of_lives, const std::string& word_to_guess, const std::vector<char>& letters_that_have_been_found)`, giving three parameters to our function even though it only needs one.
 
 The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See <LessonLink slug="free-functions"/>)
 
@@ -145,7 +145,7 @@ bool player_is_alive(int number_of_lives) {
 
 ## player_has_won()
 
-This one is a bit tricky ; we need to decide how we are gonna store the letters that the user has guessed in order to know if has won. We have many choices of implementation. We can trade off simplicity of the code for performance if we want to. But since the words are always gonna be small (less than 1000 characters, obviously) performance should not be a concern and we are gonna aim for the simplest code possible. I thing of vector of bools will work great, indicating for each letter of the word if it has been found.
+This one is a bit tricky; we need to decide how we are gonna store the letters that the user has guessed in order to know if they have won. We have many choices of implementation. We can trade off simplicity of the code for performance if we want to. But since the words are always gonna be small (less than 100 characters, obviously) performance should not be a concern and we are gonna aim for the simplest code possible. I think a vector of bools will work great, indicating for each letter of the word if it has been found.
 
 ```cpp
 bool player_has_won(const std::vector<bool>& letters_guessed) {
@@ -178,6 +178,8 @@ bool word_contains(char letter, std::string_view word) {
 }
 ```
 
+(**NB:** there might be a one-liner solution available in the standard library! Go search for it 😉)
+
 :::tip What is string_view?
 It is [a new type from C++17](https://en.cppreference.com/w/cpp/string/basic_string_view). It is a non-owning reference to either a `const char*` or a `std::string`.
 
@@ -187,8 +189,6 @@ Just remember that it is non-owning, like a reference: it is great for passing p
 
 (Read <LessonLink slug="string-and-string-view"/>)
 :::
-
-(**NB:** there might be a one-liner solution available in the standard library! Go search for it 😉)
 
 <CommitLink hash="f4d32f3a93cfb3455cd977c41e99b7956b51cd08"/>
 
@@ -266,7 +266,7 @@ void play_hangman() {
 
 ## Refactoring
 
-Now, as we did for the previous game, we will move all this code into its file.
+Now, as we did for the previous game, we will move all this code into its own file.
 
 <CommitLink hash="1fedb688994be92d5e787f733e685611973c7256"/>
 
@@ -274,9 +274,9 @@ Now, as we did for the previous game, we will move all this code into its file.
 
 ### Enforcing invariants with a class
 
-You noticed that in several functions we had to `assert(word_to_guess.size() == letters_guessed.size())`. This is because from the point of view of the function their is no guarantee that this invariant has been enforced. But because of that we end up checking the invariant many times, which is a waste of effort and requires more code (and code duplication!).
+You noticed that in several functions we had to `assert(word_to_guess.size() == letters_guessed.size())`. This is because from the point of view of the function there is no guarantee that this invariant has been enforced. But because of that we end up checking the invariant many times, which is a waste of effort and requires more code (and code duplication!).
 
-So, how can we improve this situation? Well, classes are made exactly for that reason (and only that reason): *enforcing invariants*!
+So, how can we improve this situation? Well, classes are made exactly for that reason: *enforcing invariants*!
 
 ```cpp
 class WordWithMissingLetters {
@@ -294,7 +294,7 @@ private:
 };
 ```
 
-Now think about which of the functions we wrote deserve (or need) to be members of this class? TIP: try to move as few functions as possible inside the class. Only those that need access to the private details of the class must (and should) be moved in the class. Because each member function has to make sure that the invariant is preserved, whereas free functions using this class can rely on the fact that the invariant is enforced by the class.
+Now think about which of the functions we wrote deserve (or need) to be members of this class? TIP: try to move as few functions as possible inside the class. Only those that need access to the private details of the class must (and should) be moved in the class. Member functions are harder to write and maintain because they have to make sure that the invariants are preserved, whereas free functions using the class can rely on the fact that the invariants are already enforced by the class.
 
 You will also probably need to add some getters.
 
@@ -303,7 +303,7 @@ You will also probably need to add some getters.
 :::tip
 Designing a good class requires time and thinking, but it can simplify the rest of your code later down the road, and makes your code easier to reason about.
 
-**_Small_ classes that do their job well and enforce one or two invariants are all the rage!**<br/>
+**Small classes that do their job well and enforce one or two invariants are all the rage!**<br/>
 (Read <LessonLink slug="design-cohesive-classes"/>)
 :::
 
