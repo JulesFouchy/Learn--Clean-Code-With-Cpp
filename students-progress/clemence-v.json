@@ -20,7 +20,7 @@
   "designated_initializers": 3,
   "documentation": 3,
   "dont-overfocus-on-performance": 3,
-  "dont-repeat-yourself": 3,
+  "dry-dont-repeat-yourself": 3,
   "enums": 3,
   "error-handling": 3,
   "formatting-tool": 3,

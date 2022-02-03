@@ -7,4 +7,4 @@ tags:
     - Clean Code
 ---
 
-TODO: take inspiration from the chapter in *The Pragmatic Programmer*
+In software developmnent, we try to avoid code duplications
