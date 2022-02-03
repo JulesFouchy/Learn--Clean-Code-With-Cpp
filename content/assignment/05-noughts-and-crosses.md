@@ -4,6 +4,7 @@ title: Noughts and Crosses
 import TipTryNotToRead from "./_tip_try_not_to_read.md"
 import CommitLink from "../../components/CommitLink"
 import LessonLink from "@site/components/LessonLink"
+import CodeBlock from "@theme/CodeBlock"
 
 Today is a big day because for our third game we are leaving the console behind! We will display some actual graphics and the user will be able to click on the window to play!
 
@@ -33,7 +34,7 @@ We need a *3 by 3* board. We will make our function a little more general than t
 But handling a board that is not square adds a little bit of complexity, and since we don't need it for now we will only make a function that can draw square boards, with as many rows as columns.
 
 ```cpp
-void draw_board(int size, p6::Context& p6)
+void draw_board(int size, p6::Context& ctx)
 {
     // TODO
 }
@@ -41,9 +42,46 @@ void draw_board(int size, p6::Context& p6)
 
 ![](./img/board.png)
 
-
 :::info tip
-The [map](TODO link to the doc) function from *p6* might be useful to convert your loop indices into a position in the window.
+The [map](https://julesfouchy.github.io/p6-docs/reference/math#map) function from *p6* might be useful to convert your loop indices into a position in the window.
 :::
 
-<CommitLink hash="efe2e963eebf76ddd22f45be16bc202f9257815e"/>
+<CommitLink hash="e643b41a4b81f4c66642239d03746bb13ccd600f"/>
+
+## Detecting which cell is hovered
+
+In order to click and place our noughts and crosses we first need to be able to know which cell is currently hovered by the mouse.
+
+This time I want to give you a little more room to think about the design, so I am not going to give you the signature of the function(s) you need to write.
+
+<details>
+  <summary>Tip n°1</summary>
+  <div>
+  What will you return from this function? Or in other words: <i>how do you represent a cell?</i><br/>
+  It is probably a good occasion to create a little struct (see <LessonLink slug="when-to-use-structs"/>)
+  </div>
+  <br/>
+  <details>
+    <summary>My solution</summary>
+    <div>
+    I chose to represent a cell with a 2D index:
+    <CodeBlock language="cpp">{`struct CellIndex {
+    int x;
+    int y;
+};`}
+    </CodeBlock>
+    It starts as (0, 0) on the bottom left and increases one by one. I then added functions that convert from cell_index to position in the window and vice-versa which allows we to do both my drawing and my hover detection with this CellIndex type.
+    </div>
+    </details>
+</details>
+
+<details>
+  <summary>Tip n°2</summary>
+  <div>
+  It is possible that there is no cell under the mouse, if we are outside the board. How will you handle that?<br/>
+  Your return type probably needs to be able to indicate the absence of cell.<br/>
+  Since C++17 we have <LessonLink slug="optional"/> that is made exactly for that purpose!
+  </div>
+</details>
+
+<CommitLink hash="6dbc007e3f95dfe7c71006f3f52e042f0b6197b2"/>
