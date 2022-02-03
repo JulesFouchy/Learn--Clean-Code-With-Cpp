@@ -43,43 +43,51 @@ Finding the right name sometimes gives you ideas of how to improve your design. 
 
 Some of these are extracted from the [Unreal Engine Coding Guidelines](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/CodingStandard/).
 
-### Name your Booleans as questions
+### Name your booleans as assertions
 
-Because they can only be true or false, Boolean are well suited to be read as question.
+Because they can only be true or false, booleans are well suited to be read as assertions:
 
 ```cpp
 // Bad, what does true mean?
-bool CheckTea(FTea Tea);
+bool CheckTea(Tea tea);
 
-// Good, name makes it clear true means tea is fresh
-bool IsTeaFresh(FTea Tea);
+// Good, the name makes it clear that true means the tea is fresh
+bool TeaIsFresh(Tea tea);
 ```
 
-### Use Boolean to describe complicated conditions
+This also makes your code read as an actual sentence:
 
-Because it is faster to read than a comment, and can't be outdated.
+```cpp
+if (TeaIsFresh(myTea)) {
+    // . . .
+}
+```
+
+### Use variables or functions to split complicated statements
+
+Because it is faster to read than a comment, and can't be outdated:
 
 ```cpp
 // Bad, difficult to understand
 if ((Blah->BlahP->WindowExists->Etc && Stuff) &&
-    !(bPlayerExists && bGameStarted && bPlayerStillHasPawn &&
+    !(PlayerExists && GameStarted && PlayerStillHasPawn &&
     IsTuesday())))
 {
     DoSomething();
 }
 
 // Good, way easier to understand
-const bool bIsLegalWindow = Blah->BlahP->WindowExists->Etc && Stuff;
-const bool bIsPlayerDead = bPlayerExists && bGameStarted && bPlayerStillHasPawn && IsTuesday();
-if (bIsLegalWindow && !bIsPlayerDead)
+const bool WindowIsValid = Blah->BlahP->WindowExists->Etc && Stuff;
+const bool PlayerIsDead = PlayerExists && GameStarted && PlayerStillHasPawn && IsTuesday();
+if (WindowIsValid && !PlayerIsDead)
 {
     DoSomething();
 }
 ```
 
-### Append "out" to non-const references parameters
+### Append "out" to non-const reference parameters
 
-When you pass a variable per reference (and not by copy), it implies that your function will change its value. It is better to make it explicit so that it is easier to understand what is going on.
+When you pass a variable by mutable reference it implies that your function will change its value. It is better to make it explicit so that it is easier to understand what is going on.
 
 ```cpp
 bool parseObjectFromPath(const char* aPath, Object& anObjectOut)
