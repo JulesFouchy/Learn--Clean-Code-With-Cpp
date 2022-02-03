@@ -40,7 +40,8 @@ module.exports = async () => {
       },
     ],
     classes: classes,
-    extra_copyright: `<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/justicon" title="justicon">justicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>`,
+    copyright_before: `These lessons were written by <a href="https://julesfouchy.github.io/home/">Jules Fouchy</a> and <a href="https://guillaumehaerinck.com/#/">Guillaume Haerinck</a><br/>`,
+    copyright_after: `<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/justicon" title="justicon">justicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>`,
     syntax_highlight_for: ["cmake", "csharp"],
     lessons_allowed_tags: [
       "Clean Code",
