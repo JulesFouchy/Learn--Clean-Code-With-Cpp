@@ -58,7 +58,7 @@ This time I want to give you a little more room to think about the design, so I 
   <summary>Tip n°1</summary>
   <div>
   What will you return from this function? Or in other words: <i>how do you represent a cell?</i><br/>
-  It is probably a good occasion to create a little struct (see <LessonLink slug="when-to-use-structs"/>)
+  It is probably a good occasion to create a little struct (see <LessonLink slug="use-structs-to-group-data"/>)
   </div>
   <br/>
   <details>

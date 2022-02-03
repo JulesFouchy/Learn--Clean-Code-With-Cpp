@@ -1,5 +1,5 @@
 ---
-title: When to use structs
+title: Use structs to group data
 benefit: 5
 easiness: 3
 level: 2

@@ -70,7 +70,7 @@
   "vector": 0,
   "wasm-and-electron": 0,
   "watch-conferences": 0,
-  "when-to-use-structs": 0,
+  "use-structs-to-group-data": 0,
   "write-libraries": 0,
   "write-small-functions": 0
 }
