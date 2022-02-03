@@ -60,6 +60,24 @@ bool TeaIsFresh(Tea tea);
 The *assertion* version is great because it makes your code read as an actual sentence: `if (TeaIsFresh(myTea))`.
 On the other hand the *question* version is great because the first word (`is`, `has`, `does`, *etc.*) makes it instantly clear that this is a boolean.
 
+### Avoid abbreviations
+
+What is obvious to you might not be obvious to everybody. Instead of taking the risk, just take the time to type a few more letters :wink:. Only use abbreviations if you are relying on a well established convention, like *id* for *identifier*. For example the *Bloomberg Coding Standards* define a list of allowed abbreviations that everyone should know the meaning of ([*See Section 3.4.3*](http://bloomberg.github.io/bde/knowledge_base/coding_standards.html#general-naming-conventions)).
+
+```cpp
+// Bad. Can you guess what this stands for?
+int calc_rev_diff();
+
+// Good, no guessing involved
+int calculate_revenue_difference();
+
+// Bad (although we have gotten used to it so this is now an OK convention)
+void mkdir();
+
+// Good, much clearer to everybody, especially to newbies
+void make_directory();
+```
+
 ### Use variables or functions to split complicated statements
 
 Because it is faster to read than a comment, and can't be outdated:
