@@ -24,7 +24,7 @@
   "enums": 3,
   "error-handling": 3,
   "formatting-tool": 3,
-  "free-functions": 3,
+  "prefer-free-functions": 3,
   "friend": 3,
   "functional-programming": 3,
   "git-pull-request": 3,

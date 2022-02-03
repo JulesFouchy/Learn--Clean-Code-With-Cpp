@@ -20,7 +20,7 @@ Inheritance is kinda problematic so we are not going to consider it here (see <L
 Classes have one goal: **_enforcing invariants_**.
 :::
 
-If you don't have any invariants, you will end up with a class that only has getters and setters that do nothing special: this is basically a struct with an uglier syntax. You could also have member functions, but if your member variables all have getters and setters then you could always replace these member functions with free functions, which is a better practice anyways (see <LessonLink slug="free-functions"/>).
+If you don't have any invariants, you will end up with a class that only has getters and setters that do nothing special: this is basically a struct with an uglier syntax. You could also have member functions, but if your member variables all have getters and setters then you could always replace these member functions with free functions, which is a better practice anyways (see <LessonLink slug="prefer-free-functions"/>).
 
 :::tip
 Prefer using a *struct* over a *class* if you have no invariants to enforce (see the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c2-use-class-if-the-class-has-an-invariant-use-struct-if-the-data-members-can-vary-independently)).
@@ -48,7 +48,7 @@ So my guideline will be: don't use private member functions, use free functions 
 
 ## No public methods that only use the public API
 
-If your method only uses public members of the class, then it could be written as a free function: this will make your class simpler, and the overall design more decoupled. See <LessonLink slug="free-functions"/>.
+If your method only uses public members of the class, then it could be written as a free function: this will make your class simpler, and the overall design more decoupled. See <LessonLink slug="prefer-free-functions"/>.
 
 :::tip
 Public methods are meant to access private members: *this is where the encapsulation happens!*<br/>

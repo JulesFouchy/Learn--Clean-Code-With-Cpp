@@ -117,7 +117,7 @@ This is a complex question and there is no one true answer, so feel free to pond
 
 One answer might be that we will make a class which will have all the state as member variables, and that our `show_number_of_lives()` will be a member function. One problem with that approach is that now `show_number_of_lives()` also has access to variables it doesn't need like the word to guess and the letters that have already been found. It is as if we wrote `show_number_of_lives(int number_of_lives, const std::string& word_to_guess, const std::vector<char>& letters_that_have_been_found)`, giving three parameters to our function even though it only needs one.
 
-The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See <LessonLink slug="free-functions"/>)
+The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See <LessonLink slug="prefer-free-functions"/>)
 
 So, what do we put in our state? Well, I guess we will see as we implement each function 😉
 

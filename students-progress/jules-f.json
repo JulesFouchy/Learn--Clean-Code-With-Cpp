@@ -24,7 +24,7 @@
   "enums": 0,
   "error-handling": 0,
   "formatting-tool": 0,
-  "free-functions": 0,
+  "prefer-free-functions": 0,
   "friend": 0,
   "functional-programming": 0,
   "git-pull-request": 0,
