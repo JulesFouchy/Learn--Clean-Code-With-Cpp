@@ -43,25 +43,22 @@ Finding the right name sometimes gives you ideas of how to improve your design. 
 
 Some of these are extracted from the [Unreal Engine Coding Guidelines](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/CodingStandard/).
 
-### Name your booleans as assertions
+### Name your booleans as questions or assertions
 
-Because they can only be true or false, booleans are well suited to be read as assertions:
+To make it clear what true and false mean:
 
 ```cpp
 // Bad, what does true mean?
 bool CheckTea(Tea tea);
 
 // Good, the name makes it clear that true means the tea is fresh
+bool IsTeaFresh(Tea tea);
+// Also good
 bool TeaIsFresh(Tea tea);
 ```
 
-This also makes your code read as an actual sentence:
-
-```cpp
-if (TeaIsFresh(myTea)) {
-    // . . .
-}
-```
+The *assertion* version is great because it makes your code read as an actual sentence: `if (TeaIsFresh(myTea))`.
+On the other hand the *question* version is great because the first word (`is`, `has`, `does`, *etc.*) makes it instantly clear that this is a boolean.
 
 ### Use variables or functions to split complicated statements
 
