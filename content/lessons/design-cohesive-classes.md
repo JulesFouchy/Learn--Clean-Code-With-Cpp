@@ -1,5 +1,5 @@
 ---
-title: Design Cohesive Classes
+title: Design cohesive classes
 benefit: 5
 easiness: 3
 level: 2
