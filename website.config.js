@@ -3,10 +3,14 @@ const fetch = require("node-fetch")
 module.exports = async () => {
   const contact_info = await fetch(
     "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/contact.json"
-  ).then((res) => res.json())
+  )
+    .then((res) => res.json())
+    .catch((err) => ({}))
   const classes = await fetch(
     "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/my-classes.json"
-  ).then((res) => res.json())
+  )
+    .then((res) => res.json())
+    .catch((err) => [])
   return {
     github_account: "JulesFouchy",
     repo: "Learn--Clean-Code-With-Cpp",
