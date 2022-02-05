@@ -16,7 +16,7 @@ Be consistent with the conventions you choose (e.g. camelCase vs snake_case, pre
 
 When your brain gets used to a convention you will find it easier to read and understand the code. On the contrary if a project breaks its own convention all the time it can be confusing.
 
-To help you in this task you have <LessonLink text="formatting tools" slug="formatting-tool"/> and <LessonLink text="static analysers" slug="static-analysis-and-sanitizers"/> which will do most of the job for you.
+To help you in this task you have <LessonLink text="formatting tools" slug="formatting-tool"/> and <LessonLink text="static analysers" slug="static-analysers"/> which will do most of the job for you.
 
 ## Don't be too religious
 
