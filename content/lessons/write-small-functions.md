@@ -7,12 +7,13 @@ bias: 2
 tags:
     - Clean Code
 ---
+import GoingFurther from "@site/components/GoingFurther"
+
+> Write the functions you wish to see in the world – [*Tony Van Eerd*](https://youtu.be/glYq-dvgby4?t=2721)
 
 ## Brief
 
-Small functions are way easier to read and reason about.
-
-[Here is what the Core Guidelines have to say about it.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-single)
+Small functions are way easier to read and reason about. [Here is what the Core Guidelines have to say about it.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-single)
 
 ## Details
 
@@ -107,3 +108,14 @@ void View::display_image(ImTextureID image_texture_id, ImageSize image_size, boo
     }
 }
 ```
+
+## Going further
+
+<GoingFurther resources = {[
+    {
+        title: "SOLID, Revisited",
+        author: "Tony Van Eerd",
+        link: "https://youtu.be/glYq-dvgby4",
+        duration: "1h30",
+    },
+]}/>

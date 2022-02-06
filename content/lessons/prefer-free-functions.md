@@ -36,4 +36,10 @@ Don't feel the need to put every function in a class just because you are an "ob
         link: "https://youtu.be/WLDT1lDOsb4",
         duration: "1h",
     },
+    {
+        title: "How Non-Member Functions Improve Encapsulation",
+        author: "Scott Meyers",
+        link: "https://embeddedartistry.com/fieldatlas/how-non-member-functions-improve-encapsulation/",
+        duration: "15min",
+    },
 ]}/>

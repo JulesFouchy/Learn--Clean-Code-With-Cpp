@@ -54,3 +54,14 @@ If your method only uses public members of the class, then it could be written a
 Public methods are meant to access private members: *this is where the encapsulation happens!*<br/>
 If they only need public members then you can turn them into free functions.
 :::
+
+## Going further
+
+<GoingFurther resources = {[
+    {
+        title: "SOLID, Revisited",
+        author: "Tony Van Eerd",
+        link: "https://youtu.be/glYq-dvgby4",
+        duration: "1h30",
+    },
+]}/>

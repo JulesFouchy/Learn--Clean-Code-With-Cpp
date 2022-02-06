@@ -6,6 +6,7 @@ level: 2
 tags:
     - Clean Code
 ---
+import Resource from "@site/components/Resource"
 
 ## Brief
 
@@ -35,6 +36,8 @@ bool order_is_valid(int amount) {
 ```
 
 It is feasible that we will need to change `order_is_valid` while keeping `age_is_valid` the same, and it wouldn't be practical to do if the code had been refactored away. In this example the duplication is a coincidence, not a fondamental property of our domain model.
+
+See also: <Resource title="SOLID, Revisited" author="Tony Van Eerd" link="https://youtu.be/glYq-dvgby4?t=4157" duration="6min"/>.
 :::
 
 ## Going further
