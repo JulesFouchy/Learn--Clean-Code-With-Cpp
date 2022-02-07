@@ -16,6 +16,8 @@ import CodeBlock from "@theme/CodeBlock"
 
 A compiler is the program that takes your C++ code and creates an executable out of it. Needless to say that it is quite important to have as a C++ developer.
 
+## Installation
+
 <Tabs>
   <TabItem value="windows" label="Windows">
 You will find all the explanations you need <a href = "https://code.visualstudio.com/docs/cpp/config-msvc">here</a> (<b>NB:</b> you only need to follow the <i>Prerequisites</i> section).<br/>
