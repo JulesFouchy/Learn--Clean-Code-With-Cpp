@@ -8,7 +8,7 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 ## Alternative classes
 
-[CPP Learning](https://laefy.github.io/CPP_Learning/): Great classes (in French) done by Céline Noel for the Master 1 at Université Gustave Eiffel.
+[CPP Learning](https://laefy.github.io/CPP_Learning/): Great classes (in French) by Céline Noel for the Master 1 at Université Gustave Eiffel.
 
 ## Video tutorials
 
@@ -35,6 +35,14 @@ Here are a lot of awesome resources that will help you in your learning journey.
 [IT Hare](http://ithare.com/)
 
 [Fluent C++](https://www.fluentcpp.com/)
+
+## Articles
+
+[C++ Compilation](https://github.com/green7ea/cpp-compilation): A short description of the C++ build process
+
+[C++ Interview questions](https://www.codingame.com/work/cpp-interview-questions/): Common questions to test your skills in C++
+
+[Doom3 BFG Source code review](https://fabiensanglard.net/doom3_bfg/): Code analysis of a huge codebase by Fabien Sanglard
 
 ## Books
 
@@ -91,11 +99,3 @@ Here are a lot of awesome resources that will help you in your learning journey.
 [C++ Class Natures in Their Canonical Form and How to Find Them](https://youtu.be/PedVlux_p-k) *Peter Sommerlad*
 
 [Data-Oriented Design and C++](https://youtu.be/rX0ItVEVjHc) *Mike Acton*
-
-## Articles
-
-[C++ Compilation](https://github.com/green7ea/cpp-compilation): A short description of the C++ build process
-
-[C++ Interview questions](https://www.codingame.com/work/cpp-interview-questions/): Common questions to test your skills in C++
-
-[Doom3 BFG Source code review](https://fabiensanglard.net/doom3_bfg/): Code analysis of a huge codebase by Fabien Sanglard
