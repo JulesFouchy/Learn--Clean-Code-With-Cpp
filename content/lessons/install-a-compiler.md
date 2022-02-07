@@ -38,6 +38,6 @@ If you need more information, you can check out <a href="https://code.visualstud
 
 ## Verification
 
-You should now be able to build [this sample project](https://github.com/JulesFouchy/Simple-Cpp-Setup). If you are using VSCode you just need the <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> and you should be able to simply use the *launch* button at the bottom of your VSCode:
+You should now be able to build [this sample project](https://github.com/JulesFouchy/Simple-Cpp-Setup). If you are using VSCode you just need the <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> and you should then be able to use the *launch* button at the bottom of your VSCode:
 
 ![](./img/cmake-run-project.png)
