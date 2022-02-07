@@ -35,29 +35,29 @@ class Transform {
 
 class Character {
 public:
-    // functions that might use _transform if they neeed it
+    // functions that might use _transform if they need it
 private:
     Transform _transform;
 };
 
-class Ennemy {
+class Obstacle {
 public:
-    // functions that might use _transform if they neeed it
+    // functions that might use _transform if they need it
 private:
     Transform _transform;
 };
 ```
 
-This gives you greater control over the API of the "child" classes. Because when you modify a parent class the change is necessarily reflected in *all* the children, which is often not desired. Often you find that you need to add something in the parent class because one specific child needs it, but by doing so you impose it on all the other children which don't necessarily need or want it. With composition you have greater control over that. And also composition drives you to write smaller classes instead of inheriting from one big mother class, which is definitely preferable.
+This gives you greater control over the API of the "child" classes. Because when you modify a parent class the change is necessarily reflected in *all* the children, which is often not desired. But often you end up needing to add something in the parent class because one specific child needs it; and by doing so you impose it on all the other children which don't necessarily need or want it. With composition you have greater control over that. And also composition naturally encourages you to write smaller classes instead of inheriting from one big mother class.
 
 ## Polymorphism
 
-There are many ways of achieving polymorphism! And there are also different kinds of polymorphism: *static* and *dynamic*.
+There are many ways of achieving polymorphism, and inheritance is only one of them! And there are also different kinds of polymorphism: *static* and *dynamic*.
 
 ### Static
 
-Static polymorphism happens at compile time: it is therefore more performant, but can be used in less situations.<br/>
-Static polymorphism is achieved through **templates** (and **function overloads** can help too):
+Static polymorphism happens at compile time: it is therefore more performant, but can be used in fewer situations.<br/>
+Static polymorphism is achieved through **templates**. (And **function overloads** can help too):
 
 ```cpp
 void do_something(int x) {/*...*/}
@@ -93,14 +93,14 @@ Since all alternatives are known at compile time, the size of `Camera` is known 
 
 :::info
 One downside to *std::variant* is that the syntax is not as nice as it could be, and it might be simpler to use inheritance.<br/>
-This has to be taken into account when deciding between *std::variant* and *inheritance*, and I will not blame you if you decide to pay the performance cost of inheritance for the sole reason that it is simpler to write code with inheritance than with std::variant (Although dealing with unique_ptr can be quite cumbersome too).
+This has to be taken into account when deciding between *std::variant* and *inheritance*, and I will not blame you if you decide to pay the performance cost of inheritance for the sole reason that it is simpler to write code with inheritance than with *std::variant*. (Although dealing with *unique_ptr* can be quite cumbersome too).
 
-But remember that in some cases *std::variant* can be simpler to use than inheritance (and also, as always, be more performant); especially if you need your type to be copiable.
+But remember that in some cases *std::variant* will be simpler to use than inheritance (and also, as always, more performant); especially if you need your type to be copiable.
 :::
 
 #### std::function
 
-[`std::function`](/lessons/std-function) is an amazing type! It is basically the strategy pattern embodied in a simple type! If you need to inject behaviour into a class or if you need to pass a function as a parameter to another function, then `std::function` is the type you need.
+[`std::function`](/lessons/std-function) is an amazing type! It is basically the strategy pattern embodied in a simple-to-use type! If you need to inject behaviour into a class or if you need to pass a function as a parameter to another function, then `std::function` is what you need.
 
 ## Good use cases for inheritance
 
@@ -108,7 +108,7 @@ You might now be left wondering when using inheritance is a good idea, if reusin
 
 ### Interfaces
 
-This is probably the bigger one. It is **completely OK** to inherit[^1] from a purely abstract class (a.k.a. a class which has no attributes, and only pure virtual methods):
+This is probably the bigger one. It is OK to inherit[^1] from a purely abstract class (a.k.a. a class which has no attributes, and only pure virtual methods):
 
 [^1]: And even multiple inheritance works very well when used with interfaces (and needs to be used in many cases because you want your types to inherit from multiple interfaces)
 
@@ -120,16 +120,16 @@ public:
 };
 ```
 
-This is called an *interface* and is very useful: it allows the client code to be decoupled from any given Camera implementation, and only depend on an interface:
+This is called an *interface* and is very useful: it allows the client code to be decoupled from any given *Camera* implementation, and only depend on an interface:
 
 ```cpp
 void render_scene(const ICamera& camera); // I don't depend on a specific camera implementation
-                                          // I just need any object which has a `view_matrix()` and a `projection_matrix()` methods
+                                          // I just need any object which has a `view_matrix()` and a `projection_matrix()` method
 ```
 
 ### CRTP
 
-The Curiously Recurring Template Pattern (CRTP) is a pretty useful implementation trick. For example it allows you to add behaviour to a class easily:
+The *Curiously Recurring Template Pattern* (CRTP) is a pretty useful implementation trick. For example it allows you to add behaviour to a class easily:
 
 ```cpp
 class Angle
