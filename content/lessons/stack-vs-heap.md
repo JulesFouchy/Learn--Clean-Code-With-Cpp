@@ -70,7 +70,7 @@ This also has the advantage that all of the data won't be copied when you are re
 
 You can't know the size of a polymorphic class at compile time because some child classes could be bigger than the parent class. You therefore have to use the heap[^1].
 
-[^1]: **NB:** actually you can use <LessonLink slug="variant" text="std::variant"/> if you want polymorphic objects on the stack. `std::variant` is basically a better version of inheritance.
+[^1]: **NB:** actually you can use <LessonLink slug="composition-over-inheritance" anchor="#stdvariant" text="std::variant"/> if you want polymorphic objects on the stack. `std::variant` is basically a better version of inheritance.
 
 
 ```cpp
