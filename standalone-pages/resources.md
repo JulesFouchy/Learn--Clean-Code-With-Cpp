@@ -16,6 +16,8 @@ Here are a lot of awesome resources that will help you in your learning journey.
 
 [Jason Turner](https://youtu.be/UYEyHlynkPc): Advanced and very detailed videos about various aspects of C++.
 
+[mCoding](https://youtu.be/i_wDa2AS_8w): Has a few great videos about C++.
+
 ## Guidelines
 
 [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
