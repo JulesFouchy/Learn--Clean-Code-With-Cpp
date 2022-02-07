@@ -26,20 +26,18 @@ There are a few reasons to learn how to use *git* :
 - **push** : Have a copy of your code in a server so that other developers can get it.
 - **pull** : Get changes made by other developers.
 
-<img src="./img/version-control-flowchart.png" alt="version control flowchart" style="zoom:50%;" />
-
 ## The big idea
 
 The usual setup when you use git is to create a *remote depot* that is used as a central authority (often this is [github](https://github.com/), but many other providers exist). Authorized developers *clone* the content on their computer, make modifications and *push* their changes back to the depot so that everyone can get it.
 
 ![git depot](./img/git-depot.png)
 
-It is also possible to work only locally (which is great for a simple test project or TPs). Simply open a command line and type `git init` and you can skip the "inital setup" from the next section. It is still possible afterwards to publish your local repository to github thought.
+It is also possible to work only locally (which is great for a simple test project or TPs). Simply open a command line and type `git init` and you can skip the "inital setup" from the next section. It is still possible afterwards to publish your local repository to github though.
 
 ## Step by step
 
 :::tip
-These steps are presented with the command line so that you get a better understanding of git. Yet I strongly recommand that you use a software to abstract this for you. You check the next section for an example.
+These steps are presented with the command line so that you get a better understanding of git. Yet I strongly recommend that you use a software to abstract this for you. You check the next section for an example.
 :::
 
 ### Initial setup
