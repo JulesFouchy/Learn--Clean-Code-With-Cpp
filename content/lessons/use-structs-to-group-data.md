@@ -13,7 +13,7 @@ import LessonLink from "@site/components/LessonLink"
 
 Structs allow you to group data together. When there are no invariants to enforce, using a struct and having all your data public is better that using a class (as explained in <LessonLink slug="design-cohesive-classes"/>).
 
-Often, if you notice that you are passing the same group of parameters to a few functions it is a great oportunity to create a struct: it will simplify parameter passing, make it easier to add a parameter to the group later, and it adds an abstraction to your code that might help you reason about it and that you might reuse later.<br/>
+Often, if you notice that you are passing the same group of parameters to a few functions, it is a great oportunity to create a struct: it will simplify parameter passing, make it easier to add a parameter to the group later, and it adds an abstraction to your code that might help you reason about it and that you might reuse later.<br/>
 For example, if many functions take an `x` and a `y` you might refactor this into a `Point` or `Point2D` struct.<br/>
 On the other hand if you need a point that is restricted to, say, a disk on the plane, then you will need a class to enforce that invariant.
 
