@@ -42,10 +42,8 @@ void Character::move(Direction direction) {
     switch (direction) {
     case Direction::North:
         /*...*/
-        break;
     case Direction::East:
         /*...*/
-        break;
     case Direction::South:
         /*...*/
     case Direction::West:
@@ -129,10 +127,8 @@ void Character::move(Direction direction)
     switch (direction) {
     case North: // More readable than `Direction::North`. We already know that we are dealing with Directions.
         /*...*/
-        break;
     case East:
         /*...*/
-        break;
     case South:
         /*...*/
     case West:
