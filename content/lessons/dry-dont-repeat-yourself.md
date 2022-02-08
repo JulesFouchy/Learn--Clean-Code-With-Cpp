@@ -10,14 +10,14 @@ import Resource from "@site/components/Resource"
 
 ## Brief
 
-In software development we try to avoid duplications. This helps us maintain our code because the important stuff happens in only one place and we don't have to chase the duplicated code around in our code base when we want to make a change.
+In software development we try to avoid duplications. This helps us maintain our code because the important stuff happens in only one place and we don't have to chase the duplicated code around in our codebase when we want to make a change.
 
 There are many ways to avoid duplications:
 
-- **Use a loop or an algorithm**, when you want to do the same thing multiple times in a row
-- **Use a function**, when you want to do the same thing in different places
-- **Use a template**, when you want to do the same thing but for different types
-- **Use a struct or a class**, when you want to use the same group of data in different places
+- **Use a loop or an algorithm**, when you want to do the same thing multiple times in a row.
+- **Use a function**, when you want to do the same thing in different places.
+- **Use a template**, when you want to do the same thing but for different types.
+- **Use a struct or a class**, when you want to use the same group of data in different places.
 - **Use a macro**, (😬[^1]) when you can't use any of the above methods, and have the courage to write and maintain some ugly macro-based code. (Honestly I believe that in most cases duplications are less of an evil than complicated metaprogramming based on macros, so I wouldn't recommend going down the route of macros most of the time). If you really need macros to do complicated things, take a look at libraries like [Boost.Hana](https://www.boost.org/doc/libs/1_61_0/libs/hana/doc/html/index.html).
 
 [^1]: Unfortunately there are still some (very rare) use cases for macros. Hopefully those will disappear once we get reflection and proper metaprogramming in the language, which should come for C++26 or C++29.
