@@ -10,7 +10,7 @@ tags:
 
 ## Brief
 
-Submodules are used to *link* to other repositories: instead of copying a library into your project, you can use a submodule to keep a reference to the original repository. This has several advantages:
+Submodules are used to link to other repositories: instead of copying a library into your project, you can use a submodule to keep a reference to the original repository. This has several advantages:
 - It doesn't take space on your repo: it is merely a link and people can download it if they want to
 - It is easier to update: you simply have to pull from the original repository
 - You always know which version of the library you are using: it is written in the Git submodule
@@ -35,7 +35,7 @@ It doesn't work really well with GitKraken so I recommend to do that step with t
 git clone --recursive https://github.com/url/to/the/repo
 ```
 
-If you forget to use that `--recursive` flag, the submodules won't be cloned. To fix that you can always do
+If you forget to use that `--recursive` flag, the submodules won't be cloned. To fix that you can always do:
 
 ```
 git submodule update --init --recursive
