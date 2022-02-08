@@ -20,7 +20,7 @@ import LessonLink from "@site/components/LessonLink"
 
 There are a few reasons to use *git*:
 
-- **revert**: Go back in time to a working state if you broke something while experimenting.
+- **revert**: Go back in time to a working state if you broke something.
 - **checkout**: Check how the project was at a given date.
 - **commit**: Be able to work step-by-step by grouping your changes with a description.
 - **blame**: Be able to know when a line of code was added, and by whom.
@@ -31,7 +31,7 @@ There are a few reasons to use *git*:
 
 ## The big picture
 
-The usual setup when you use *git* is to create a *remote depot* that is used as a central authority (often this is [GitHub](https://github.com/), but many other providers exist like [GitLab](https://about.gitlab.com/)). Authorized developers *clone* the content on their computer, make modifications and *push* their changes back to the depot so that everyone can get it.
+The usual setup when you use *git* is to create a *remote depot* that is used as a central authority (often this is [GitHub](https://github.com/), but many other providers exist like [GitLab](https://about.gitlab.com/)). Authorized developers *clone* the content on their computer, make modifications, and *push* their changes back to the depot so that everyone can get it.
 
 ![git depot](./img/git-depot.png)
 
@@ -40,7 +40,7 @@ It is also possible to work only locally (which is great for a simple test proje
 ## Step by step
 
 :::tip
-These steps are presented with the command line so that you get a better understanding of *git*. Yet I strongly recommend that you use a software to abstract this for you. You can check the next section for an example.
+These steps are presented with the command line so that you get a better understanding of *git*. Yet I strongly recommend that you use a software to abstract this for you. You can check the next section for some advice on that.
 :::
 
 ### Initial setup
@@ -67,7 +67,7 @@ Then it is time to make you local commit accessible to others via the remote rep
 
 ![pull](./img/git-push.png)
 
-In order to get the latest changes from the remote repository it is recommended to frequently run `git pull` (in particular, always before calling `git push`). If you work with other developers, it is possible that you encounter conflicts if you made changes at the same place in the same files. In this case, check out the next section about resolving conflicts.
+In order to get the latest changes from the remote repository it is recommended to frequently run `git pull` (in particular, always before calling `git push`). If you work with other developers it is possible that you encounter conflicts if you made changes at the same place in the same files. In this case, check out the section about resolving conflicts.
 
 ![pull](./img/git-flow.png)
 
@@ -77,11 +77,11 @@ You might also have heard about branches. This is an advanced *git* feature, you
 
 There are a lot of softwares that make the previous steps easier to do and monitor. I would recommend [GitKraken](https://www.gitkraken.com/) for the job. It is free to use for public repositories, has a nice interface and a great set of features.[^2] They also have [a Youtube channel](https://www.youtube.com/watch?v=v4g6y_HsgpA&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU) with tons of concise tutorials to get started.
 
-[^2]: Another great *git UI* is [Fork](https://git-fork.com/) if you are tired of how laggy GitKraken can be sometimes.
+[^2]: Another great *git UI* is [Fork](https://git-fork.com/) if you are tired of how laggy GitKraken can sometimes be.
 
 ## Handling conflicts
 
-A conflict happens when you made changes in the same place as another developer, but his changes are more recent. In this case you will have to use an external tool to compare the changes and merge them into a valid file. 
+A conflict happens when you made changes in the same place as another developer, but their changes are more recent. In this case you will have to use an external tool to compare the changes and merge them into a valid file. 
 
 GitKraken is a great tool to handle these situations: check out [this tutorial](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git) to get started.
 
@@ -102,6 +102,7 @@ It is great to distinguish different types of commit by starting the message wit
 - **Add**: adds a new feature / class / function.
 - **Update**: improves / changes an existing feature / class / function.
 - **Fix**: fixes a bug.
+- *etc.*
 
 Here are some example messages I would write:
 ```
