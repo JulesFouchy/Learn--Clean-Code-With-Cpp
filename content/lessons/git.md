@@ -87,6 +87,38 @@ GitKraken is a great tool to handle these situations: check out [this tutorial](
 
 ## Good practices
 
+### Small commits
+
 As soon as you have made meaningful progress and the code compiles, make a commit!
 
-Try to avoid putting *unrelated* changes in the same commit.
+Try to avoid putting *unrelated* changes in the same commit: split them over several commits.
+
+### Clear messages and descriptions
+
+Don't be lazy, write actual sentences without stripping words!<br/>
+In the description, explain *why* you are making the change.<br/>
+Be clear about which part of the code is affected by the changes. I (and others) like to put this inside [ ] at the beginning of the message.<br/>
+It is great to distinguish different types of commit by starting the message with a keyword:
+- **Add**: adds a new feature / class / function.
+- **Update**: improves / changes an existing feature / class / function.
+- **Fix**: fixes a bug.
+
+Here are some example messages I would write:
+```
+[guess_the_number] Add get_int_from_user()
+```
+```
+[CMake] Modernize set(EXECUTABLE_OUTPUT_PATH . . .)
+```
+```
+[hangman] Fix missing include
+```
+
+### Don't commit broken code
+
+Always make sure the code compiles before commiting it!<br/>
+This can especially happen after a merge or a conflict resolution: so please check that the code is still working before commiting the resolved conflict!
+
+### Double check
+
+Read all your changes before commiting them! It will make sure you don't commit temporary debug code (as I have done way too many times), and it is a good opportunity to review all your changes and make sure you are happy with them.
