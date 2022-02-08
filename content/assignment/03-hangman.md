@@ -55,13 +55,13 @@ else {
     show_defeat_message();
 }
 ```
-It should look like that in the end (even though we will probably have to modify it a bit as we write our code)
+It should look like that in the end (even though we will probably have to modify it a bit as we write our code).
 
 ## Picking a random word
 
 You might be able to reuse what we did for the last game where we needed a random int. If you do so, you will need to move the `rand()` code to its own file so that it can be included both in *Guess the Number* and *Hangman*.
 
-You can use a hardcoded list of words like:
+You can use a hardcoded list of words like that:
 ```cpp
 #include <array>
 
@@ -96,7 +96,7 @@ First, let's move `get_int_from_user()` into its own *get_input_from_user.h* fil
 
 Then we can turn it into a template, and rename it because it is not tied to integers anymore:
 ```cpp
-/// Blocks until the user inputs something of type T in the console
+/// Blocks until the user inputs something of type T in the console, and then returns it
 template<typename T>
 T get_input_from_user() {
     // TODO: replace int with T
@@ -117,7 +117,7 @@ This is a complex question and there is no one true answer, so feel free to pond
 
 One answer might be that we will make a class which will have all the state as member variables, and that our `show_number_of_lives()` will be a member function. One problem with that approach is that now `show_number_of_lives()` also has access to variables it doesn't need like the word to guess and the letters that have already been found. It is as if we wrote `show_number_of_lives(int number_of_lives, const std::string& word_to_guess, const std::vector<char>& letters_that_have_been_found)`, giving three parameters to our function even though it only needs one.
 
-The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See <LessonLink slug="prefer-free-functions"/>)
+The solution that I suggest is that we write all of them as free functions, taking only the parameters they need. We will then have our state in a struct and only pass the required parts of our state to the different functions. (See <LessonLink slug="prefer-free-functions"/>).
 
 So, what do we put in our state? Well, I guess we will see as we implement each function 😉
 
@@ -153,7 +153,7 @@ bool player_has_won(const std::vector<bool>& letters_guessed) {
 }
 ```
 
-We need to know if the vector contains at least one false. You might be tempted to use a loop, but you can also use an algorithm from the standard library and do this in one line! Go search on the Internet how you can do that 😉<br/>
+We need to know if the vector contains at least one false. You might be tempted to use a loop, but you can also use an algorithm from the standard library and do this in one line! Go search on the Internet how you can do that 😉.<br/>
 NB: several algorithms can be used to achieve this result and it doesn't really matter which one you pick.
 
 <CommitLink hash="1f853409ad2bd1f71d198f394f5a9d4da2616e67"/>
@@ -187,7 +187,7 @@ It has many advantages: providing the same API as `std::string` for `const char*
 
 Just remember that it is non-owning, like a reference: it is great for passing parameters around, but if you need to store it as a long-lasting variable you probably still need to use a `std::string`.
 
-(Read <LessonLink slug="string-and-string-view"/>)
+(You can read <LessonLink slug="string-and-string-view"/>)
 :::
 
 <CommitLink hash="f4d32f3a93cfb3455cd977c41e99b7956b51cd08"/>
@@ -276,7 +276,7 @@ Now, as we did for the previous game, we will move all this code into its own fi
 
 You noticed that in several functions we had to `assert(word_to_guess.size() == letters_guessed.size())`. This is because from the point of view of the function there is no guarantee that this invariant has been enforced. But because of that we end up checking the invariant many times, which is a waste of effort and requires more code (and code duplication!).
 
-So, how can we improve this situation? Well, classes are made exactly for that reason: *enforcing invariants*!
+So, how can we improve this situation? Well, classes are made exactly for that reason: *enforcing invariants*! (See <LessonLink slug="design-cohesive-classes"/>).
 
 ```cpp
 class WordWithMissingLetters {
@@ -294,17 +294,17 @@ private:
 };
 ```
 
-Now think about which of the functions we wrote deserve (or need) to be members of this class? TIP: try to move as few functions as possible inside the class. Only those that need access to the private details of the class must (and should) be moved in the class. Member functions are harder to write and maintain because they have to make sure that the invariants are preserved, whereas free functions using the class can rely on the fact that the invariants are already enforced by the class.
+Now think about which of the functions we wrote deserve (or need) to be members of this class? TIP: try to move as few functions as possible inside the class. Only those that need access to the private details of the class must (and should) be moved in the class. Member functions are harder to write and maintain because they have to make sure that the invariants are preserved, whereas free functions using the class can rely on the fact that the invariants are already enforced by the class. (See <LessonLink slug="prefer-free-functions"/>).
 
 You will also probably need to add some getters.
 
 <CommitLink hash="3972c14c04b0a88da9a08b7a27625cbe3127bc8b"/><br/><br/>
 
 :::tip
-Designing a good class requires time and thinking, but it can simplify the rest of your code later down the road, and makes your code easier to reason about.
+Designing a good class requires time and thinking, but it can simplify the rest of your code later down the road, and make your code easier to reason about.
 
 **Small classes that do their job well and enforce one or two invariants are all the rage!**<br/>
-(Read <LessonLink slug="design-cohesive-classes"/>)
+(See <LessonLink slug="design-cohesive-classes"/>)
 :::
 
 :::info Bonus
