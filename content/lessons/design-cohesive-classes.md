@@ -8,6 +8,7 @@ tags:
     - Clean Code
 ---
 import LessonLink from "@site/components/LessonLink"
+import GoingFurther from "@site/components/GoingFurther"
 
 ## Brief
 
@@ -34,7 +35,7 @@ Prefer using a *struct* over a *class* if you have no invariants to enforce (see
 
 Try not to mix concerns inside a single class: it should have only one reason to change. This is known as the *Single Responsibility Principle*.
 
-A good indicator: if none of your methods need to have access to all members at once then you can probably split that class in two or more smaller classes.
+A good indicator: if none of your methods need to have access to all members at once then you can probably split that class into two or more smaller classes.
 
 ## No private methods
 
@@ -44,7 +45,7 @@ Think about it: what is their advantage over a free function? Apart from the fac
 
 [^3]: Actually they might be used in inheritance hierarchies. But since inheritance hierarchies are a bad practice too, this doesn't quite count 😛
 
-So my guideline will be: don't use private member functions, use free functions that take as a parameter the things they need.
+So my guideline will be: don't use private member functions, use free functions that take as parameters the things they need.
 
 ## No public methods that only use the public API
 
