@@ -59,7 +59,7 @@ PS: did you think of what happens when the user tries to input something that is
 
 ## The game
 
-We will now finish our game by implementing the last two steps!
+We will now finish our game by implementing the last two steps:
 
 ```cpp
 void play_guess_the_number()
@@ -69,7 +69,7 @@ void play_guess_the_number()
 ```
 
 - First you need to pick a random number
-- Then you need a loop that asks the user for a number, until he guesses right. For the loop you can do something like
+- Then you need a loop that asks the user for a number, until they guess right. For the loop you can do something like
 ```cpp
 bool finished = false;
 while (!finished) {
