@@ -48,7 +48,7 @@ private:
 };
 ```
 
-This gives you greater control over the API of the "child" classes. Because when you modify a parent class the change is necessarily reflected in *all* the children, which is often not desired. But often you end up needing to add something in the parent class because one specific child needs it; and by doing so you impose it on all the other children which don't necessarily need or want it. With composition you have greater control over that. And also composition naturally encourages you to write smaller classes instead of inheriting from one big mother class.
+This gives you greater control over the API of the "child" classes. Because when you modify a parent class the change is necessarily reflected in *all* the children, which is often not desired. But often you end up needing to add something in the parent class because one specific child needs it, and by doing so you impose it on all the other children which don't necessarily need or want it. With composition you have greater control over that. And also composition naturally encourages you to write smaller classes instead of inheriting from one big mother class.
 
 ## Polymorphism
 
@@ -82,7 +82,7 @@ Dynamic polymorphism allows you to change the behaviour of an object or function
 
 #### std::variant
 
-One thing to note is that inheritance allows anyone to subclass a type at any time. This is very generic, but also very rarely needed! Most of the time you will know in advance all the possible subtypes. For example you might by writing an abstract `Camera` class which has exactly two child classes: `TrackballCamera` and `FreeflyCamera`. In such cases using a *std::variant* will be more performant, and also express the semantic better.
+One thing to note is that inheritance allows anyone to subclass a type at any time. This is very generic, but also very rarely needed! Most of the time you will know in advance all the possible subtypes. For example you might by writing an abstract `Camera` class which has exactly two child classes: `TrackballCamera` and `FreeflyCamera`. In such cases using a *std::variant* will be more performant, and also express the semantic better:
 
 ```cpp
 using Camera = std::variant<TrackballCamera,
