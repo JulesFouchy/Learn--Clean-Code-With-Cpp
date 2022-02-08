@@ -13,13 +13,13 @@ import LessonLink from "@site/components/LessonLink"
 
 An IDE (Integrated Development Environment) is like a text editor, but way more powerful! It has a lot of additional features that will help you write, run and debug your code!
 
-I personally use and recommend [*Visual Studio Code*](https://code.visualstudio.com/) (*VS Code* for short).
+I personally use and recommend [*Visual Studio Code*](https://code.visualstudio.com/) (*VSCode* for short).
 
 ## Extensions
 
 There are many extensions that can help you! Check out the recommended extensions for your language or discover what other people use.
 
-Here are some great extensions for VS Code that I recommend:
+Here are some great extensions for VSCode that I recommend:
 
 - <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>: The Basic C++ extensions
 - <VSCodeExtension id="coenraads.bracket-pair-colorizer-2"/>: This colors matching pairs of brackets; it makes the code more readable
@@ -27,7 +27,7 @@ Here are some great extensions for VS Code that I recommend:
 
 ## Quick actions
 
-Below are a few of the most important things that an IDE will help you with; I will demonstrate them using *VS Code* but rest assured that any other IDE will have the same functionalities. Please note that most of these actions are only available if <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> is installed in your VS Code.
+Below are a few of the most important things that an IDE will help you with; I will demonstrate them using *VSCode* but rest assured that any other IDE will have the same functionalities. Please note that most of these actions are only available if <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> is installed in your VSCode.
 
 ### Rename
 
@@ -79,6 +79,4 @@ If you need to find something fast and easy, run `CTRL + SHIFT + F`, enter the o
 
 ### Launching the project
 
-Once you have the <LessonLink slug="cmake" text="CMake"/> setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing `F7` and run it using `F5`. When you run the project it will use the current configuration; these are made to be customizable so you can select the one you want using the dropdown in the "Run and Debug" panel on the left, and edit them by pressing the cogwheel icon.
-
-![](./img/run-project.png)
+Once you have the <LessonLink slug="cmake" text="CMake"/> setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing `F7` or run it using `CTRL + F5`.
