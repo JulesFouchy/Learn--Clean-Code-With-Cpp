@@ -44,5 +44,4 @@ You can check that the deployment succeeded in the [actions tab of GitHub](https
 - Add a way to add bonus points : to reward the investment, the questions asked, the overall high quality / ambition of the project, lessons that are hard but have been partially mastered like *naming*.
 
 - write tests for the grader
-- retrieve my info from json once Docusaurus supports async
 - Replace easiness with difficulty, and change difficulty calculation when I compute the points for each lesson
