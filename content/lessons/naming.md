@@ -23,9 +23,9 @@ Take the time to rename whenever you notice a name that is not quite accurate!
 <LessonLink slug="ide" anchor="#rename" text="Use the features of your IDE"/> to make the renaming easy.
 :::
 
-The greatest names are both consise and descriptive: they encapsulate a concept perfectly and everybody can wrap their head around them easily.<br/>
-The next best thing are names that are long, but still descriptive. The fact that you need a "sentence" to describe your object might indicate that you don't fully understand the abstraction behind it, or that you have a design flaw (maybe your function tries to do several things at once and should be split, or maybe your class has more than one responsibility). Nevertheless it is still a decent name and you can live with it for a while.<br/>
-The last kind of names are the ones that are obscure (or worse, *lies*); those are inacceptable!
+**The greatest names are both consise and descriptive**: they encapsulate a concept perfectly and everybody can wrap their head around them easily.<br/>
+**The next best thing are names that are long, but still descriptive**. The fact that you need a "sentence" to describe your object might indicate that you don't fully understand the abstraction behind it, or that you have a design flaw (maybe your function tries to do several things at once and should be split, or maybe your class has more than one responsibility). Nevertheless it is still a decent name and you can live with it for a while.<br/>
+**The last kind of names are the ones that are obscure (or worse, *lies*); those are inacceptable!**
 
 :::tip
 I could not do a better job than Kevlin Henney already did, so please watch those 10 minutes of his conference, starting at 41:30
@@ -102,7 +102,7 @@ if (WindowIsValid && !PlayerIsDead)
 
 ### Append "out" to non-const reference parameters
 
-When you pass a variable by mutable reference it implies that your function will change its value. It is better to make it explicit so that it is easier to understand what is going on.
+When you pass a variable by mutable reference it implies that your function will change its value. It can be better to make it explicit so that it is easier to understand what is going on.
 
 ```cpp
 bool parseObjectFromPath(const char* aPath, Object& anObjectOut)
