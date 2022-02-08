@@ -15,14 +15,14 @@ import VSCodeExtension from "@site/components/VSCodeExtension"
 
 ## Brief
 
-A compiler is the program that takes your C++ code and creates an executable out of it. Needless to say that it is quite important to have as a C++ developer.
+A compiler is a program that takes your C++ code and creates an executable out of it. Needless to say that it is quite important to have as a C++ developer.
 
 ## Installation
 
 <Tabs>
   <TabItem value="windows" label="Windows">
 You will find all the explanations you need <a href = "https://code.visualstudio.com/docs/cpp/config-msvc">here</a> (<b>NB:</b> you only need to follow the <i>Prerequisites</i> section).<br/>
-I will just add that while you install MSVC, after selecting <b>Desktop development with C++</b>, in the <i>Installation details</i> on the right you must also check <i>C++ Clang tools for Windows</i> (We will need it later when we install amazing tools).
+I will just add that while you install MSVC, after selecting <b>Desktop development with C++</b>, in the <i>Installation details</i> on the right you must also check <i>C++ Clang tools for Windows</i> (We will need it later when we install some tools).
 <br/><br/>
 Then install CMake: go <a href="https://cmake.org/download/">here</a> and download and run the <i>Windows x64 Installer</i>.
   </TabItem>
