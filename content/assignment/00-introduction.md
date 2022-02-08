@@ -51,8 +51,13 @@ If you choose Option#1, you don't need to care about the other pages of the *Ass
 
 If you are looking for inspiration I can suggest a few ideas that I would personally love working on:
 
- - **Cool**: I am currently working on a C++ framework called [*Cool*](https://coollibs.github.io/home/) where we do a lot of image-related work. If you are interested in joining the adventure, there is definitely a place for you!
- - **A Bezier-curve editor**: Check out [this video](https://youtu.be/aVwxzDHniEw) to learn more about Bezier curves. Bezier curves are pretty cool; you could do an editor that renders them, allows you to modify them, implement a fill algorithm to colorize the interior, and so on. Once you can render Bezier curves you can render any SVG using a library like [nanosvg](https://github.com/memononen/nanosvg).
+ - **A Bezier-curve editor**: Check out [this video](https://youtu.be/aVwxzDHniEw) to learn more about Bezier curves. Bezier curves are pretty cool; you could do an editor that renders them, allows you to draw them, implement a fill algorithm to colorize the interior, and so on. Once you can render Bezier curves you can render any SVG using a library like [nanosvg](https://github.com/memononen/nanosvg).
+ - **Image post-processing**: Apply effects like brightness, constrast, blur, and many more on an image.
+ - **Image mosaic**: Recreate an image by stamping a lot of small ones together, like [this one](https://blenderartists.org/t/mosaic-image-generator-program/596903).
+ - **Boids**: Simulate flocks of birds and other similar behaviours, using a few simple rules. Here is a [great explanation by *The Coding Train*](https://youtu.be/P_xJMH8VvAE?list=PLRqwX-V7Uu6ZV4yEcW3uDwOgGXKUUsPOM).
+ - **A drawing app**: With a few tools: brushes, shapes, *etc.*
+ - **A tool for generative artists**
+ - **Cool**: I am currently working on a C++ framework called [*Cool*](https://coollibs.github.io/home/) where we do a lot of image-related work. If you are interested in joining the adventure, there is definitely a place for you! You could work on the camera system, the lighting, the scripting, or many other things.
 
 ## Option#2: Following the guided project
 
