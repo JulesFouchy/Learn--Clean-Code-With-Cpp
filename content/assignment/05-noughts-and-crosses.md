@@ -10,7 +10,7 @@ Today is a big day because for our third game we are leaving the console behind!
 
 We are gonna use the [*p6* library](https://github.com/JulesFouchy/p6) which makes it very easy. Its API is strongely inspired by [*p5.js*](https://p5js.org/) which you might already be familiar with.
 
-<img src={require("../../static/img/noughts-and-crosses.gif").default} style={{width: "50%"}} />
+<img src="/Learn--Clean-Code-With-Cpp/img/noughts-and-crosses.gif" style={{width: "50%"}} />
 
 ## Adding the library
 
