@@ -34,13 +34,13 @@ Although this class makes use of C++, most of its content will be applicable to 
  
  I believe this is the best way for you to learn, for practicing is when the actual learning happens. Moreover, giving lectures would imply that you are all at the same point in your learning journey and are all ready to learn the same things, which is definitely never true, not for any single group of students larger than 2.
 
-These lessons are not meant to be read one after the other. Instead look at [the list of lessons](./progress) and pick one (or a few) that seem interesting to you; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat.
+These lessons are not meant to be read one after the other. Instead look at [the list of lessons](../progress) and pick one (or a few) that seem interesting to you; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat.
 
  Note that the lessons are sorted by order of importance so it makes sense to somewhat follow the order even though this is not a strict one.
 
 ## Evaluation
 
-Check out the [Progress](./progress) section to see how you will be graded, and the [Assignment](./assignment) section to see what you will have to submit.
+Check out the [Progress](../progress) section to see how you will be graded, and the [Assignment](../assignment) section to see what you will have to submit.
 
 My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will have a great visibility on your current grade as you progress in the semester and you will always have the possibility to submit extra work to improve it if you wish.
 
