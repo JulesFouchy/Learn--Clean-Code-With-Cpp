@@ -20,7 +20,11 @@ To see these tools in action, [check this out](https://youtu.be/juJaaCf_yKc).
 
 ### clang-tidy
 
-Go to [LLVM's release page](https://github.com/llvm/llvm-project/releases/latest) and choose the right executable (e.g. *LLVM-13.0.0-win64.exe* for Windows). Then run the executable and it will install everything (don't forget to accept *Add to PATH*). Once you restart your computer the VSCode extension will be able to find the *clang-tidy* executable.
+**For Windows:**
+Go to [LLVM's release page](https://github.com/llvm/llvm-project/releases/latest) and choose the right executable (e.g. *LLVM-13.0.0-win64.exe*). Then run the executable and it will install everything (don't forget to accept *Add to PATH*). Once you restart your computer the VSCode extension will be able to find the *clang-tidy* executable.
+
+**For Linux and Mac:**
+It should be as simple as installing it through your favorite package manager. If not, go look on the Internet!
 
 ### The other
 
