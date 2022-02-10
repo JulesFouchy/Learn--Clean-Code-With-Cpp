@@ -17,7 +17,31 @@ Often, if you notice that you are passing the same group of parameters to a few 
 For example, if many functions take an `x` and a `y` you might refactor this into a `Point` or `Point2D` struct.<br/>
 On the other hand if you need a point that is restricted to, say, a disk on the plane, then you will need a class to enforce that invariant.
 
-Moreover, if this group of parameters is supposed to have a default value, then you can encode it in the struct instead of duplicating it all over the place in all the functions that take those parameters.
+Moreover, if this group of parameters is supposed to have a default value, then you can encode it in the struct instead of duplicating it all over the place in all the functions that take those parameters:
+
+```cpp
+// Bad, we are duplicating our default values
+class Texture {
+    // . . .
+    void resize     (ImageSize size,                   InternalFormat internal_format = InternalFormat::RGBA, Channels channels = Channels::RGBA, TexelDataType texel_data_type = TexelDataType::UnsignedByte);
+    void upload_data(ImageSize size, const void* data, InternalFormat internal_format = InternalFormat::RGBA, Channels channels = Channels::RGBA, TexelDataType texel_data_type = TexelDataType::UnsignedByte);
+};
+```
+
+```cpp
+// Good, we have removed some duplications and introduced a useful abstraction
+struct TextureLayout {
+    InternalFormat internal_format = InternalFormat::RGBA;
+    Channels       channels        = Channels::RGBA;
+    TexelDataType  texel_data_type = TexelDataType::UnsignedByte;
+};
+
+class Texture {
+    // . . .
+    void resize(ImageSize size, TextureLayout layout = {});
+    void upload_data(ImageSize size, const void* data, TextureLayout layout = {});
+};
+```
 
 ## Designated initializers
 
