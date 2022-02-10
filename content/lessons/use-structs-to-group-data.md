@@ -17,6 +17,8 @@ Often, if you notice that you are passing the same group of parameters to a few 
 For example, if many functions take an `x` and a `y` you might refactor this into a `Point` or `Point2D` struct.<br/>
 On the other hand if you need a point that is restricted to, say, a disk on the plane, then you will need a class to enforce that invariant.
 
+Moreover, if this group of parameters is supposed to have a default value, then you can encode it in the struct instead of duplicating it all over the place in all the functions that take those parameters.
+
 ## Designated initializers
 
 In C++20 structs have become even more amazing thanks to *designated initializers*:<br/>
