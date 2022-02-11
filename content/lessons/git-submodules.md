@@ -26,6 +26,7 @@ With the command line you can do:
 
 ```
 git submodule add https://github.com/url/to/the/repo folder/where/to/clone
+git submodule update --init --recursive
 ```
 
 ## Cloning a project that uses a submodule
