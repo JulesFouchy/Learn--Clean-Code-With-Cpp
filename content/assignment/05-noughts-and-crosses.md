@@ -188,3 +188,5 @@ We need to check all the rows, all the columns, and all the diagonals. How are y
 ## Refactoring
 
 Congrats, you have finished a pretty nice game! Now all that there is left to do is to move your code into its own file and add this game to the menu.
+
+<CommitLink hash="d79e7f02920fea4ff9aabc3d80d27b2ba839756c"/>
