@@ -27,6 +27,12 @@ Functional programming is an important paradigm. A lot of very good techniques h
         description: "A sweet intro to some functional concepts",
     },
     {
+        title: "Building an Intuition for Composition",
+        author: "Sy Brand",
+        link: "https://youtu.be/AGRWRwi7rD0",
+        duration: "1h",
+    },
+    {
         title: "Fundamentals of Lambda Calculus & Functional Programming in JavaScript",
         author: "Gabriel Lebec",
         link: "https://youtu.be/3VQ382QG-y4",
