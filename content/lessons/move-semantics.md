@@ -152,9 +152,9 @@ Compilers can do other optimizations, but RVO is (currently) the only one that i
         duration: "5min",
     },
     {
-        title: "TODO put a link to Klaus' conference when the CppCon 2021 is available on Youtube",
+        title: "Back To Basics: The Special Member Functions",
         author: "Klaus Iglberger",
-        link: "TODO put a link to Klaus' conference when the CppCon 2021 is available on Youtube",
+        link: "https://youtu.be/9BM5LAvNtus",
         duration: "1h",
     },
     {
