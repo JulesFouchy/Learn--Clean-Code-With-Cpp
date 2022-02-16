@@ -21,7 +21,7 @@ The main difference will be that I won't be able to provide you with guided step
 
 I will be looking at your code regularly to give you feedback and start checking the lessons that you are learning.
 
-In order for me to do so, all of you must publish you work on a public Git repository (which is good practice anyways, and will be the number one lesson I will be looking at).
+In order for me to do so, all of you must publish your work on a public Git repository (which is good practice anyways, and will be the number one lesson I will be looking at).
 
 You can use GitHub, GitLab or whatever you are used to using. Just send me a link to the relevant repository *now* (or as soon as you start working on the project).
 
