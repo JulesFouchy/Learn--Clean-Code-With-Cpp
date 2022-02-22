@@ -1,7 +1,7 @@
 {
   "install-a-compiler": 0,
   "ide": 0,
-  "git": 0,
+  "git": 1,
   "debugger": 0,
   "formatting-tool": 0,
   "static-analysers": 0,

@@ -2,7 +2,7 @@
   "install-a-compiler": 3,
   "ide": 2,
   "git": 2,
-  "debugger": 0,
+  "debugger": 2,
   "formatting-tool": 3,
   "static-analysers": 3,
   "naming": 1,

@@ -1,6 +1,6 @@
 {
-  "install-a-compiler": 0,
-  "ide": 0,
+  "install-a-compiler": 3,
+  "ide": 2,
   "git": 0,
   "debugger": 0,
   "formatting-tool": 0,

@@ -12,7 +12,7 @@
   "prefer-free-functions": 0,
   "design-cohesive-classes": 0,
   "use-structs-to-group-data": 0,
-  "write-small-functions": 0,
+  "write-small-functions": 1,
   "dry-dont-repeat-yourself": 0,
   "enums": 0,
   "split-problems-in-small-pieces": 0,
