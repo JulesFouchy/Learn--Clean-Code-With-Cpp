@@ -53,7 +53,7 @@ int get_int_from_user() {
 }
 ```
 
-PS: did you think of what happens when the user tries to input something that is not a number? Here is [a link that can help you](https://stackoverflow.com/questions/10349857/how-to-handle-wrong-data-type-input). (NB: now you might start to understand why we wrap this code in a `get_int_from_user()` function: the code is not trivial so we want to encapsulate it. You can also read <LessonLink slug="write-small-functions"/>.)
+PS: did you think of what happens when the user tries to input something that is not a number? Here is [a link that can help you](https://stackoverflow.com/questions/10349857/how-to-handle-wrong-data-type-input). (NB: now you might start to understand why we wrap this code in a function: the code is not trivial so we want to encapsulate it. You can also read <LessonLink slug="write-small-functions"/>.)
 
 <CommitLink hash="f0b93c1f556d25dc4b4a9511f50110ed5a3765ae"/>
 
