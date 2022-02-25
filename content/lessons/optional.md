@@ -7,5 +7,19 @@ tags:
     - Clean Code
     - C++
 ---
+import GoingFurther from "@site/components/GoingFurther"
 
-https://youtu.be/ojZbFIQSdl8?t=1056
+## Brief
+
+[See this great lesson on std::optional](https://www.cppstories.com/2018/05/using-optional/).
+
+## Going further
+
+<GoingFurther resources = {[
+    {
+        title: "Using Types Effectively",
+        author: "Ben Deane",
+        link: "https://youtu.be/ojZbFIQSdl8",
+        duration: "1h",
+    },
+]}/>
