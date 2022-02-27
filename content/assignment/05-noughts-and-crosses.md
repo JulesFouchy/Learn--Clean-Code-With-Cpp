@@ -6,7 +6,7 @@ import CommitLink from "../../components/CommitLink"
 import LessonLink from "@site/components/LessonLink"
 import CodeBlock from "@theme/CodeBlock"
 
-Today is a big day because for our third game we are leaving the console behind! We will display some actual graphics and the user will be able to click on the window to play!
+Today is a big day because for our third game we are leaving the console behind! We will display some actual graphics and the user will be able to click in the window to play!
 
 We are gonna use the [*p6* library](https://github.com/JulesFouchy/p6) which makes it very easy. Its API is strongely inspired by [*p5.js*](https://p5js.org/) which you might already be familiar with.
 
