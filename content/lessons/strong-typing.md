@@ -9,7 +9,9 @@ tags:
 
 ## Brief
 
-Strong typing is when you create a type just to wrap an `int`,  so that you can give that `int` a name, invariants, and so on. It helps you express your intent more clearly and makes your APIs harder to misuse. They are amazing and definitely worth the extra little time needed to write them down ; don't be lazy !
+Strong typing is when you create a type just to wrap an `int`,  so that you can give that `int` a name, invariants, and so on. It helps you express your intent more clearly and makes your APIs harder to misuse. They are amazing and definitely worth the extra little time needed to write them down; don't be lazy!
+
+*Strong typedefs* (as well as a few other amazing features) are available in the great [*type_safe*](https://github.com/foonathan/type_safe) library. You should consider using it if you want to use strong types.
 
 ## Details
 
@@ -19,7 +21,7 @@ And then look at [this great example](https://youtu.be/ojZbFIQSdl8?t=1444) of us
 
 Once you are done with these, I want to give an example of my own.
 
-Consider a 2D position (a.k.a a point) and a 2D displacement (a.k.a. a vector (although that term is way too overloaded and has sadly become ambiguous)). They can both be represented with two numbers *x* and *y* even though they are **_very different concepts_** !
+Consider a 2D position (a.k.a a point) and a 2D displacement (a.k.a. a vector (although that term is way too overloaded and has sadly become ambiguous)). They can both be represented with two numbers *x* and *y* even though they are **_very different concepts_**!
 
 The fact that they are different concepts means that we can not do the same operations on them ! Strong typing can protect us from accidently doing that.
 
@@ -31,14 +33,14 @@ Adding a displacement to a position is perfectly reasonable too : it moves the p
 
 ![](./img/displacement-position-addition.png)
 
-But adding two positions doesn't make sense at all !!!
+But adding two positions doesn't make sense at all!!!
 
 ![](./img/point-addition.png)
 
 Even though it would be easy to add the *representation* of two positions, we want to prevent that because it would most likely be a bug or a logic error.
 
 :::tip Recap
-Strong typing helps us give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more ! They prevent logic errors and make APIs clearer.
+Strong typing helps us give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more! They prevent logic errors and make APIs clearer.
 :::
 
 :::info Going further
