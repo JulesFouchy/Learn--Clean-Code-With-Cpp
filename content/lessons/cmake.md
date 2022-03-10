@@ -53,6 +53,33 @@ endif()
 A C++ code that compiles is far from guaranteed to have no bugs! (mostly because of backward compatibility with C). This is why warnings are important!
 :::
 
+:::caution
+If you are writing a library, using *warnings as errors* can prevent your users from compiling your library. Because the different compilers (and compiler versions) don't generate the same warnings and you might therefore have missed some.
+
+You should only enable *warnings as errors* when you are building the tests of your library, and disable it by default for your users. This is what *p6* does:
+```cmake title="p6/CMakeLists.txt"
+if (p6_ENABLE_WARNINGS_AS_ERRORS)
+    message("-- [p6] Enabling warnings as errors for p6")
+    if(MSVC)
+        target_compile_options(p6 PRIVATE /WX /W4)
+    else()
+        target_compile_options(p6 PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors -Wconversion -Wsign-conversion)
+    endif()
+    set(glpp_extended_ENABLE_WARNINGS_AS_ERRORS true)
+    set(img_ENABLE_WARNINGS_AS_ERRORS true)
+else()
+    message("-- [p6] Not using warnings as errors for p6")
+endif()
+```
+[*p6's CMake*](https://github.com/JulesFouchy/p6/blob/main/CMakeLists.txt)
+
+```cmake title="p6-tests/CMakeLists.txt"
+set(p6_ENABLE_WARNINGS_AS_ERRORS true)
+add_subdirectory(p6)
+```
+[*p6-test's CMake*](https://github.com/JulesFouchy/p6-docs/blob/main/tests/CMakeLists.txt)
+:::
+
 ### Setting your C++ version
 
 You can ask for a specific version of C++:
