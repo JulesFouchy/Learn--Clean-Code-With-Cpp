@@ -237,6 +237,10 @@ I disagree with it though, since to me maintaining a list of my *.cpp* files in 
 Now that you have the arguments from both sides, pick your poison. 
 :::
 
+:::info tip
+If it is hard to add new files to your codebase people will tend to try and avoid it, and will put more things in one single file, which might not be desirable. If you want to encourage people to write many small files, using `GLOB_RECURSE` might be a good idea.
+:::
+
 ### Precompiled header
 
 A precompiled header is pretty useful (see <LessonLink slug="precompiled-header"/>).
