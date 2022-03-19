@@ -9,7 +9,7 @@ tags:
 
 ## Brief
 
-If you are used to using integer constants to express different possible situations, then don't! Enums are meant to do exactly that and are way clearer to read!
+If you are used to using integer constants (or worse, a long list of booleans) to express different possible situations, then don't! Enums are meant to do exactly that and are way clearer to read!
 
 ```cpp
 // Bad, you need comments to indicate what the numbers mean!
