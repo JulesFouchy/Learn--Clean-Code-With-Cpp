@@ -54,6 +54,21 @@ You can check that the deployment succeeded in the [actions tab of GitHub](https
 - Putting too many things in the headers; especially the declaration of functions that are only used in the .cpp. Instead they could declare them at the top of the .cpp if they still want them to be accessible in the whole .cpp and not dependant of the order they are implemented in.
 - booleans: don't use 0 and 1, use true and false
 
+## Thoughts
+
+---
+
+En fait c'est bien que tout le monde ait pris connaissance des lessons de niveau 1 et 2 assez rapidement ; ça permet de faire des quizz, d'en rediscuter, de s'en servir comme base de discussion pour faire des remarques / issues etc.
+
+Peut-être quil faudrait les faire en CM sur les 1 ou 2 premières séances.
+
+---
+DRY = The change happens in one single place
+SRP = Each component has only one reason to change
+
+=> Two sides of the same coin: together they mean that components should be a small coherent unit
+
+---
 
 ## Questionnaire
 
