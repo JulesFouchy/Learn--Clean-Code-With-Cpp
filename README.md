@@ -45,3 +45,18 @@ You can check that the deployment succeeded in the [actions tab of GitHub](https
 
 - write tests for the grader
 - Replace easiness with difficulty, and change difficulty calculation when I compute the points for each lesson
+
+- **Final "project"? Chess game? To see how they do when they have no guided steps at all and no correction available.**
+
+## Things many students get wrong
+
+- forgetting `#pragma once` in the headers
+- Putting too many things in the headers; especially the declaration of functions that are only used in the .cpp. Instead they could declare them at the top of the .cpp if they still want them to be accessible in the whole .cpp and not dependant of the order they are implemented in.
+- booleans: don't use 0 and 1, use true and false
+
+
+## Questionnaire
+
+- Alternance Guillaume et moi VS avoir un seul prof
+- + de CMs ?
+- + de quizzs ?
