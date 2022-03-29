@@ -29,7 +29,7 @@
   "master-your-ide": 1,
   "optional": 1,
   "single-source-of-truth": 1,
-  "strong-typing": 1,
+  "strong-types": 1,
   "code-reviews": 0,
   "const": 0,
   "dont-overfocus-on-performance": 0,
