@@ -19,6 +19,7 @@
   "composition-over-inheritance": 0,
   "vector": 0,
   "documentation": 0,
+  "minimize-dependencies": 0,
   "use-libraries": 0,
   "assert": 0,
   "auto": 0,
