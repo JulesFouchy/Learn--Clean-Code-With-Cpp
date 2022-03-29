@@ -1,6 +1,6 @@
 ---
 title: Documentation
-benefit: 5
+benefit: 4
 easiness: 3
 level: 3
 tags:
