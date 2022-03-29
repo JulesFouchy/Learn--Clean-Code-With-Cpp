@@ -1,7 +1,7 @@
 ---
 title: Strong Typing
-benefit: 4
-easiness: 4
+benefit: 5
+easiness: 3
 level: 3
 tags:
     - Clean Code
@@ -44,7 +44,7 @@ But adding two positions doesn't make sense at all!
 Even though it would be easy to add the *representation* of two positions, we want to prevent that because it would most likely be a logic error.
 
 :::tip Recap
-Strong typing helps us give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more! They prevent logic errors and make APIs clearer.
+Strong types help us give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more! They prevent logic errors and make APIs harder to misuse.
 :::
 
 ## Going further
@@ -62,6 +62,6 @@ Strong typing helps us give a more concrete representation to ***concepts***, **
         author: "Robert Ramey",
         link: "https://youtu.be/632a-DMM5J0",
         duration: "1h",
-        description: "Abstract Algebra and Strong Types"
+        description: "Strong types to enforce invariants and model Abstract Algebra concepts"
     },
 ]}/>
