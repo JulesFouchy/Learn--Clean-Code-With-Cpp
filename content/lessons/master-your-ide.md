@@ -21,8 +21,8 @@ You can also discover shortcuts by watching other people write code. Take the ti
 
 Take the time to open the *Settings* menu of your IDE, and read through it! You will discover a lot of the hidden functionalities of your IDE, and you might be able to change its behaviour to better suit your needs! I often feel silly when I discover that the functionality I was dreaming of was actually available, waiting for me to enable it.
 
-Same for the extensions you use: they can be configured in a lot of different ways, so check out their settings!<br/>
-(For example, did you know that you can tell the CMake extension where your CMakeLists.txt is? It doesn't have to be at the root of the project!)
+The same is true for the extensions you use: they can be configured in a lot of different ways, so check out their settings!<br/>
+(For example, did you know that you can tell the CMake extension where your CMakeLists.txt is? It doesn't have to be at the root of your project!)
 
 ## A few great actions
 
