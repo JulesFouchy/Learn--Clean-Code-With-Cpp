@@ -24,7 +24,7 @@
   "auto": 1,
   "testing": 1,
   "type-design": 1,
-  "dependencies": 1,
+  "dependency-injection": 1,
   "lambda": 1,
   "master-your-ide": 1,
   "optional": 1,

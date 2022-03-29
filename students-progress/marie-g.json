@@ -24,7 +24,7 @@
   "auto": 0,
   "testing": 0,
   "type-design": 0,
-  "dependencies": 0,
+  "dependency-injection": 0,
   "lambda": 0,
   "master-your-ide": 0,
   "optional": 0,
