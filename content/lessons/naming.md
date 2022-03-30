@@ -28,7 +28,11 @@ Take the time to rename whenever you notice a name that is not quite accurate!
 **The last kind of names are the ones that are obscure (or worse, *lies*); those are inacceptable!**
 
 :::tip
-I could not do a better job than Kevlin Henney already did, so please watch those 10 minutes of his conference, starting at 41:30
+To help you find good names, imagine yourself explaining to someone what the function does (or even better, actually find someone and explain it to them). Listen to the words that you will naturally say: they will often be a very good name for your function. And even if it is a full sentence, a long name is better than a bad one.
+:::
+
+:::info tip
+I could not do a better job than Kevlin Henney already did, so please watch those 10 minutes of his conference, starting at 41:30.
 <Resource 
     title="Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks"
     author="Kevlin Henney"
