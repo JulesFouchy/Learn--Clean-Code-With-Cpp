@@ -56,6 +56,7 @@
   "space-out-your-code": 0,
   "watch-conferences": 0,
   "write-libraries": 0,
+  "command": 0,
   "dear-imgui": 0,
   "designated_initializers": 0,
   "string-and-string-view": 0,
