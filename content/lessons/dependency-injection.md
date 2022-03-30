@@ -32,7 +32,9 @@ And the argument to rule them all: what if you want to have multiple instances o
 
 **So yes, you should receive all the classes that you depend on as parameters to your functions / methods.**
 
-If the case of a class, receiving the dependencies in the constructor and storing them as members isn't the cleanest solution either, and you should really prefer receiving the dependencies in each method that needs them. This will make clear which parts of your class actually need which dependency.
+Using parameters makes your functions independent of how the outside world is structured, which facilitates change.
+
+In the case of a class, receiving the dependencies in the constructor and storing them as members isn't the cleanest solution either, and you should really prefer receiving the dependencies in each method that needs them. This will make clear which parts of your class actually need which dependency.
 
 **Also** if you were to store a reference to the dependency, you would have to make sure that the pointed object outlives the class where the reference is stored; otherwise you would get a dangling reference!<br/>
 For example if your dependency lives in a ```std::vector```, and the vector gets resized at some point, all the references to elements of that vector get invalidated! If you stored one such reference, you are in trouble! On the contrary if you pass the reference to the method each time you call it, you will not notice the change of memory address at all.
