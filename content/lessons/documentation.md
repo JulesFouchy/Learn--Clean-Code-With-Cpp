@@ -69,6 +69,10 @@ Doxygen is *the* reference tool for C++ projects that want to generate a website
 
 This kind of documentation is very different from documenting your API. It talks to developpers who will read and modify the internal code. It aims to help them understand the architecture, the reasons the code looks the way it does, and how to change it.
 
+:::tip
+Tell a story in your documentation: how do the different components work together?
+:::
+
 Once you finish implementing a piece of code you should explain your intentions, the alternatives you considered and the reasons that made you choose this particular implementation. Don't be shy, talk a lot, and leave a trace for others.
 
 ![](./img/internal_documentation.png)<br/>
