@@ -13,7 +13,18 @@ import GoingFurther from "@site/components/GoingFurther"
 
 ## Brief
 
-Small functions are way easier to read and reason about. [Here is what the Core Guidelines have to say about it.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-single)
+*Small functions* are way easier to read and reason about.<br/>
+*Small functions* facilitate future refactorings because the logic is already split into atomic parts.<br/>
+*Small functions* force you to give meaning by giving names, not only to the action (the function) but also to its parameters; for example:
+```cpp
+void do_something(Thread& thread, bool is_main_thread) { /*...*/ }
+
+for (size_t i = 0; i < threads.size(); ++i) {
+    do_something(threads[i],
+                 i == 0); // Thanks to the parameter name we know that `i == 0` actually checks to see if the current thread is the main thread
+}
+```
+[**Important:** Here is what the Core Guidelines have to say about small functions.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-single)
 
 ## Details
 
@@ -24,7 +35,7 @@ void View::imgui_window(ImTextureID image_texture_id, ImageSize image_size, bool
 { 
     if (_is_open) { 
         ImGui::Begin(_name.c_str(), &_is_open, ImGuiWindowFlags_NoScrollbar); 
-        // Update _size 
+        // Store window size 
         const auto size = ImGui::GetContentRegionAvail(); 
         if (size.x >= 1.f && size.y >= 1.f) { 
             _size.emplace( 
@@ -34,7 +45,7 @@ void View::imgui_window(ImTextureID image_texture_id, ImageSize image_size, bool
         else { 
             _size.reset(); 
         } 
-        // Update _position 
+        // Store window position 
         _position = ImGui::GetCursorScreenPos(); 
  
         if (_size.has_value()) { 
@@ -58,7 +69,7 @@ void View::imgui_window(ImTextureID image_texture_id, ImageSize image_size, bool
 ```
 
 But I had to admit that I was having trouble reading those long functions, and that maybe everyone else was right.
-The same code as above would look like this once split into more atomic parts :
+The same code as above would look like this once split into more atomic parts:
 
 ```cpp
 void View::imgui_window(ImTextureID image_texture_id, ImageSize image_size, bool need_to_fit)
