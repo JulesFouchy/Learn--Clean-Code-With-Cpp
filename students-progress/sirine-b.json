@@ -22,7 +22,7 @@
   "minimize-dependencies": 0,
   "use-libraries": 0,
   "assert": 0,
-  "auto": 0,
+  "auto": 1,
   "testing": 0,
   "dependency-injection": 0,
   "lambda": 0,

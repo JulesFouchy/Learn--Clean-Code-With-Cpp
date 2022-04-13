@@ -1,6 +1,6 @@
 {
   "install-a-compiler": 3,
-  "ide": 2,
+  "ide": 3,
   "git": 2,
   "debugger": 2,
   "formatting-tool": 3,
@@ -8,7 +8,7 @@
   "naming": 1,
   "stack-vs-heap": 2,
   "consistency-in-style": 1,
-  "make-it-work-then-make-it-good": 2,
+  "make-it-work-then-make-it-good": 3,
   "prefer-free-functions": 2,
   "design-cohesive-classes": 1,
   "use-structs-to-group-data": 1,

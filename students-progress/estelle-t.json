@@ -33,7 +33,7 @@
   "code-reviews": 0,
   "const": 0,
   "dont-overfocus-on-performance": 0,
-  "git-submodules": 0,
+  "git-submodules": 1,
   "stl-algorithms": 0,
   "debug-vs-release": 0,
   "immediately-invoked-function": 0,
