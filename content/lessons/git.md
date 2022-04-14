@@ -128,6 +128,9 @@ Here are some example messages I would write:
 ```
 [hangman] Fix missing include
 ```
+```
+[board] Start using BoardSize instead of int
+```
 
 ### Don't commit broken code
 
