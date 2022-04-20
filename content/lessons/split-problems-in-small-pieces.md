@@ -20,6 +20,10 @@ Think about the smallest next step that you can take, that will produce a visibl
 
 I personally like to do the visual steps first, because then it is easier to debug / see your progress and it is more rewarding, you really feel like you are getting somewhere once something is displayed on the screen.
 
+## Create abstractions
+
+Abstractions can make your code harder to understand at first glance, but they also make it easier to change (and therefore to manipulate).
+
 ## Going further
 
 <GoingFurther resources = {[

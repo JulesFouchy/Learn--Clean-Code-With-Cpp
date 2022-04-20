@@ -19,7 +19,7 @@ There are many ways to avoid duplications:
 - **Use a template**, when you want to do the same thing but for different types.
 - **Use a struct or a class**, when you want to use the same group of data in different places.
 - **Use `auto`**, when the type is already declared in the expression; e.g. `std::unique_ptr<MyClass> ptr = std::make_unique<MyClass>();` vs `auto ptr = std::make_unique<MyClass>();`.
-- **Use a macro**, (😬[^1]) when you can't use any of the above methods, and have the courage to write and maintain some ugly macro-based code. (Honestly I believe that in most cases duplications are less of an evil than complicated metaprogramming based on macros, so I wouldn't recommend going down the route of macros most of the time). If you really need macros to do complicated things, take a look at libraries like [Boost.Hana](https://www.boost.org/doc/libs/1_61_0/libs/hana/doc/html/index.html).
+- **Use a macro**, (😬[^1]) when you can't use any of the above methods, and have the courage to write and maintain some ugly macro-based code. (Honestly I believe that in most cases duplications are less of an evil than complicated metaprogramming based on macros, so I wouldn't recommend going down the route of macros most of the time). If you really need macros to do complicated things, take a look at a library like [Boost.Hana](https://www.boost.org/doc/libs/1_61_0/libs/hana/doc/html/index.html).
 
 [^1]: Unfortunately there are still some (very rare) use cases for macros. Hopefully those will disappear once we get reflection and proper metaprogramming in the language, which should come for C++26 or C++29.
 
@@ -44,6 +44,10 @@ See also: <Resource title="SOLID, Revisited" author="Tony Van Eerd" link="https:
 :::tip
 To know if you are violating *DRY*, ask yourself: "If I change this bit of code, would it be a bug to forget to change that other bit of code?" If the answer is yes, then you are not following the *DRY* principle.
 :::
+
+<!-- :::tip
+You should avoid duplicating implementation, but you are free to duplicate intention because it is way less likely to have to change. (And also it is the atomic element of code so you can't really refactor it away anyways).
+::: -->
 
 ## Going further
 
