@@ -1,6 +1,6 @@
 ---
 name: Question
-about: To ask a question about a lesson or an exercise. Use this template if you did
+about: To ask a question about a lesson or an exercise. Use this if you did
   not understand something in the class.
 title: "[Question] replace_me"
 labels: question
