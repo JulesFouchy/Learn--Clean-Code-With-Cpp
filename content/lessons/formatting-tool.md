@@ -23,4 +23,4 @@ For C++, *Clang format* is the most popular one and I would recommend it. Here i
     - set *Default Formatter* to Clang-Format
     - enable *Format on Save*
 
-You will also need to put a configuration file named *.clang-format* at the root of your project to specify how the formatting should be done. You can use [this great website](https://zed0.co.uk/clang-format-configurator/) to configure it. Or if you don't want to spend too many time tweaking it yourself, you can use mine: https://github.com/CoolLibs/Cool/blob/main/.clang-format.
+You will also need to put a configuration file named *.clang-format* at the root of your project to specify how the formatting should be done. You can use [this great website](https://zed0.co.uk/clang-format-configurator/) to configure it. Or if you don't want to spend too many time tweaking it yourself, you can use mine: https://github.com/CoolLibs/tooling/blob/main/.clang-format.
