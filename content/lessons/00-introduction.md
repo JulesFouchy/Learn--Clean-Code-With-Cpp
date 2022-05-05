@@ -42,7 +42,7 @@ These lessons are not meant to be read one after the other. Instead look at [the
 
 Check out the [Progress](../progress) section to see how you will be graded, and the [Assignment](../assignment) section to see what you will have to submit.
 
-My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will have a great visibility on your current grade as you progress in the semester and you will always have the possibility to submit extra work to improve it if you wish.
+My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will have a great visibility on your current grade as you progress in the semester and you will always have the possibility to submit extra work if you wish to improve it.
 
 ## Give me feedback
 
