@@ -7,6 +7,8 @@ tags:
     - Tools
 ---
 import VSCodeExtension from "@site/components/VSCodeExtension"
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## Brief
 
@@ -20,11 +22,16 @@ To see these tools in action, [check this out](https://youtu.be/juJaaCf_yKc).
 
 ### clang-tidy
 
-**For Windows:**
-Go to [LLVM's release page](https://github.com/llvm/llvm-project/releases/latest) and choose the right executable (e.g. *LLVM-13.0.0-win64.exe*). Then run the executable and it will install everything (don't forget to accept *Add to PATH*). Once you restart your computer the VSCode extension will be able to find the *clang-tidy* executable.
-
-**For Linux and Mac:**
+<Tabs>
+  <TabItem value="windows" label="Windows" default>
+Go to <a href="https://github.com/llvm/llvm-project/releases/latest" target="_blank">LLVM's release page</a> and choose the right executable (e.g. <i>LLVM-13.0.0-win64.exe</i>). Then run the executable and it will install everything (don't forget to accept <i>Add to PATH</i>). Once you restart your computer the VSCode extension will be able to find the <i>clang-tidy</i> executable.
+  </TabItem>
+  <TabItem value="linux-and-mac" label="Linux and Mac">
 It should be as simple as installing it through your favorite package manager. If not, go look on the Internet!
+  </TabItem>
+</Tabs>
+
+To configure the behaviour of clang-tidy you need to have a *.clang-tidy* file at the root of your project. You can [use mine as a starting point](https://github.com/CoolLibs/tooling/blob/main/.clang-tidy).
 
 ### The other
 
