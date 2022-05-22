@@ -24,3 +24,16 @@ For C++, *Clang format* is the most popular one and I would recommend it. Here i
     - enable *Format on Save*
 
 You will also need to put a configuration file named *.clang-format* at the root of your project to specify how the formatting should be done. You can use [this great website](https://zed0.co.uk/clang-format-configurator/) to configure it. Or if you don't want to spend too many time tweaking it yourself, you can use mine: https://github.com/CoolLibs/tooling/blob/main/.clang-format.
+
+:::tip
+Note that in some very specific cases you can disable clang-format locally to use some non-standard formatting, using these special comments:
+
+```cpp
+// clang-format off
+void on_mouse_move  (Camera& camera, glm::vec2 const& delta) { std::visit([&](auto&& state) { state.on_mouse_move  (*this, camera, delta); }, _state); }
+void on_wheel_down  (Camera& camera, int mods)               { std::visit([&](auto&& state) { state.on_wheel_down  (*this, camera, mods);  }, _state); }
+void on_wheel_up    (Camera& camera)                         { std::visit([&](auto&& state) { state.on_wheel_up    (*this, camera);        }, _state); }
+void on_wheel_scroll(Camera& camera, float dl)               { std::visit([&](auto&& state) { state.on_wheel_scroll(*this, camera, dl);    }, _state); }
+// clang-format on
+```
+:::
