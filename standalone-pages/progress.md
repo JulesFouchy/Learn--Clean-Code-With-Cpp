@@ -20,35 +20,53 @@ Welcome! In this section you will be able to see your progress live, your curren
 
 ## How is my grade calculated?
 
-### Git and other tools (5 points)
+:::caution
+Note that things are not validated forever! If you stop writing good code, you will lose your rainbows! 🌈
+:::
+
+### Git and other tools (3 points)
 
 What grants you points:
 
-- ➕ Following [the good practices of the Git lesson](/lessons/git#good-practices)
-- ➕ Having a [.clang-format](/lessons/formatting-tool/) file, and applying it to your codebase
-- ➕ Having a [.clang-tidy](/lessons/static-analysers/) file, and applying it to your codebase
-- ➕ Having a nice ReadMe, using Markdown
+- ➕ 🌈 Following [the good practices of the Git lesson](/lessons/git#good-practices)
+- ➕ 🌈 Having a [.clang-format](/lessons/formatting-tool/) file, and applying it to your codebase
+- ➕ ☁️ Having a [.clang-tidy](/lessons/static-analysers/) file, and fixing the problems ot shows you, or asking a teacher what the warning means if you don't understand how to fix it or why it is a problem.
+- ➕ ☁️ Having a nice ReadMe, using Markdown
+- ➕ ☁️ IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
 
 What loses you points:
 
-- ➖ Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
-- ➖ Making no commits until near the end of the semester
+- ➖ 😠 Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
+- ➖ ☁️ Making no commits until near the end of the semester
 
-### Clean Code (10 points)
+### Clean Code (8 points)
 
 What grants you points:
 
-- ➕ Writing small functions
-- ➕ Writing small structs
-- ➕ Writing small classes
-- ➕ Using free functions whenever possible
-- ➕ Names that are clear
+- ➕ 🌈 Writing small functions
+- ➕ ☁️ Writing small structs
+- ➕ ☁️ Writing small classes
+- ➕ ☁️ Using free functions when appropriate
 
 What loses you points:
 
+- ➖ Hard to understand or misleading names
 - ➖ Duplicated code
 - ➖ Overly complicated code
+- ➖ Global variables (and singletons are global variables btw!)
+
+### C++ Code Quality (4 points)
+
+What grants you points:
+
+- ➕ 
+
+What loses you points:
+
 - ➖ Headers with unnecessary includes in them/ If something is only needed by the .cpp file, only include it in the .cpp, not the .hpp.
+- ➖ Using `new` instead of a stack allocation or a smart pointer
+- ➖ Forgetting `#pragma once` in your headers
+- ➖ Using `0` and `1` instead of `true` and `false` for your booleans
 
 ### Investment (5 points)
 
@@ -58,6 +76,7 @@ What grants you points:
 
 - ➕ Asking questions and participating in class
 - ➕ Reading lessons (but how do I evaluate that? Probably just say everybody reads levels 1 and 2 and other levels are bonuses)
+- ➕ Advancing in the exercises ./ project.
 
 What loses you points:
 
