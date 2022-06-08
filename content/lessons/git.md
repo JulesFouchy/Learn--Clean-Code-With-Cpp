@@ -154,3 +154,5 @@ This can especially happen after a merge or a conflict resolution: so please che
 ### Double check
 
 Read all your changes before commiting them! It will make sure you don't commit temporary debug code (as I have done way too many times), and it is a good opportunity to review all your changes and make sure you are happy with them.
+
+It is also a good opportunity to make sure you are not commiting files you are not suposed to, like your *build* folder.
