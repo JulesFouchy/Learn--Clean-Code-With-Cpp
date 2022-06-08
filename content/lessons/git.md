@@ -76,10 +76,10 @@ You might also have heard about branches. This is an advanced *git* feature, you
 ## Using a graphical interface
 
 :::tip
-There are a lot of softwares that make the previous steps easier to do and monitor. I would recommend [GitKraken](https://www.gitkraken.com/) for the job. It is free to use for public repositories, has a nice interface and a great set of features.[^2] They also have [a Youtube channel](https://www.youtube.com/watch?v=v4g6y_HsgpA&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU) with tons of concise tutorials to get started.
-:::
+There are a lot of softwares that make the previous steps easier to do and monitor. I would recommend [GitKraken](https://www.gitkraken.com/) for the job. It is free to use for public repositories, has a nice interface and a great set of features. They also have [a Youtube channel](https://www.youtube.com/watch?v=v4g6y_HsgpA&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU) with tons of concise tutorials to get started.
 
-[^2]: Another great *git UI* is [Fork](https://git-fork.com/) if you are tired of how laggy GitKraken can sometimes be.
+**NB:** Another great git UI is [Fork](https://git-fork.com/) if you are tired of how laggy GitKraken can sometimes be. (But unfortunately it is not available on Linux). 
+:::
 
 ## Handling conflicts
 
@@ -118,18 +118,20 @@ It is great to distinguish different types of commit by starting the message wit
 - **Fix**: fixes a bug.
 - *etc.*
 
+**You can also use [😎 Gitmoji 😎](https://gitmoji.dev/)**, a standard set of emojis to indicate the kind of commit you are making.
+
 Here are some example messages I would write:
 ```
-[guess_the_number] Add get_int_from_user()
+✨ [guess_the_number] Add get_int_from_user()
 ```
 ```
-[CMake] Modernize set(EXECUTABLE_OUTPUT_PATH . . .)
+♻️ [CMake] Modernize set(EXECUTABLE_OUTPUT_PATH ...)
 ```
 ```
-[hangman] Fix missing include
+🐛 [hangman] Fix missing include
 ```
 ```
-[board] Start using BoardSize instead of int
+♻️ [board] Start using BoardSize instead of int
 ```
 
 ### Don't commit broken code
