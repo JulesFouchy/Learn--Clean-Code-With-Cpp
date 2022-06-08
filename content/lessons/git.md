@@ -29,63 +29,67 @@ There are a few reasons to use *git*:
 
 ![A joke with a lot of truth in it](./img/version-control-flowchart.png)
 
-## The big picture
+## Good practices
 
-The usual setup when you use *git* is to create a *remote depot* that is used as a central authority (often this is [GitHub](https://github.com/), but many other providers exist like [GitLab](https://about.gitlab.com/)). Authorized developers *clone* the content on their computer, make modifications, and *push* their changes back to the depot so that everyone can get it.
+### Small commits
 
-![git depot](./img/git-depot.png)
+:::tip Guideline
+As soon as you have made some progress and the code compiles, make a commit!
 
-It is also possible to work only locally (which is great for a simple test project or exercises). Simply open a command line and type `git init` and you can skip the "inital setup" from the next section. It is still possible afterwards to publish your local repository to GitHub though.
-
-## Step by step
-
-:::tip
-These steps are presented with the command line so that you get a better understanding of *git*. Yet I strongly recommend that you use a software to abstract this for you. You can check the next section for some advice on that.
+Try to avoid putting *unrelated* changes in the same commit: split them over several commits.
 :::
 
-### Initial setup
+### Clear messages and descriptions
 
-You first need to install [*git*](https://git-scm.com/) and go through the setup. Then you can go to [GitHub](https://github.com/), create a new account, and create a new repository (should be a green button on the "Repositories" left panel). Once created, you will be able to clone it on your computer. 
+:::tip Guideline
+Don't be lazy, write actual sentences without stripping words!<br/>
+In the description, explain *why* you are making the change.<br/>
+Be clear about which part of the code is affected by the changes. I (and others) like to put this inside [ ] at the beginning of the message.<br/>
+It is great to distinguish different types of commit by starting the message with a keyword:
+- **Add**: adds a new feature / class / function.
+- **Update**: improves / changes an existing feature / class / function.
+- **Fix**: fixes a bug.
+- *etc.*
 
-To do so, open a command line in the folder you want you repository to be in, and run `git clone your_repo_url`. Replace "your_repo_url" with the one given by GitHub, when you click on the "code" green button.
+**You can also use [😎 Gitmoji 😎](https://gitmoji.dev/)**, a standard set of emojis to indicate the kind of commit you are making.
+:::
 
-![github clone](./img/github-clone.png)
+Here are some example messages I would write:
+```
+✨ [guess_the_number] Add get_int_from_user()
+```
+```
+♻️ [CMake] Modernize set(EXECUTABLE_OUTPUT_PATH ...)
+```
+```
+🐛 [hangman] Fix missing include
+```
+```
+♻️ [board] Start using BoardSize instead of int
+```
 
-### Work routine
+### Don't commit broken code
 
-There are only a handful of commands that are useful on a day-to-day basis. Here is how it works:
+:::tip Guideline
+Always make sure the code compiles before commiting it!<br/>
+This can especially happen after a merge or a conflict resolution: so please check that the code is still working before commiting the resolved conflict!
+:::
 
-After making some changes, you have to select the file that you wish to commit to the remote repo. To select all changed files run `git add .`
+### Double check
 
-![pull](./img/git-add.png)
+:::tip Guideline
+Read all your changes before commiting them! It will make sure you don't commit temporary debug code (as I have done way too many times), and it is a good opportunity to review all your changes and make sure you are happy with them.
 
-When you are happy with your changes, you can save them in a group that will be stored locally. To do so run `git commit -m "Place a description of your changes here"`.
+It is also a good opportunity to make sure you are not commiting files you are not suposed to, like your *build* folder.
 
-![pull](./img/git-commit.png)
-
-Then it is time to make you local commit accessible to others via the remote repository. Simply run `git push`.
-
-![pull](./img/git-push.png)
-
-In order to get the latest changes from the remote repository it is recommended to frequently run `git pull` (in particular, always before calling `git push`). If you work with other developers it is possible that you encounter conflicts if you made changes at the same place in the same files. In this case, check out the section about resolving conflicts.
-
-![pull](./img/git-flow.png)
-
-You might also have heard about branches. This is an advanced *git* feature, you likely don't need to use it for your first student projects. If you are curious check out the <LessonLink slug="advanced-git-features"/>.
+**_TIP:_** Using a graphical interface will greatly help you in that task.
+:::
 
 ## Using a graphical interface
 
-:::tip
-There are a lot of softwares that make the previous steps easier to do and monitor. I would recommend [GitKraken](https://www.gitkraken.com/) for the job. It is free to use for public repositories, has a nice interface and a great set of features. They also have [a Youtube channel](https://www.youtube.com/watch?v=v4g6y_HsgpA&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU) with tons of concise tutorials to get started.
+There are a lot of apps that make the steps of the next sections easier to do and monitor. I would recommend [GitKraken](https://www.gitkraken.com/) for the job. It is free to use for public repositories, has a nice interface and a great set of features. They also have [a Youtube channel](https://www.youtube.com/watch?v=v4g6y_HsgpA&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU) with tons of concise tutorials to get started.
 
 **NB:** Another great git UI is [Fork](https://git-fork.com/) if you are tired of how laggy GitKraken can sometimes be. (But unfortunately it is not available on Linux). 
-:::
-
-## Handling conflicts
-
-A conflict happens when you made changes in the same place as another developer, but their changes are more recent. In this case you will have to use an external tool to compare the changes and merge them into a valid file. 
-
-GitKraken is a great tool to handle these situations: check out [this tutorial](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git) to get started.
 
 ## .gitignore
 
@@ -111,48 +115,52 @@ Thumbs.db
 
 If you are using something like GitKraken you can also right-click on the file or folder and select *Ignore*.
 
-## Good practices
+## How to use git
 
-### Small commits
+### Overview
 
-As soon as you have made meaningful progress and the code compiles, make a commit!
+:::info
+The steps are presented with the command line so that you get a better understanding of *git*. Yet we strongly recommend that you use a graphical interface like GitKraken to simplify this for you.
+:::
 
-Try to avoid putting *unrelated* changes in the same commit: split them over several commits.
+The usual setup when you use *git* is to create a *remote depot* that is used as a central authority (often this is [GitHub](https://github.com/), but many other providers exist like [GitLab](https://about.gitlab.com/)). Authorized developers *clone* the content on their computer, make modifications, and *push* their changes back to the depot so that everyone can get it.
 
-### Clear messages and descriptions
+![git depot](./img/git-depot.png)
 
-Don't be lazy, write actual sentences without stripping words!<br/>
-In the description, explain *why* you are making the change.<br/>
-Be clear about which part of the code is affected by the changes. I (and others) like to put this inside [ ] at the beginning of the message.<br/>
-It is great to distinguish different types of commit by starting the message with a keyword:
-- **Add**: adds a new feature / class / function.
-- **Update**: improves / changes an existing feature / class / function.
-- **Fix**: fixes a bug.
-- *etc.*
+It is also possible to work only locally (which is great for a simple test project or exercises). Simply open a command line and type `git init` and you can skip the "inital setup" from the next section. It is still possible afterwards to publish your local repository to GitHub though.
 
-**You can also use [😎 Gitmoji 😎](https://gitmoji.dev/)**, a standard set of emojis to indicate the kind of commit you are making.
+### Initial setup
 
-Here are some example messages I would write:
-```
-✨ [guess_the_number] Add get_int_from_user()
-```
-```
-♻️ [CMake] Modernize set(EXECUTABLE_OUTPUT_PATH ...)
-```
-```
-🐛 [hangman] Fix missing include
-```
-```
-♻️ [board] Start using BoardSize instead of int
-```
+You first need to install [*git*](https://git-scm.com/) and go through the setup. Then you can go to [GitHub](https://github.com/), create a new account, and create a new repository (should be a green button on the "Repositories" left panel). Once created, you will be able to clone it on your computer. 
 
-### Don't commit broken code
+To do so, open a command line in the folder you want you repository to be in, and run `git clone your_repo_url`. Replace "your_repo_url" with the one given by GitHub when you click on the green "Code" button.
 
-Always make sure the code compiles before commiting it!<br/>
-This can especially happen after a merge or a conflict resolution: so please check that the code is still working before commiting the resolved conflict!
+![github clone](./img/github-clone.png)
 
-### Double check
+### Work routine
 
-Read all your changes before commiting them! It will make sure you don't commit temporary debug code (as I have done way too many times), and it is a good opportunity to review all your changes and make sure you are happy with them.
+There are only a handful of commands that are useful on a day-to-day basis. Here is how it works:
 
-It is also a good opportunity to make sure you are not commiting files you are not suposed to, like your *build* folder.
+After making some changes, you have to select the files that you want to commit to the remote repo. To select all changed files run `git add .`
+
+![pull](./img/git-add.png)
+
+When you are happy with your changes, you can save them in a group that will be stored locally. To do so run `git commit -m "Place a description of your changes here"`.
+
+![pull](./img/git-commit.png)
+
+Then it is time to make you local commit accessible to others via the remote repository. Simply run `git push`.
+
+![pull](./img/git-push.png)
+
+In order to get the latest changes from the remote repository it is recommended to frequently run `git pull` (in particular, always before calling `git push`). If you work with other developers it is possible that you encounter conflicts if you made changes at the same place in the same files. In this case, check out the section about resolving conflicts.
+
+![pull](./img/git-flow.png)
+
+You might also have heard about branches. This is an advanced *git* feature, you likely don't need to use it for your first student projects. If you are curious check out the <LessonLink slug="advanced-git-features"/>.
+
+## Resolving conflicts
+
+A conflict happens when you made changes in the same place as another developer. In this case you will have to use an external tool to compare the changes and merge them into a valid file. 
+
+GitKraken is a great tool to handle these situations: check out [this tutorial](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git) to get started.
