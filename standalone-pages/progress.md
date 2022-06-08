@@ -46,7 +46,9 @@ What grants you points:
 
 What loses you points:
 
+- ➖ Duplicated code
 - ➖ Overly complicated code
+- ➖ Headers with unnecessary includes in them/ If something is only needed by the .cpp file, only include it in the .cpp, not the .hpp.
 
 ### Investment (5 points)
 
