@@ -31,7 +31,7 @@ Below are a few of the most important things that an IDE will help you with; I w
 
 ### Rename
 
-Right-click on any name and choose *Rename Symbol* (or put your text cursor on a name and use the shortcut `F2`).<br/>
+Right-click on any name and choose *Rename Symbol* (or put your text cursor on a name and use the shortcut <kbd>F2</kbd>).<br/>
 It is better than doing a "Find and Replace" because "Rename Symbol" is content-aware; e.g. if you rename a class called "Point" to something else it will not affect another class called "Point2D".
 
 ![](./img/rename.png)
@@ -45,19 +45,19 @@ And if you want to stay focused on the portion of code you are currently editing
 
 ### Go to symbol
 
-This allows you to quickly jump to a method in a file; the shortcut is `CTRL + SHIFT + O` and then you can type in what you are looking for. It is also super useful to outline the structure of a file.
+This allows you to quickly jump to a method in a file; the shortcut is <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>O</kbd> and then you can type in what you are looking for. It is also super useful to outline the structure of a file.
 
 ![](./img/go-to-symbol.png)
 
 ### Go to file
 
-If you know which file you want to open it is blazing fast to press `CTRL + P` and type what you need.
+If you know which file you want to open it is blazing fast to press <kbd>CTRL</kbd> + <kbd>P</kbd> and type what you need.
 
 ![](./img/go-to-file.png)
 
 ### Switch between .h and .cpp
 
-Use `ALT + O` to quickly switch between the header and the implementation file. Very useful when you are writing code for a class.
+Use <kbd>ALT</kbd> + <kbd>O</kbd> to quickly switch between the header and the implementation file. Very useful when you are writing code for a class.
 
 ### Find all references
 
@@ -67,16 +67,16 @@ This allows you to find all the places where a symbol is used. Simply right-clic
 
 ### Search for a word in the current file
 
-Useful to find you way around, simply press `CTRL + F` to open this popup and search what you need. The arrow on the left allows you to rename the occurrences you found, which can be useful.
+Useful to find you way around, simply press <kbd>CTRL</kbd> + <kbd>F</kbd> to open this popup and search what you need. The arrow on the left allows you to rename the occurrences you found, which can be useful.
 
 ![](./img/search-current-file.png)
 
 ### Search for a word in the whole project
 
-If you need to find something fast and easy, run `CTRL + SHIFT + F`, enter the object of desire and press enter. The VSCode search bar is awesome and won't let you down, you can even batch-rename things there! As a side note, it is also great to be able to limit the search to a specific folder, the option is available when you press the three dots on the right.
+If you need to find something fast and easy, run <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd>, enter the object of desire and press enter. The VSCode search bar is awesome and won't let you down, you can even batch-rename things there! As a side note, it is also great to be able to limit the search to a specific folder, the option is available when you press the three dots on the right.
 
 ![](./img/search-whole-project.png)
 
 ### Launching the project
 
-Once you have the <LessonLink slug="cmake" text="CMake"/> setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing `F7` or run it using `CTRL + F5`.
+Once you have the <LessonLink slug="cmake" text="CMake"/> setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing <kbd>F7</kbd> or run it using <kbd>CTRL + F5</kbd>.
