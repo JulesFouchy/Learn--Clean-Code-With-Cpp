@@ -22,7 +22,6 @@ There are many extensions that can help you! Check out the recommended extension
 Here are some great extensions for VSCode that I recommend:
 
 - <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>: The Basic C++ extensions
-- <VSCodeExtension id="coenraads.bracket-pair-colorizer-2"/>: This colors matching pairs of brackets; it makes the code more readable
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: This allows you to work remotely with your teammates in one single editor. It is amazing to work together!
 
 ## Quick actions
