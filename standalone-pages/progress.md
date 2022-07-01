@@ -20,18 +20,67 @@ Welcome! In this section you will be able to see your progress live, your curren
 
 ## How is my grade calculated?
 
-**The level 1 is worth <LevelPoints level={1}/> points, the level 2 is worth <LevelPoints level={2}/> points, the level 3 is worth <LevelPoints level={3}/> points, the level 4  is worth <LevelPoints level={4}/> points and the level 5 is worth <LevelPoints level={5}/> points**. For each level the points are split across the lessons according to their difficulty: the harder lessons are worth more points.
-
-Your mastery in each lesson is measured in *butterflies*: 0 butterfly means you haven't looked at the lesson yet, 1 means you have read it, 2 means you are starting to apply it to your code, and 3 means you apply it *consistently* with great success. **You get a third of the points of the lesson for each butterfly you unlock!**
-
-The <ButterflyGreen/> green butterflies <ButterflyGreen/> indicate the points that I have validated, and the <ButterflyBlue/> blue ones <ButterflyBlue/> are the ones you can temporarily check to see what your grade would be if you were to validate those points.
-
-**My goal is that all of you do level 1** (which is pretty easy and quick) and then **focus on level 2** for the majority of the semester. If you do so you will all get at least <LevelPoints level={1}/> to <LevelPoints level={[1, 2]}/> points. *If you have time*, start working on level 3: it is full of important lessons too. Level 4 contains lessons that are slightly less important, or that don't make sense to apply until you have already a strong mastery of level 3. Level 5 contains lessons that are not really important at all, but that are still worth hearing once in your lifetime (perhaps).
-
-:::tip
-Don't wait to reach butterfly 3 on a lesson before moving on to the next: this last butterfly might be difficult to get (especially for the harder lessons).<br/>
-You will be better off starting new lessons while still trying to apply the previous lessons you learned.
+:::caution
+Note that things are not validated forever! If you stop writing good code, you will lose your rainbows! 🌈
 :::
+
+### Git and other tools (3 points)
+
+What grants you points:
+
+- ➕ 🌈 Following [the good practices of the Git lesson](/lessons/git#good-practices)
+- ➕ 🌈 Having a [.clang-format](/lessons/formatting-tool/) file, and applying it to your codebase
+- ➕ ☁️ Having a [.clang-tidy](/lessons/static-analysers/) file, and fixing the problems ot shows you, or asking a teacher what the warning means if you don't understand how to fix it or why it is a problem.
+- ➕ ☁️ Having a nice ReadMe, using Markdown
+- ➕ ☁️ IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
+
+What loses you points:
+
+- ➖ 😠 Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
+- ➖ ☁️ Making no commits until near the end of the semester
+
+### Clean Code (8 points)
+
+What grants you points:
+
+- ➕ 🌈 Writing small functions
+- ➕ ☁️ Writing small structs
+- ➕ ☁️ Writing small classes
+- ➕ ☁️ Using free functions when appropriate
+
+What loses you points:
+
+- ➖ Hard to understand or misleading names
+- ➖ Duplicated code
+- ➖ Overly complicated code
+- ➖ Global variables (and singletons are global variables btw!)
+
+### C++ Code Quality (4 points)
+
+What grants you points:
+
+- ➕ 
+
+What loses you points:
+
+- ➖ Headers with unnecessary includes in them/ If something is only needed by the .cpp file, only include it in the .cpp, not the .hpp.
+- ➖ Using `new` instead of a stack allocation or a smart pointer
+- ➖ Forgetting `#pragma once` in your headers
+- ➖ Using `0` and `1` instead of `true` and `false` for your booleans
+
+### Investment (5 points)
+
+Originalité, déviation par rapport au sujet de TPs, ou faire un projet
+
+What grants you points:
+
+- ➕ Asking questions and participating in class
+- ➕ Reading lessons (but how do I evaluate that? Probably just say everybody reads levels 1 and 2 and other levels are bonuses)
+- ➕ Advancing in the exercises ./ project.
+
+What loses you points:
+
+- ➖ 
 
 ## How are the lessons sorted?
 
