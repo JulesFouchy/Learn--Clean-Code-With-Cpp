@@ -8,11 +8,18 @@ tags:
     - C++
 ---
 
+## When **not** to use const
+
+- When returning by value
+- On member variables 
+
+On arguments passed by copy it is up to you, doesn't add much semantic, doesn't prevent big bugs but can prevent small ones.
+
 ## Bonus trick
 
 You can use lambdas for const variables that are complex to initialize.
 
-### Bad :( (because ```x``` is not ```const```)
+### Bad :( (because `x` is not `const`)
 
 ```cpp
 enum class MyEnum {
