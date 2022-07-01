@@ -70,8 +70,35 @@ SRP = Each component has only one reason to change
 
 ---
 
-## Questionnaire
+## Conclusion première année 2022-2023
 
-- Alternance Guillaume et moi VS avoir un seul prof
-- + de CMs ?
-- + de quizzs ?
+Autonomie extrêmement appréciée. Des petits points de temps en temps ne font pas de mal, mais "à condition d'être rapide et une notion à la fois".
+
+TP Noughts & Crosses peut-être un peu trop dur. Notament les partie maths pour convertir entre mouse coord et position dans la grid ont bloqué bcp de monde. Peut-être avoir un TP avant pour apprendre à utiliser p6?
+
+Essayer de faire plus de liens entre TPs et cours, pointer vers les notions qui vont bien au bon moment.
+
+Trouver l'occasion dans les TPs de faire des "cohesive classes".
+
+Les quizzs c'était cool
+
+Système de notation démotivant: on ne voit pas assez sa progression
+
+Points forts: cours clair, site au top
+
+Certainses parties du cours mériteraient d'être au S1 ou 2 ou 3, ça aide pour les gros projets genre OpenGL
+
+C'était bien d'avoir un cours "chill" pour revoir les notions
+
+Section Progress : mitigé: la moitiié l'adorent, l'autre moitié ne l'ont pas utilisé. 
+
+C'est top d'avoir deux profs. Même si parfois galère si l'un ne sait pas répondre aux questions.
+
+Peut-être focus un peu moins sur clean code et être déjà content que les gens pratiquent et s'en sortent. Pour pas mal de gens qui sont pas hyper chauds en prog ça représente déjà beaucoup, et actuellement ce n'est pas du tout évalué dans le cours.
+
+Trop chiant pour moi de track les leçons lues.
+
+I messed up the "1 single project" feel of the exercises. They are more or less independent.
+
+
+Other TP idea, to intro p6, easier than Noughts & Crosses: balls go in a straight line in random directions, and you must click on them to destroy them. It gives you the opportunity to make a class for balls (and one for BallsManager ?).
