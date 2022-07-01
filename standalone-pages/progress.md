@@ -24,28 +24,28 @@ Welcome! In this section you will be able to see your progress live, your curren
 Note that things are not validated forever! If you stop writing good code, you will lose your rainbows! 🌈
 :::
 
-### Git and other tools (3 points)
+### Git and other tools (coef. 1)
 
 What grants you points:
 
 - ➕ 🌈 Following [the good practices of the Git lesson](/lessons/git#good-practices)
 - ➕ 🌈 Having a [.clang-format](/lessons/formatting-tool/) file, and applying it to your codebase
-- ➕ ☁️ Having a [.clang-tidy](/lessons/static-analysers/) file, and fixing the problems ot shows you, or asking a teacher what the warning means if you don't understand how to fix it or why it is a problem.
-- ➕ ☁️ Having a nice ReadMe, using Markdown
-- ➕ ☁️ IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
+- ➕ 🌈 Having a [.clang-tidy](/lessons/static-analysers/) file, and fixing the problems ot shows you, or asking a teacher what the warning means if you don't understand how to fix it or why it is a problem.
+- ➕ 🌈 Having a nice ReadMe, using Markdown
+- ➕ 🌈 IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
 
 What loses you points:
 
-- ➖ 😠 Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
+- ➖ 💥 Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
 - ➖ ☁️ Making no commits until near the end of the semester
 
-### Clean Code (8 points)
+### Clean Code (coef. 3)
 
 What grants you points:
 
-- ➕ 🌈 Writing small functions
+- ➕ 🌞 Writing small functions
 - ➕ ☁️ Writing small structs
-- ➕ ☁️ Writing small classes
+- ➕ 💥 Writing small classes
 - ➕ ☁️ Using free functions when appropriate
 
 What loses you points:
@@ -55,7 +55,7 @@ What loses you points:
 - ➖ Overly complicated code
 - ➖ Global variables (and singletons are global variables btw!)
 
-### C++ Code Quality (4 points)
+### C++ Code Quality (coef. 1)
 
 What grants you points:
 
@@ -68,7 +68,7 @@ What loses you points:
 - ➖ Forgetting `#pragma once` in your headers
 - ➖ Using `0` and `1` instead of `true` and `false` for your booleans
 
-### Investment (5 points)
+### Investment (coef. 1)
 
 Originalité, déviation par rapport au sujet de TPs, ou faire un projet
 
