@@ -22,8 +22,6 @@ To see these tools in action, [check this out](https://youtu.be/juJaaCf_yKc).
 
 ### clang-tidy
 
-[Clang Tidy is now very easy to use in VS Code!](https://devblogs.microsoft.com/cppblog/visual-studio-code-c-december-2021-update-clang-tidy/).
-
 <Tabs>
   <TabItem value="windows" label="Windows" default>
 Go to <a href="https://github.com/llvm/llvm-project/releases/latest" target="_blank">LLVM's release page</a> and choose the right executable (e.g. <i>LLVM-13.0.0-win64.exe</i>). Then run the executable and it will install everything (don't forget to accept <i>Add to PATH</i>). Once you restart your computer the VSCode extension will be able to find the <i>clang-tidy</i> executable.

@@ -7,7 +7,7 @@ slug: /lessons
 
 *Welcome to this class!*
 
-We will only assume some beginner-level experience in programming with C++ or a similar language like C#, Java, C, Javascript, *etc.*, and will guide you from your current level to being a solid programmer who loves coding and creates amazing software 🥳.
+We will only assume some beginner-level experience in programming with C++ or a similar language like C#, Java, C, Javascript, Python, *etc.*, and will guide you from your current level to being a solid programmer who loves coding and creates amazing software 🥳.
 
 ## Goals
 
@@ -24,25 +24,27 @@ Clean code is both a concern at the architectural level (organisation between mo
 We will see basic coding habits that make your code more expressive, general principles that help you organize your code, a few amazing design patterns, and we will get into the habit of using **meaningful names** and writing **documentation** and **tests**. We will also discover the amazing tools that are available to make our job easier and way more enjoyable.
 
 
-:::tip NOT ALL C++
+:::tip It's not about C++
 Although this class makes use of C++, most of its content will be applicable to any language and any kind of programming project.
 :::
 
 ## How to
 
- **I will not be giving lectures**. Instead I will let you all move along with the lessons and exercises at your own pace. I will be here to answer questions, and occasionally talk to the whole class about very important things that I want to highlight.
+**I will not be giving lectures**. Instead I will let you all move along with the lessons and exercises at your own pace. I will be here to answer questions, and occasionally talk to the whole class about very important things that I want to highlight.
  
- I believe this is the best way for you to learn, for practicing is when the actual learning happens. Moreover, giving lectures would imply that you are all at the same point in your learning journey and are all ready to learn the same things, which is definitely never true, not for any single group of students larger than 2.
+I believe this is the best way for you to learn, for practicing is when the actual learning happens. Moreover, giving lectures would imply that you are all at the same point in your learning journey and are all ready to learn the same things, which is never true for any single group of students larger than 2.
 
-These lessons are not meant to be read one after the other. Instead look at [the list of lessons](../progress) and pick one (or a few) that seem interesting to you; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat.
+The lessons are not meant to be read one after the other. Instead look at [the list of skills](../progress) and pick one (or a few) that seem interesting to you; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat with new lessons.
 
- Note that the lessons are sorted by order of importance so it makes sense to somewhat follow the order even though this is not a strict one.
+:::tip
+Note that the lessons are sorted by order of importance, so it makes sense to somewhat follow the order even if it is not a strict one.
+:::
 
 ## Evaluation
 
 Check out the [Progress](../progress) section to see how you will be graded, and the [Assignment](../assignment) section to see what you will have to submit.
 
-My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will have a great visibility on your current grade as you progress in the semester and you will always have the possibility to submit extra work if you wish to improve it.
+My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will at all time have a great visibility on how well you are doing and what you could work on next.
 
 ## Give me feedback
 

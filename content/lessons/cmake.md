@@ -11,7 +11,7 @@ import GoingFurther from "@site/components/GoingFurther"
 
 ## Brief
 
-To understand modern CMake you need to understand *targets*. Basically a target is an executable or a library. You will define a target for your executable and describe its source files, and then you will import the targets for each library you use, and will add those targets as a dependency of your executable. Here is an example taken from [p6-examples](https://github.com/JulesFouchy/p6-examples/blob/main/CMakeLists.txt):
+To understand modern CMake you need to understand *targets*. Basically a target is an executable or a library. You will define a target for your executable and describe its source files, and then you will import the targets for each library you use, and will add those targets as a dependency of your executable. Here is an example taken from [p6-examples](https://github.com/JulesFouchy/p6-docs/blob/main/examples/basic/CMakeLists.txt):
 ```cmake
 cmake_minimum_required(VERSION 3.8)
 project(p6-hello-world)
@@ -21,8 +21,8 @@ add_executable(${PROJECT_NAME} # Creates a target called ${PROJECT_NAME}, a.k.a.
     src/something.cpp          # Note that you don't need to list the header files here (.h / .hpp)
 )
 
-add_subdirectory(p6)                                  # Includes the p6 library ; this assumes that you have a folder called p6 at the same level as this CMakeLists.txt file, and that the p6 folder contains a CMakeLists.txt file
-target_link_libraries(${PROJECT_NAME} PRIVATE p6::p6) # Adds the target "p6::p6" as a dependency of our target ${PROJECT_NAME}. Unfortunately the command is called target_link_libraries() even though it can be used for other things than just linking ; don't get confused! A better name would have been add_dependency()
+add_subdirectory(p6)                                  # Includes the p6 library; this assumes that you have a folder called p6 at the same level as this CMakeLists.txt file, and that the p6 folder contains a CMakeLists.txt file.
+target_link_libraries(${PROJECT_NAME} PRIVATE p6::p6) # Adds the target "p6::p6" as a dependency of our target ${PROJECT_NAME}. Unfortunately the command is called target_link_libraries() even though it can be used for other things than just linking; don't get confused! A better name would have been add_dependency()
                                                       # The name of the target "p6::p6" is up to the library authors. Check out their documentation to know how they called it!
                                                       # The "::" in the name of the library's target is not mandatory, but library authors often add it because target_link_libraries() can do many different things, and if you make a typo in the name of the target it will ignore it instead of reporting an error. It is only if you have a "::" in the name that target_link_libraries() will know that it can't be anything but a target and will raise an error if the name doesn't actually correspond to a target.
 ```
@@ -38,9 +38,9 @@ Now we will see a few useful things that you can do with CMake:
 ### Enabling warnings
 
 ```cmake
-if (MSVC) # Visual Studio for Windows
+if (MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /WX /W3)
-else() # gcc and clang
+else()
     target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors)
 endif()
 ```
@@ -54,9 +54,10 @@ A C++ code that compiles is far from guaranteed to have no bugs! (mostly because
 :::
 
 :::caution
-If you are writing a library, using *warnings as errors* can prevent your users from compiling your library. Because the different compilers (and compiler versions) don't generate the same warnings and you might therefore have missed some.
+If you are writing a library, using *warnings as errors* can prevent your users from compiling your library. Since the different compilers (and compiler versions) don't generate the same warnings, you might have missed some.
 
 You should only enable *warnings as errors* when you are building the tests of your library, and disable it by default for your users. This is what *p6* does:
+[*In it's CMake:*](https://github.com/JulesFouchy/p6/blob/main/CMakeLists.txt)
 ```cmake title="p6/CMakeLists.txt"
 if (p6_ENABLE_WARNINGS_AS_ERRORS)
     message("-- [p6] Enabling warnings as errors for p6")
@@ -71,13 +72,12 @@ else()
     message("-- [p6] Not using warnings as errors for p6")
 endif()
 ```
-[*p6's CMake*](https://github.com/JulesFouchy/p6/blob/main/CMakeLists.txt)
 
+[*In the CMake of projects using p6:*](https://github.com/JulesFouchy/p6-docs/blob/main/tests/CMakeLists.txt)
 ```cmake title="p6-tests/CMakeLists.txt"
 set(p6_ENABLE_WARNINGS_AS_ERRORS true)
 add_subdirectory(p6)
 ```
-[*p6-test's CMake*](https://github.com/JulesFouchy/p6-docs/blob/main/tests/CMakeLists.txt)
 :::
 
 ### Setting your C++ version
@@ -172,42 +172,9 @@ You will have those files somewhere in your sources, but when you produce an exe
 
 *All the files required by CoolLab.exe*
 
-Here is an example of how you can ask CMake to copy your asset files and folders whenever they change (taken from [Cool](https://github.com/CoolLibs/CMakeUtils/blob/main/files_and_folders.cmake)):
+There is no straight-forward of asking CMake to do it[^1], but you can use [this great library](https://github.com/CoolLibs/CMakeUtils).
 
-```cmake
-#! Copies FILE to the directory where the executable of your TARGET will be created
-#  FILE can be either an absolute or a relative path. If it is relative it will be relative to ${CMAKE_SOURCE_DIR}.
-#  Unlike the default CMake functions this one will re-copy the file whenever it changes
-function(copy_file TARGET FILE)
-    # Get the part of the file path relative to the top-level CMakeLists.txt
-    cmake_path(RELATIVE_PATH FILE BASE_DIRECTORY ${CMAKE_SOURCE_DIR} OUTPUT_VARIABLE FILE_RELATIVE_PATH)
-    if (NOT FILE_RELATIVE_PATH)
-        set(FILE_RELATIVE_PATH ${FILE})
-    endif()
-    # Add the copy command
-    set(DUMMY_OUTPUT_NAME ${CMAKE_CURRENT_BINARY_DIR}/DUMMY_${FILE_RELATIVE_PATH}_${TARGET})
-    add_custom_command(
-        COMMENT "Copying \"${FILE_RELATIVE_PATH}\""
-        OUTPUT ${DUMMY_OUTPUT_NAME}
-        COMMAND ${CMAKE_COMMAND} -E make_directory ${DUMMY_OUTPUT_NAME} # Create a dummy directory that CMake will use as a timestamp reference to know if the actual file has changed, when it checks for the OUTPUT (unfortunately OUTPUT can't use a generator expression so we can't use our actual output file as the OUTPUT)
-        COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/${FILE_RELATIVE_PATH} ${OUT_DIR}/${FILE_RELATIVE_PATH} # Actual copy of the file to the destination
-        MAIN_DEPENDENCY ${FILE}
-    )
-    target_sources(${TARGET} PRIVATE ${FILE}) # Required for the custom command to be run when we build our target
-endfunction()
-
-#! Copies FOLDER and all its files to the directory where the executable of your TARGET will be created
-#  FOLDER can be either an absolute or a relative path. If it is relative it will be relative to ${CMAKE_SOURCE_DIR}.
-#  Unlike the default CMake functions this one will re-copy the files of the folder whenever they change or a file is added
-function(copy_folder TARGET FOLDER)
-    file(GLOB_RECURSE FILES CONFIGURE_DEPENDS ${FOLDER}/*)
-    foreach(FILE ${FILES})
-        copy_file(${TARGET} ${FILE} ${OUT_DIR})
-    endforeach()
-endfunction()
-```
-
-You can either copy these functions into your project, or use [this small library](https://github.com/CoolLibs/CMakeUtils) (Which is the recommended way because you are guaranteed that it will be up-to-date).
+[^1]: The default functions in available in CMake don't quite do what we want. They copy the files only once, when the CMakeLists.txt file is run. They won't re-copy them automatically whenever they change.
 
 ### GLOB
 
@@ -219,7 +186,7 @@ file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS src/*)
 
 It will grab the list of all *.cpp* files in *src* ant put then in `MY_SOURCES`.
 
- - `GLOB_RECURSE` means that it will also find files that are in the subdirectories of *src*. If you only want to find the files at the first level of *src* you can use `GLOB` instead.
+ - `GLOB_RECURSE` means that it will also find the files that are in the subdirectories of *src*. If you only want to find the files at the first level of *src* you can use `GLOB` instead.
 
  - `CONFIGURE_DEPENDS` means that CMake will check before every build to see if files were added or deleted, and if so it will update accordingly. Without it you would need to manually tell CMake to reconfigure each time you add or remove a file.
 
@@ -238,15 +205,15 @@ Now that you have the arguments from both sides, pick your poison.
 :::
 
 :::info tip
-If it is hard to add new files to your codebase people will tend to try and avoid it, and will put more things in one single file, which might not be desirable. If you want to encourage people to write many small files, using `GLOB_RECURSE` might be a good idea.
+If it is hard to add new files to your codebase people will tend to try and avoid it, and will put more things in one single file, which might not be desirable. If you want to encourage people to write many small files, using `GLOB_RECURSE` might be a good idea 😉
 :::
 
 ### Precompiled header
 
 A precompiled header is pretty useful (see <LessonLink slug="precompiled-header"/>).
-You can create one with CMake using [`target_precompile_headers`](https://cmake.org/cmake/help/git-stage/command/target_precompile_headers.html).
+You can create one with CMake using [`target_precompile_headers`](https://cmake.org/cmake/help/git-stage/command/target_precompile_headers.html):
 ```cmake
-target_precompile_headers(Cool PUBLIC
+target_precompile_headers(${PROJECT_NAME} PRIVATE
     <vector>
     <string>
     <memory>
@@ -263,9 +230,9 @@ As a library, your *CMakeLists.txt* has one goal: define a target containing all
 Users should only have to do
 ```cmake
 add_subdirectory(libname)
-target_link_libraries(${PROJECT_NAME} PRIVATE libname)
+target_link_libraries(${PROJECT_NAME} PRIVATE libname::libname)
 ```
-This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (this information is known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} PRIVATE libname)` all this information is propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
+This is possible because a target can store a lot of things: the sources, the include directories, the compile definitions, *etc.* (this information is known as *requirements* in the literature). When users call `target_link_libraries(${PROJECT_NAME} PRIVATE libname::libname)` all this information is propagated to `${PROJECT_NAME}` by CMake so that our main target will get the proper includes and so on.
 
 *If you want to have a look at a real-world example of modern cmake, check out [p6](https://github.com/julesfouchy/p6/blob/main/CMakeLists.txt) (small library) or [Cool](https://github.com/CoolLibs/Cool/blob/main/CMakeLists.txt) (big framework).*
 
@@ -275,7 +242,7 @@ You create your library's target with
 ```cmake
 add_library(libname)
 ```
-(it is the equivalent of `add_executable(exename)`)
+(It is the equivalent of `add_executable(exename)`.)
 
 ### Use the target_xxx() commands
 

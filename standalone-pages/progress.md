@@ -10,21 +10,22 @@ import ProgressScore from "@site/components/progress/ProgressScore"
 import BrowserOnly from "@docusaurus/BrowserOnly"
 import ButterflyGreen from "@site/static/img/butterfly-green.svg"
 import ButterflyBlue from "@site/static/img/butterfly-blue.svg"
-import LevelPoints from "@site/components/progress/LevelPoints"
 
 # Progress
 
-<ButterflyGreen/> <ButterflyGreen/> <ButterflyGreen/><br/>
-Welcome! In this section you will be able to see your progress live, your current grade, and the next lessons that you can learn.<br/>
-<ButterflyBlue/> <ButterflyBlue/> <ButterflyBlue/><br/><br/>
+Welcome! In this section you will be able to see your progress live, the things you did well, and the things you need to work on. This is basically a big list of all the do's and don'ts I expect you to follow during this semester.
 
-## How is my grade calculated?
+:::tip LEGEND
+🌈 > You are doing great.<br/>
+☁️ > I haven't seen enough of your code yet to tell if you are doing well.<br/>
+💥 > I am not happy and you should prioritize working on that point.
+:::
 
 :::caution
 Note that things are not validated forever! If you stop writing good code, you will lose your rainbows! 🌈
 :::
 
-### Git and other tools (coef. 1)
+## Git and other tools (coef. 1)
 
 What grants you points:
 
@@ -39,23 +40,23 @@ What loses you points:
 - ➖ 💥 Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
 - ➖ ☁️ Making no commits until near the end of the semester
 
-### Clean Code (coef. 3)
+## Clean Code (coef. 3)
 
-What grants you points:
+What you should do:
 
 - ➕ 🌞 Writing small functions
 - ➕ ☁️ Writing small structs
 - ➕ 💥 Writing small classes
 - ➕ ☁️ Using free functions when appropriate
 
-What loses you points:
+What you shouldn't do:
 
 - ➖ Hard to understand or misleading names
 - ➖ Duplicated code
 - ➖ Overly complicated code
 - ➖ Global variables (and singletons are global variables btw!)
 
-### C++ Code Quality (coef. 1)
+## C++ Code Quality (coef. 1)
 
 What grants you points:
 
@@ -68,7 +69,7 @@ What loses you points:
 - ➖ Forgetting `#pragma once` in your headers
 - ➖ Using `0` and `1` instead of `true` and `false` for your booleans
 
-### Investment (coef. 1)
+## Investment (coef. 1)
 
 Originalité, déviation par rapport au sujet de TPs, ou faire un projet
 
@@ -81,61 +82,3 @@ What grants you points:
 What loses you points:
 
 - ➖ 
-
-## How are the lessons sorted?
-
-They are first sorted by **Level**. Then, for lessons of the same Level, a **Priority** is computed as `0.75 * Benefit + 0.25 * Easiness`, which is then remapped between 100% and 0% according to the Level. **Benefit** measures how much your code or workflow will improve if you learn that lesson, and **Easiness** measures how easy it will be to learn that lesson. The bests lessons are the ones that have a huge impact *and* are easy to learn, and these are the ones that will have the highest Priorities.
-
-## Filters
-<BrowserOnly>{() =>(<span>
-    <StudentPicker/>
-    <br/>
-    <TagsFilter/>
-    <Grade top_position="340px"/>
-    <br/>
-</span>)}</BrowserOnly>
-
-## Level 1
-
-The basic tools you **must** use while you write code, and the basic habits you should try to start picking up.
-
-<BrowserOnly>{() =>(<span>
-    <ProgressScore level={1}/>
-    <LessonsTable level={1}/>
-</span>)}</BrowserOnly>
-
-## Level 2
-
-The essential principles that will naturally lead you to writing better code.
-
-<BrowserOnly>{() =>(<span>
-    <ProgressScore level={2}/>
-    <LessonsTable level={2}/>
-</span>)}</BrowserOnly>
-
-## Level 3
-
-Many things that will improve your code: C++ features, design patterns, implementation tricks, more tools, *etc.*
-
-<BrowserOnly>{() =>(<span>
-    <ProgressScore level={3}/>
-    <LessonsTable level={3}/>
-</span>)}</BrowserOnly>
-
-## Level 4
-
-Nice to have features, or things to do once you understand most of the things of level 3.
-
-<BrowserOnly>{() =>(<span>
-    <ProgressScore level={4}/>
-    <LessonsTable level={4}/>
-</span>)}</BrowserOnly>
-
-## Level 5
-
-When you have nothing important to learn anymore.
-
-<BrowserOnly>{() =>(<span>
-    <ProgressScore level={5}/>
-    <LessonsTable level={5}/>
-</span>)}</BrowserOnly>
