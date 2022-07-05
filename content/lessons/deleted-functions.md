@@ -2,7 +2,7 @@
 title: Deleted functions
 benefit: 3
 easiness: 5
-level: 4
+level: advanced
 tags:
     - Clean Code
     - C++

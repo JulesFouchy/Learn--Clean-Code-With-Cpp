@@ -2,7 +2,7 @@
 title: Stack vs Heap
 benefit: 4
 easiness: 3
-level: 1
+level: good-to-know
 tags:
     - Performant Code
 ---

@@ -2,7 +2,7 @@
 title: Testing
 benefit: 5
 easiness: 2
-level: 3
+level: practices-and-patterns
 tags:
     - Clean Code
 ---

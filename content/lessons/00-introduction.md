@@ -1,6 +1,8 @@
 ---
 title: Introduction
 slug: /lessons
+benefit: 5
+easiness: 5
 ---
 
 ## Hi 👋

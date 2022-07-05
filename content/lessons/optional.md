@@ -2,7 +2,7 @@
 title: std::optional
 benefit: 4
 easiness: 4
-level: 3
+level: basic-cpp
 tags:
     - Clean Code
     - C++

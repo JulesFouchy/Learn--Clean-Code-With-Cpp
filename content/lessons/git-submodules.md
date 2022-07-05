@@ -2,7 +2,7 @@
 title: Git submodules
 benefit: 4
 easiness: 3
-level: 3
+level: advanced
 tags:
     - Tools
     - Git

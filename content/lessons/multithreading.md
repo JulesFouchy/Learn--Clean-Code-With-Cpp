@@ -2,7 +2,7 @@
 title: Multithreading
 benefit: 3
 easiness: 2
-level: 3
+level: advanced
 tags:
     - Performant Code
 ---

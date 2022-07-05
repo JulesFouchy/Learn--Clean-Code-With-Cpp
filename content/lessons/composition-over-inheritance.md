@@ -2,7 +2,7 @@
 title: Composition over Inheritance
 benefit: 4
 easiness: 2
-level: 2
+level: practices-and-patterns
 tags:
     - Clean Code
 ---

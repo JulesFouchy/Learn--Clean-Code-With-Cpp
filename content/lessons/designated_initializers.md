@@ -2,7 +2,7 @@
 title: Designated Initializers
 benefit: 4
 easiness: 5
-level: 4
+level: basic-cpp
 tags:
     - Clean Code
     - C++

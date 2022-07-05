@@ -2,7 +2,7 @@
 title: Strong Types
 benefit: 5
 easiness: 3
-level: 3
+level: clean-code
 tags:
     - Clean Code
 ---

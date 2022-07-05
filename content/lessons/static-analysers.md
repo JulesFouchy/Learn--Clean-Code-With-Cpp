@@ -2,7 +2,7 @@
 title: Use static analysers
 benefit: 5
 easiness: 3
-level: 1
+level: tools
 tags:
     - Tools
 ---

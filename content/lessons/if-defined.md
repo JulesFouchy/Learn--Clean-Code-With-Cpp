@@ -2,7 +2,7 @@
 title: "#if defined()"
 benefit: 1
 easiness: 5
-level: 5
+level: useless
 tags:
     - Beautiful Code
     - C++

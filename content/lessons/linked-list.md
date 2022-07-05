@@ -2,7 +2,7 @@
 title: Linked lists
 benefit: 2
 easiness: 5
-level: 4
+level: advanced
 tags:
     - Performant Code
 ---

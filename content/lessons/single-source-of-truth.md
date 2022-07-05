@@ -2,7 +2,7 @@
 title: Single Source of Truth
 benefit: 4
 easiness: 4
-level: 3
+level: practices-and-patterns
 tags:
     - Clean Code
 ---

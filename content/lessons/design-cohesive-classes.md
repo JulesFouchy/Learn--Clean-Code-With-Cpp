@@ -2,7 +2,7 @@
 title: Design cohesive classes
 benefit: 5
 easiness: 3
-level: 2
+level: clean-code
 bias: 4
 tags:
     - Clean Code

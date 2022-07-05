@@ -2,7 +2,7 @@
 title: The Command pattern
 benefit: 5
 easiness: 2
-level: 4
+level: advanced
 tags:
     - Clean Code
 ---

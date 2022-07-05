@@ -2,7 +2,7 @@
 title: std::function
 benefit: 3
 easiness: 5
-level: 3
+level: basic-cpp
 tags:
     - Clean Code
     - C++

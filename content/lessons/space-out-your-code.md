@@ -2,7 +2,7 @@
 title: Space out your code
 benefit: 2
 easiness: 5
-level: 3
+level: practices-and-patterns
 tags:
     - Beautiful Code
 ---

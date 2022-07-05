@@ -2,7 +2,7 @@
 title: Code reviews
 benefit: 4
 easiness: 3
-level: 3
+level: practices-and-patterns
 tags:
     - Workflow
 ---

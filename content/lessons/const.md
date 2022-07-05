@@ -2,7 +2,7 @@
 title: const
 benefit: 4
 easiness: 3
-level: 3
+level: basic-cpp
 tags:
     - Clean Code
     - C++

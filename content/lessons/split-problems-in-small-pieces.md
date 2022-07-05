@@ -2,7 +2,7 @@
 title: Split problems in small pieces
 benefit: 5
 easiness: 1
-level: 2
+level: practices-and-patterns
 tags:
     - Workflow
 ---

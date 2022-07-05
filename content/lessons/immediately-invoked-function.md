@@ -2,7 +2,7 @@
 title: Immediately Invoked Function
 benefit: 3
 easiness: 5
-level: 3
+level: practices-and-patterns
 tags:
     - Clean Code
 ---

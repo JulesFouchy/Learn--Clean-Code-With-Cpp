@@ -2,7 +2,7 @@
 title: Watch conferences
 benefit: 5
 easiness: 3
-level: 4
+level: practices-and-patterns
 tags:
     - Workflow
 ---

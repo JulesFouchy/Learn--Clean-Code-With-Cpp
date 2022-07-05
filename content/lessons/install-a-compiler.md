@@ -2,7 +2,7 @@
 title: Install a compiler
 benefit: 5
 easiness: 5
-level: 1
+level: tools
 bias: 1
 tags:
     - Tools

@@ -2,7 +2,7 @@
 title: Enums
 benefit: 4
 easiness: 5
-level: 2
+level: basic-cpp
 tags:
     - Clean Code
 ---

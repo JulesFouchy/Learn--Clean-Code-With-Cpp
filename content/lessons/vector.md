@@ -2,7 +2,7 @@
 title: std::vector
 benefit: 5
 easiness: 5
-level: 3
+level: basic-cpp
 tags:
     - Clean Code
     - Performant Code

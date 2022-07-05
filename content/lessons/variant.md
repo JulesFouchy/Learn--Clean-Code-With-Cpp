@@ -2,7 +2,7 @@
 title: std::variant
 benefit: 3
 easiness: 3
-level: 3
+level: basic-cpp
 tags:
     - Clean Code
     - Performant Code

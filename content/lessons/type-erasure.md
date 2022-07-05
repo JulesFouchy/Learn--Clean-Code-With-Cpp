@@ -2,7 +2,7 @@
 title: Type erasure
 benefit: 4
 easiness: 2
-level: 4
+level: advanced
 tags:
     - Clean Code
 ---

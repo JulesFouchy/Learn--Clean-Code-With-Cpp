@@ -2,7 +2,7 @@
 title: Precompiled Header
 benefit: 3
 easiness: 3
-level: 4
+level: good-to-know
 tags:
     - C++
 ---

@@ -2,7 +2,7 @@
 title: Error Handling
 benefit: 3
 easiness: 4
-level: 3
+level: practices-and-patterns
 tags:
     - Clean Code
 ---

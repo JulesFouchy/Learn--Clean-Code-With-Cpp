@@ -2,7 +2,7 @@
 title: Use libraries
 benefit: 5
 easiness: 3
-level: 3
+level: practices-and-patterns
 tags:
     - Clean Code
 ---

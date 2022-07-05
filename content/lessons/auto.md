@@ -2,7 +2,7 @@
 title: auto
 benefit: 3
 easiness: 5
-level: 3
+level: basic-cpp
 tags:
     - Beautiful Code
     - Clean Code

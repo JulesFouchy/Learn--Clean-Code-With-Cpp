@@ -2,7 +2,7 @@
 title: Polymorphism
 benefit: 3
 easiness: 2
-level: 3
+level: basic-cpp
 tags:
     - Clean Code
 ---

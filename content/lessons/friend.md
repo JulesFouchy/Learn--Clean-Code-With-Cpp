@@ -2,7 +2,7 @@
 title: friend
 benefit: 1
 easiness: 5
-level: 4
+level: advanced
 tags:
     - Clean Code
     - C++

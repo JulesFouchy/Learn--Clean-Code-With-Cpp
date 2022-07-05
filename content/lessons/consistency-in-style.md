@@ -2,7 +2,7 @@
 title: Consistency in style
 benefit: 2
 easiness: 5
-level: 1
+level: practices-and-patterns
 tags:
     - Beautiful Code
 ---
