@@ -13,3 +13,5 @@ Even if it's only for your personal use, it will help you a lot with code reuse 
 So : as soon as you are write some bit of code that is fairly generic, consider turning it into a library.
 
 For CMake refer back to <LessonLink text="here" slug="cmake" anchor="#cmake-for-library-authors"/>.
+
+I would only advice to do it once you are experrienced though. Because it takes wisdow to know how generic your needs to be: dpon't iver do it, but don't under do it either.

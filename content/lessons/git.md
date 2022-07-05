@@ -164,3 +164,7 @@ You might also have heard about branches. This is an advanced *git* feature, you
 A conflict happens when you made changes in the same place as another developer. In this case you will have to use an external tool to compare the changes and merge them into a valid file. 
 
 GitKraken is a great tool to handle these situations: check out [this tutorial](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git) to get started.
+
+## Going further
+
+TODO Link to Advanced git features

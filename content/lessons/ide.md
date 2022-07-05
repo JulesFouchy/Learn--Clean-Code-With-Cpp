@@ -79,3 +79,7 @@ If you need to find something fast and easy, run <kbd>CTRL</kbd> + <kbd>SHIFT</k
 ### Launching the project
 
 Once you have the <LessonLink slug="cmake" text="CMake"/> setup done (either by using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) or by doing it yourself) you can build the project by pressing <kbd>F7</kbd> or run it using <kbd>CTRL + F5</kbd>.
+
+## Going further
+
+TODO link to lesson Master your IDE
