@@ -1,0 +1,26 @@
+[
+  {
+    "name": "The Tools",
+    "id": "tools"
+  },
+  {
+    "name": "Basic C++",
+    "id": "basic-cpp"
+  },
+  {
+    "name": "The Essence of Clean Code",
+    "id": "clean-code"
+  },
+  {
+    "name": "Good practices and patterns",
+    "id": ""
+  },
+  {
+    "name": "Advanced",
+    "id": "advanced"
+  },
+  {
+    "name": "Useless",
+    "id": "useless"
+  }
+]

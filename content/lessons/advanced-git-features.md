@@ -2,7 +2,7 @@
 title: Advanced Git features
 benefit: 3
 easiness: 3
-level: 3
+level: "tools"
 tags:
     - Tools
     - Git
