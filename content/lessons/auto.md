@@ -8,6 +8,7 @@ tags:
     - Clean Code
     - C++
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
 
 ## Brief
 
@@ -30,3 +31,5 @@ You write a piece of code once, and then it will be read many many times by many
 In short: we don't care if you have to type more characters, we only care about the readability of the code.<br/>
 So *"auto saves me some typing"* is not a good reason, but *"auto is more readable"* is. And in the cases where auto is *less* readable, then don't use auto!
 :::
+
+<YoutubeVideo id="2vOPEuiGXVo?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>

@@ -8,10 +8,17 @@ tags:
     - C++
 ---
 import GoingFurther from "@site/components/GoingFurther"
+import YoutubeVideo from "@site/components/YoutubeVideo"
 
 ## Brief
 
-[See this great lesson on std::optional](https://www.cppstories.com/2018/05/using-optional/).
+<YoutubeVideo id="UAAiwObNhQ0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
+
+<br/>
+
+---
+
+[**Read this great lesson on std::optional.**](https://www.cppstories.com/2018/05/using-optional/)
 
 ## Going further
 

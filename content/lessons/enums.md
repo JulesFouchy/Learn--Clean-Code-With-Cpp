@@ -6,6 +6,7 @@ level: basic-cpp
 tags:
     - Clean Code
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
 
 ## Brief
 
@@ -53,6 +54,8 @@ void Character::move(Direction direction) {
     }
 }
 ```
+
+<YoutubeVideo id="x55jfOd5PEE?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
 
 ## Use `enum class`, not `enum`
 

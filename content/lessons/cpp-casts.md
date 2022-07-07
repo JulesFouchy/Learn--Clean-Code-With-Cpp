@@ -7,5 +7,10 @@ tags:
     - Clean Code
     - C++
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
 
-[5 min](https://youtu.be/DAvZ3OG9cNo)
+<YoutubeVideo id="pWZS1MtxI-A?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
+
+<br/>
+
+<YoutubeVideo id="DAvZ3OG9cNo"/>

@@ -7,3 +7,7 @@ tags:
     - Clean Code
     - C++
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
+
+
+<YoutubeVideo id="mWgmBBz0y8c?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>

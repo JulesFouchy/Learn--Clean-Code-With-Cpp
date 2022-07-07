@@ -6,5 +6,6 @@ level: good-to-know
 tags:
     - C++
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
 
-https://youtu.be/eSI4wctZUto
+<YoutubeVideo id="eSI4wctZUto?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>

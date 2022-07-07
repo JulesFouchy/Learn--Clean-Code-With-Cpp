@@ -10,8 +10,17 @@ tags:
 import LessonLink from "@site/components/LessonLink"
 import Resource from "@site/components/Resource"
 import GoingFurther from "@site/components/GoingFurther"
+import YoutubeVideo from "@site/components/YoutubeVideo"
 
 ## Brief
+
+<YoutubeVideo id="ehMg6zvXuMY?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
+
+<br/>
+
+<YoutubeVideo id="OWNeCTd7yQE?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
+
+<br/>
 
 You all know what copying an object means. But did you know that we can do better in some circumstances?
 

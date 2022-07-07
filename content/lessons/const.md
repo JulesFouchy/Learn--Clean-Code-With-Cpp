@@ -7,6 +7,15 @@ tags:
     - Clean Code
     - C++
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
+
+## Brief
+
+<YoutubeVideo id="4fJBrditnJU?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
+
+<br/>
+
+<YoutubeVideo id="bP9z3H3cVMY?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
 
 ## When **not** to use const
 

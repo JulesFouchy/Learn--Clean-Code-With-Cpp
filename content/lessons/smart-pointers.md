@@ -7,6 +7,9 @@ tags:
     - Clean Code
     - C++
 ---
+import YoutubeVideo from "@site/components/YoutubeVideo"
+
+<YoutubeVideo id="UOB7-B2MfwA?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
 
 **No naked new** : this doesn't mean *no dynamic allocations*, it just means they should always be done through a smart pointer or a container.
 

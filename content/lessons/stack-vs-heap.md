@@ -2,12 +2,19 @@
 title: Stack vs Heap
 benefit: 4
 easiness: 3
-level: good-to-know
+level: basic-cpp
 tags:
     - Performant Code
 ---
 import GoingFurther from "@site/components/GoingFurther"
 import LessonLink from "@site/components/LessonLink"
+import YoutubeVideo from "@site/components/YoutubeVideo"
+
+<YoutubeVideo id="iNuTwvD6ciI?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
+
+<br/>
+
+<YoutubeVideo id="wJ1L2nSIV1s?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"/>
 
 ## Brief
 
