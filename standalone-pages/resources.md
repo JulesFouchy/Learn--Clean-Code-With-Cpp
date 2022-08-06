@@ -101,3 +101,5 @@ Here are a lot of awesome resources that will help you in your learning journey
 [C++ Class Natures in Their Canonical Form and How to Find Them](https://youtu.be/PedVlux_p-k) *Peter Sommerlad*
 
 [Data-Oriented Design and C++](https://youtu.be/rX0ItVEVjHc) *Mike Acton*
+
+[What Belongs In The C++ Standard Library?](https://youtu.be/OgM0MYb4DqE) *Bryce Adelstein Lelbach*
