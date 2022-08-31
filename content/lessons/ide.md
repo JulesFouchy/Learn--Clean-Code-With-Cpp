@@ -1,5 +1,5 @@
 ---
-title: Use an IDE
+title: IDE
 benefit: 5
 easiness: 5
 level: tools

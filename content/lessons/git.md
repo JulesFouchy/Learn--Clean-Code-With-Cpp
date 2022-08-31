@@ -1,5 +1,5 @@
 ---
-title: Use Git
+title: Git
 benefit: 5
 easiness: 4
 level: tools

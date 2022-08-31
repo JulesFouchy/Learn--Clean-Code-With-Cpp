@@ -1,5 +1,5 @@
 ---
-title: Install a compiler
+title: Compiler
 benefit: 5
 easiness: 5
 level: tools

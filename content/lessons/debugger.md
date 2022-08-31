@@ -1,5 +1,5 @@
 ---
-title: Use a debugger
+title: Debugger
 benefit: 5
 easiness: 4
 level: tools

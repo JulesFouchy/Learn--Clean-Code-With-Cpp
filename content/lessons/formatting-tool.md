@@ -1,5 +1,5 @@
 ---
-title: Use a formatting tool
+title: Formatter
 benefit: 5
 easiness: 4
 level: tools

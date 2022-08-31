@@ -1,5 +1,5 @@
 ---
-title: Use static analysers
+title: Static Analysers
 benefit: 5
 easiness: 3
 level: tools
