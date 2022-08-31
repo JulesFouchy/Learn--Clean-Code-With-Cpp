@@ -3,7 +3,7 @@ import Resource from "@site/components/Resource"
 # Resources
 
 :::tip Brief
-Here are a lot of awesome resources that will help you in your learning journey
+Here are a few awesome resources that will help you in your learning journey
 :::
 
 ## Alternative classes

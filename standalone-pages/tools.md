@@ -8,4 +8,4 @@ Here are a few awesome tools that will help you as you write or learn C++
 
 [Compiler Explorer](https://godbolt.org/): See the machine code generated from your code.
 
-[Quick Bench](https://quick-bench.com/): Measure and compare the performance of different bits of code.
+[Quick Bench](https://quick-bench.com/): Measure and compare the performance of different pieces of code.
