@@ -9,6 +9,8 @@ tags:
 ---
 import LessonLink from "@site/components/LessonLink"
 
+> [C.2: Use `class` if the class has an invariant; use `struct` if the data members can vary independently.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c2-use-class-if-the-class-has-an-invariant-use-struct-if-the-data-members-can-vary-independently)
+
 ## Brief
 
 Structs allow you to group data together. When there are no invariants to enforce, using a struct and having all your data public is better that using a class (as explained in <LessonLink slug="design-cohesive-classes"/>).

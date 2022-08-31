@@ -9,7 +9,11 @@ tags:
 ---
 import GoingFurther from "@site/components/GoingFurther"
 
+> [C.4: Make a function a member only if it needs direct access to the representation of a class.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c4-make-a-function-a-member-only-if-it-needs-direct-access-to-the-representation-of-a-class)
+
 ## Brief
+
+TODO explain what a free function is
 
 :::tip
 Free functions help a lot with decoupling, code reuse, testing, *etc.*

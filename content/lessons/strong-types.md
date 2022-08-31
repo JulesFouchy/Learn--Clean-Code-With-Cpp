@@ -8,6 +8,8 @@ tags:
 ---
 import GoingFurther from "@site/components/GoingFurther"
 
+> [I.4: Make interfaces precisely and strongly typed.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#i4-make-interfaces-precisely-and-strongly-typed)
+
 ## Brief
 
 *Strong typing* is when you create a type just to wrap an `int`,  so that you can give that `int` a name, invariants, and so on. It helps you express your intent more clearly and makes your APIs harder to misuse. They are amazing and definitely worth the extra little time needed to write them down!

@@ -102,3 +102,9 @@ I messed up the "1 single project" feel of the exercises. They are more or less 
 
 
 Other TP idea, to intro p6, easier than Noughts & Crosses: balls go in a straight line in random directions, and you must click on them to destroy them. It gives you the opportunity to make a class for balls (and one for BallsManager ?).
+
+## TODO
+
+- make the lessons sorted again
+- Create a "Progress" section for each student
+- Decide what these "coefficient"s in the progress section mean, and what is the coefficient for each section. (NB: students probably prefre to see points on 20. BUT its important to remember than there can be negative points.)

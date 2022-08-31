@@ -11,6 +11,8 @@ import GoingFurther from "@site/components/GoingFurther"
 
 > Write the functions you wish to see in the world – [*Tony Van Eerd*](https://youtu.be/glYq-dvgby4?t=2721)
 
+> [F.3: Keep functions short and simple.](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#f3-keep-functions-short-and-simple)
+
 ## Brief
 
 *Small functions* are way easier to read and reason about.<br/>
