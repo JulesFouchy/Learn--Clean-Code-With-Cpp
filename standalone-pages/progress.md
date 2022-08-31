@@ -16,13 +16,13 @@ import ButterflyBlue from "@site/static/img/butterfly-blue.svg"
 Welcome! In this section you will be able to see your progress live, the things you did well, and the things you need to work on. This is basically a big list of all the do's and don'ts I expect you to follow during this semester.
 
 :::tip LEGEND
-🌈 > You are doing great.<br/>
+🌞 > You are doing great.<br/>
 ☁️ > I haven't seen enough of your code yet to tell if you are doing well.<br/>
-💥 > I am not happy and you should prioritize working on that point.
+❌ > I am not happy and you should prioritize working on that point.
 :::
 
 :::caution
-Note that things are not validated forever! If you stop writing good code, you will lose your rainbows! 🌈
+Note that things **are not validated forever**! If you stop writing good code, you will lose your  happy faces! 🌞
 :::
 
 ## Git and other tools (coef. 1)
@@ -42,19 +42,19 @@ What loses you points:
 
 ## Clean Code (coef. 3)
 
-What you should do:
+➕ What you **should** do:
 
-- ➕ 🌞 Writing small functions
-- ➕ ☁️ Writing small structs
-- ➕ 💥 Writing small classes
-- ➕ ☁️ Using free functions when appropriate
+- 🌞 Writing small functions
+- ☁️ Writing small structs
+- ❌ Writing small classes
+- ☁️ Using free functions when appropriate
 
-What you shouldn't do:
+➖ What you **shouldn't** do:
 
-- ➖ Hard to understand or misleading names
-- ➖ Duplicated code
-- ➖ Overly complicated code
-- ➖ Global variables (and singletons are global variables btw!)
+- 🌫 Hard to understand or misleading names
+- 🌞 Duplicated code
+- ❌ Overly complicated code
+- 🌞 Global variables (and singletons are global variables btw!)
 
 ## C++ Code Quality (coef. 1)
 
