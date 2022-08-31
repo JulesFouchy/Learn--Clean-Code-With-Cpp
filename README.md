@@ -105,5 +105,5 @@ Other TP idea, to intro p6, easier than Noughts & Crosses: balls go in a straigh
 
 ## TODO
 
-- make the lessons sorted again
+- Put lessons of each level inside their own folder
 - Decide what these "coefficient"s in the progress section mean, and what is the coefficient for each section. (NB: students probably prefre to see points on 20. BUT its important to remember than there can be negative points.)
