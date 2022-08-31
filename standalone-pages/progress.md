@@ -21,9 +21,22 @@ Welcome! In this section you will be able to see your progress live, the things 
 ❌ > I am not happy and you should prioritize working on that point.
 :::
 
+Read all of level 1 and 2, and other levels when you need to (e.g. you need a refresher on lambdas, range-for loops etc.)
+
+Level 1: Tools
+Level 2: Expressive, Clean code
+Level 3: C++ Features
+Level 4: Advanced Stuff
+
+Levels don't really make sense anymore cause there isn't a notion of progression. You can read Level 3 whenever you need to learn about a C++ feature.
+
+
 :::caution
 Note that things **are not validated forever**! If you stop writing good code, you will lose your  happy faces! 🌞
 :::
+
+It's important that you deviate from the TP and add your own functionalities, it can be very simple, just a few extra functions, but I really want to see as much things as possible that you wrote 100% yourself.
+
 
 ## Git and other tools (coef. 1)
 
@@ -44,6 +57,7 @@ What loses you points:
 
 ➕ What you **should** do:
 
+- 🌞 Expressing your intent / Hiding implementation details
 - 🌞 Writing small functions
 - ☁️ Writing small structs
 - ❌ Writing small classes
@@ -55,6 +69,8 @@ What loses you points:
 - 🌞 Duplicated code
 - ❌ Overly complicated code
 - 🌞 Global variables (and singletons are global variables btw!)
+- 🌞 Missing a `const`
+- 🌞 Not wrapping `std::cin` in a function. Doing so would capture your intention, allow you to handle errors easily, and creating const variables instead of creating them uninitialized and filling them with `cin`.
 
 ## C++ Code Quality (coef. 1)
 
@@ -71,7 +87,7 @@ What loses you points:
 
 ## Investment (coef. 1)
 
-Originalité, déviation par rapport au sujet de TPs, ou faire un projet
+Originalité, déviation par rapport au sujet de TPs, ajout de features, ou faire un projet
 
 What grants you points:
 
