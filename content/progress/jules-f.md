@@ -57,7 +57,8 @@ What loses you points:
 - 🌞 Writing small functions
 - ☁️ Writing small structs
 - ❌ Writing small classes
-- ☁️ Using free functions when appropriate
+- ☁️ Using free functions as often as possible, and methods only when appropriate
+- ☁️ Bonus points if you find an occasion to use `std::optional` (ans `std::variant` if you are an advanced user)
 
 ➖ What you **shouldn't** do:
 
@@ -83,7 +84,7 @@ What loses you points:
 
 ## Investment (coef. 1)
 
-Originalité, déviation par rapport au sujet de TPs, ajout de features, ou faire un projet
+Originalité, déviation par rapport au sujet de TPs, ajout de features, faire un projet, quantité de code rendu.
 
 What grants you points:
 

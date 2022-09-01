@@ -35,15 +35,22 @@ In terms of invested time I won't ask you more than can fit during the class ses
 
 Please note that *I will only be evaluating the quality of your code, not the state of the end product*. This means that it doesn't matter if you don't have time to finish the project you set out to do! Your grade will be solely based on the lessons you successfully applied in the project. So no worries please 😎.
 
+
+:::info
+The minimum expected is that you finish *Bubble Shooter*.
+:::
+
 ## Option#1: Rolling your own project
 
 I would highly encourage you to do so if you are really interested in programming. You will definitely learn a ton by doing so, and produce something that you will be proud of.
 
-If you choose to do so it might be a good idea to share your plans with me so that we can discuss them, give you some feedback or suggestions, and try to estimate the time it will take you. Note that you can still embark on a huge project if you so desire because it doesn't matter if you don't finish it for the end of the semester (see [Time investment](#time-investment)).
+If you choose to do so it might be a good idea to share your plans with me so that we can discuss them, give you some feedback or suggestions, and try to estimate the time it will take you. Try to aim for something that is not too big: what matters to me is **quality rather than quantity**.
 
 **For this project you _can_ work in groups**. Simply remember that the more you are on a project, the harder it is to coordinate and produce a cohesive codebase. But if you think that a collaboration would be beneficial, then please go ahead!
 
 I also think that it only makes sense to team up with people who have roughly the same level as you. This way you will be able to help each other out and discuss ideas on equal footing. If you are looking for someone very good to help you, you can always ask your comrades or me, but working on the same project wouldn't be beneficial I believe because you won't be advancing at the same pace and/or having the same ambitions. (I might be wrong though and we can discuss that).
+
+If you want to mix with a project from another class, it is possible, but beware!
 
 If you choose Option#1, you don't need to care about the other pages of the *Assignment* section. Just know that I strongly recommend to use [this template](https://github.com/JulesFouchy/Simple-Cpp-Setup) as a starting point for your code.
 
