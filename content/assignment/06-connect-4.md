@@ -57,7 +57,7 @@ Again we can reuse the `Board` class of the previous game if we generalize it a 
 <br/>
 
 :::info Tip
-Don't forget to handle the "error" cases when a column is full or the player did click outside of the board instead of on a column. Once again [`std::optional`](../lessons/optional.md) can help you represent that.
+Don't forget to handle the "error" cases when a column is full or the player did click outside of the board instead of on a column. Once again <LessonLink text="std::optional" slug="optional"/> can help you represent that.
 :::
 
 ### Show a preview of where the player is about to play
