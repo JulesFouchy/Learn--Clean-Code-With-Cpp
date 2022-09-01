@@ -17,6 +17,11 @@ I will provide a suggestion of a small project with guided steps, but you can ch
 
 The main difference will be that I won't be able to provide you with guided steps for your own projects, but this also means that you will learn a ton more by doing it! You might also be more motivated to work on something you chose and care about.
 
+
+:::info
+It's important that you deviate from the TP and add your own functionalities, it can be very simple, just a few extra functions, but I really want to see as much things as possible that you wrote 100% yourself.
+:::
+
 ## Submitting your work
 
 I will be looking at your code regularly to give you feedback and start checking the lessons that you are learning.
