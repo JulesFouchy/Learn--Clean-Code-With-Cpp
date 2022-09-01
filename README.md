@@ -102,6 +102,7 @@ I messed up the "1 single project" feel of the exercises. They are more or less 
 
 
 Other TP idea, to intro p6, easier than Noughts & Crosses: balls go in a straight line in random directions, and you must click on them to destroy them. It gives you the opportunity to make a class for balls (and one for BallsManager ?).
+Then add Squares: talk about polymorphism. Squares can have a rotation, unlike disks. For the advanced peeps, tell them to redo it with std::variant, or with two unrelated classes stored in two different vectors.
 
 ## TODO
 
