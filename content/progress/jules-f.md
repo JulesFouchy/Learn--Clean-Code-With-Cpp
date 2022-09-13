@@ -71,8 +71,11 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 - ☁️ Headers with unnecessary includes in them/ If something is only needed by the .cpp file, only include it in the .cpp, not the .hpp.
 - ☁️ Using `new` instead of a stack allocation or a smart pointer
+- ☁️ Headers and source files in two separate folder[^1]. Put them next to each other, bc after I read I very often want to read the other so it should be easy to find.
 - ☁️ Forgetting `#pragma once` in your headers
 - ☁️ Using `0` and `1` instead of `true` and `false` for your booleans
+
+[^1]: Unless you are writing a library. Then it might be to expose some headers and not others in an "include" folder.
 
 ## Investment (4 pts.)
 
