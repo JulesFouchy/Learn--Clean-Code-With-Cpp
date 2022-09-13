@@ -49,6 +49,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - ❌ Using strong types
 - ❌ Encapsulation, using `public` / `private` accordingly
 - 🌞 Using `const` when appropriate (see <LessonLink slug="const"/>)
+- ❌ Using range-based loops or algorithms, instead of raw loops
 - ☁️ Using free functions as often as possible, and methods only when appropriate
 - ☁️ Bonus points if you find an occasion to use `std::optional` (and `std::variant` if you are an advanced user)
 
