@@ -26,9 +26,9 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ➕* What you **should** do:*
 
-- 🌞 Following [the good practices of the Git lesson](/lessons/git#good-practices)
-- 🌞 Having a [.clang-format](/lessons/formatting-tool/) file, and applying it to your codebase
-- 🌞 Having a [.clang-tidy](/lessons/static-analysers/) file, and fixing the problems it shows you, or asking the teacher what the warning means if you don't understand it or don't know how to fix it.
+- 🌞 Follow [the good practices of the Git lesson](/lessons/git#good-practices)
+- 🌞 Have a [.clang-format](/lessons/formatting-tool/) file, and apply it to your codebase
+- 🌞 Have a [.clang-tidy](/lessons/static-analysers/) file, and fix the problems it shows you, or ask the teacher what the warning means if you don't understand it or don't know how to fix it.
 <!-- - 🌞 Having a nice ReadMe, using Markdown -->
 - 🌞 IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
 
@@ -41,16 +41,16 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ➕* What you **should** do:*
 
-- 🌞 Expressing your intent / Hiding implementation details
-- 🌞 Writing small functions
-- 🌞 Writing many functions
-- ☁️ Writing small structs
-- ❌ Writing small classes
-- ❌ Using strong types
-- ❌ Encapsulation, using `public` / `private` accordingly
-- 🌞 Using `const` when appropriate (see <LessonLink slug="const"/>)
-- ❌ Using range-based loops or algorithms, instead of raw loops
-- ☁️ Using free functions as often as possible, and methods only when appropriate
+- 🌞 Express your intent / Hide implementation details
+- 🌞 Write small functions
+- 🌞 Write many functions
+- ☁️ Write small structs
+- ❌ Write small classes
+- ❌ Use strong types
+- ❌ Encapsulation, use `public` / `private` accordingly
+- 🌞 Use `const` when appropriate (see <LessonLink slug="const"/>)
+- ❌ Use range-based loops or algorithms, instead of raw loops
+- ☁️ Use free functions as often as possible, and methods only when appropriate
 - ☁️ Bonus points if you find an occasion to use `std::optional` (and `std::variant` if you are an advanced user)
 
 ➖* What you **shouldn't** do:*
@@ -65,7 +65,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ➕* What you **should** do:*
 
-- ☁️ Using lambdas when appropriate
+- ☁️ Use lambdas when appropriate
 
 ➖* What you **shouldn't** do:*
 
@@ -81,10 +81,9 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ➕* What you **should** do:*
 
-- ☁️ Asking questions and participating in class
-- ☁️ Reading lessons (but how do I evaluate that? Probably just say everybody reads levels 1 and 2 and other levels are bonuses)
-- ☁️ Advancing in the exercises ./ project.
-- ☁️ Deviating from the guided steps, adding your own touch to the exercises, adding more features that are not explicitly asked for
+- ☁️ Ask questions and participate in class
+- ☁️ Advance in the exercises / project.
+- ☁️ Deviate from the guided steps, add your own touch to the exercises, add more features than are not explicitly asked for
 
 ➖* What you **shouldn't** do:*
 
