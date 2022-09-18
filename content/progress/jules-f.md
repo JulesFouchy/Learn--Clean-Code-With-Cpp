@@ -24,7 +24,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ## Git and other tools (3 pts.)
 
-➕* What you **should** do:*
+➕ *What you **should** do:*
 
 - 🌞 Follow [the good practices of the Git lesson](/lessons/git#good-practices)
 - 🌞 Have a [.clang-format](/lessons/formatting-tool/) file, and apply it to your codebase
@@ -32,14 +32,14 @@ Note that things **are not validated forever**! If you stop writing good code, y
 <!-- - 🌞 Having a nice ReadMe, using Markdown -->
 - 🌞 IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
 
-➖* What you **shouldn't** do:*
+➖ *What you **shouldn't** do:*
 
 - ❌ Commiting unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
 - ☁️ Making no commits until near the end of the semester
 
 ## Clean Code (12 pts.)
 
-➕* What you **should** do:*
+➕ *What you **should** do:*
 
 - 🌞 Express your intent / Hide implementation details
 - 🌞 Write small functions
@@ -53,7 +53,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - ☁️ Use free functions as often as possible, and methods only when appropriate
 - ☁️ Bonus points if you find an occasion to use `std::optional` (and `std::variant` if you are an advanced user)
 
-➖* What you **shouldn't** do:*
+➖ *What you **shouldn't** do:*
 
 - ☁️ Hard to understand or misleading names
 - 🌞 Duplicated code
@@ -63,11 +63,11 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ## C++ Code Quality (3 pts.)
 
-➕* What you **should** do:*
+➕ *What you **should** do:*
 
 - ☁️ Use lambdas when appropriate
 
-➖* What you **shouldn't** do:*
+➖ *What you **shouldn't** do:*
 
 - ☁️ Headers with unnecessary includes in them/ If something is only needed by the .cpp file, only include it in the .cpp, not the .hpp.
 - ☁️ Using `new` instead of a stack allocation or a smart pointer
@@ -79,13 +79,14 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ## Investment (4 pts.)
 
-➕* What you **should** do:*
+➕ *What you **should** do:*
 
 - ☁️ Ask questions and participate in class
 - ☁️ Advance in the exercises / project.
 - ☁️ Deviate from the guided steps, add your own touch to the exercises, add more features than are not explicitly asked for
+- ☁️ Take my feedback into account, improve your old code if need be
 
-➖* What you **shouldn't** do:*
+➖ *What you **shouldn't** do:*
 
 - ☁️ Submitting no work until near the end of the semester
 - ☁️ Copy-pasting the solution

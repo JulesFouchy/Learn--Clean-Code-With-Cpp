@@ -27,6 +27,8 @@ int rand(int min, int max);
 
 I am not a fan of "automatic" documentation where you feel the need to add a description to every parameter. Only do it if you have something meaningful to say about that parameter! Otherwise I much prefer a simple sentence that explains the function and its parameters all at once.
 
+Also, don't just paraphrase the implementation.
+
 ```cpp title="Bad, this is very redondant"
 /**
  * @brief Computes the average of a and b.
