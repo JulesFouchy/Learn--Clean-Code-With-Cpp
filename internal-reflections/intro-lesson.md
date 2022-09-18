@@ -1,4 +1,7 @@
-Buzz words:
+Quizz: show code samples and ask them to find problems in them. (Some might be "perfect", this is great to spark discussions when ppl try to find problems in them even when there are no obvious ones).
+We can go through all the big thematics of this class.
+
+<!-- Buzz words:
 - DRY
 - responsibilty (SRP)
 - Semantics
@@ -11,4 +14,4 @@ Buzz words:
 
 Explicit those concepts in the first lesson: they will come back all the time to justify why we do things in a certain way.
 
-**Message of the course: I want you to care about the code you write; I want you to write it mindfully and think about the solutions you are deploying.**
+**Message of the course: I want you to care about the code you write; I want you to write it mindfully and think about the solutions you are deploying.** -->
