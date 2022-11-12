@@ -6,10 +6,6 @@ import Resource from "@site/components/Resource"
 Here are a few awesome resources that will help you in your learning journey
 :::
 
-## Alternative classes
-
-[CPP Learning](https://laefy.github.io/CPP_Learning/): Great classes (in French) by Céline Noel for the Master 1 at Université Gustave Eiffel.
-
 ## Video tutorials
 
 [The Cherno](https://youtu.be/2BP8NhxjrO0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb): Great beginner level tutorials to learn C++ and many of its features.
@@ -31,6 +27,10 @@ Here are a few awesome resources that will help you in your learning journey
 [Bloomberg's coding standards](http://bloomberg.github.io/bde/knowledge_base/coding_standards.html)
 
 [How to write unmaintainable code](https://github.com/Droogans/unmaintainable-code)
+
+## Other classes
+
+[CPP Learning](https://laefy.github.io/CPP_Learning/): Great classes (in French) by Céline Noel for the Master 1 at Université Gustave Eiffel.
 
 ## Blogs
 
