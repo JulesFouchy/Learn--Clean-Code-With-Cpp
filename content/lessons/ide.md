@@ -24,6 +24,10 @@ Here are some great extensions for VSCode that I recommend:
 - <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>: The Basic C++ extensions
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: This allows you to work remotely with your teammates in one single editor. It is amazing to work together!
 
+## Settings up a C++ environment in VSCode
+
+- Install clangd extension. If it tells you to disable Intelisense, say yes. If you miss that step, go in the Settings, search for `C_Cpp.intelliSenseEngine` and set it to `Disabled`. (Otherwise it will conflict with *clangd* which is the extension that we will use to get autocompletion and many other amazing features.)
+
 ## Quick actions
 
 Below are a few of the most important things that an IDE will help you with; I will demonstrate them using *VSCode* but rest assured that any other IDE will have the same functionalities. Please note that most of these actions are only available if <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> is installed in your VSCode.
