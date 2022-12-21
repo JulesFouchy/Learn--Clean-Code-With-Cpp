@@ -12,7 +12,7 @@ import LessonLink from "@site/components/LessonLink"
 
 Welcome! In this section you will be able to see your progress live, the things you did well, and the things you need to work on. This is basically a big list of all the do's and don'ts I expect you to follow during this semester.
 
-:::tip LEGEND
+:::tip CAPTIONS
 🌞 > You are doing great.<br/>
 ☁️ > I haven't seen enough of your code yet to tell if you are doing well.<br/>
 ❌ > I am not happy and you should prioritize working on that point.
@@ -22,13 +22,13 @@ Welcome! In this section you will be able to see your progress live, the things 
 Note that things **are not validated forever**! If you stop writing good code, you will lose your  happy faces! 🌞
 :::
 
-## Git and other tools (3 pts.)
+## Tools (3 pts.)
 
 ➕ *What you **should** do:*
 
 - 🌞 Follow [the good practices of the Git lesson](/lessons/git#good-practices)
 - 🌞 Have a [.clang-format](/lessons/formatting-tool/) file, and apply it to your codebase
-- 🌞 Have a [.clang-tidy](/lessons/static-analysers/) file, and fix the problems it shows you, or ask the teacher what the warning means if you don't understand it or don't know how to fix it.
+- 🌞 Have a [.clang-tidy](/lessons/static-analysers/) file, and fix the problems it shows you, or ask the teacher if you don't understand what the warning means or don't know how to fix it.
 <!-- - 🌞 Having a nice ReadMe, using Markdown -->
 - 🌞 IDE, debugger, .clang-tidy are very important too, but I can't evaluate them
 
