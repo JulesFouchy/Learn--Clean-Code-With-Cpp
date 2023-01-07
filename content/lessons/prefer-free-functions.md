@@ -13,7 +13,24 @@ import GoingFurther from "@site/components/GoingFurther"
 
 ## Brief
 
-TODO explain what a free function is
+:::info
+A *free function* is just a plain old function, i.e. it is not a method, it is not attached to any class. (By the way, methods are often called *member functions* in C++.)
+```cpp
+void i_am_a_free_function()
+{
+    // ...
+}
+
+class Foo
+{
+public:
+    void i_am_a_method() // Also known as a "member function" in C++
+    {
+        // ...
+    }
+};
+```
+:::
 
 :::tip
 Free functions help a lot with decoupling, code reuse, testing, *etc.*
