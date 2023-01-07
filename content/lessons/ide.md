@@ -22,11 +22,16 @@ There are many extensions that can help you! Check out the recommended extension
 Here are some great extensions for VSCode that I recommend:
 
 - <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>: The Basic C++ extensions
+- <VSCodeExtension id="llvm-vs-code-extensions.vscode-clangd"/>: An improved extension that will help you coding in C++. This replaces the default Intellisense installed with <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> (but note that you still need to install both extensions).
+- <VSCodeExtension id="yzhang.markdown-all-in-one"/>: To preview your markdown and get help during edition (e.g. it can automatically generate a table of content).
+- <VSCodeExtension id="streetsidesoftware.code-spell-checker"/>: A great spell checker.
+- <VSCodeExtension id="emmanuelbeziat.vscode-great-icons"/>: Nice icons for many file types (.cpp, .hpp, CMakeLists.txt, etc.).
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: This allows you to work remotely with your teammates in one single editor. It is amazing to work together!
+- <VSCodeExtension id="Shan.code-settings-sync"/>: Allows you to backup and synchronize your VSCode settings between different computers.
 
 ## Settings up a C++ environment in VSCode
 
-- Install clangd extension. If it tells you to disable Intelisense, say yes. If you miss that step, go in the Settings, search for `C_Cpp.intelliSenseEngine` and set it to `Disabled`. (Otherwise it will conflict with *clangd* which is the extension that we will use to get autocompletion and many other amazing features.)
+- Install clangd extension. If it tells you to disable Intellisense, say yes. If you miss that step, go in the Settings, search for `C_Cpp.intelliSenseEngine` and set it to `Disabled`. (Otherwise it will conflict with *clangd* which is the extension that we will use to get autocompletion and many other amazing features.)
 
 ## Quick actions
 

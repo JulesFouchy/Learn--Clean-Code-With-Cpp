@@ -2,5 +2,5 @@
   "deno.enable": true,
   "deno.unstable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["Eerd"]
+  "cSpell.words": ["cpptools", "Eerd", "emmanuelbeziat", "yzhang"]
 }
