@@ -28,6 +28,7 @@ Here are some great extensions for VSCode that I recommend:
 - <VSCodeExtension id="emmanuelbeziat.vscode-great-icons"/>: Nice icons for many file types (.cpp, .hpp, CMakeLists.txt, etc.).
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: This allows you to work remotely with your teammates in one single editor. It is amazing to work together!
 - <VSCodeExtension id="Shan.code-settings-sync"/>: Allows you to backup and synchronize your VSCode settings between different computers.
+- <VSCodeExtension id="josetr.cmake-language-support-vscode"/>: To provide autocompletion and formatting for CMake.
 
 ## Settings up a C++ environment in VSCode
 
