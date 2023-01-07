@@ -75,4 +75,4 @@ Which is much more readable than
 const auto window_config = WindowConfig{"Hello C++", 500, 500, true, true, false};
 ```
 
-And note that you can skip some members (like `cap_framerate_on_startup_if` in this example). They will be initialized with their default value.
+And note that you can skip some members (like `cap_framerate_on_startup_if` in this example). They will be initialized with their default value. **This makes structs a viable option to emulate named parameters in C++.**

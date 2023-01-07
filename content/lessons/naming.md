@@ -104,33 +104,6 @@ if (WindowIsValid && !PlayerIsDead)
 }
 ```
 
-### Append "out" to non-const reference parameters
-
-When you pass a variable by mutable reference it implies that your function will change its value. It can be better to make it explicit so that it is easier to understand what is going on.
-
-```cpp
-bool parseObjectFromPath(const char* aPath, Object& anObjectOut)
-{
-    if (const auto values = readFile(aPath))
-    {
-        anObjectOut.Set(values);
-        return true;
-    }
-    return false;
-}
-
-// ...
-
-{
-    Object newObject;
-    if (parseObjectFromPath("superPath/superFile", newObject))
-    {
-        // Do stuff with your filled object
-    }
-    // ...
-}
-```
-
 ## Going further
 
 <GoingFurther resources = {[

@@ -1,7 +1,7 @@
 ---
 title: "DRY: Don't repeat yourself"
 benefit: 5
-easiness: 2
+easiness: 3
 level: clean-code
 tags:
     - Clean Code
@@ -18,12 +18,12 @@ There are many ways to avoid duplications:
 - **Use a function**, when you want to do the same thing in different places.
 - **Use a template**, when you want to do the same thing but for different types.
 - **Use a struct or a class**, when you want to use the same group of data in different places.
-- **Use a `using`**, `using Board = std::array<std::array<boardTile, 3>, 3>`.
+- **Use a `using`** declaration, e.g. `using Board = std::array<std::array<boardTile, 3>, 3>`.
 - **Use `auto`**, when the type is already declared in the expression; e.g. `std::unique_ptr<MyClass> ptr = std::make_unique<MyClass>();` vs `auto ptr = std::make_unique<MyClass>();`.
 - **Use a macro**, (😬[^1]) when you can't use any of the above methods, and have the courage to write and maintain some ugly macro-based code. (Honestly I believe that in most cases duplications are less of an evil than complicated metaprogramming based on macros, so I wouldn't recommend going down the route of macros most of the time). If you really need macros to do complicated things, take a look at a library like [Boost.Hana](https://www.boost.org/doc/libs/1_61_0/libs/hana/doc/html/index.html).
-- **Use a Python script** to generate repetitive parts of your C++ code. This can often be a better solution than macros because the generated code is clean and readable, so it is easy to debug. Arguably having parts of your C++ code as strings in a Python script can be annoying too, but you have to pick your poison. I would recommend to generate the bits of code you need in separate files, and then include those files where you need them in your C++ code. It will be simpler than having your Python script in specific parts of a file; you can just generate the whole file from scratch each time you run the script. Example: [Python script], [generated file], [C++ file using the generated file].
+- **Use a Python script** to generate repetitive parts of your C++ code. This can often be a better solution than macros because the generated code is clean and readable, so it is easy to debug. Arguably having parts of your C++ code as strings in a Python script can be annoying too, but you have to pick your poison. I would recommend to generate the bits of code you need in separate files, and then include those files where you need them in your C++ code. It will be simpler than having code injected directly by the script in the middle of a regular source file; you can just generate the whole file from scratch each time you run the script. Example: [Python script](https://github.com/CoolLibs/Cool/blob/main/src/Cool/ColorSpaces/generator_colors.py), [generated file](https://github.com/CoolLibs/Cool/blob/main/src/Cool/ColorSpaces/generated/parse_color_and_alpha_space.inl), [C++ file using the generated file](https://github.com/CoolLibs/Cool/blob/main/src/Cool/ColorSpaces/ColorAndAlphaSpace.cpp). This uses [this little helper script](https://github.com/CoolLibs/tooling/blob/main/generate_files.py) I wrote.
 
-[^1]: Unfortunately there are still some (very rare) use cases for macros. Hopefully those will disappear once we get reflection and proper metaprogramming in the language, which should come for C++26 or C++29.
+[^1]: Unfortunately there are still some (very rare) use cases for macros. Hopefully those will disappear once we get reflection and proper metaprogramming in the language, which should come in C++26 or C++29.
 
 :::info Tip
 *Code duplication* doesn't mean *textual duplication*, but **knowledge duplication**.

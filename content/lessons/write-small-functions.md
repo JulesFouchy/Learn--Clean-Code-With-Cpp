@@ -15,11 +15,12 @@ import GoingFurther from "@site/components/GoingFurther"
 
 ## Brief
 
-*Small functions* are way easier to read and reason about.<br/>
-*Small functions* describe your intent, and allow you to change the implementation behind it easily.<br/>
-*Small functions* facilitate future refactorings because the logic is already split into atomic parts.<br/>
-*Small functions* are easier to search for in the codebase.<br/>
-*Small functions* force you to give meaning by giving names, not only to the action (the function) but also to its parameters; for example:
+Small functions:
+- are way easier to read and reason about.<br/>
+- describe your intent, and allow you to change the implementation behind it easily.<br/>
+- facilitate future refactorings because the logic is already split into atomic parts.<br/>
+- are easier to search for in the codebase.<br/>
+- force you to give meaning by giving names, not only to the action (the function) but also to its parameters; for example:
 ```cpp
 void do_something(Thread& thread, bool is_main_thread) { /*...*/ }
 
@@ -127,6 +128,12 @@ void View::display_image(ImTextureID image_texture_id, ImageSize image_size, boo
 ## Going further
 
 <GoingFurther resources = {[
+    {
+        title: "Why You Shouldn't Nest Your Code",
+        author: "CodeAesthetic",
+        link: "https://youtu.be/CFRhGnuXG-4",
+        duration: "8min",
+    },
     {
         title: "SOLID, Revisited",
         author: "Tony Van Eerd",

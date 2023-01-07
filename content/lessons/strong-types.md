@@ -43,10 +43,10 @@ But adding two positions doesn't make sense at all!
 
 ![](./img/point-addition.png)
 
-Even though it would be easy to add the *representation* of two positions, we want to prevent that because it would most likely be a logic error.
+Even though it would be easy to add the *representation* of two positions, we want to prevent that because it would almost certainly be a logic error.
 
 :::tip Recap
-Strong types help us give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more! They prevent logic errors and make APIs harder to misuse.
+Strong types help you give a more concrete representation to ***concepts***, ***physical units***, ***coordinate spaces***, and much more! They prevent logic errors and make APIs harder to misuse.
 :::
 
 ## Going further

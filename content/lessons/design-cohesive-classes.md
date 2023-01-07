@@ -15,7 +15,7 @@ import GoingFurther from "@site/components/GoingFurther"
 First, do you need a class? What is the difference between a *class* and a *struct*?[^1]<br/>
 A class can have private members, it can have methods attached to it[^2], and it can use inheritance.
 
-Inheritance is kinda problematic so we are not going to consider it here (see <LessonLink slug="composition-over-inheritance"/>). We are then left with methods and with private attributes, which actually both serve the same goal: *enforcing invariants*.
+Inheritance is kinda problematic so we are not going to consider it here (see <LessonLink slug="composition-over-inheritance"/>). We are then left with methods and private attributes, which actually both serve the same goal: *enforcing invariants*.
 
 :::tip
 Classes have one goal: **_enforcing invariants_**.
@@ -37,17 +37,17 @@ Try not to mix concerns inside a single class: it should have only one reason to
 
 A good indicator: if none of your methods need to have access to all members at once then you can probably split that class into two or more smaller classes.
 
-## No private methods
+## Avoid private methods
 
 Private methods are problematic because they can't be tested and they can't be reused outside of the class.
 
-Think about it: what is their advantage over a free function? Apart from the fact that they have access to all the members of the class, and therefore they don't need to declare parameters (which is a bad reason, don't be lazy!) I can't think of anything else[^3].
+Think about it: what is their advantage over a free function? Apart from the fact that they have access to all the members of the class, and therefore they don't need to declare parameters (which is kind of a bad reason, don't be lazy!) I can't think of anything else[^3].
 
 [^3]: Actually they might be used in inheritance hierarchies. But since inheritance hierarchies are a bad practice too, this doesn't quite count 😛
 
-So my guideline will be: don't use private member functions, use free functions that take as parameters the things they need.
+So my guideline will be: avoid private member functions, use free functions that take as parameters the things they need.
 
-## No public methods that only use the public API
+## Avoid public methods that only use the public API
 
 If your method only uses public members of the class, then it could be written as a free function: this will make your class simpler, and the overall design more decoupled. See <LessonLink slug="prefer-free-functions"/>.
 
