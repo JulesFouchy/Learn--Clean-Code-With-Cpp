@@ -21,6 +21,12 @@ Inheritance is kinda problematic so we are not going to consider it here (see <L
 Classes have one goal: **_enforcing invariants_**.
 :::
 
+:::info
+An *invariant* is a property that is always true for your class.<br/><br/>
+For example, a `PointInsideUnitDisk` class might store its state as an `x` and `y` values, and have the *invariant* that the length of the `(x, y)` vector is always less than 1. This invariant needs to be enforced by all the methods, e.g. by deciding what happens when we call `set_x()`: do we just set the `x` and throw an exception if the length of `(x, y)` is now greater than 1? Do we set the `x` and then normalize the `(x, y)` vector if its length would otherwise become greater than 1? Or do we not expose a `set_x()` method at all? All of these answers can be valid; it just depends on the context and on how you plan to use your `PointInsideUnitDisk` class.<br/><br/>
+On the other hand a `Point2D` "class" might also store its state as an `x` and `y` values, but doesn't have any invariant to enforce because **any** values are valid for `x` and `y`. In that case `Point2D` might be better represented as a *struct* rather than a *class*.
+:::
+
 If you don't have any invariants, you will end up with a class that only has getters and setters that do nothing special: this is basically a struct with an uglier syntax. You could also have member functions, but if your member variables all have getters and setters then you could always replace these member functions with free functions, which is a better practice anyways (see <LessonLink slug="prefer-free-functions"/>).
 
 :::tip
