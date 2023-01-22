@@ -44,7 +44,7 @@ Note that the lessons are sorted by order of importance, so it makes sense to so
 
 ## Evaluation
 
-Check out the [Progress](../progress) section to see how you will be graded, and the [Assignment](../assignment) section to see what you will have to submit.
+Check out the [Progress](../progress) section to see how you will be graded.
 
 My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will at all time have a great visibility on how well you are doing and what you could work on next.
 
