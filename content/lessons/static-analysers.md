@@ -1,5 +1,5 @@
 ---
-title: Static Analysers
+title: Linter
 benefit: 5
 easiness: 3
 level: tools
