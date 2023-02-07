@@ -23,4 +23,4 @@ Once that is done you should see warnings popping up inside your IDE:
 
 ![clang-tidy](img/clang-tidy.png)
 
-Also note the "Quick Fix... (Ctrl+;)" option: sometimes clang-tidy is even capable of fixing the problem for you automatically!
+Also note the *"Quick Fix... (Ctrl+;)"* option: sometimes clang-tidy is even capable of fixing the problem for you automatically!
