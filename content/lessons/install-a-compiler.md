@@ -3,7 +3,7 @@ title: Compiler
 benefit: 5
 easiness: 5
 level: tools
-bias: 1
+bias: 2
 tags:
     - Tools
     - C++

@@ -5,6 +5,7 @@ easiness: 5
 level: tools
 tags:
     - Tools
+bias: 1
 ---
 import VSCodeExtension from "@site/components/VSCodeExtension"
 import LessonLink from "@site/components/LessonLink"
