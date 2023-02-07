@@ -7,6 +7,7 @@ tags:
     - Tools
 ---
 import VSCodeExtension from "@site/components/VSCodeExtension"
+import LessonLink from "@site/components/LessonLink"
 
 ## Brief
 
@@ -17,11 +18,10 @@ Also, it ensures a consistency in style across the whole codebase and all the de
 ## Details
 
 For C++, *Clang format* is the most popular one and I would recommend it. Here is how to set it up:
-- Install it on your computer. For Linux it is just a matter of using `sudo apt install clang-format`.
-- Install the associated VSCode extension that will automatically run it on your code: <VSCodeExtension id="xaver.clang-format"/>.
-- Go to your VSCode settings and:
-    - set *Default Formatter* to Clang-Format
-    - enable *Format on Save*
+- First you need to have <LessonLink slug="clangd" text="clangd set up"/>
+- Then go to your VSCode settings and:
+    - Set `Default Formatter` to `clangd`
+    - Enable `Format on Save`
 
 You will also need to put a configuration file named *.clang-format* at the root of your project to specify how the formatting should be done. You can use [this great website](https://zed0.co.uk/clang-format-configurator/) to configure it. Or if you don't want to spend too many time tweaking it yourself, you can use mine: https://github.com/CoolLibs/tooling/blob/main/.clang-format.
 

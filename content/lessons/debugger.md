@@ -20,19 +20,9 @@ A debugger allows you to stop the execution of your program once it reaches a sp
 
 You need to use <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> and have a C++ compiler installed on your computer.
 
-### Configure your debugger
-
-If you are using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) this is already done for you! And if you are using the <VSCodeExtension id="ms-vscode.cmake-tools"/> extension you don't even need this `launch.json` config file.
-
-Yet you might want to set this up by yourself in the future. In order to do so, simply open the "Run and Debug" panel and click on the "Run and Debug" blue button. You now have to select your debugger, first option is for Linux, second is for Windows. Press *Default Configuration* and it will create a `launch.json` file under the `.vscode` folder.
-
-![](./img/create-launch-file.png)
-
-If you want to know the specific details, [doc is here](https://code.visualstudio.com/docs/cpp/launch-json-reference). For now you only have to set the `"program"` field with the path to your executable (so you have to build your program with `F7` beforehand). In general with the CMake setup it will be under `${workspaceFolder}/build/bin/Debug/YOURPROGRAM.exe` but you should check to be sure.
-
 ### Run your debugger
 
-Simply press the play button in the "Run and Debug" panel. Or you can also press `CTRL + F5`, or the bug icon in the bottom bar:
+Simply use the "Run and Debug" button in the bottom bar:
 
 ![Debugger icon of VS Code](./img/debugger.png)
 
@@ -57,3 +47,13 @@ You can also see all the functions that have been called previously (called the 
 Finally you can execute the program step by step with the second arrow (*step over*) or the third one (*step into*):
 
 ![Seeing the call stack](./img/debugger_step_by_step.png)
+
+### Configure your debugger
+
+If you are using the [template project](https://github.com/JulesFouchy/Simple-Cpp-Setup) this is already done for you! And if you are using the <VSCodeExtension id="ms-vscode.cmake-tools"/> extension you don't even need this `launch.json` config file.
+
+Yet you might want to set this up by yourself in the future. In order to do so, simply open the "Run and Debug" panel and click on the "Run and Debug" blue button. You now have to select your debugger, first option is for Linux, second is for Windows. Press *Default Configuration* and it will create a `launch.json` file under the `.vscode` folder.
+
+![](./img/create-launch-file.png)
+
+If you want to know the specific details, [doc is here](https://code.visualstudio.com/docs/cpp/launch-json-reference). For now you only have to set the `"program"` field with the path to your executable (so you have to build your program with `F7` beforehand). In general with the CMake setup it will be under `${workspaceFolder}/build/bin/Debug/YOURPROGRAM.exe` but you should check to be sure.
