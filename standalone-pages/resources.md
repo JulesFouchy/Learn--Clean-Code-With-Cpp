@@ -62,6 +62,8 @@ Here are a few awesome resources that will help you in your learning journey
 
 [Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks](https://youtu.be/FyCYva9DhsI) *Kevlin Henney*
 
+[All the Little Things](https://youtu.be/8bZh5LMaSmE) *Sandi Metz*, TDD, refactoring, write small things
+
 [Free Your Functions!](https://www.youtube.com/watch?v=WLDT1lDOsb4) *Klaus Iglberger*
 
 [SOLID, Revisited](https://youtu.be/glYq-dvgby4) *Tony Van Eerd*
