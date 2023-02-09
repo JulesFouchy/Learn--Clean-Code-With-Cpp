@@ -16,7 +16,7 @@ We will only assume some beginner-level experience in programming with C++ or a 
 What are the properties of good code? *Correctness* is certainly number one. And *maintainability* comes second, a.k.a. how easy your code is to change while preserving its correctness. *Performance* comes third, since it doesn't matter how fast you are if you are going in the wrong direction 😛.
 
 :::tip GOAL
-In this class we will focus on writing **Clean Code**, a.k.a. code that is **correct** and **maintainable**.
+In this class we will focus on writing **Clean Code**, i.e. code that is **correct** and **maintainable**.
 :::
 
 Clean code is an essential concern when you start building larger projects that are meant to last for years. Anyone should be able to pick up your code and – within a reasonable time frame – understand what it does, what its role inside the project is, and how to modify it.
@@ -29,24 +29,6 @@ We will see basic coding habits that make your code more expressive, general pri
 :::tip It's not about C++
 Although this class makes use of C++, most of its content will be applicable to any language and any kind of programming project.
 :::
-
-## How to
-
-**I will not be giving lectures**. Instead I will let you all move along with the lessons and exercises at your own pace. I will be here to answer questions, and occasionally talk to the whole class about very important things that I want to highlight.
- 
-I believe this is the best way for you to learn, for practicing is when the actual learning happens. Moreover, giving lectures would imply that you are all at the same point in your learning journey and are all ready to learn the same things, which is never true for any single group of students larger than 2.
-
-The lessons are not meant to be read one after the other. Instead look at [the list of skills](../progress) and pick one (or a few) that seem interesting to you; read the lessons and then try to apply them in your exercises or projects. Once you mastered them, repeat with new lessons.
-
-:::tip
-Note that the lessons are sorted by order of importance, so it makes sense to somewhat follow the order even if it is not a strict one.
-:::
-
-## Evaluation
-
-Check out the [Progress](../progress) section to see how you will be graded.
-
-My hope is that you won't spend too much time working outside of the class if this is not something you wish to do. You will at all time have a great visibility on how well you are doing and what you could work on next.
 
 ## Give me feedback
 

@@ -43,14 +43,14 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - ❌ Write small classes (<LessonLink slug="design-cohesive-classes"/>)
 - ☁️ Write small structs (<LessonLink slug="use-structs-to-group-data"/>)
 - ❌ Use strong types (<LessonLink slug="strong-types"/>)
-- ❌ Use encapsulation properly (`public` / `private`)
+- ❌ Use encapsulation when appropriate (`public` / `private`) (<LessonLink slug="design-cohesive-classes"/>)
 - ☁️ Use free functions as often as possible, and methods only when appropriate (<LessonLink slug="prefer-free-functions"/>)
 - ❌ Use range-based loops or algorithms, instead of raw loops (<LessonLink slug="stl-algorithms"/>)
 
 ➖ *What you **shouldn't** do:*
 
-- ☁️ Hard to understand or misleading names
-- 🌞 Duplicated code
+- ☁️ Hard to understand or misleading names (<LessonLink slug="naming"/>)
+- 🌞 Duplicated code (<LessonLink slug="dry-dont-repeat-yourself"/>)
 - ❌ Overly complicated code
 - 🌞 Global variables
 
@@ -58,13 +58,13 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 ➕ *What you **should** do:*
 
-- 🌞 Use `const` when appropriate (see <LessonLink slug="const"/>)
-- ☁️ Use lambdas when appropriate
+- 🌞 Use `const` when appropriate (<LessonLink slug="const"/>)
+- ☁️ Use lambdas when appropriate (<LessonLink slug="lambda"/>)
 
 ➖ *What you **shouldn't** do:*
 
 - ☁️ Headers with unnecessary includes in them/ If something is only needed by the .cpp file, only include it in the .cpp, not the .hpp.
-- ☁️ Using `new` instead of a stack allocation or a smart pointer
+- ☁️ Using `new` instead of a stack allocation or a smart pointer or a standard container (`std::vector`)
 - ☁️ Forgetting `#pragma once` in your headers
 - ☁️ Using `0` and `1` instead of `true` and `false` for your booleans
 
