@@ -13,8 +13,10 @@ If you are familiar with *IntelliSense* (which is installed by default in Visual
 - First, install the clangd extension: <VSCodeExtension id="llvm-vs-code-extensions.vscode-clangd"/>. 
 - It should then prompt you to disable IntelliSense: **say yes**. If you miss that step, go in the Settings, search for `C_Cpp.intelliSenseEngine` and set it to `Disabled`.
 ![](img/clangd-disable-intellisense.png)
-- It should then prompt you to download the actual language server: **say yes**.
+- It should then prompt you to download the actual language server: **say yes**. If it doesn't show up, then <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> and run `clangd: Download language server`. If it is unable to download it, you can download it manually [here](https://github.com/llvm/llvm-project/releases/latest) (for Windows, select the `-win64.exe` version).
 - Now go to your Settings (<kbd>CTRL</kbd>+<kbd>,</kbd>), search for `clangd arguments` and add `--compile-commands-dir=${workspaceFolder}/build`
+- Now [install Ninja](https://ninja-build.org/). Then, go back to your settings and set `Cmake: Generator` to `Ninja`.
+- You might need to close VS Code, delete your `build` folder (if it exists), and open VS Code again.
 
 You should now be good to go! (If VSCode is not able to provide autocompletion, then something went wrong during the installation of *clangd*.)
 
