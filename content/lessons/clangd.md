@@ -21,3 +21,10 @@ If you are familiar with *IntelliSense* (which is installed by default in Visual
 You should now be good to go! (If VSCode is not able to provide autocompletion, then something went wrong during the installation of *clangd*.)
 
 ![clangd-autocompletion](img/clangd-autocompletion.png)
+
+:::tip
+*clangd* adds these things called `Inlay Hints`:
+![inlay hints](img/inlay_hints.png)
+If you don't want them you can disable them in your VS Code settings:
+![disable inlay hints](img/inlay_hints_disabled.png)
+:::
