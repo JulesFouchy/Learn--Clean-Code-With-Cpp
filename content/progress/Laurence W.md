@@ -75,3 +75,4 @@ Note that things **are not validated forever**! If you stop writing good code, y
 
 - ☁️ Ask questions and participate in class
 - ☁️ Take my feedback into account, improve your old code if need be
+- ☁️ Extend your project with additional features

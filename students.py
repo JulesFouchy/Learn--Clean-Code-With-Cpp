@@ -132,6 +132,8 @@ Note that things **are not validated forever**! If you stop writing good code, y
 ➕ *What you **should** do:*
 
 - ☁️ Ask questions and participate in class
-- ☁️ Take my feedback into account, improve your old code if need be'''
+- ☁️ Take my feedback into account, improve your old code if need be
+- ☁️ Extend your project with additional features
+'''
     with io.open(filepath, "w", encoding='utf8') as file:
         file.write(string)
