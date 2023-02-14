@@ -13,8 +13,9 @@ import LessonLink from "@site/components/LessonLink"
 Welcome! In this section you will be able to see your progress live, the things you did well, and the things you need to work on. This is basically a big list of all the do's and don'ts I expect you to follow during this semester.
 
 :::tip CAPTIONS
-🌞 > You are doing great.<br/>
 ☁️ > I haven't seen enough of your code yet to tell if you are doing well.<br/>
+🌞 > You are doing great.<br/>
+🌈 > You are doing amazing.<br/>
 ❌ > I am not happy and you should prioritize working on that point.
 :::
 
