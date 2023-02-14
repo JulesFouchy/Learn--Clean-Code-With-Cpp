@@ -25,6 +25,7 @@ module.exports = async () => {
       { to: "/progress", label: "Progress", position: "left" },
       { to: "/resources", label: "Resources", position: "left" },
       { to: "/tools", label: "Tools", position: "left" },
+      { to: "/sujet", label: "Sujet", position: "left" },
     ],
     should_sort_lessons_by_priority: true,
     //   footer: {}, // Uncomment this to override the hardcoded footer in docusaurus.config.js
