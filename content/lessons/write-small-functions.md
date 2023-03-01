@@ -1,9 +1,8 @@
 ---
 title: Write small functions
 benefit: 5
-easiness: 3
+easiness: 4
 level: clean-code
-bias: 2
 tags:
     - Clean Code
 ---
