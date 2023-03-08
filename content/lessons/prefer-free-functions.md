@@ -60,7 +60,7 @@ static void i_am_a_helper_free_function() // Note the `static` keyword here.
     // ...
 }
 
-static void i_am_a_free_function_that_is_declared_in_the_header_and_reused_in_other_files()
+void i_am_a_free_function_that_is_declared_in_the_header_and_reused_in_other_files()
 {
     i_am_a_helper_free_function(); // I use static helper functions to implement myself.
                                    // These functions are not needed by anyone but me so they are marked `static`.
