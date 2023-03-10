@@ -3,7 +3,7 @@ title: Use structs to group data
 benefit: 5
 easiness: 3
 level: clean-code
-bias: 3
+bias: 4
 tags:
     - Clean Code
 ---
