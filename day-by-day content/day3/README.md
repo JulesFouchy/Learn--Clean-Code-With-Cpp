@@ -1,0 +1,1 @@
+- Lesson "Write small functions". Example refactoring the code that is in the lesson.

@@ -1,0 +1,4 @@
+- Lesson "Design cohesive classes".
+  - Quick demo of a bad example from https://youtu.be/glYq-dvgby4?t=939
+  - Example 1: how I refactored VideoExportProcess into its own class (not showing the refactor, just the final product and explaining why it is better. ALSO this is an opportunity to talk about `std::optional`)
+  - Example 2 : a Texture class that deserves to have its id put in a separate class that handles destructor and move, so that the main Texture class doesn't have to implement move constructor manually and explicitly copy all the member variables (risk of forgetting to add a variable in the move constructor when adding that variable to the class later on) ALSO this is a good opportunity to talk about move constructors (that they will likely need in their OpenGL project)

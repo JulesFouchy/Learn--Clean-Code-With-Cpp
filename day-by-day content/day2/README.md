@@ -1,0 +1,3 @@
+- Présentation du template Simple-p6-setup, comment il marche en interne (clang-tidy, clang-format, cmake, tests, CI) Afin d’éviter que ce soit une boîte noire complète
+- Leçon “Make it work then make it good”
+- Présentation du sujet de projet

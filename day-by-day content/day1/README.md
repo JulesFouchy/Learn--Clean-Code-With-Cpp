@@ -1,0 +1,2 @@
+- Présentation du cours, de l'organisation, de l'évaluation, etc.
+- Démo des outils, pourquoi ils sont aussi importants et utiles, iels installent tout ça.

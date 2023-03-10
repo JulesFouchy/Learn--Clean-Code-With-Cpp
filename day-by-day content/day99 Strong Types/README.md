@@ -1,0 +1,1 @@
+StrongTypes : prendre l’exemple de la classe Angle de p6, qu’iels auront plus ou moins toustes rencontré. Dire qu’elle sert à te forcer à toujours préciser l’unité dans laquelle est ton angle, et elle gère les conversions implicitement au besoin. Voir comment elle est implémenter ; aussi parler des UDL parce que c’est cool.
