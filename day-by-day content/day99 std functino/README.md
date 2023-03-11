@@ -1,0 +1,1 @@
+Find an opportunity to talk about std::function (during the Minimize dependencies lesson?)
