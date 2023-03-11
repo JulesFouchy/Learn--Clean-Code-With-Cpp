@@ -26,7 +26,7 @@ import YoutubeVideo from "@site/components/YoutubeVideo"
     {
         title: "Using Types Effectively",
         author: "Ben Deane",
-        link: "https://youtu.be/ojZbFIQSdl8",
-        duration: "1h",
+        link: "https://youtu.be/ojZbFIQSdl8?t=1055",
+        duration: "1min",
     },
 ]}/>
