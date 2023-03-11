@@ -1,2 +1,2 @@
-- Présentation du cours, de l'organisation, de l'évaluation, etc.
+- Présentation du cours, de l'organisation, de l'évaluation, etc. https://docs.google.com/presentation/d/1ISq955jHqkMpt8Ff8tlmGVcdHHLvpubwxNcdsDYfD6M/edit?usp=sharing
 - Démo des outils, pourquoi ils sont aussi importants et utiles, iels installent tout ça.
