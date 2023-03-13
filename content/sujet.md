@@ -19,6 +19,13 @@ Dans ce projet, vous allez coder des *boids*, une technique très connue pour si
   - Cohésion
 - Vous proposerez une GUI avec la librairie [*Dear ImGui*](https://julesfouchy.github.io/p6-docs/tutorials/dear-imgui) afin de pouvoir changer les paramètres de la simulation (coefficients des différentes règles, nombre de boids, etc.). Notez que cette librairie est déjà inclue avec p6 et disponible sans avoir rien à faire ; il vous suffit de [suivre le tutoriel](https://julesfouchy.github.io/p6-docs/tutorials/dear-imgui).
 
+## Non-Consignes
+
+Voici des choses que nous ne vous demandons **PAS** de faire :
+
+- On ne vous demande **PAS** d'optimiser la simulation. Vous pouvez faire autant de boucles naïves sur tous les boids que vous voulez. Optimiser ce genre de problème est compliqué (octree, BVH, etc.) et vous avez déjà suffisamment de choses à faire dans ce projet !
+(Bien entendu vous pouvez le faire en bonus une fois que vous avez rempli tous les critères obligatoires du sujet, mais soyez prévenu.e.s que ce n'est pas ce qu'il y a de plus simple à implémenter parfaitement ! D'autant plus que je n'évalue pas votre capacité à faire de l'algorithmie avancée, mais seulement à produire du code clair. Ce n'est donc clairement pas le meilleure piste d'extension du projet si vous cherchez à améliorer votre note !).
+
 ## Attendus
 
 Voici la liste des choses à faire et ne pas faire dans votre projet: https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/progress/. Vous serez évalué.e.s sur votre capacité à respecter un maximum de mes attentes et produire du code simple, compréhensible et maintenable.
