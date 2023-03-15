@@ -29,6 +29,12 @@ import YoutubeVideo from "@site/components/YoutubeVideo"
 
 <GoingFurther resources = {[
     {
+        title: "Breaking Dependencies - The Visitor Design Pattern in Cpp",
+        author: "Klaus Iglberger",
+        link: "https://youtu.be/PEcy1vYHb8A",
+        duration: "1h",
+    },
+    {
         title: "Using Types Effectively",
         author: "Ben Deane",
         link: "https://youtu.be/ojZbFIQSdl8",
