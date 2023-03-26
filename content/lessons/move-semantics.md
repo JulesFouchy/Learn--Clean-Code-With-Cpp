@@ -1,5 +1,5 @@
 ---
-title: Move semantics
+title: Move constructors
 benefit: 3
 easiness: 3
 level: basic-cpp
@@ -76,22 +76,22 @@ public:
     }
     UniqueBuffer(const UniqueBuffer&) = delete;            // We disable copying
     UniqueBuffer& operator=(const UniqueBuffer&) = delete; // We disable copying
-    UniqueBuffer(UniqueBuffer&& rhs) noexcept // Move constructor
-        : _id{rhs._id}
+    UniqueBuffer(UniqueBuffer&& other) noexcept // Move constructor
+        : _id{other._id}
     {
-        rhs._id = 0; // Make sure that rhs won't delete the _id we just copied
+        other._id = 0; // Make sure that other won't delete the _id we just copied
     }
-    UniqueBuffer& operator=(UniqueBuffer&& rhs) noexcept // Move assignment operator
+    UniqueBuffer& operator=(UniqueBuffer&& other) noexcept // Move assignment operator
     {
-        if (this != &rhs) {           // Make sure that we don't do silly things when we try to move an object to itself
+        if (this != &other) {         // Make sure that we don't do silly things when we try to move an object to itself
             glDeleteBuffers(1, &_id); // Delete the previous object
-            _id     = rhs._id;        // Copy the object
-            rhs._id = 0;              // Make sure that rhs won't delete the _id we just copied
+            _id     = other._id;      // Copy the object
+            other._id = 0;            // Make sure that other won't delete the _id we just copied
         }
         return *this; // move assignment must return a reference to this, so we do it
     }
 
-    GLuint operator*() const { return _id; } // The getter for the wrapped `_id`. You can also have it as a function called id() but I like to use the dereference operator for that purpose (*my_wrapper).
+    GLuint id() const { return _id; } // The getter for the wrapped `_id`.
 
 private:
     GLuint _id;
@@ -100,11 +100,11 @@ private:
 
 Many things to note:
 
-- We disable copying because we can't simply copy the `_id` (the copy would refer to the same object as the original, which would be problematic just like in our vector example), and we can't create a new object with `glGenBuffers` because we have no idea what was stored in that buffer by users (if we were to do a naive copy constructor, then when users ask for a copy they would get a new empty buffer instead of a copy of all the vertex data or whatever that was added to the buffer). Disabling copy also prevents accidental copies of objects that are not supposed to be copied (e.g. because they are big and the copy would be expensive).
-- We do `rhs._id = 0;` when we move. This is because if we don't, then when `rhs` gets destroyed it will destroy its `_id`, which is the same as what our new object is using, which would make it invalid!
-- We do `if (this != &rhs)`. This is because someone could call `v = std::move(v);` (in generic code it can happen and it is not that obvious and sometimes you need to do it). In such cases without the check we would do `rhs._id = 0;` but since `rhs` is ourself we would just loose our `_id`!
-- The signature for move operations contains `UniqueBuffer&&`. This `&&` symbol is called an r-value reference; it is kind of like the usual reference `&` (called an l-value reference) but it indicates that you are allowed to modify the object and steal its resources. Basically it means that it is okay to move from the object. 
-- The move constructor and move assignment are marked `noexcept` which is **extremely important**. If you don't then STL containers like vector will not use your move and will do a copy instead (because it would be problematic if an exception was thrown while a vector is resizing and moving objects to the new location). This `noexcept` costs you nothing and allows great performance improvements when you store your objects in a vector, so please don't forget it!
+- We disable copying because we can't simply copy the `_id` (the copy would refer to the same object as the original, which would be problematic just like in our vector example), and we can't create a copy of the object with `glGenBuffers` because we have no idea what was stored in that buffer by users (if we were to do a naive copy constructor, then when users ask for a copy they would get a new empty buffer instead of a copy of all the vertex data or whatever that was added to the buffer). Disabling copy can also prevent accidental copies of objects that are not supposed to be copied (e.g. because they are big and the copy would be expensive).
+- We do `other._id = 0;` when we move. This is because if we don't, then when `other` gets destroyed it will destroy its `_id`, which is the same as what our new object is using, which would make it invalid!
+- We do `if (this != &other)`. This is because someone could call `v = std::move(v);` (in generic code it can happen and it is not that obvious and sometimes you need to do it). In such cases without the check we would do `other._id = 0;` but since `other` is ourself we would just lose our `_id`!
+- The signature for move operations contains `UniqueBuffer&&`. This `&&` symbol is called an <LessonLink text="r-value reference" slug="l-values-and-r-values"/>; it is kind of like the usual reference `&` (called an l-value reference) but it indicates that you are allowed to modify the object and steal its resources. Basically it means that it is okay to move from the object. 
+- The move constructor and move assignment are marked `noexcept` which is **EXTREMELY IMPORTANT**. If you don't then STL containers like vector will not use your move and will do a copy instead (because it would be problematic if an exception was thrown while a vector is resizing and moving objects to the new location). And since copy is disabled, you will get a nasty compilation error and not be able to store your objects inside vectors!
 
 :::tip
 Make your wrappers as small as possible. Because if you need to define a move constructor in a big class then you need to tell it to move each member variable, which is tedious and error prone. Plus you will probably need that resource in several classes and you don't want to have to repeat the destruction code in each of them.
@@ -114,9 +114,9 @@ Make your wrappers as small as possible. Because if you need to define a move co
 
 ## Asking for a move with std::move
 
-Move happens automatically:
+Moves happen automatically:
 - When returning from a function
-- When passing a temporary value to a function (a.k.a. something that was not put in a variable). In `f(MyClass{1, 3});`, `MyClass{1, 3}` is not given any name: it is a temporary and will be moved into `f` instead of copied.
+- When passing a temporary value to a function (a.k.a. something that was not put in a variable). In `f(MyClass{1, 3});`, `MyClass{1, 3}` is not given any name: it is a temporary and will be moved into `f` instead of being copied.
 
 But if you have
 ```cpp
