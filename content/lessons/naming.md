@@ -56,9 +56,9 @@ To make it clear what true and false mean:
 bool CheckTea(Tea tea);
 
 // Good, the name makes it clear that true means the tea is fresh
-bool IsTeaFresh(Tea tea);
-// Also good
 bool TeaIsFresh(Tea tea);
+// Also good
+bool IsTeaFresh(Tea tea);
 ```
 
 The *assertion* version is great because it makes your code read as an actual sentence: `if (TeaIsFresh(myTea))`.
