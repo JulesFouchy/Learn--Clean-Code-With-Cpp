@@ -6,7 +6,7 @@ class Printer1 {
 public:
     void print(const std::string& message) const
     {
-        std::cout << fmt::format("---\n{}\n---\n", message);
+        std::cout << fmt::format("111\n{}\n111\n", message);
     }
 };
 
@@ -14,7 +14,7 @@ class Printer2 {
 public:
     void print(const std::string& message) const
     {
-        std::cout << fmt::format("***\n{}\n***\n", message);
+        std::cout << fmt::format("222\n{}\n222\n", message);
     }
 };
 
