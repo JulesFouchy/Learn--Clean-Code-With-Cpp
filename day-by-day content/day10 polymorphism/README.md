@@ -12,5 +12,6 @@ Inheritance is not a good mechanism for code reuse, but it is fine for polymorph
 
 Faire un miro où on liste les mécanismes qu'iels connaissent, puis on note leurs avantages / inconvénients, et on les classe: - static / dynamic
 - open / closed set of types
+- easy to add types / operations
 - free functions / méthodes obligatoirement
 - intrusif / non-intrusif
