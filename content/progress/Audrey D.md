@@ -1,6 +1,3 @@
----
-title: Audrey D
----
 import StudentsDropdown from "@site/components/progress/StudentsDropdown"
 import LessonLink from "@site/components/LessonLink"
 
@@ -46,7 +43,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - ☁️ Use strong types (<LessonLink slug="strong-types"/>)
 - ❌ Use encapsulation when appropriate (`public` / `private`) (<LessonLink slug="design-cohesive-classes"/>)
 - ☁️ Use free functions as often as possible, and methods only when appropriate (<LessonLink slug="prefer-free-functions"/>)
-- ☁️ <LessonLink slug="minimize-dependencies"/>
+- ❌ <LessonLink slug="minimize-dependencies"/>
 - 🌞 Use range-based loops or algorithms, instead of raw loops (<LessonLink slug="stl-algorithms"/>)
 
 ➖ *What you **shouldn't** do:*
