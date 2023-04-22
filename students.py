@@ -56,10 +56,7 @@ for [nom, prenom] in students:
     filepath = path.join(Path(__file__).parent,
                          "content/progress", f"{name}.md")
 
-    string = f'''---
-title: {name}
----
-import StudentsDropdown from "@site/components/progress/StudentsDropdown"
+    string = f'''import StudentsDropdown from "@site/components/progress/StudentsDropdown"
 import LessonLink from "@site/components/LessonLink"
 
 <StudentsDropdown/>
