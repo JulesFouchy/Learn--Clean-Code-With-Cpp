@@ -1,6 +1,3 @@
----
-title: Eric T
----
 import StudentsDropdown from "@site/components/progress/StudentsDropdown"
 import LessonLink from "@site/components/LessonLink"
 
