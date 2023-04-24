@@ -1,6 +1,3 @@
----
-title: Sarah N
----
 import StudentsDropdown from "@site/components/progress/StudentsDropdown"
 import LessonLink from "@site/components/LessonLink"
 
