@@ -1,3 +1,6 @@
 [submodule "Teaching-Toolbox"]
 	path = Teaching-Toolbox
 	url = https://github.com/JulesFouchy/Teaching-Toolbox
+[submodule "day-by-day content/day11 Strong Types/p6"]
+	path = day-by-day content/day11 Strong Types/p6
+	url = https://github.com/julesfouchy/p6
