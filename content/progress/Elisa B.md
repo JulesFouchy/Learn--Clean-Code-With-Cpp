@@ -20,30 +20,30 @@ Welcome! In this section you will be able to see your progress live, the things 
 Note that things **are not validated forever**! If you stop writing good code, you will lose your  happy faces! 🌞
 :::
 
-## Tools (3 pts.)
+## Tools (3 / 3 pts.)
 
 ➕ *What you **should** do:*
 
 - 🌞 Follow [the good practices of the Git lesson](/lessons/git#good-practices)
 - 🌞 Have a [.clang-format](/lessons/formatting-tool/) file, and apply it to your codebase
-- ☁️ Have a [.clang-tidy](/lessons/static-analysers/) file, and fix the problems it shows you, or ask the teacher if you don't understand what the warning means or don't know how to fix it.
+- 🌞 Have a [.clang-tidy](/lessons/static-analysers/) file, and fix the problems it shows you, or ask the teacher if you don't understand what the warning means or don't know how to fix it.
 
 ➖ *What you **shouldn't** do:*
 
 - 🌞 Committing unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
 - 🌞 Making no commits until near the end of the semester
 
-## Clean Code (12 pts.)
+## Clean Code (11 / 12 pts.)
 
 ➕ *What you **should** do:*
 
 - 🌞 Write many small functions (<LessonLink slug="write-small-functions"/>)
 - 🌞 Write small classes (<LessonLink slug="design-cohesive-classes"/>)
-- ❌ Write small structs (<LessonLink slug="use-structs-to-group-data"/>)
+- ☁️ Write small structs (<LessonLink slug="use-structs-to-group-data"/>)
 - ☁️ Use strong types (<LessonLink slug="strong-types"/>)
-- ❌ Use encapsulation when appropriate (`public` / `private`) (<LessonLink slug="design-cohesive-classes"/>)
-- ☁️ Use free functions as often as possible, and methods only when appropriate (<LessonLink slug="prefer-free-functions"/>)
-- ❌ <LessonLink slug="minimize-dependencies"/>
+- 🌞 Use encapsulation when appropriate (`public` / `private`) (<LessonLink slug="design-cohesive-classes"/>)
+- 🌞 Use free functions as often as possible, and methods only when appropriate (<LessonLink slug="prefer-free-functions"/>)
+- 🌞 <LessonLink slug="minimize-dependencies"/>
 - 🌞 Use range-based loops or algorithms, instead of raw loops (<LessonLink slug="stl-algorithms"/>)
 
 ➖ *What you **shouldn't** do:*
@@ -53,7 +53,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - 🌞 Overly complicated code
 - 🌞 Global variables
 
-## C++ Code Quality (3 pts.)
+## C++ Code Quality (1 / 3 pts.)
 
 ➕ *What you **should** do:*
 
@@ -67,7 +67,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - 🌞 Forgetting `#pragma once` in your headers
 - 🌞 Using `1` and `0` instead of `true` and `false` for your booleans
 
-## Investment (4 pts.)
+## Investment (1 / 4 pts.)
 
 ➕ *What you **should** do:*
 
