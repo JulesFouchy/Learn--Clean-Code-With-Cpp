@@ -67,7 +67,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - 🌞 Forgetting `#pragma once` in your headers
 - 🌞 Using `1` and `0` instead of `true` and `false` for your booleans
 
-## Investment (2 / 4 pts.)
+## Investment (2.5 / 4 pts.)
 
 ➕ *What you **should** do:*
 
