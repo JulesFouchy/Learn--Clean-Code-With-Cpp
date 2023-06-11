@@ -115,6 +115,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 ➕ *What you **should** do:*
 
 - ☁️ Use range-based loops or algorithms, instead of raw loops (<LessonLink slug="stl-algorithms"/>)
+- ☁️ Use destructors when things need to be destroyed at the end.
 - ☁️ Use `const` when appropriate (<LessonLink slug="const"/>)
 - ☁️ Use lambdas when appropriate (<LessonLink slug="lambda"/>)
 
