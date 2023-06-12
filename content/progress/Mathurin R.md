@@ -33,7 +33,7 @@ Note that things **are not validated forever**! If you stop writing good code, y
 - 🌞 Committing unwanted files like your *build* folder (see [.gitignore](/lessons/git#gitignore))
 - 🌞 Making no commits until near the end of the semester
 
-## Clean Code (8 / 12 pts.)
+## Clean Code (9 / 12 pts.)
 
 ➕ *What you **should** do:*
 
