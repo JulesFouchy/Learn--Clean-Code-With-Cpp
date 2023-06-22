@@ -1,0 +1,1 @@
+- Faire un cours sur "rule of 0 & rule of 5". Très peu de gens mettent ça en application, alors que pour les classes wrapper d'objets OpenGL c'est l'occasion.
