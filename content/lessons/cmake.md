@@ -345,6 +345,12 @@ As far as the alias name goes, people have different conventions like `p6::p6`, 
 
 <GoingFurther resources = {[
     {
+        title: "Embracing Modern CMake",
+        author: "Stephen Kelly",
+        link: "https://youtu.be/mn1ZnO3MtVk",
+        duration: "1h",
+    },
+    {
         title: "Using Modern CMake Patterns to Enforce a Good Modular Design",
         author: "Mathieu Ropert",
         link: "https://youtu.be/eC9-iRN2b04",
@@ -355,12 +361,6 @@ As far as the alias name goes, people have different conventions like `p6::p6`, 
         author: "Henry Schreiner",
         link: "https://cliutils.gitlab.io/modern-cmake/",
         duration: "short online book",
-    },
-    {
-        title: "Embracing Modern CMake",
-        author: "Stephen Kelly",
-        link: "https://youtu.be/mn1ZnO3MtVk",
-        duration: "1h",
     },
     {
         title: "C++ Weekly - Ep 208 - The Ultimate CMake / C++ Quick Start",
