@@ -102,7 +102,7 @@ You can find the hash of a commit on GitHub / GitLab: (by default choosing the l
 if (MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /WX /W4)
 else()
-    target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors)
+    target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -Wpedantic -pedantic-errors -Wimplicit-fallthrough)
 endif()
 ```
 
