@@ -4,7 +4,7 @@
 Here are a few awesome tools that will help you as you write or learn C++
 :::
 
-[C++ Insights](https://cppinsights.io/): See what kind of code the compiler is generating from your high-level code.
+[C++ Insights](https://cppinsights.io/): See what kind of basic C++ code the compiler is generating from your high-level code.
 
 [Compiler Explorer](https://godbolt.org/): See the machine code generated from your code.
 

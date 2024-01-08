@@ -28,7 +28,6 @@ Here are some great extensions for VSCode that I recommend:
 - <VSCodeExtension id="yzhang.markdown-all-in-one"/>: To preview your markdown and get help during edition (e.g. it can automatically generate a table of content).
 - <VSCodeExtension id="emmanuelbeziat.vscode-great-icons"/>: Nice icons for many file types (.cpp, .hpp, CMakeLists.txt, etc.).
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: This allows you to work remotely with your teammates in one single editor. It is amazing to work together!
-- <VSCodeExtension id="Shan.code-settings-sync"/>: Allows you to backup and synchronize your VSCode settings between different computers.
 - <VSCodeExtension id="josetr.cmake-language-support-vscode"/>: To provide autocompletion and formatting for CMake.
 
 ## Quick actions
@@ -61,7 +60,7 @@ If you know which file you want to open it is blazing fast to press <kbd>CTRL</k
 
 ![](./img/go-to-file.png)
 
-### Switch between .h and .cpp
+### Switch between .hpp and .cpp
 
 Use <kbd>ALT</kbd> + <kbd>O</kbd> to quickly switch between the header and the implementation file. Very useful when you are writing code for a class.
 

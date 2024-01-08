@@ -1,30 +1,30 @@
 [
-  {
-    "name": "The Tools",
-    "id": "tools"
-  },
-  {
-    "name": "C++ Basics",
-    "id": "basic-cpp"
-  },
-  {
-    "name": "The Essence of Clean Code",
-    "id": "clean-code"
-  },
-  {
-    "name": "Good practices and patterns",
-    "id": "practices-and-patterns"
-  },
-  {
-    "name": "Good to know",
-    "id": "good-to-know"
-  },
-  {
-    "name": "Advanced",
-    "id": "advanced"
-  },
-  {
-    "name": "Miscellaneous",
-    "id": "useless"
-  }
+    {
+        "name": "The Tools",
+        "id": "tools"
+    },
+    {
+        "name": "C++ Basics",
+        "id": "basic-cpp"
+    },
+    {
+        "name": "Clean Code",
+        "id": "clean-code"
+    },
+    {
+        "name": "Good practices and patterns",
+        "id": "practices-and-patterns"
+    },
+    {
+        "name": "Good to know",
+        "id": "good-to-know"
+    },
+    {
+        "name": "Advanced",
+        "id": "advanced"
+    },
+    {
+        "name": "Miscellaneous",
+        "id": "useless"
+    }
 ]

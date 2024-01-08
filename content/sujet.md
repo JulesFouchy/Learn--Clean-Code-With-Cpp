@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Sujet
 ---
 
@@ -28,7 +28,7 @@ Voici des choses que nous ne vous demandons **PAS** de faire :
 
 ## Attendus
 
-Voici la liste des choses à faire et ne pas faire dans votre projet: https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/progress/. Vous serez évalué.e.s sur votre capacité à respecter un maximum de mes attentes et produire du code simple, compréhensible et maintenable.
+Voici la liste des choses à faire et ne pas faire dans votre projet: https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/evaluation/. Vous serez évalué.e.s sur votre capacité à respecter un maximum de mes attentes et produire du code simple, compréhensible et maintenable.
 
 ## Conseils
 
@@ -49,4 +49,4 @@ Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre pr
   -  Distance minimale entre deux boids jamais atteinte
   -  etc.
 - Ajouter des obstacles en forme de cercle (ou sphère quand vous passerez en 3D) que les boids éviteront.
-- Tant qu'un bouton de la souris est enfoncé, considérer la souris (ou la caméra si vous êtes en 3D) comme un obstacle.
+- Tant qu'un bouton de la souris est enfoncé, considérer la souris (ou la caméra si vous êtes en 3D) comme un obstacle. -->

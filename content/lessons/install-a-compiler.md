@@ -34,9 +34,3 @@ You should just have to run this command:<br/><br/>
 If you need more information, you can check out <a href="https://code.visualstudio.com/docs/cpp/config-clang-mac">this article</a> (<b>NB:</b> you only need to follow the <i>Prerequisites</i> section).
   </TabItem>
 </Tabs>
-
-## Verification
-
-You should now be able to build [this sample project](https://github.com/JulesFouchy/Simple-Cpp-Setup). If you are using VSCode you just need the <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/> and then use the *launch* button at the bottom of your VSCode:
-
-![](./img/cmake-run-project.png)

@@ -22,10 +22,10 @@ module.exports = async () => {
     main_page_link: "lessons",
     navbar_items: [
       { to: "/lessons", label: "Lessons", position: "left" },
-      { to: "/progress", label: "Progress", position: "left" },
       { to: "/resources", label: "Resources", position: "left" },
       { to: "/tools", label: "Tools", position: "left" },
       { to: "/sujet", label: "Sujet", position: "left" },
+      { to: "/evaluation", label: "Evaluation", position: "left" },
     ],
     should_sort_lessons_by_priority: true,
     //   footer: {}, // Uncomment this to override the hardcoded footer in docusaurus.config.js
