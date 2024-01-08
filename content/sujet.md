@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: Sujet
 ---
 
@@ -7,6 +7,13 @@ title: Sujet
 ## Sujet
 
 Dans ce projet, vous allez coder des *boids*, une technique très connue pour simuler des comportements de groupe comme des nuées d'oiseaux ou des bancs de poissons. Pour découvrir ce que sont les boids, [regardez cette vidéo](https://youtu.be/LltugBg4dtk) ; vous allez implémenter quelque chose de très similaire dans ce projet.
+
+## Infos
+
+- Ce projet sera commun avec les cours de Synthèse d'Image et de Mathématiques. Les profs des matières respectives vous donneront leurs parties du sujet.
+- Ce projet se fera par groupes de 2.
+  - Des groupes de 3 sont aussi possibles, mais sachez que nous seront plus exigeants et attendront un rendu plus conséquent de votre part, proportionnel à la taille de votre groupe.
+  - Des groupes de 1 sont aussi possibles, mais sachez que ce sera + difficile, notamment pour faire la partie Synthèse d'Image seul.e.
 
 ## Consignes
 
@@ -24,11 +31,11 @@ Dans ce projet, vous allez coder des *boids*, une technique très connue pour si
 Voici des choses que nous ne vous demandons **PAS** de faire :
 
 - On ne vous demande **PAS** d'optimiser la simulation. Vous pouvez faire autant de boucles naïves sur tous les boids que vous voulez. Optimiser ce genre de problème est compliqué (octree, BVH, etc.) et vous avez déjà suffisamment de choses à faire dans ce projet !
-(Bien entendu vous pouvez le faire en bonus une fois que vous avez rempli tous les critères obligatoires du sujet, mais soyez prévenu.e.s que ce n'est pas ce qu'il y a de plus simple à implémenter parfaitement ! D'autant plus que je n'évalue pas votre capacité à faire de l'algorithmie avancée, mais seulement à produire du code clair. Ce n'est donc clairement pas le meilleure piste d'extension du projet si vous cherchez à améliorer votre note !).
+(Bien entendu vous pouvez le faire en bonus une fois que vous avez rempli tous les critères obligatoires du sujet, mais soyez prévenu.es que ce n'est pas ce qu'il y a de plus simple à implémenter parfaitement ! D'autant plus que je n'évalue pas votre capacité à faire de l'algorithmie avancée, mais seulement à produire du code clair. Ce n'est donc clairement pas le meilleure piste d'extension du projet si vous cherchez à améliorer votre note !).
 
 ## Attendus
 
-Voici la liste des choses à faire et ne pas faire dans votre projet: https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/evaluation/. Vous serez évalué.e.s sur votre capacité à respecter un maximum de mes attentes et produire du code simple, compréhensible et maintenable.
+[Voici la liste des choses à faire et ne pas faire dans votre projet](/evaluation). Vous serez évalué.es sur votre capacité à respecter un maximum de mes attentes et produire du code simple, compréhensible et maintenable.
 
 ## Conseils
 
@@ -36,11 +43,9 @@ Voici la liste des choses à faire et ne pas faire dans votre projet: https://ju
 
 - Commencez en 2D avec p6 en attendant que vous ayez les connaissances OpenGL pour faire de la 3D.
 
-- Faites les choses au plus simple pour commencer. Vous aurez tout le temps par la suite de revisiter votre code pour le conformer aux exigeances de qualité que nous verrons dans ce cours.
-
 ## Pour aller plus loin
 
-Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre projet. (Vous pouvez aussi rajouter vos propres idées). Ceci dit, avant de vous lancer dans ces nouvelles fonctionalités, n'oubliez pas que **le plus important dans l'évaluation reste d'avoir du code propre**, donc ne commencez pas à rajouter des choses si vous n'êtes pas confiant.e.s que ce que vous avez déjà est solide.
+Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre projet. (Vous pouvez aussi rajouter vos propres idées). Ceci dit, avant de vous lancer dans ces nouvelles fonctionalités, n'oubliez pas que **le plus important dans l'évaluation reste d'avoir du code propre**, donc ne commencez pas à rajouter des choses si vous n'êtes pas confiant.es que ce que vous avez déjà est solide.
 
 - Source de nourriture : Ajouter un (ou plusieurs) point vers lequel les boids seront attirés, et qui disparaît une fois que [nombre à choisir par vos soins] boids sont passés dessus. Quand une source de nourriture disparaît, une nouvelle apparaît à une position aléatoire.
 - Au lieu que tous les boids aient les même paramètres de comportement, faire deux familles de boids, chacune ayant ses propres paramètres. Faites en sorte qu'il soit facile de rajouter une troisième famille dans le code si on en avait envie.
@@ -49,4 +54,4 @@ Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre pr
   -  Distance minimale entre deux boids jamais atteinte
   -  etc.
 - Ajouter des obstacles en forme de cercle (ou sphère quand vous passerez en 3D) que les boids éviteront.
-- Tant qu'un bouton de la souris est enfoncé, considérer la souris (ou la caméra si vous êtes en 3D) comme un obstacle. -->
+- Tant qu'un bouton de la souris est enfoncé, considérer la souris (ou la caméra si vous êtes en 3D) comme un obstacle.

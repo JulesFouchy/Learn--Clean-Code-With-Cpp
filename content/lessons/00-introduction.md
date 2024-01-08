@@ -5,15 +5,7 @@ benefit: 5
 easiness: 5
 ---
 
-## Hi 👋
-
-*Welcome to this class!*
-
-We will only assume some beginner-level experience in programming with C++ or a similar language like C#, Java, C, Javascript, Python, *etc.*, and will guide you from your current level to being a solid programmer who loves coding and creates amazing software 🥳.
-
 ## Goals
-
-What are the properties of good code? *Correctness* is certainly number one. And *maintainability* comes second, a.k.a. how easy your code is to change while preserving its correctness. *Performance* comes third, since it doesn't matter how fast you are if you are going in the wrong direction 😛.
 
 :::tip GOAL
 In this class we will focus on writing **Clean Code**, i.e. code that is **correct** and **maintainable**.
