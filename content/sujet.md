@@ -14,6 +14,7 @@ Dans ce projet, vous allez coder des *boids*, une technique très connue pour si
 - Ce projet se fera par groupes de 2.
   - Des groupes de 3 sont aussi possibles, mais sachez que nous seront plus exigeants et attendront un rendu plus conséquent de votre part, proportionnel à la taille de votre groupe.
   - Des groupes de 1 sont aussi possibles, mais sachez que ce sera + difficile, notamment pour faire la partie Synthèse d'Image seul.e.
+- Pour ce cours de C++, j'évaluerai l'entièreté du code du projet, y compris celui de synthèse d'image et de maths.
 
 ## Consignes
 
@@ -42,6 +43,10 @@ Voici des choses que nous ne vous demandons **PAS** de faire :
 - Nous vous recommandons de partir de ce template de projet pour bien démarrer: https://github.com/JulesFouchy/Simple-p6-Setup
 
 - Commencez en 2D avec p6 en attendant que vous ayez les connaissances OpenGL pour faire de la 3D.
+
+- Vous pouvez utiliser la librairie *glm* pour représenter des vec2, vec3 etc. Elle est inclue automatiquement avec *p6*.
+
+- Quand vous passerez à OpenGL pour faire votre rendu en 3D, il faudra activer le mode OpenGL de p6. Pour cela, allez dans le CMakeLists.txt de votre projet, et sous la ligne `# ---Add p6 library---` ajoutez `set(P6_RAW_OPENGL_MODE ON CACHE BOOL "")`. Puis, faites <kbd>F1</kbd> et utilisez *"CMake: Delete Cache and Reconfigure"*.
 
 ## Pour aller plus loin
 
