@@ -1,0 +1,1 @@
+Move constructors, example of constructing a VBO class for their OpenGLs exercises.
