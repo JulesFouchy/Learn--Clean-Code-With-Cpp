@@ -44,6 +44,8 @@ Voici des choses que nous ne vous demandons **PAS** de faire :
 
 - Commencez en 2D avec p6 en attendant que vous ayez les connaissances OpenGL pour faire de la 3D.
 
+- Pour apprendre à utiliser la librairie p6 (évènements clavier / souris, dessin 2D, etc.), [lisez ces tutoriels](https://julesfouchy.github.io/p6-docs/tutorials).
+
 - Vous pouvez utiliser la librairie *glm* pour représenter des vec2, vec3 etc. Elle est inclue automatiquement avec *p6*.
 
 - Quand vous passerez à OpenGL pour faire votre rendu en 3D, il faudra activer le mode OpenGL de p6. Pour cela, allez dans le CMakeLists.txt de votre projet, et sous la ligne `# ---Add p6 library---` ajoutez `set(P6_RAW_OPENGL_MODE ON CACHE BOOL "")`. Puis, faites <kbd>F1</kbd> et utilisez *"CMake: Delete Cache and Reconfigure"*.
