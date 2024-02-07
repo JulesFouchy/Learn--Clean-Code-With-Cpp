@@ -1,0 +1,2 @@
+Pas d'activité, full autonomie et je passe voir les groupes pour regarder tout leur code et donner des conseils. Au final le faire "tôt" dans le semestre c'est bien, j'ai quasi eu le temps de voir tout le monde, et j'ai quand même pu warn sur des trucs du genre "utilisez glm, ne faites pas `float posX; float posY;`, parler de setters souvent, etc.
+Le faire avant les vacances c'est bien aussi, ça permet de s'assurer qu'iels ne sont pas bloqué.es / sont sur une bonne piste. + j'ai prévenu qu'à la rentrée on regarderait le code d'un groupe avec toute la classe.
