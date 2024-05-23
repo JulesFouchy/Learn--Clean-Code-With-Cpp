@@ -11,19 +11,6 @@ import LessonLink from "@site/components/LessonLink"
 ☁️ > I haven't seen enough of your code yet to tell if you are doing well.<br/>
 🌞 > You are doing great.<br/>
 🌈 > You are doing amazing.<br/>
-❌ > I am not happy and you should prioritizeimport StudentsDropdown from "@site/components/evaluation/StudentsDropdown"
-import LessonLink from "@site/components/LessonLink"
-
-<StudentsDropdown/>
-
-<br/>
-
-# Evaluation
-
-:::tip CAPTIONS
-☁️ > I haven't seen enough of your code yet to tell if you are doing well.<br/>
-🌞 > You are doing great.<br/>
-🌈 > You are doing amazing.<br/>
 ❌ > I am not happy and you should prioritize working on that point.
 :::
 
@@ -68,3 +55,16 @@ import LessonLink from "@site/components/LessonLink"
 - ❌ Use `const` when appropriate (<LessonLink slug="const"/>)
 - ☁️ Use lambdas when appropriate (<LessonLink slug="lambda"/>)
 
+➖ *What you **shouldn't** do:*
+
+- 🌞 Using `new` instead of a stack allocation or a smart pointer or a standard container (`std::vector`)
+- ☁️ Forgetting `#pragma once` in your headers
+- 🌞 Using `1` and `0` instead of `true` and `false` for your booleans
+
+## Investment (2 / 4 pts.)
+
+➕ *What you **should** do:*
+
+- ☁️ Ask questions and participate in class
+- ☁️ Take my feedback into account, improve your old code if need be
+- ☁️ Extend your project with additional features
