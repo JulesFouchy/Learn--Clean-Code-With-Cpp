@@ -1,7 +1,7 @@
 ---
 title: Linter
 benefit: 5
-easiness: 3
+easiness: 4
 level: tools
 tags:
     - Tools
@@ -15,7 +15,7 @@ There are a lot of bugs and bad coding habits that can be caught by tools. It ca
 
 ## Installing
 
-You simple need to have <LessonLink slug="clangd" text="clangd set up"/>.
+You simply need to have <LessonLink slug="clangd" text="clangd set up"/>.
 
 To configure the behaviour of clang-tidy you need to have a *.clang-tidy* file at the root of your project. You can [use mine as a starting point](https://github.com/CoolLibs/tooling/blob/main/.clang-tidy).
 

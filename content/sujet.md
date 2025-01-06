@@ -2,63 +2,74 @@
 title: Sujet
 ---
 
-# BOIDS
+# Jeu d'échec
 
 ## Sujet
 
-Dans ce projet, vous allez coder des *boids*, une technique très connue pour simuler des comportements de groupe comme des nuées d'oiseaux ou des bancs de poissons. Pour découvrir ce que sont les boids, [regardez cette vidéo](https://youtu.be/LltugBg4dtk) ; vous allez implémenter quelque chose de très similaire dans ce projet.
+Dans ce projet, vous allez coder un jeu d'échec. Si vous ne connaissez pas les règles [voici un petit tuto](https://www.chess.com/learn-how-to-play-chess). Notez que nous n'allons pas implémenter certaines règles un peu trop compliquées, vous trouverez [plus bas](#features-à-implémenter) le détail de ce que vous devez implémenter.
+
+De plus, il y aura quelques règles supplémentaires dans notre jeu d'échecs : des évènements aléatoires viendront perturber la partie. Je vous renvoie au sujet de maths que vous donnera Mr. Martinez pour plus d'infos sur ces évènements aléatoires que vous devrez implémenter.
 
 ## Infos
 
 - Ce projet sera commun avec les cours de Synthèse d'Image et de Mathématiques. Les profs des matières respectives vous donneront leurs parties du sujet.
-- Ce projet se fera par groupes de 2.
-  - Des groupes de 3 sont aussi possibles, mais sachez que nous seront plus exigeants et attendront un rendu plus conséquent de votre part, proportionnel à la taille de votre groupe.
-  - Des groupes de 1 sont aussi possibles, mais sachez que ce sera + difficile, notamment pour faire la partie Synthèse d'Image seul.e.
-- Pour ce cours de C++, j'évaluerai l'entièreté du code du projet, y compris celui de synthèse d'image et de maths.
+- Ce projet se fera par groupes de 2 (et exceptionnellement il peut y avoir un groupe de 3 ou de 1)
+- Pour ce cours de C++ j'évaluerai l'entièreté du code du projet, y compris celui de synthèse d'image et de maths. De plus, je n'évalue pas uniquement le nombre de features implémentées, mais aussi (et surtout) la qualité / clarté du code, et le respect des conseils que je vous donnerai dans les différents points de cours tout au long du semestre.
+
+## Deadline
+
+Le projet sera à rendre jeudi 10 avril à 23h59, la veille de la soutenance.
+
+## Pour bien démarrer
+
+Je vous recommande très fortement de partir de [ce template de projet](https://github.com/JulesFouchy/imgui-template). Il inclut déjà la librairie *Dear ImGui* dont vous aurez besoin (cf. les consignes ci-après). Il contient aussi des fichiers [*.clang-format*](./lessons/formatting-tool.md) et [*.clang-tidy*](./lessons/static-analysers.md) (que vous pouvez modifier si vous le souhaitez).
 
 ## Consignes
 
-- Vos boids se déplaceront dans un cube et ne pourront pas en sortir. Pour cela, deux possibilités :
-  - Si leur position dépasse le cube, ils seront téléportés de l'autre côté du cube (Par exemple, pour un cube allant de -1 à 1, si le x d'un boid devient 1.2, il faudra transformer sa position x en -0.8.)
-  - *Ou alors (un peu plus difficile)*: Les boids considéreront les bords du cube comme des obstacles et tenteront de les éviter. Il vous faudra probablement rajouter une règle de comportement appliquant une force aux boids pour les éloigner des obstacles.
-- Vos boids suivront, *a minima*, les trois règles de base (Vous êtes libres d'en rajouter d'autres si vous le souhaitez):
-  - Séparation
-  - Alignement
-  - Cohésion
-- Vous proposerez une GUI avec la librairie [*Dear ImGui*](https://julesfouchy.github.io/p6-docs/tutorials/dear-imgui) afin de pouvoir changer les paramètres de la simulation (coefficients des différentes règles, nombre de boids, etc.). Notez que cette librairie est déjà inclue avec p6 et disponible sans avoir rien à faire ; il vous suffit de [suivre le tutoriel](https://julesfouchy.github.io/p6-docs/tutorials/dear-imgui).
+![](./img/chess.gif)
 
-## Non-Consignes
+Le jeu se jouera via une GUI codée avec la librairie *Dear ImGui*. Cette librairie vous permettra facilement de placer des boutons à l'écran, qui représenteront les cases du plateau, et sur lesquels on pourra cliquer pour sélectionner les pièces et les déplacer.<br/>
+Vous trouverez dans le template de projet que je vous ai fourni quelques exemples sur l'utilisation de la librairie.
 
-Voici des choses que nous ne vous demandons **PAS** de faire :
+Puis vous ferez une visualisation en 3D du plateau et des pièces (cf. le sujet de synthèse d'image), mais même après ça vous garderez la GUI pour jouer les mouvements des pièces, et le monde 3D reflétera les changements. (En bonus, vous pouvez faire du picking en 3D pour cliquer directement dans le monde 3D pour sélectionner les pièces, mais c'est du bonus)
 
-- On ne vous demande **PAS** d'optimiser la simulation. Vous pouvez faire autant de boucles naïves sur tous les boids que vous voulez. Optimiser ce genre de problème est compliqué (octree, BVH, etc.) et vous avez déjà suffisamment de choses à faire dans ce projet !
-(Bien entendu vous pouvez le faire en bonus une fois que vous avez rempli tous les critères obligatoires du sujet, mais soyez prévenu.es que ce n'est pas ce qu'il y a de plus simple à implémenter parfaitement ! D'autant plus que je n'évalue pas votre capacité à faire de l'algorithmie avancée, mais seulement à produire du code clair. Ce n'est donc clairement pas le meilleure piste d'extension du projet si vous cherchez à améliorer votre note !).
+### Features à implémenter
 
-## Attendus
+- [ ] Les pièces sont représentées par un bouton de leur couleur (blanc ou noir), avec une lettre les représentant (P pour Pion, etc.)
+- [ ] Les cases vides sont soit claires soit sombres, en fonction d'un pattern d'échiquier. La case en bas à gauche est une case sombre.
+- [ ] Le plateau commence avec les pièces disposées ainsi, les blancs toujours en bas :
+![](./img/board.png)
+- [ ] Chaque joueur joue tour à tour. On ne peut pas déplacer deux pièces d'une même couleur d'affilée.
+- [ ] Ce sont toujours les blancs qui commencent la partie
+- [ ] Quand on clique sur une pièce elle devient sélectionnée, puis quand on clique sur une case la pièce sélectionnée se déplace sur cette case (si le coup est valide). On peut désélectionner la pièce avec un clic-droit (`if (ImGui::IsMouseClicked( ImGuiMouseButton_Right ))`).
+- [ ] Quand une pièce est sélectionnée, indiquer toutes les cases sur lesquelles elle peut se déplacer
+- [ ] La tour se déplace en ligne droite, d'autant de cases qu'elle veut tant qu'elle n'est pas bloquée par une autre pièce
+- [ ] Le fou se déplace en diagonale, d'autant de cases qu'il veut tant qu'il n'est pas bloqué par une autre pièce
+- [ ] Le cavalier se déplace en L
+- [ ] La dame peut se déplacer dans toutes les directions (ligne droite ou diagonale), tant qu'elle n'est pas bloquée par une autre pièce
+- [ ] Le roi peut se déplacer d'une case dans toutes les directions
+- [ ] Le pion peut avancer d'une case, et peut manger les pièces qui sont une case en diagonale devant lui
+- [ ] Si il n'a pas encore bougé, un pion peut avancer de deux cases d'un coup
+- [ ] Quand un pion arrive sur la dernière ligne du plateau, il est transformé en une autre pièce (c'est le joueur qui choisit : une dame, une tour, un fou ou un cavalier). Pour que le joueur choisisse, vous pouvez par exemple faire apparaître un popup avec ImGui.
+- [ ] "En passant": si un pion avance de deux cases, et arrive à côté d'un pion adverse, le pion adverse peut manger le pion en avançant derrière lui. NB: ce doit être fait le tour immédiatement après le déplacement du pion, si l'adversaire décide de jouer autre chose, il ne peut pas manger "en passant" plus tard.
+![](./img/en_passant.jpeg)
+- [ ] Victoire quand on mange le roi adverse (la détection automatique des échecs, et échec et mat, n'est pas demandée)
 
-[Voici la liste des choses à faire et ne pas faire dans votre projet](/evaluation). Vous serez évalué.es sur votre capacité à respecter un maximum de mes attentes et produire du code simple, compréhensible et maintenable.
+### Règles que vous n'avez pas besoin d'implémenter
 
-## Conseils
-
-- Nous vous recommandons de partir de ce template de projet pour bien démarrer: https://github.com/JulesFouchy/Simple-p6-Setup
-
-- Commencez en 2D avec p6 en attendant que vous ayez les connaissances OpenGL pour faire de la 3D.
-
-- Pour apprendre à utiliser la librairie p6 (évènements clavier / souris, dessin 2D, etc.), [lisez ces tutoriels](https://julesfouchy.github.io/p6-docs/tutorials).
-
-- Vous pouvez utiliser la librairie *glm* pour représenter des vec2, vec3 etc. Elle est inclue automatiquement avec *p6*.
-
-- Quand vous passerez à OpenGL pour faire votre rendu en 3D, il faudra activer le mode OpenGL de p6. Pour cela, allez dans le CMakeLists.txt de votre projet, et sous la ligne `# ---Add p6 library---` ajoutez `set(P6_RAW_OPENGL_MODE ON CACHE BOOL "")`. Puis, faites <kbd>F1</kbd> et utilisez *"CMake: Delete Cache and Reconfigure"*.
+- ~~Roquer~~
+- ~~Les diversions conditions qui causent un match nul~~
+- ~~Victoire quand on met le roi adverse échec et mat~~
+- ~~Quand le roi est en échec, les seuls coups autorisés sont des coups qui font que le roi n'est plus en échec~~
 
 ## Pour aller plus loin
 
-Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre projet. (Vous pouvez aussi rajouter vos propres idées). Ceci dit, avant de vous lancer dans ces nouvelles fonctionalités, n'oubliez pas que **le plus important dans l'évaluation reste d'avoir du code propre**, donc ne commencez pas à rajouter des choses si vous n'êtes pas confiant.es que ce que vous avez déjà est solide.
+Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre projet. (Vous pouvez aussi rajouter vos propres idées). Ceci dit, avant de vous lancer dans ces nouvelles fonctionalités, n'oubliez pas que **le plus important dans l'évaluation reste la qualité du code**, donc ne commencez pas à rajouter des choses si vous n'êtes pas confiant.es que ce que vous avez déjà est solide.
 
-- Source de nourriture : Ajouter un (ou plusieurs) point vers lequel les boids seront attirés, et qui disparaît une fois que [nombre à choisir par vos soins] boids sont passés dessus. Quand une source de nourriture disparaît, une nouvelle apparaît à une position aléatoire.
-- Au lieu que tous les boids aient les même paramètres de comportement, faire deux familles de boids, chacune ayant ses propres paramètres. Faites en sorte qu'il soit facile de rajouter une troisième famille dans le code si on en avait envie.
-- Faire des statistiques sur la simulation :
-  -  Distance totale parcourue par les boids
-  -  Distance minimale entre deux boids jamais atteinte
-  -  etc.
-- Ajouter des obstacles en forme de cercle (ou sphère quand vous passerez en 3D) que les boids éviteront.
-- Tant qu'un bouton de la souris est enfoncé, considérer la souris (ou la caméra si vous êtes en 3D) comme un obstacle.
+- Coder de nouvelles pièces, avec de nouveaux patterns de déplacement
+- Quand on déplace une pièce, au lieu qu'elle se téléporte instantanément à sa nouvelle position, faire une animation où elle se déplace progressivement vers sa nouvelle position (dans le monde 3D)
+- Pouvoir sauvegarder et charger des parties, avec [la notation FEN](https://www.chess.com/terms/fen-chess)
+- Pouvoir choisir la taille du plateau (par exemple jouer sur un 6x6 ou un 13x13)
+- Avoir un historique de tous les coups joués et pouvoir revenir en arrière
+- Implémenter [les règles qui n'étaient pas demandées](#règles-que-vous-navez-pas-besoin-dimplémenter)
+- Coder une IA

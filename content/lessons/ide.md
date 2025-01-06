@@ -23,12 +23,13 @@ There are many extensions that can help you! Check out the recommended extension
 Here are some great extensions for VSCode that I recommend:
 
 - <VSCodeExtension id="ms-vscode.cpptools-extension-pack"/>: The Basic C++ extensions
-- <VSCodeExtension id="SteveBushResearch.BuildOutputColorizer"/>: To colorize the output of the compilation and highlight error messages.
-- <VSCodeExtension id="streetsidesoftware.code-spell-checker"/>: A great spell checker.
-- <VSCodeExtension id="yzhang.markdown-all-in-one"/>: To preview your markdown and get help during edition (e.g. it can automatically generate a table of content).
-- <VSCodeExtension id="emmanuelbeziat.vscode-great-icons"/>: Nice icons for many file types (.cpp, .hpp, CMakeLists.txt, etc.).
+- <VSCodeExtension id="SteveBushResearch.BuildOutputColorizer"/>: To colorize the output of the compilation and highlight error messages
+- <VSCodeExtension id="usernamehw.errorlens"/>: To see the errors more clearly in the IDE
+- <VSCodeExtension id="streetsidesoftware.code-spell-checker"/>: A great spell checker
+- <VSCodeExtension id="yzhang.markdown-all-in-one"/>: To preview your markdown and get help during edition (e.g. it can automatically generate a table of content)
+- <VSCodeExtension id="emmanuelbeziat.vscode-great-icons"/>: Nice icons for many file types (.cpp, .hpp, CMakeLists.txt, etc.)
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/>: This allows you to work remotely with your teammates in one single editor. It is amazing to work together!
-- <VSCodeExtension id="josetr.cmake-language-support-vscode"/>: To provide autocompletion and formatting for CMake.
+- <VSCodeExtension id="josetr.cmake-language-support-vscode"/>: To provide autocompletion and formatting for CMake
 
 ## Quick actions
 
