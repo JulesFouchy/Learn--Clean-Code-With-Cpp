@@ -26,7 +26,7 @@ Je vous recommande très fortement de partir de [ce template de projet](https://
 
 ## Consignes
 
-![](./img/chess.gif)
+![](./img/chess2.gif)
 
 Le jeu se jouera via une GUI codée avec la librairie *Dear ImGui*. Cette librairie vous permettra facilement de placer des boutons à l'écran, qui représenteront les cases du plateau, et sur lesquels on pourra cliquer pour sélectionner les pièces et les déplacer.<br/>
 Vous trouverez dans le template de projet que je vous ai fourni quelques exemples sur l'utilisation de la librairie.
@@ -43,6 +43,7 @@ Puis vous ferez une visualisation en 3D du plateau et des pièces (cf. le sujet 
 - [ ] Ce sont toujours les blancs qui commencent la partie
 - [ ] Quand on clique sur une pièce elle devient sélectionnée, puis quand on clique sur une case la pièce sélectionnée se déplace sur cette case (si le coup est valide). On peut désélectionner la pièce avec un clic-droit (`if (ImGui::IsMouseClicked( ImGuiMouseButton_Right ))`).
 - [ ] Quand une pièce est sélectionnée, indiquer toutes les cases sur lesquelles elle peut se déplacer
+- [ ] Victoire quand on mange le roi adverse (la détection automatique des échecs, et échec et mat, **n'est pas demandée**)
 - [ ] La tour se déplace en ligne droite, d'autant de cases qu'elle veut tant qu'elle n'est pas bloquée par une autre pièce
 - [ ] Le fou se déplace en diagonale, d'autant de cases qu'il veut tant qu'il n'est pas bloqué par une autre pièce
 - [ ] Le cavalier se déplace en L
@@ -50,21 +51,20 @@ Puis vous ferez une visualisation en 3D du plateau et des pièces (cf. le sujet 
 - [ ] Le roi peut se déplacer d'une case dans toutes les directions
 - [ ] Le pion peut avancer d'une case, et peut manger les pièces qui sont une case en diagonale devant lui
 - [ ] Si il n'a pas encore bougé, un pion peut avancer de deux cases d'un coup
-- [ ] Quand un pion arrive sur la dernière ligne du plateau, il est transformé en une autre pièce (c'est le joueur qui choisit : une dame, une tour, un fou ou un cavalier). Pour que le joueur choisisse, vous pouvez par exemple faire apparaître un popup avec ImGui.
+- [ ] Quand un pion arrive sur la dernière ligne du plateau, il est transformé en une autre pièce (c'est le joueur qui choisit : une dame, une tour, un fou ou un cavalier). Pour que le joueur choisisse, vous pouvez par exemple faire apparaître une fenêtre modale avec ImGui.
 - [ ] "En passant": si un pion avance de deux cases, et arrive à côté d'un pion adverse, le pion adverse peut manger le pion en avançant derrière lui. NB: ce doit être fait le tour immédiatement après le déplacement du pion, si l'adversaire décide de jouer autre chose, il ne peut pas manger "en passant" plus tard.
 ![](./img/en_passant.jpeg)
-- [ ] Victoire quand on mange le roi adverse (la détection automatique des échecs, et échec et mat, n'est pas demandée)
 
 ### Règles que vous n'avez pas besoin d'implémenter
 
 - ~~Roquer~~
-- ~~Les diversions conditions qui causent un match nul~~
+- ~~Les diverses conditions qui causent un match nul~~
 - ~~Victoire quand on met le roi adverse échec et mat~~
 - ~~Quand le roi est en échec, les seuls coups autorisés sont des coups qui font que le roi n'est plus en échec~~
 
 ## Pour aller plus loin
 
-Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre projet. (Vous pouvez aussi rajouter vos propres idées). Ceci dit, avant de vous lancer dans ces nouvelles fonctionalités, n'oubliez pas que **le plus important dans l'évaluation reste la qualité du code**, donc ne commencez pas à rajouter des choses si vous n'êtes pas confiant.es que ce que vous avez déjà est solide.
+Voici des consignes optionnelles que vous pouvez suivre afin d'étoffer votre projet. (Vous pouvez aussi rajouter vos propres idées). Ceci dit, avant de vous lancer dans ces nouvelles fonctionnalités, n'oubliez pas que **le plus important dans l'évaluation reste la qualité du code**, donc ne commencez pas à rajouter des choses si vous n'êtes pas confiant.es que ce que vous avez déjà est solide.
 
 - Coder de nouvelles pièces, avec de nouveaux patterns de déplacement
 - Quand on déplace une pièce, au lieu qu'elle se téléporte instantanément à sa nouvelle position, faire une animation où elle se déplace progressivement vers sa nouvelle position (dans le monde 3D)
