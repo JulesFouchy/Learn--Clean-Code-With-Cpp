@@ -22,6 +22,7 @@ module.exports = async () => {
     main_page_link: "lessons",
     navbar_items: [
       { to: "/lessons", label: "Lessons", position: "left" },
+      { to: "/slides", label: "Slides", position: "left" },
       { to: "/resources", label: "Resources", position: "left" },
       { to: "/tools", label: "Tools", position: "left" },
       { to: "/sujet", label: "Sujet", position: "left" },
