@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkteaching_toolbox_website_generator=self.webpackChunkteaching_toolbox_website_generator||[]).push([[704],{704:function(e,t,o){o.r(t)}}]);
