@@ -1,6 +1,3 @@
----
-slug: /slides
----
 import GoingFurther from "@site/components/GoingFurther"
 
 ## Slides
