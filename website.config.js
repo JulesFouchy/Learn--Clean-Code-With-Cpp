@@ -2,12 +2,12 @@ const fetch = require("node-fetch")
 
 module.exports = async () => {
   const contact_info = await fetch(
-    "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/contact.json"
+    "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/contact.json",
   )
     .then((res) => res.json())
     .catch((err) => ({}))
   const classes = await fetch(
-    "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/my-classes.json"
+    "https://raw.githubusercontent.com/JulesFouchy/JulesFouchy/main/my-classes.json",
   )
     .then((res) => res.json())
     .catch((err) => [])
@@ -25,7 +25,7 @@ module.exports = async () => {
       { to: "/slides", label: "Slides", position: "left" },
       { to: "/resources", label: "Resources", position: "left" },
       { to: "/tools", label: "Tools", position: "left" },
-      //   { to: "/sujet", label: "Sujet", position: "left" },
+      { to: "/sujet", label: "Sujet", position: "left" },
     ],
     should_sort_lessons_by_priority: true,
     //   footer: {}, // Uncomment this to override the hardcoded footer in docusaurus.config.js

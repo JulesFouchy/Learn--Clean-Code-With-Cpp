@@ -12,6 +12,8 @@ Autonomie: Envoyer message Discord avec les instructions:
 - Installer [clang-tidy](https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/lessons/static-analysers/)
 - [Refactoring Exercise](https://github.com/JulesFouchy/Refactoring-Exercises): trouver un max de problèmes dans le code, les noter, les fixer, noter le fix
 
-Sur les 30/40 dernières minutes on corrige le Refactoring ensemble, et je distribue des chocolats à tous les gens qui participent
+Et si vous pouvez m'expliquer pourquoi c'est un problème et pourquoi avec le fix c'est mieux, c'est encore mieux!
+
+Sur les 30 dernières minutes on corrige le Refactoring ensemble, et je distribue des chocolats à tous les gens qui participent
 
 ## Post-mortem
