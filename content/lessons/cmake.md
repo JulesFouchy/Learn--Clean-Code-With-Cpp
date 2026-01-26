@@ -83,6 +83,7 @@ If it is hard to add new files to your codebase people will tend to try and avoi
 In order to make sure that anybody cloning your repository will have all the required libraries to compile your project, it is important to have a way to automatically download them. <LessonLink slug="git-submodules" text="Submodules"/> are one way of achieving this, but in the case of external libraries that you are not actively writing yourself (which should be most of the cases, especially if you are a beginner programmer), then submodules are a bit annoying and don't bring any value. In that case, CMake offers a better alternative: [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html). It will automatically download the libraries when necessary:
 
 ```cmake
+include(FetchContent) # Include the FetchContent functions. Only do this once, even if you import several libraries
 FetchContent_Declare( # Declare a library: its name and where to find it 
     p6                                               # Name of the library
     GIT_REPOSITORY https://github.com/julesfouchy/p6 # Repo of the library
