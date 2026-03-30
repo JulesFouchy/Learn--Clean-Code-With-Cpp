@@ -18,8 +18,7 @@ De plus, il y deux modes de jeu: le mode standard, et un mode "chaos" avec des �
 
 ## Deadline
 
-<!-- Le projet sera à rendre jeudi 10 avril à 23h59, la veille de la soutenance. -->
-*À venir*
+Vendredi 17 avril, 23h59
 
 ## Rendu
 
